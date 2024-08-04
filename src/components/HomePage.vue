@@ -1,18 +1,22 @@
 <template>
   <div>
     <section class="hero">
+      <video class="hero-video" autoplay muted loop ref="heroVideo">
+        <source src="/hero_video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
       <div class="hero-content">
-        <h1>Galina Filipkova Counselling Tewkesbury</h1>
-        <p>Professional and confidential counselling services in Tewkesbury</p>
+        <h1>Clear Skies Practice Tewkesbury</h1>
+        <p>Professional and confidential counselling services</p>
       </div>
     </section>
     <section class="intro">
       <h2>About Me</h2>
       <div class="portrait-container">
-        <img src="@/assets/galina.jpg" alt="Galina Filipkova" class="portrait"/>
+        <img src="@/assets/portrait.jpg" alt="Galina Filipkova" class="portrait"/>
       </div>
       <p>Welcome to my counselling practice. I offer a safe and confidential space to explore your thoughts and feelings. With years of experience, I am here to help you navigate through your challenges and achieve personal growth.</p>
-      <a :href="`/sample.pdf`" download="sample.pdf">Download Sample PDF</a>
+      <a href="/sample.pdf" download="sample.pdf">Download Sample PDF</a>
     </section>
     <section class="services">
       <h2>Services</h2>
@@ -27,23 +31,48 @@
 
 <script>
 export default {
-  name: 'HomePage'
+  name: 'HomePage',
+  mounted() {
+    this.playVideo();
+  },
+  methods: {
+    playVideo() {
+      const video = this.$refs.heroVideo;
+      if (video && video.paused) {
+        video.play().catch((error) => {
+          console.error("Error playing video:", error);
+        });
+      }
+    }
+  }
 }
 </script>
 
 <style scoped>
 .hero {
-  background-image: url('@/assets/hero_image.jpg');
-  background-size: cover;
-  background-position: center;
-  color: white;
-  text-align: center;
-  padding: 50px 20px;
+  position: relative;
+  height: 300px; /* Adjust the height as needed */
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 
 .hero-content {
+  position: relative;
   max-width: 800px;
   margin: auto;
+  text-align: center;
+  color: white;
+  padding: 50px 20px;
+  z-index: 1;
 }
 
 .intro, .services {

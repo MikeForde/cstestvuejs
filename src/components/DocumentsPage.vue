@@ -2,29 +2,29 @@
   <div>
     <section class="documents-hero">
       <div class="hero-content">
-        <h1>Download Documents</h1>
+        <h1>Clear Skies Documents</h1>
       </div>
     </section>
     <section class="documents-list" ref="documentsList" :class="{ 'fade-in': showDocumentsList }">
-      <h2>Available Documents</h2>
+      <h2>Please Download the Documents Below</h2>
       <ul>
         <li>
-          <a href="/information_for_clients.pdf" download="Information for Clients">
+          <a href="/Fees and Terms of Business.pdf" download="Information for Clients">
             Information for Clients
           </a>
         </li>
         <li>
-          <a href="/privacy_notice.pdf" download="Privacy Notice">
+          <a href="/Privacy Notice.pdf" download="Privacy Notice">
             Privacy Notice
           </a>
         </li>
         <li>
-          <a href="/client_contract.pdf" download="Client Contract">
+          <a href="/Client Contract.docx" download="Client Contract">
             Client Contract
           </a>
         </li>
         <li>
-          <a href="/registration_form.pdf" download="Registration Form">
+          <a href="/Registration Form.docx" download="Registration Form">
             Registration Form
           </a>
         </li>

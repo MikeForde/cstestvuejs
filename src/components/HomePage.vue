@@ -8,16 +8,54 @@
       <div class="hero-content">
         <h1>Clear Skies Practice Tewkesbury</h1>
         <p>Professional and confidential counselling</p>
+        <p>Supporting You Moving Forward</p>
       </div>
       <img src="@/assets/CSP_Logo_White_trans.png" alt="Logo" class="logo-overlay">
     </section>
     <section class="intro" ref="intro" :class="{ 'fade-in': showIntro }">
-      <h2>About Me</h2>
-      <div class="portrait-container">
-        <img src="@/assets/portrait.jpg" alt="Galina Filipkova" class="portrait"/>
+      <div class="intro-container">
+        <div class="intro-card text-card">
+          <h2>About Me</h2>
+          <p>Hello</p>
+          <p>My name is Galina Filipkova. I am a trainee counsellor HG.Dip.P (Trainee) and currently offer free* therapy sessions for adults to complete the final stage of my psychotherapy qualification.</p>
+          <p>I created the Clear Skies Practice as a safe space where we can work together to help you move forward. Please read more about how I will support you.</p>
+          <p>* I offer free counselling but ask my clients to contribute £12 per 1-hour session towards room hire.</p>
+        </div>
+        <div class="intro-card image-card">
+          <img src="@/assets/portrait.jpg" alt="Galina Filipkova" class="portrait"/>
+        </div>
       </div>
-      <p>Welcome to my counselling practice. I offer a safe and confidential space to explore your thoughts and feelings. With years of experience, I am here to help you navigate through your challenges and achieve personal growth.</p>
-      <a href="/sample.pdf" download="sample.pdf">Download Sample PDF</a>
+    </section>
+    <section class="additional-info" ref="additionalInfo" :class="{ 'fade-in': showAdditionalInfo }">
+      <div class="info-container">
+        <div class="info-card image-card">
+          <img src="@/assets/Daisy.jpeg" alt="Help Image" class="help-image"/>
+        </div>
+        <div class="info-card text-card">
+          <h2>I Can Help With:</h2>
+          <ul>
+            <li>Anxiety (mild to moderate)</li>
+            <li>Panic attacks</li>
+            <li>Stress (mild to moderate)</li>
+            <li>Sleep</li>
+            <li>Relaxation</li>
+            <li>Depression (mild to moderate)</li>
+            <li>Addiction (mild)</li>
+            <li>Behaviour change</li>
+            <li>Communication skills</li>
+            <li>Grief/bereavement</li>
+            <li>Life changes</li>
+            <li>Loneliness</li>
+            <li>Loss</li>
+            <li>Performance</li>
+            <li>Personal development</li>
+            <li>Phobias (mild to moderate)</li>
+            <li>Relationship difficulties (mild)</li>
+            <li>Self-confidence</li>
+            <li>Time management</li>
+          </ul>
+        </div>
+      </div>
     </section>
     <section class="services" ref="services" :class="{ 'fade-in': showServices }">
       <h2>Services</h2>
@@ -37,6 +75,7 @@ export default {
     return {
       showIntro: false,
       showServices: false,
+      showAdditionalInfo: false,
     };
   },
   mounted() {
@@ -53,6 +92,8 @@ export default {
             this.showIntro = true;
           } else if (entry.target.classList.contains('services')) {
             this.showServices = true;
+          } else if (entry.target.classList.contains('additional-info')) {
+            this.showAdditionalInfo = true;
           }
           observer.unobserve(entry.target);
         }
@@ -62,6 +103,7 @@ export default {
     this.$nextTick(() => {
       observer.observe(this.$refs.intro);
       observer.observe(this.$refs.services);
+      observer.observe(this.$refs.additionalInfo);
     });
   },
   methods: {
@@ -114,7 +156,7 @@ export default {
   z-index: 0;
 }
 
-.intro, .services {
+.intro, .additional-info, .services {
   padding: 20px;
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -122,38 +164,60 @@ export default {
   transition: opacity 1s ease-in;
 }
 
+.intro-container, .info-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.intro-card, .info-card {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-card {
+  width: 55%;
+}
+
+.image-card {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portrait, .help-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
 .fade-in {
   opacity: 1;
 }
 
-.intro h2, .services h2 {
+.intro h2, .additional-info h2, .services h2 {
   color: #333;
   margin-bottom: 15px;
 }
 
-.intro p, .services ul {
+.intro p, .additional-info ul, .services ul {
   color: #666;
 }
 
-.services ul {
+.additional-info ul, .services ul {
   list-style-type: none;
   padding: 0;
 }
 
-.services ul li {
+.additional-info ul li, .services ul li {
   margin: 10px 0;
-}
-
-.portrait-container {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0;
-}
-
-.portrait {
-  border: 5px solid #6699CC; /* Pale blue frame */
-  border-radius: 10px;
-  width: 200px; /* Adjust as needed */
-  height: auto;
 }
 </style>

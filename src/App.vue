@@ -10,7 +10,7 @@
           <span class="brand-name">Clear Skies Practice</span>
         </router-link>
         <ul class="nav-links" :class="{ 'nav-active': menuActive }">
-          <li><router-link to="/human-givens" @click="closeMenu">Human Givens</router-link></li>
+          <li><router-link to="/therapy" @click="closeMenu">Therapy</router-link></li>
           <li><router-link to="/documents" @click="closeMenu">Documents</router-link></li>
           <li><router-link to="/about-me" @click="closeMenu">About Me</router-link></li>
           <li><router-link to="/contact" @click="closeMenu">Contact</router-link></li>

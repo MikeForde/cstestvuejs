@@ -2,7 +2,7 @@
   <div>
     <section class="hero">
       <div class="hero-content">
-        <h1>Human Givens Therapy</h1>
+        <h1>Therapy</h1>
       </div>
     </section>
     <section class="intro" ref="intro" :class="{ 'fade-in': showIntro }">

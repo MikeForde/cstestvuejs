@@ -11,7 +11,7 @@
       </div>
       <img src="@/assets/CSP_Logo_White_trans.png" alt="Logo" class="logo-overlay">
     </section>
-    <section class="intro">
+    <section class="intro" ref="intro" :class="{ 'fade-in': showIntro }">
       <h2>About Me</h2>
       <div class="portrait-container">
         <img src="@/assets/portrait.jpg" alt="Galina Filipkova" class="portrait"/>
@@ -19,7 +19,7 @@
       <p>Welcome to my counselling practice. I offer a safe and confidential space to explore your thoughts and feelings. With years of experience, I am here to help you navigate through your challenges and achieve personal growth.</p>
       <a href="/sample.pdf" download="sample.pdf">Download Sample PDF</a>
     </section>
-    <section class="services">
+    <section class="services" ref="services" :class="{ 'fade-in': showServices }">
       <h2>Services</h2>
       <ul>
         <li>Individual Counselling</li>
@@ -33,8 +33,36 @@
 <script>
 export default {
   name: 'HomePage',
+  data() {
+    return {
+      showIntro: false,
+      showServices: false,
+    };
+  },
   mounted() {
     this.playVideo();
+
+    const options = {
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          if (entry.target.classList.contains('intro')) {
+            this.showIntro = true;
+          } else if (entry.target.classList.contains('services')) {
+            this.showServices = true;
+          }
+          observer.unobserve(entry.target);
+        }
+      });
+    }, options);
+
+    this.$nextTick(() => {
+      observer.observe(this.$refs.intro);
+      observer.observe(this.$refs.services);
+    });
   },
   methods: {
     playVideo() {
@@ -90,6 +118,12 @@ export default {
   padding: 20px;
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.fade-in {
+  opacity: 1;
 }
 
 .intro h2, .services h2 {

@@ -5,7 +5,7 @@
           <h1>About Me</h1>
         </div>
       </section>
-      <section class="intro">
+      <section class="intro" ref="intro" :class="{ 'fade-in': showIntro }">
         <div class="intro-content">
           <img src="@/assets/portrait.jpg" alt="About Me Image" class="intro-image">
           <h2>Hello, I'm Galina Filipkova</h2>
@@ -13,7 +13,7 @@
           <p>Together we will discover ways to help you cope with the things that may have damaged or hurt you, so you can take courage to live wholeheartedly again.</p>
         </div>
       </section>
-      <section class="contact-details">
+      <section class="contact-details" ref="details" :class="{ 'fade-in': showDetails }">
         <h2>Contact Details</h2>
         <p><strong>Address:</strong> Clear Skies Practice, The Road, Tewkesbury, GL20, England, UK</p>
         <p><strong>Phone:</strong> 0789 123 345</p>
@@ -24,13 +24,42 @@
   
   <script>
   export default {
-    name: 'AboutMePage'
-  }
+    name: 'AboutMePage',
+    data() {
+      return {
+        showIntro: false,
+        showDetails: false,
+      };
+    },
+    mounted() {
+      const options = {
+        threshold: 0.1
+      };
+  
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            if (entry.target.classList.contains('intro')) {
+              this.showIntro = true;
+            } else if (entry.target.classList.contains('contact-details')) {
+              this.showDetails = true;
+            }
+            observer.unobserve(entry.target);
+          }
+        });
+      }, options);
+  
+      this.$nextTick(() => {
+        observer.observe(this.$refs.intro);
+        observer.observe(this.$refs.details);
+      });
+    }
+  };
   </script>
   
   <style scoped>
   .hero {
-    background-color: #00509E;
+    background-color: #6699CC;
     color: white;
     text-align: center;
     padding: 50px 20px;
@@ -42,12 +71,18 @@
     margin: auto;
   }
   
-  .intro {
+  .intro, .contact-details {
     padding: 20px;
     text-align: left;
     max-width: 800px;
     margin: auto;
+    opacity: 0;
+    transition: opacity 1s ease-in;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .fade-in {
+    opacity: 1;
   }
   
   .intro-content {
@@ -58,16 +93,8 @@
   
   .intro-image {
     max-width: 100%;
-    height: auto;
+    height: 400px;
     margin: 20px 0;
-  }
-  
-  .contact-details {
-    padding: 20px;
-    text-align: left;
-    max-width: 800px;
-    margin: auto;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
   .contact-details h2 {

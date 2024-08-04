@@ -3,7 +3,7 @@
     <section class="hero">
       <div class="hero-content">
         <h1>Clear Skies Practice Tewkesbury</h1>
-        <p>Professional and confidential counselling services in Tewkesbury</p>
+        <p>Helping You Flourish</p>
       </div>
     </section>
     <section class="intro">
@@ -35,7 +35,7 @@ export default {
   background-image: url('@/assets/hero_image.jpg');
   background-size: cover;
   background-position: center;
-  color: white;
+  color: rgb(3, 3, 3);
   text-align: center;
   padding: 50px 20px;
 }

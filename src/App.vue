@@ -7,6 +7,8 @@
         <span class="brand-name">Clear Skies Practice</span>
       </router-link>
         <li><router-link to="/human-givens">Human Givens</router-link></li>
+        <li><router-link to="/documents">Documents</router-link></li>
+        <li><router-link to="/about-me">About me</router-link></li>
         <li><router-link to="/contact">Contact</router-link></li>
       </ul>
     </nav>

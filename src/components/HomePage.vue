@@ -7,8 +7,9 @@
       </video>
       <div class="hero-content">
         <h1>Clear Skies Practice Tewkesbury</h1>
-        <p>Professional and confidential counselling services</p>
+        <p>Professional and confidential counselling</p>
       </div>
+      <img src="@/assets/CSP_Logo_White_trans.png" alt="Logo" class="logo-overlay">
     </section>
     <section class="intro">
       <h2>About Me</h2>
@@ -73,6 +74,15 @@ export default {
   color: white;
   padding: 50px 20px;
   z-index: 1;
+}
+
+.logo-overlay {
+  position: absolute;
+  bottom: 10px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px; /* Adjust size as needed */
+  z-index: 0;
 }
 
 .intro, .services {

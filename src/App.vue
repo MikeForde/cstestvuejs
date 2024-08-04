@@ -2,8 +2,10 @@
   <div id="app">
     <nav class="navbar">
       <ul class="nav-links">
+        <router-link to="/" class="brand-link">
         <img src="@/assets/CSP_Logo_White_trans.png" alt="Logo" class="logo">
-        <li><router-link to="/">Home</router-link></li>
+        <span class="brand-name">Clear Skies Practice</span>
+      </router-link>
         <li><router-link to="/human-givens">Human Givens</router-link></li>
         <li><router-link to="/contact">Contact</router-link></li>
       </ul>
@@ -33,8 +35,20 @@ export default {
   padding: 0 20px;
 }
 
+.brand-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
 .logo {
   height: 40px; /* Adjust as needed */
+}
+
+.brand-name {
+  color: white;
+  font-size: 20px;
+  margin-left: 10px;
 }
 
 .nav-links {

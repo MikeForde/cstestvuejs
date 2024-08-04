@@ -12,7 +12,7 @@
         <img src="@/assets/galina.jpg" alt="Galina Filipkova" class="portrait"/>
       </div>
       <p>Welcome to my counselling practice. I offer a safe and confidential space to explore your thoughts and feelings. With years of experience, I am here to help you navigate through your challenges and achieve personal growth.</p>
-      <a :href="`${basePath}/sample.pdf`" download="sample.pdf">Download Sample PDF</a>
+      <a :href="`/sample.pdf`" download="sample.pdf">Download Sample PDF</a>
     </section>
     <section class="services">
       <h2>Services</h2>
@@ -27,12 +27,7 @@
 
 <script>
 export default {
-  name: 'HomePage',
-  data() {
-    return {
-      basePath: process.env.BASE_URL
-    };
-  }
+  name: 'HomePage'
 }
 </script>
 

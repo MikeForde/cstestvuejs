@@ -2,7 +2,7 @@
   <div>
     <section class="hero">
       <div class="hero-content">
-        <h1>Galina Filipkova Counselling Tewkesbury</h1>
+        <h1>Clear Skies Practice Tewkesbury</h1>
         <p>Professional and confidential counselling services in Tewkesbury</p>
       </div>
     </section>

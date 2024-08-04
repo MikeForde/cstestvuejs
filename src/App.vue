@@ -2,7 +2,7 @@
   <div id="app">
     <nav class="navbar">
       <ul class="nav-links">
-        <img src="@/assets/CSP_Logo_White.png" alt="Logo" class="logo">
+        <img src="@/assets/CSP_Logo_White_trans.png" alt="Logo" class="logo">
         <li><router-link to="/">Home</router-link></li>
         <li><router-link to="/human-givens">Human Givens</router-link></li>
         <li><router-link to="/contact">Contact</router-link></li>

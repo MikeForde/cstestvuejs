@@ -43,9 +43,11 @@ export default {
 <style scoped>
 h1 {
   color: green;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 form {
   max-width: 500px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 form div {
   margin-bottom: 10px;

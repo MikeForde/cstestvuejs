@@ -57,7 +57,7 @@ export default {
 }
 
 .hero-video {
-  position: absolute;
+  position: absolute; /* https://www.pexels.com/license/ */
   top: 0;
   left: 0;
   width: 100%;
@@ -74,6 +74,7 @@ export default {
   color: white;
   padding: 50px 20px;
   z-index: 1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .logo-overlay {
@@ -88,6 +89,7 @@ export default {
 .intro, .services {
   padding: 20px;
   text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .intro h2, .services h2 {
@@ -115,7 +117,7 @@ export default {
 }
 
 .portrait {
-  border: 5px solid #add8e6; /* Pale blue frame */
+  border: 5px solid #6699CC; /* Pale blue frame */
   border-radius: 10px;
   width: 200px; /* Adjust as needed */
   height: auto;

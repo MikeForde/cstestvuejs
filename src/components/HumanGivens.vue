@@ -76,6 +76,7 @@ export default {
   color: white;
   text-align: center;
   padding: 50px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .hero-content {
@@ -90,6 +91,7 @@ export default {
   margin: auto;
   opacity: 0;
   transition: opacity 1s ease-in;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .fade-in {

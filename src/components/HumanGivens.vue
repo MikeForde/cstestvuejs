@@ -6,6 +6,7 @@
       </div>
     </section>
     <section class="intro" ref="intro" :class="{ 'fade-in': showIntro }">
+      <img src="@/assets/human_givens_image.jpg" alt="Human Givens" class="intro-image">
       <h2>What is Human Givens?</h2>
       <p>The Human Givens approach offers a clear understanding of what we all need to feel emotionally well and be able to flourish in our individual lives:</p>
       <ul>
@@ -92,6 +93,13 @@ export default {
   opacity: 0;
   transition: opacity 1s ease-in;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.intro-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
 }
 
 .fade-in {

@@ -7,7 +7,7 @@
       </section>
       <section class="intro" ref="intro" :class="{ 'fade-in': showIntro }">
         <div class="intro-content">
-          <img src="@/assets/portrait.jpg" alt="About Me Image" class="intro-image">
+          <img src="@/assets/portrait_colour.jpg" alt="About Me Image" class="intro-image">
           <h2>Hello, I'm Galina Filipkova</h2>
           <p>I started the Clear Skies Practice as a safe place where you can come to be healed, to enjoy a shared experience and to find your way forward. You are not alone, and help is now just a moment away.</p>
           <p>Together we will discover ways to help you cope with the things that may have damaged or hurt you, so you can take courage to live wholeheartedly again.</p>

@@ -21,7 +21,7 @@
           <p><i>* I offer free counselling but ask my clients to contribute £12 per 1-hour session towards room hire.</i></p>
         </div>
         <div class="intro-card image-card">
-          <img src="@/assets/portrait.jpg" alt="Galina Filipkova" class="portrait"/>
+          <img src="@/assets/portrait_colour.jpg" alt="Galina Filipkova" class="portrait"/>
         </div>
       </div>
     </section>

@@ -162,7 +162,8 @@ export default {
   color: white;
   padding: 50px 20px;
   z-index: 1;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size:x-large;
 }
 
 .logo-overlay {
@@ -174,13 +175,26 @@ export default {
   z-index: 0;
 }
 
-.intro, .additional-info, .services {
+.intro, .additional-info, .immediate-help, .resources {
   padding: 20px;
   text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   opacity: 0;
   transition: opacity 1s ease-in;
+  font-size: larger;
 }
+
+.intro p, .additional-info li, .immediate-help p, .resources p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+}
+
+.intro h1, .intro h2, .intro h3, 
+.additional-info h1, .additional-info h2, .additional-info h3, 
+.immediate-help h1, .immediate-help h2, .immediate-help h3, 
+.resources h1, .resources h2, .resources h3 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 
 .intro-container, .info-container {
   display: flex;
@@ -236,7 +250,6 @@ export default {
 .resources {
   padding: 20px;
   text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   opacity: 0;
   transition: opacity 1s ease-in;
 }
@@ -316,21 +329,21 @@ export default {
   opacity: 1;
 }
 
-.intro h2, .additional-info h2, .services h2 {
+.intro h2, .additional-info h2, .immediate-help h2 {
   color: #333;
   margin-bottom: 15px;
 }
 
-.intro p, .additional-info ul, .services ul {
+.intro p, .additional-info ul, .immediate-help ul {
   color: #666;
 }
 
-.additional-info ul, .services ul {
+.additional-info ul, .immediate-help ul {
   list-style-type: none;
   padding: 0;
 }
 
-.additional-info ul li, .services ul li {
+.additional-info ul li, .immediate-help ul li {
   margin: 10px 0;
 }
 </style>

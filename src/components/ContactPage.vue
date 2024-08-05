@@ -13,7 +13,7 @@
         </div>
         <div class="contact-card">
           <h2>Email</h2>
-          <p><a href="mailto:galina@clearskiespractice.com">galina@clearskiespractice.com</a></p>
+          <p><a href="mailto:clearskiespractice@gmail.com">clearskiespractice@gmail.com</a></p>
         </div>
       </div>
     </section>

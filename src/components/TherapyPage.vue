@@ -151,7 +151,6 @@ export default {
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 20px;
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
   display: flex;
   flex-direction: column;
   justify-content: center;

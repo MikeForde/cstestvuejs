@@ -66,16 +66,25 @@ export default {
 
 <style scoped>
 .documents-hero {
-  background-color: #6699CC;
+  position: relative;
+  height: 200px;
+  background-image: url('@/assets/Sky.jpeg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
   text-align: center;
-  padding: 50px 20px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: x-large;
 }
 
 .hero-content {
   max-width: 800px;
   margin: auto;
+  padding: 50px 20px;
+  z-index: 1;
 }
 
 .documents-list {
@@ -83,16 +92,14 @@ export default {
   text-align: left;
   max-width: 800px;
   margin: auto;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   opacity: 0;
   transition: opacity 1s ease-in;
-}
-
-.fade-in {
-  opacity: 1;
+  font-family: Verdana, sans-serif;
 }
 
 .documents-list h2 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: x-large;
   color: #333;
   margin-bottom: 15px;
 }
@@ -114,5 +121,9 @@ export default {
 
 .documents-list ul li a:hover {
   text-decoration: underline;
+}
+
+.fade-in {
+  opacity: 1;
 }
 </style>

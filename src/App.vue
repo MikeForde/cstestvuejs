@@ -14,6 +14,7 @@
           <li><router-link to="/about-me" @click="closeMenu">About Me</router-link></li>
           <li><router-link to="/documents" @click="closeMenu">Documents</router-link></li>
           <li><router-link to="/privacy" @click="closeMenu">Privacy Policy</router-link></li>
+          <li><router-link to="/business" @click="closeMenu">Business Terms</router-link></li>
           <li><router-link to="/contact" @click="closeMenu">Contact</router-link></li>
         </ul>
       </div>

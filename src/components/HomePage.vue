@@ -7,7 +7,6 @@
       </video>
       <div class="hero-content">
         <h1>Clear Skies Practice Tewkesbury</h1>
-        <p>Professional and confidential counselling</p>
         <p>Supporting You Moving Forward</p>
       </div>
       <img src="@/assets/CSP_Logo_White_trans.png" alt="Logo" class="logo-overlay">
@@ -19,7 +18,7 @@
           <p>Hello</p>
           <p>My name is Galina Filipkova. I am a trainee counsellor HG.Dip.P (Trainee) and currently offer free* therapy sessions for adults to complete the final stage of my psychotherapy qualification.</p>
           <p>I created the Clear Skies Practice as a safe space where we can work together to help you move forward. Please read more about how I will support you.</p>
-          <p>* I offer free counselling but ask my clients to contribute £12 per 1-hour session towards room hire.</p>
+          <p><i>* I offer free counselling but ask my clients to contribute £12 per 1-hour session towards room hire.</i></p>
         </div>
         <div class="intro-card image-card">
           <img src="@/assets/portrait.jpg" alt="Galina Filipkova" class="portrait"/>
@@ -57,16 +56,30 @@
         </div>
       </div>
     </section>
-    <section class="services" ref="services" :class="{ 'fade-in': showServices }">
-      <h2>Services</h2>
-      <ul>
-        <li>Individual Counselling</li>
-        <li>Couples Counselling</li>
-        <li>Family Therapy</li>
-      </ul>
+    <section class="immediate-help" ref="immediateHelp" :class="{ 'fade-in': showImmediateHelp }">
+      <div class="help-card">
+        <h2>Need immediate help?</h2>
+      </div>
+    </section>
+    <section class="resources" ref="resources" :class="{ 'fade-in': showResources }">
+      <div class="resources-container">
+        <div class="resource-card">
+          <h2>Samaritans</h2>
+          <p>A Samaritan is there to offer emotional support and help whatever you are going through. They're available 24 hours a day, 365 days a year.</p>
+          <p><strong>Need support? Call 116 123 to speak to a Samaritan</strong></p>
+          <a href="https://www.samaritans.org/" target="_blank">LEARN MORE</a>
+        </div>
+        <div class="resource-card">
+          <h2>Shout</h2>
+          <p>Shout is a 24/7 text service, free on all major mobile networks in the UK, for anyone in crisis and in need of immediate help.</p>
+          <p><strong>Text SHOUT to 85258</strong></p>
+          <a href="https://giveusashout.org/" target="_blank">LEARN MORE</a>
+        </div>
+      </div>
     </section>
   </div>
 </template>
+
 
 <script>
 export default {
@@ -74,8 +87,9 @@ export default {
   data() {
     return {
       showIntro: false,
-      showServices: false,
       showAdditionalInfo: false,
+      showImmediateHelp: false,
+      showResources: false,
     };
   },
   mounted() {
@@ -90,10 +104,12 @@ export default {
         if (entry.isIntersecting) {
           if (entry.target.classList.contains('intro')) {
             this.showIntro = true;
-          } else if (entry.target.classList.contains('services')) {
-            this.showServices = true;
           } else if (entry.target.classList.contains('additional-info')) {
             this.showAdditionalInfo = true;
+          } else if (entry.target.classList.contains('immediate-help')) {
+            this.showImmediateHelp = true;
+          } else if (entry.target.classList.contains('resources')) {
+            this.showResources = true;
           }
           observer.unobserve(entry.target);
         }
@@ -102,8 +118,9 @@ export default {
 
     this.$nextTick(() => {
       observer.observe(this.$refs.intro);
-      observer.observe(this.$refs.services);
       observer.observe(this.$refs.additionalInfo);
+      observer.observe(this.$refs.immediateHelp);
+      observer.observe(this.$refs.resources);
     });
   },
   methods: {
@@ -118,6 +135,7 @@ export default {
   }
 }
 </script>
+
 
 <style scoped>
 .hero {
@@ -175,14 +193,16 @@ export default {
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: left;
 }
 
 .text-card {
   width: 55%;
+  padding: 0 30px;
 }
 
 .image-card {
@@ -198,6 +218,99 @@ export default {
   border-radius: 10px;
   object-fit: cover;
 }
+
+.immediate-help {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.help-card {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.resources {
+  padding: 20px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.resources-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resource-card {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 45%;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.resource-card h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.resource-card p {
+  color: #666;
+  text-align: left;
+}
+
+.resource-card a {
+  display: block;
+  margin-top: 10px;
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.resource-card a:hover {
+  text-decoration: underline;
+}
+
+/* Existing styles... */
+
+@media screen and (max-width: 768px) {
+  .intro-container, .info-container, .resources-container {
+    flex-direction: column;
+  }
+
+  .intro-container .text-card, .intro-container .image-card,
+  .info-container .text-card, .info-container .image-card,
+  .resources-container .resource-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Change order in vertical mode */
+  .intro-container .text-card {
+    order: 2;
+  }
+
+  .intro-container .image-card {
+    order: 1;
+  }
+
+  .info-container .text-card {
+    order: 2;
+  }
+
+  .info-container .image-card {
+    order: 1;
+  }
+}
+
+/* Additional styles... */
+
 
 .fade-in {
   opacity: 1;

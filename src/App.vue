@@ -12,11 +12,11 @@
         <ul class="nav-links" :class="{ 'nav-active': menuActive }">
           <li><router-link to="/therapy" @click="closeMenu">Therapy</router-link></li>
           <li><router-link to="/about-me" @click="closeMenu">About Me</router-link></li>
-          <li><router-link to="/documents" @click="closeMenu">Documents</router-link></li>
           <li><router-link to="/contact" @click="closeMenu">Contact</router-link></li>
           <li class="dropdown">
             <span @click="toggleDropdown">Info <i class="fas fa-caret-down"></i></span>
             <ul class="dropdown-content" :class="{ 'show-dropdown': dropdownActive }">
+              <li><router-link to="/documents" @click="closeMenu">Documents</router-link></li>
               <li><router-link to="/privacy" @click="closeMenu">Privacy Policy</router-link></li>
               <li><router-link to="/business" @click="closeMenu">Fees and Business Terms</router-link></li>
             </ul>
@@ -135,6 +135,8 @@ export default {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
   min-width: 160px;
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
 }
 
 .dropdown-content li {

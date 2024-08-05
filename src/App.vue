@@ -13,9 +13,14 @@
           <li><router-link to="/therapy" @click="closeMenu">Therapy</router-link></li>
           <li><router-link to="/about-me" @click="closeMenu">About Me</router-link></li>
           <li><router-link to="/documents" @click="closeMenu">Documents</router-link></li>
-          <li><router-link to="/privacy" @click="closeMenu">Privacy Policy</router-link></li>
-          <li><router-link to="/business" @click="closeMenu">Business Terms</router-link></li>
           <li><router-link to="/contact" @click="closeMenu">Contact</router-link></li>
+          <li class="dropdown">
+            <span @click="toggleDropdown">Info <i class="fas fa-caret-down"></i></span>
+            <ul class="dropdown-content" :class="{ 'show-dropdown': dropdownActive }">
+              <li><router-link to="/privacy" @click="closeMenu">Privacy Policy</router-link></li>
+              <li><router-link to="/business" @click="closeMenu">Fees and Business Terms</router-link></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </nav>
@@ -30,15 +35,23 @@ export default {
   name: 'App',
   data() {
     return {
-      menuActive: false
+      menuActive: false,
+      dropdownActive: false
     };
   },
   methods: {
     toggleMenu() {
       this.menuActive = !this.menuActive;
+      if (!this.menuActive) {
+        this.dropdownActive = false;
+      }
+    },
+    toggleDropdown() {
+      this.dropdownActive = !this.dropdownActive;
     },
     closeMenu() {
       this.menuActive = false;
+      this.dropdownActive = false;
     }
   }
 }
@@ -99,18 +112,41 @@ export default {
 
 .nav-links li {
   margin: 0 15px;
+  position: relative;
 }
 
-.nav-links li a {
+.nav-links li a, .nav-links li span {
   display: block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  cursor: pointer;
 }
 
-.nav-links li a:hover {
+.nav-links li a:hover, .nav-links li span:hover {
   background-color: #111;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  min-width: 160px;
+}
+
+.dropdown-content li {
+  margin: 0;
+}
+
+.dropdown-content li a {
+  padding: 12px 16px;
+}
+
+.show-dropdown {
+  display: block;
 }
 
 .content {
@@ -139,6 +175,11 @@ export default {
 
   .hamburger {
     display: block;
+  }
+
+  .dropdown-content {
+    position: static;
+    box-shadow: none;
   }
 }
 </style>

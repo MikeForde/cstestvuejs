@@ -134,10 +134,17 @@ export default {
   color: #666;
   font-size: large;
 }
+.approach p, .moving-towards-change p{
+  color: white
+}
 
 .therapy h1, .therapy h2, .therapy h3, .approach h1, .approach h2, .approach h3, .trauma h1, .trauma h2, .trauma h3, .moving-towards-change h1, .moving-towards-change h2, .moving-towards-change h3 {
   font-family: Cambria, serif;
   color: #333;
+}
+
+.approach h1, .approach h2, .approach h3, .moving-towards-change h2, .moving-towards-change h3 {
+  color: white;
 }
 
 .approach-container, .trauma-container {
@@ -155,6 +162,14 @@ export default {
   flex-direction: column;
   justify-content: center;
   text-align: left;
+}
+
+.therapy-card {
+  border: 10px solid #5DAED5;
+}
+
+.approach-card, .change-card {
+  background: #5DAED5;
 }
 
 

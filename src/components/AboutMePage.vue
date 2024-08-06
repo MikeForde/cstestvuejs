@@ -9,24 +9,21 @@
     <section class="about-me" ref="aboutMe" :class="{ 'fade-in': showAboutMe }">
       <div class="about-me-container">
         <div class="about-me-card image-card">
-          <img src="@/assets/portrait_colour.jpg" alt="Galina Filipkova" class="about-me-image"/>
+          <img src="@/assets/galina2.jpg" alt="Galina Filipkova" class="about-me-image"/>
+        </div>
+        <div class="about-me-info info-card">
+          <h2>I'm Galina Filipkova</h2>
+          <p>I am a trainee counsellor HG.Dip.P (Trainee) and currently offer free* therapy sessions for adults to complete the final stage of my psychotherapy qualification.</p>
+          <p>From my previous roles in education and social care, I have extensive experience of working with both adults and young people. I currently work in a grammar school in Gloucester supporting students’ wellbeing and mental health.</p>
+          <p>I also volunteered previously with the Samaritans.</p>
+          <p>In my free time, I enjoy reading, gardening, yoga, running and walking.</p>
+          <p><i>* I offer free counselling but ask my clients to contribute £12 per 1-hour session towards room hire.</i></p>
         </div>
       </div>
     </section>
     
-    <section class="info-section" ref="section1" :data-section="1" :class="{ 'fade-in': showSection1 }">
-      <div class="info-card">
-        <h2>I'm Galina Filipkova</h2>
-        <p>I am a trainee counsellor HG.Dip.P (Trainee) and currently offer free* therapy sessions for adults to complete the final stage of my psychotherapy qualification.</p>
-        <p>From my previous roles in education and social care, I have extensive experience of working with both adults and young people. I currently work in a grammar school in Gloucester supporting students’ wellbeing and mental health.</p>
-        <p>I also volunteered previously with the Samaritans.</p>
-        <p>In my free time, I enjoy reading, gardening, yoga, running and walking.</p>
-        <p><i>* I offer free counselling but ask my clients to contribute £12 per 1-hour session towards room hire.</i></p>
-      </div>
-    </section>
-    
     <section class="info-section" ref="section2" :data-section="2" :class="{ 'fade-in': showSection2 }">
-      <div class="info-card">
+      <div class="info-card section1">
         <h2>My Qualifications:</h2>
         <ul>
           <li>Human Givens Diploma Part 1 and Part 2, Human Givens College</li>
@@ -60,7 +57,7 @@
     </section>
     
     <section class="info-section" ref="section4" :data-section="4" :class="{ 'fade-in': showSection4 }">
-      <div class="info-card">
+      <div class="info-card section3">
         <h2>I can help with:</h2>
         <ul>
           <li>Anxiety (mild to moderate)</li>
@@ -87,6 +84,7 @@
     </section>
   </div>
 </template>
+
 
 <script>
 export default {
@@ -120,7 +118,6 @@ export default {
 
     this.$nextTick(() => {
       observer.observe(this.$refs.aboutMe);
-      observer.observe(this.$refs.section1);
       observer.observe(this.$refs.section2);
       observer.observe(this.$refs.section3);
       observer.observe(this.$refs.section4);
@@ -128,6 +125,7 @@ export default {
   }
 }
 </script>
+
 
 <style scoped>
 .hero {
@@ -167,25 +165,33 @@ export default {
   font-size: large;
 }
 
-.about-me h, .info-section h {
+.section1 li, .section3 li {
+  color: white;
+}
+
+.about-me h2, .info-section h2 {
   font-family: Cambria, serif;
   color: #333;
+}
+
+.section1 h2, .section3 h2{
+  color: white;
 }
 
 .about-me-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  align-items: flex-start;
+  flex-direction: row;
 }
 
 .image-card {
-  width: 100%;
+  width: 35%;
   max-width: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin-right: 20px;
 }
 
 .info-card {
@@ -197,6 +203,15 @@ export default {
   flex-direction: column;
   justify-content: center;
   text-align: left;
+}
+
+.section1, .section3 {
+  background: #5DAED5;
+}
+
+.about-me-info {
+  width: 55%;
+  padding: 0 30px;
 }
 
 .about-me-image {
@@ -220,9 +235,14 @@ ul {
 }
 
 @media screen and (max-width: 768px) {
-  .about-me-container, .info-card {
+  .about-me-container {
+    flex-direction: column;
+  }
+  
+  .image-card, .info-card {
     width: 100%;
     margin-bottom: 20px;
   }
 }
 </style>
+

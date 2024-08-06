@@ -216,6 +216,10 @@ export default {
   text-align: left;
 }
 
+.info-card {
+  background: #5DAED5;
+}
+
 .text-card {
   width: 55%;
   padding: 0 30px;
@@ -331,13 +335,22 @@ export default {
   opacity: 1;
 }
 
-.intro h2, .additional-info h2, .immediate-help h2 {
+.intro h2, .immediate-help h2 {
   color: #333;
   margin-bottom: 15px;
 }
 
-.intro p, .additional-info ul, .immediate-help ul {
+.additional-info h2 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.intro p, .immediate-help ul {
   color: #666;
+}
+
+.additional-info {
+  color: white;
 }
 
 .additional-info ul, .immediate-help ul {

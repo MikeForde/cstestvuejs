@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="hero">
-      <video class="hero-video" autoplay muted loop ref="heroVideo">
+      <video class="hero-video" autoplay muted loop playsinline webkit-playsinline ref="heroVideo">
         <source src="/hero_video.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
@@ -152,6 +152,8 @@ export default {
   height: 100%;
   object-fit: cover;
   z-index: -1;
+  background: url('@/assets/Sky.jpeg') no-repeat center center;
+  background-size: cover;
 }
 
 .hero-content {

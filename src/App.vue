@@ -64,7 +64,7 @@ export default {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #333;
+  background-color: #5DAED5;
   z-index: 1000;
   display: flex;
   align-items: center;

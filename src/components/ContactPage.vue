@@ -12,7 +12,7 @@
         <p>Please contact me for my availability and to book therapy sessions*. Text and email are my preferred methods of contact as I may be in a session if you call. I will then arrange a 15-minute, free introductory phone call, so that we can get a sense of each other and see if we are a good fit.</p>
         <p><i>* I offer free counselling but ask my clients to contribute £12 per 1-hour session towards room hire.</i></p>
         <p>Email: <a href="mailto:clearskiespractice@gmail.com">clearskiespractice@gmail.com</a></p>
-        <p>Phone/text: 077 605 310 57</p>
+        <p>Phone/text: 07760 531057</p>
       </div>
     </section>
 

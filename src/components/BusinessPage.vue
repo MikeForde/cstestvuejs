@@ -146,7 +146,7 @@
   color: white;
   text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: x-large;
+  font-size: xx-large;
 }
 
 .hero-content {

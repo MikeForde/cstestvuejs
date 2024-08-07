@@ -111,7 +111,7 @@ export default {
   justify-content: center;
   /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size:x-large;
+  font-size:xx-large;
 }
 
 .hero-content {

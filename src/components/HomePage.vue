@@ -6,8 +6,8 @@
         Your browser does not support the video tag.
       </video>
       <div class="hero-content">
-        <h1>Clear Skies Practice Tewkesbury</h1>
-        <p>Supporting You Moving Forward</p>
+        <h1>Clear Skies Practice</h1>
+        <p>Every journey begins with a single step. Maya Angelou</p>
       </div>
       <img src="@/assets/CSP_Logo_White_trans.png" alt="Logo" class="logo-overlay">
     </section>
@@ -340,7 +340,7 @@ export default {
   }
 
   .logo-overlay {
-    width: 80px;
+    width: 60px;
   }
 }
 

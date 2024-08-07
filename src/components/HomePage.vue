@@ -327,12 +327,20 @@ export default {
     order: 1;
   }
 
+  .hero {
+    height: 250px;
+  }
+
   .hero-content h1 {
     font-size: larger;
   }
 
   .hero-content p {
     font-size: large;
+  }
+
+  .logo-overlay {
+    width: 80px;
   }
 }
 

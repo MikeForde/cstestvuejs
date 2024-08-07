@@ -342,7 +342,7 @@ export default {
   }
 
   .hero-content {
-    padding: 0px 0px;
+    padding: 10px 10px;
   }
 
   .hero-content h1 {

@@ -7,7 +7,7 @@
       </video>
       <div class="hero-content">
         <h1>Clear Skies Practice</h1>
-        <p>Every journey begins with a single step. Maya Angelou</p>
+        <p>Helping You Moving Forward</p>
       </div>
       <img src="@/assets/CSP_Logo_White_trans.png" alt="Logo" class="logo-overlay">
     </section>

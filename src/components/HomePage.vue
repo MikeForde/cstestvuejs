@@ -341,6 +341,10 @@ export default {
     height: 250px;
   }
 
+  .hero-content {
+    padding: 0px 0px;
+  }
+
   .hero-content h1 {
     font-size: larger;
   }

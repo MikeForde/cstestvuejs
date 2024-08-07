@@ -35,8 +35,8 @@
       <div class="info-container">
         <div class="info-card map-card">
           <h2>Map</h2>
-          <iframe width="520" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Barton%20Road%20Tewkesbury+(The%20Devereux%20Centre)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> 
-          </div>
+          <iframe width="520" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Devereux%20Centre,%20Barton%20Road%20Tewkesbury+(Clear%20Skies%20Practice)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> 
+        </div>
         <div class="info-card image-card">
           <img src="@/assets/Devereux_Centre.jpg" alt="Devereux Centre" class="location-image"/>
         </div>

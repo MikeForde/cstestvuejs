@@ -14,11 +14,16 @@
     <section class="intro" ref="intro" :class="{ 'fade-in': showIntro }">
       <div class="intro-container">
         <div class="intro-card text-card">
-          <h2>About Me</h2>
-          <p>Hello</p>
-          <p>My name is Galina Filipkova. I am a trainee counsellor HG.Dip.P (Trainee) and currently offer free* therapy sessions for adults to complete the final stage of my psychotherapy qualification.</p>
-          <p>I created the Clear Skies Practice as a safe space where we can work together to help you move forward. Please read more about how I will support you.</p>
-          <p><i>* I offer free counselling but ask my clients to contribute £12 per 1-hour session towards room hire.</i></p>
+          <h2>Every journey begins with a single step<sup>*</sup></h2>
+          <p>Feeling overwhelmed by life’s challenges? Struggling with emotional pain, relationship issues, or finding balance? If you need support to navigate these difficulties, I can help.</p>
+          <p>My name is Galina Filipkova. I am a trainee counsellor HG.Dip.P (Trainee) and currently offer therapy sessions** for adults to complete the final stage of my psychotherapy qualification.</p>
+          <p>I created the Clear Skies Practice as a safe space where we can work together to help you move forward. I work from the Human Givens (HG) approach. It is a practical, brief and solution-focussed approach that combines the latest insights from psychology and neuroscience research with proven techniques from a wide range of modalities in counselling and psychotherapy.</p>
+          <p>My aim is to help you feel a little better after every session and to give you the tools to maintain good mental health moving forward. Please read more about how I will support you. <router-link to="/therapy">Learn more</router-link></p>
+          <div class="button-container">
+            <router-link to="/contact" class="button-link">Get in Touch Today</router-link>
+          </div>
+          <p><i>* Maya Angelou</i></p>
+          <p><i>** I offer free counselling but ask my clients to contribute £12 per 1-hour session towards room hire.</i></p>
         </div>
         <div class="intro-card image-card">
           <img src="@/assets/portrait_colour.jpg" alt="Galina Filipkova" class="portrait"/>
@@ -165,7 +170,11 @@ export default {
   padding: 50px 20px;
   z-index: 1;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size:x-large;
+  font-size:xx-large;
+}
+
+.hero-content p {
+  font-size: x-large;
 }
 
 .logo-overlay {
@@ -173,7 +182,7 @@ export default {
   bottom: 10px; /* Adjust as needed */
   left: 50%;
   transform: translateX(-50%);
-  width: 100px; /* Adjust size as needed */
+  width: 80px; /* Adjust size as needed */
   z-index: 0;
 }
 
@@ -195,6 +204,7 @@ export default {
 .immediate-help h1, .immediate-help h2, .immediate-help h3, 
 .resources h1, .resources h2, .resources h3 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: xx-large;
 }
 
 
@@ -376,5 +386,27 @@ export default {
 
 .additional-info ul li, .immediate-help ul li {
   margin: 10px 0;
+}
+
+.button-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.button-link {
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  background-color: #5DAED5;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: larger;
+  transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+  background-color: #D5845D;
 }
 </style>

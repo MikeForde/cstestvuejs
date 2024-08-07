@@ -9,7 +9,7 @@
       <section class="info-section" ref="section1" :data-section="1" :class="{ 'fade-in': showSection1 }">
         <div class="info-card">
           <h2>Your trainee therapist: Galina Filipkova</h2>
-          <p>Telephone: 077 605 310 57</p>
+          <p>Telephone: 07760 531057</p>
           <p>E-mail: <a href="mailto:clearskiespractice@gmail.com">clearskiespractice@gmail.com</a></p>
         </div>
       </section>
@@ -23,7 +23,7 @@
       <section class="info-section" ref="section3" :data-section="3" :class="{ 'fade-in': showSection3 }">
         <div class="info-card">
           <h2>Opening Hours</h2>
-          <p>Wednesday 8.30am to 12pm</p>
+          <p>Wednesday 8:30am to 12:30pm</p>
         </div>
       </section>
   

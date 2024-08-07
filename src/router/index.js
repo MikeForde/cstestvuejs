@@ -13,13 +13,18 @@ const routes = [
   { path: '/therapy', component: TherapyPage },
   { path: '/documents', component: DocumentsPage },
   { path: '/about-me', component: AboutMePage },
-  { path: '/privacy', component: PrivacyPolicyPage},
-  { path: '/business', component: BusinessPage}
+  { path: '/privacy', component: PrivacyPolicyPage },
+  { path: '/business', component: BusinessPage }
 ];
 
 const router = createRouter({
   history: createWebHistory(),
-  routes
+  routes,
+  scrollBehavior() {
+    // Always scroll to the top when navigating to a new route
+    return { top: 0 };
+  }
 });
 
 export default router;
+

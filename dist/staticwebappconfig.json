@@ -1,16 +1,42 @@
 {
     "routes": [
       {
+        "route": "/",
+        "serve": "/index.html"
+      },
+      {
+        "route": "/contact",
+        "serve": "/index.html"
+      },
+      {
+        "route": "/therapy",
+        "serve": "/index.html"
+      },
+      {
+        "route": "/documents",
+        "serve": "/index.html"
+      },
+      {
+        "route": "/about-me",
+        "serve": "/index.html"
+      },
+      {
+        "route": "/privacy",
+        "serve": "/index.html"
+      },
+      {
+        "route": "/business",
+        "serve": "/index.html"
+      },
+      {
         "route": "/*",
-        "serve": "/index.html",
-        "statusCode": 200
+        "serve": "/index.html"
       }
-      
-    ], 
-
-     "navigationFallback": {
-          "rewrite": "/index.html",
-          "exclude": ["/images/*.{png,jpg,gif}", "/css/*"]
-        }
-       
+    ],
+    "responseOverrides": {
+      "404": {
+        "rewrite": "/index.html"
+      }
+    }
   }
+  

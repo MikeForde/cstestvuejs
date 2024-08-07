@@ -1,0 +1,37 @@
+{
+    "routes": [
+      {
+        "route": "/",
+        "rewrite": "/index.html"
+      },
+      {
+        "route": "/about-me",
+        "rewrite": "/index.html"
+      },
+      {
+        "route": "/therapy",
+        "rewrite": "/index.html"
+      },
+      {
+        "route": "/documents",
+        "rewrite": "/index.html"
+      },
+      {
+        "route": "/privacy-policy",
+        "rewrite": "/index.html"
+      },
+      {
+        "route": "/business-terms",
+        "rewrite": "/index.html"
+      },
+      {
+        "route": "/contact",
+        "rewrite": "/index.html"
+      },
+      {
+        "route": "/*",
+        "serve": "/index.html"
+      }
+    ]
+  }
+  

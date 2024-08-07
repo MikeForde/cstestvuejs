@@ -326,6 +326,10 @@ export default {
   .info-container .image-card {
     order: 1;
   }
+
+  .hero-content h1 {
+    font-size: larger;
+  }
 }
 
 /* Additional styles... */

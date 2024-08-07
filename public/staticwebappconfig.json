@@ -1,42 +1,12 @@
 {
-    "routes": [
-      {
-        "route": "/",
-        "serve": "/index.html"
-      },
-      {
-        "route": "/contact",
-        "serve": "/index.html"
-      },
-      {
-        "route": "/therapy",
-        "serve": "/index.html"
-      },
-      {
-        "route": "/documents",
-        "serve": "/index.html"
-      },
-      {
-        "route": "/about-me",
-        "serve": "/index.html"
-      },
-      {
-        "route": "/privacy",
-        "serve": "/index.html"
-      },
-      {
-        "route": "/business",
-        "serve": "/index.html"
-      },
-      {
-        "route": "/*",
-        "serve": "/index.html"
-      }
-    ],
-    "responseOverrides": {
-      "404": {
-        "rewrite": "/index.html"
-      }
+    "globalHeaders": {
+      "content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline'; object-src 'none'"
+    },
+    "navigationFallback": {
+      "rewrite": "/index.html",
+      "exclude": ["/img/*.{png,jpg,gif,webp}", "/css/*"]
+    },
+    "mimeTypes": {
+      "custom": "text/html"
     }
   }
-  

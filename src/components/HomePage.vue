@@ -330,6 +330,10 @@ export default {
   .hero-content h1 {
     font-size: larger;
   }
+
+  .hero-content p {
+    font-size: large;
+  }
 }
 
 /* Additional styles... */

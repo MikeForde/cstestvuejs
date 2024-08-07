@@ -125,13 +125,13 @@ export default {
 }
 
 .nav-links li a:hover, .nav-links li span:hover {
-  background-color: #111;
+  background-color: #359ACB;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #333;
+  background-color: #359ACB;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
   min-width: 160px;
@@ -164,7 +164,7 @@ export default {
     position: absolute;
     top: 60px;
     left: 0;
-    background-color: #333;
+    background-color: #359ACB;
   }
 
   .nav-links.nav-active {

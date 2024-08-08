@@ -145,6 +145,7 @@ export default {
   position: relative;
   height: 300px; /* Adjust the height as needed */
   overflow: hidden;
+  width: 100%;
 }
 
 .hero-video {
@@ -161,7 +162,6 @@ export default {
 
 .hero-content {
   position: relative;
-  max-width: 800px;
   margin: auto;
   text-align: center;
   color: white;
@@ -293,11 +293,22 @@ export default {
     flex-direction: column;
   }
 
-  .intro-container .text-card, .intro-container .image-card,
-  .info-container .text-card, .info-container .image-card,
-  .resources-container .resource-card {
+  /* Ensure all sections occupy full width in mobile view */
+  .intro, .additional-info, .immediate-help, .resources, .hero {
     width: 100%;
-    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  .intro-container .text-card,
+  .intro-container .image-card,
+  .info-container .text-card,
+  .info-container .image-card,
+  .resource-card {
+    width: 100%;
+    /* margin: 0 0 20px 0; */
+    box-sizing: border-box;
   }
 
   /* Change order in vertical mode */

@@ -185,7 +185,6 @@ export default {
 }
 
 .intro, .additional-info, .immediate-help, .resources {
-  padding: 20px;
   text-align: center;
   opacity: 0;
   transition: opacity 1s ease-in;
@@ -206,18 +205,14 @@ export default {
 }
 
 
-.intro-container, .info-container {
+.intro-container, .info-container, .resources-container{
   display: flex;
-  justify-content: space-around;
   align-items: stretch;
 }
 
 .intro-card, .info-card {
   background: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 10px;
   padding: 20px;
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -229,12 +224,12 @@ export default {
 }
 
 .text-card {
-  width: 55%;
+  width: 60%;
   padding: 0 30px;
 }
 
 .image-card {
-  width: 35%;
+  width: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -249,37 +244,24 @@ export default {
 
 .immediate-help {
   width: 100%;
-  padding: 10px;
   text-align: center;
 }
 
 .help-card {
   background: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 10px;
   padding: 20px;
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
 .resources {
-  padding: 20px;
   text-align: center;
   opacity: 0;
   transition: opacity 1s ease-in;
 }
 
-.resources-container {
-  display: flex;
-  justify-content: space-between;
-}
-
 .resource-card {
   background: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 10px;
   padding: 20px;
-  width: 45%;
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  width: 50%;
 }
 
 .resource-card h2 {

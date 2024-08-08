@@ -13,7 +13,7 @@
         </div>
         <div class="about-me-info info-card">
           <h2>I'm Galina Filipkova</h2>
-          <p>I am a trainee counsellor HG.Dip.P (Trainee) and currently offer therapy sessions for adults to complete the final stage of my psychotherapy qualification.</p>
+          <p>I am a trainee counsellor HG.Dip.P (Trainee) and currently offer low-cost therapy sessions for adults to complete the final stage of my psychotherapy qualification.</p>
           <p>From my previous roles in education and social care, I have extensive experience of working with both adults and young people. I currently work in a grammar school in Gloucester supporting students’ wellbeing and mental health.</p>
           <p>I also volunteered previously with the Samaritans.</p>
           <p>In my free time, I enjoy reading, gardening, yoga, running and walking.</p>

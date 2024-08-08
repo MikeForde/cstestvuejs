@@ -307,7 +307,6 @@ export default {
   .info-container .image-card,
   .resource-card {
     width: 100%;
-    /* margin: 0 0 20px 0; */
     box-sizing: border-box;
   }
 

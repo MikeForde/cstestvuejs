@@ -8,7 +8,7 @@
     
     <section class="about-me" ref="aboutMe" :class="{ 'fade-in': showAboutMe }">
       <div class="about-me-container">
-        <div class="about-me-card image-card">
+        <div class="about-me-info image-card">
           <img src="@/assets/galina2.jpg" alt="Galina Filipkova" class="about-me-image"/>
         </div>
         <div class="about-me-info info-card">
@@ -129,30 +129,27 @@ export default {
 <style scoped>
 .hero {
   position: relative;
-  height: 200px;
+  overflow: hidden;
   background-image: url('@/assets/Sky.jpeg');
   background-size: cover;
   background-position: center;
+  color: white;
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size:xx-large;
+  font-size: xx-large;
 }
 
 .hero-content {
-  max-width: 800px;
   margin: auto;
-  padding: 50px 20px;
-  z-index: 1;
+  text-align: center;
   color: white;
   padding: 50px 20px;
 }
 
 .about-me, .info-section {
-  padding: 20px;
   opacity: 0;
   transition: opacity 1s ease-in;
   font-size: larger;
@@ -173,30 +170,28 @@ export default {
   color: #333;
 }
 
-.section1 h2, .section3 h2{
+.section1 h2, .section3 h2 {
   color: white;
 }
 
 .about-me-container {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  /* align-items: flex-start; */
   flex-direction: row;
 }
 
 .image-card {
-  width: 35%;
+  background: #f9f9f9;
+  width: 40%;
   max-width: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 20px;
 }
 
 .info-card {
   background: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 10px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -209,14 +204,15 @@ export default {
 }
 
 .about-me-info {
-  width: 55%;
+  width: 60%;
   padding: 0 30px;
 }
 
 .about-me-image {
   width: 100%;
+  padding: 20px;
   height: auto;
-  border-radius: 10px;
+  border-radius: 30px;
   object-fit: cover;
 }
 
@@ -234,14 +230,33 @@ ul {
 }
 
 @media screen and (max-width: 768px) {
+  .hero, .about-me, .info-section {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
   .about-me-container {
     flex-direction: column;
   }
-  
-  .image-card, .info-card {
+
+  .image-card, .info-card, .about-me-image{
     width: 100%;
-    margin-bottom: 20px;
+    box-sizing: border-box;
+    max-width:none;
+  }
+  
+  .hero {
+    height: 250px;
+  }
+
+  .hero-content {
+    padding: 10px 10px;
+  }
+
+  .hero-content h1 {
+    font-size: larger;
   }
 }
 </style>
-

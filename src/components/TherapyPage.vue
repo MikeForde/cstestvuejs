@@ -109,13 +109,11 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size:xx-large;
+  font-size: xx-large;
 }
 
 .hero-content {
-  max-width: 800px;
   margin: auto;
   text-align: center;
   color: white;
@@ -123,7 +121,7 @@ export default {
 }
 
 .therapy, .approach, .trauma, .moving-towards-change {
-  padding: 20px;
+  /* padding: 20px; */
   opacity: 0;
   transition: opacity 1s ease-in;
   font-size: larger;
@@ -134,16 +132,21 @@ export default {
   color: #666;
   font-size: large;
 }
-.approach p, .moving-towards-change p{
-  color: white
+
+.approach p, .moving-towards-change p {
+  color: white;
 }
 
-.therapy h1, .therapy h2, .therapy h3, .approach h1, .approach h2, .approach h3, .trauma h1, .trauma h2, .trauma h3, .moving-towards-change h1, .moving-towards-change h2, .moving-towards-change h3 {
+.therapy h1, .therapy h2, .therapy h3,
+.approach h1, .approach h2, .approach h3,
+.trauma h1, .trauma h2, .trauma h3,
+.moving-towards-change h1, .moving-towards-change h2, .moving-towards-change h3 {
   font-family: Cambria, serif;
   color: #333;
 }
 
-.approach h1, .approach h2, .approach h3, .moving-towards-change h2, .moving-towards-change h3 {
+.approach h1, .approach h2, .approach h3,
+.moving-towards-change h2, .moving-towards-change h3 {
   color: white;
 }
 
@@ -155,8 +158,8 @@ export default {
 
 .therapy-card, .approach-card, .trauma-card, .change-card {
   background: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 10px;
+  /* border: 1px solid #ddd;
+  border-radius: 10px; */
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -172,9 +175,8 @@ export default {
   background: #5DAED5;
 }
 
-
 .text-card {
-  width: 55%;
+  width: 60%;
   padding: 0 50px;
 }
 
@@ -183,7 +185,7 @@ export default {
 }
 
 .image-card {
-  width: 35%;
+  width: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -201,13 +203,21 @@ export default {
 }
 
 @media screen and (max-width: 768px) {
+  .hero, .therapy, .approach, .trauma, .moving-towards-change {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
   .approach-container, .trauma-container {
     flex-direction: column;
   }
 
   .text-card, .image-card {
     width: 100%;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+    box-sizing: border-box;
   }
 
   .approach-container .text-card {
@@ -224,6 +234,22 @@ export default {
 
   .trauma-container .image-card {
     order: 2;
+  }
+
+  .hero {
+    height: 250px;
+  }
+
+  .hero-content {
+    padding: 10px 10px;
+  }
+
+  .hero-content h1 {
+    font-size: larger;
+  }
+
+  .hero-content p {
+    font-size: large;
   }
 }
 </style>

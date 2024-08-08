@@ -14,16 +14,14 @@
     <section class="intro" ref="intro" :class="{ 'fade-in': showIntro }">
       <div class="intro-container">
         <div class="intro-card text-card">
-          <h2>Every journey begins with a single step<sup>*</sup></h2>
+          <h2>'Every journey begins with a single step'</h2>
           <p>Feeling overwhelmed by life’s challenges? Struggling with emotional pain, relationship issues, or finding balance? If you need support to navigate these difficulties, I can help.</p>
-          <p>My name is Galina Filipkova. I am a trainee counsellor HG.Dip.P (Trainee) and currently offer therapy sessions** for adults to complete the final stage of my psychotherapy qualification.</p>
+          <p>My name is Galina Filipkova. I am a trainee counsellor HG.Dip.P (Trainee) and currently offer low-cost therapy sessions for adults to complete the final stage of my psychotherapy qualification.</p>
           <p>I created the Clear Skies Practice as a safe space where we can work together to help you move forward. I work from the Human Givens (HG) approach. It is a practical, brief and solution-focussed approach that combines the latest insights from psychology and neuroscience research with proven techniques from a wide range of modalities in counselling and psychotherapy.</p>
           <p>My aim is to help you feel a little better after every session and to give you the tools to maintain good mental health moving forward. Please read more about how I will support you. <router-link to="/therapy">Learn more</router-link></p>
           <div class="button-container">
             <router-link to="/contact" class="button-link">Get in Touch Today</router-link>
           </div>
-          <p><i>* Maya Angelou</i></p>
-          <p><i>** I offer free counselling but ask my clients to contribute £12 per 1-hour session towards room hire.</i></p>
         </div>
         <div class="intro-card image-card">
           <img src="@/assets/portrait_colour.jpg" alt="Galina Filipkova" class="portrait"/>

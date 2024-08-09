@@ -389,7 +389,7 @@ export default {
 
 .button-link {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 12px 25px;
   color: white;
   background-color: #5DAED5;
   text-align: center;
@@ -397,10 +397,17 @@ export default {
   border-radius: 5px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: larger;
-  transition: background-color 0.3s ease;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
 }
 
 .button-link:hover {
   background-color: #D5845D;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+  border-color: #D5845D;
 }
+
 </style>

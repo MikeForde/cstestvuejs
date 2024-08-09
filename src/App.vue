@@ -27,12 +27,18 @@
     <div class="content">
       <router-view></router-view>
     </div>
+    <Footer />
   </div>
 </template>
 
 <script>
+import Footer from './components/FooterPage.vue';
+
 export default {
   name: 'App',
+  components: {
+    Footer
+  },
   data() {
     return {
       menuActive: false,

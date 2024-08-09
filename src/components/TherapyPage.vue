@@ -209,7 +209,6 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  margin-top: 20px;
 }
 
 .text-card2, .image-card {

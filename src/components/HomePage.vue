@@ -107,7 +107,7 @@ export default {
       // Adding a slight delay to ensure Safari initializes video properly
       setTimeout(() => {
         this.checkVideoPlayback();
-      }, 500); // Adjust the delay time if needed
+      }, 100); // Adjust the delay time if needed
 
       const options = {
         threshold: 0.1

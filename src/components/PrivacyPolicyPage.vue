@@ -128,74 +128,98 @@
   
   <style scoped>
   .hero {
-    position: relative;
-    height: 200px;
-    background-image: url('@/assets/Sky.jpeg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: x-large;
-  }
-  
-  .hero-content {
-    max-width: 800px;
-    margin: auto;
-    padding: 50px 20px;
-    z-index: 1;
-  }
-  
-  .info-section {
-    padding: 20px;
-    opacity: 0;
-    transition: opacity 1s ease-in;
-    font-size: larger;
-  }
-  
-  .info-section p, .info-section li {
-    font-family: Verdana, sans-serif;
-    color: #666;
-    font-size: large;
-  }
-  
-  .info-section h2 {
-    font-family: Cambria, serif;
-    color: #333;
-  }
-  
+  position: relative;
+  height: 200px;
+  background-image: url('@/assets/Sky.jpeg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: x-large;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: auto;
+  padding: 50px 20px;
+  z-index: 1;
+}
+
+.info-section {
+  /* padding: 20px; */
+  opacity: 0;
+  transition: opacity 1s ease-in;
+  font-size: larger;
+}
+
+.info-section p, .info-section li {
+  font-family: Verdana, sans-serif;
+  color: #666;
+  font-size: large;
+}
+
+[data-section="2"] p, [data-section="4"] p, [data-section="6"] p {
+  color: white;
+}
+
+.info-section h2 {
+  font-family: Cambria, serif;
+  color: #333;
+}
+
+[data-section="2"] h2, [data-section="4"] h2, [data-section="4"] li, [data-section="6"] h2 {
+  color: white;
+}
+
+[data-section="2"], [data-section="4"], [data-section="6"] {
+  background: #5DAED5;
+}
+
+.info-card {
+  background: #f9f9f9;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  border: none; /* Remove the card border */
+}
+
+[data-section="2"] .info-card, 
+[data-section="4"] .info-card, 
+[data-section="6"] .info-card {
+  background: none; /* Remove the default card background */
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+h2, p, ul {
+  text-align: left;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
   .info-card {
-    background: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
+    width: 100%;
   }
-  
-  .fade-in {
-    opacity: 1;
+
+  .hero, .info-section {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10;
+    margin: 0;
   }
-  
-  h2, p, ul {
-    text-align: left;
-  }
-  
-  ul {
-    list-style-type: disc;
-    padding-left: 20px;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .info-card {
-      width: 100%;
-      margin-bottom: 20px;
-    }
-  }
+}
+
   </style>
   

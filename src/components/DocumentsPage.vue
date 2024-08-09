@@ -12,7 +12,7 @@
           Information for Clients
           <a href="#" @click.prevent="previewDocument('/Fees and Terms of Business.pdf')">
             Preview
-          </a> | 
+          </a> 
           <a href="/Fees and Terms of Business.pdf" download="Information for Clients">
             Download
           </a>
@@ -21,7 +21,7 @@
           Privacy Notice
           <a href="#" @click.prevent="previewDocument('/Privacy Notice.pdf')">
             Preview
-          </a> | 
+          </a>
           <a href="/Privacy Notice.pdf" download="Privacy Notice">
             Download
           </a>
@@ -29,19 +29,19 @@
         <li>
           Client Contract
           <a href="#" @click.prevent="previewDocument('/Client Contract_pdf.pdf')">
-            Preview (PDF Only)
-          </a> | 
+            Preview (PDF)
+          </a>
           <a href="/Client Contract.docx" download="Client Contract">
-            Download (Editable Word Doc)
+            Download (Word)
           </a>
         </li>
         <li>
           Registration Form
           <a href="#" @click.prevent="previewDocument('/Registration Form_pdf.pdf')">
-            Preview (PDF Only)
-          </a> | 
+            Preview (PDF)
+          </a>
           <a href="/Registration Form.docx" download="Registration Form">
-            Download (Editable Word Doc)
+            Download (Word)
           </a>
         </li>
       </ul>
@@ -173,6 +173,24 @@ export default {
 
 .fade-in {
   opacity: 1;
+}
+
+/* Mobile layout adjustments */
+@media screen and (max-width: 768px) {
+  .documents-list ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .documents-list ul li > span {
+    margin-bottom: 5px;
+  }
+  
+  .documents-list ul li .links {
+    display: flex;
+    gap: 10px; /* Adds space between the Preview and Download links */
+  }
 }
 </style>
 

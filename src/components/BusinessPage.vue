@@ -146,7 +146,7 @@
   color: white;
   text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: xx-large;
+  font-size: x-large;
 }
 
 .hero-content {
@@ -157,7 +157,6 @@
 }
 
 .info-section {
-  padding: 20px;
   opacity: 0;
   transition: opacity 1s ease-in;
   font-size: larger;
@@ -169,20 +168,38 @@
   font-size: large;
 }
 
+[data-section="2"] p, [data-section="4"] p, [data-section="6"] p, [data-section="8"] p {
+  color: white;
+}
+
 .info-section h2 {
   font-family: Cambria, serif;
   color: #333;
 }
 
+[data-section="2"] h2, [data-section="4"] h2, [data-section="6"] h2, [data-section="8"] h2 {
+  color: white;
+}
+
+[data-section="2"], [data-section="4"], [data-section="6"], [data-section="8"] {
+  background: #5DAED5;
+}
+
 .info-card {
   background: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 10px;
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: left;
+  border: none; /* Remove the card border */
+}
+
+[data-section="2"] .info-card, 
+[data-section="4"] .info-card, 
+[data-section="6"] .info-card,
+[data-section="8"] .info-card {
+  background: none; /* Remove the default card background */
 }
 
 .fade-in {
@@ -192,5 +209,26 @@
 h2, p, ul {
   text-align: left;
 }
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero, .info-section {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  .info-card {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+
 
 </style>

@@ -209,15 +209,16 @@ ul {
 }
 
 @media screen and (max-width: 768px) {
-  .info-card {
-    width: 100%;
-  }
-
   .hero, .info-section {
     width: 100%;
     box-sizing: border-box;
-    padding: 10;
+    padding: 0;
     margin: 0;
+  }
+
+  .info-card {
+    width: 100%;
+    box-sizing: border-box;
   }
 }
 

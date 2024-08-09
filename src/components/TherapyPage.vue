@@ -8,7 +8,7 @@
 
     <section class="therapy" ref="therapy" :class="{ 'fade-in': showTherapy }">
       <div class="therapy-container">
-        <div class="therapy-card text-card2">
+        <div class="therapy-card text-card-therapy">
           <h2>Therapy</h2>
           <p>Our work will begin with understanding what has brought you to seek support and what you would like to be different.</p>
         </div>
@@ -43,14 +43,18 @@
         </div>
       </div>
     </section>
-    
     <section class="moving-towards-change" ref="movingTowardsChange" :class="{ 'fade-in': showMovingTowardsChange }">
+    <div class="change-card-container">
       <div class="change-card text-card2">
         <h2>Moving towards change</h2>
         <p>The Human Givens model is a brief, solution-focused approach that usually helps you see the change you want in 4-6 sessions. Some people may achieve the wanted change in fewer sessions while others may require more sessions due to the complexity of their lived experiences. I will work with your individual needs and at your pace. You can tell me after each session if you would like to book a further session. My aim is for you to feel a little better after each session and grow more and more confident in your ability to bring about the change you wish to happen.</p>
         <p>My promise to my clients is for you to have knowledge, skills and techniques to sustain your mental wellbeing beyond therapy sessions.</p>
       </div>
-    </section>
+      <div class="approach-card image-card">
+        <img src="@/assets/TherapyPath.png" alt="Therapy Path" class="therapy-path-image"/>
+      </div>
+    </div>
+  </section>
   </div>
 </template>
 
@@ -121,7 +125,6 @@ export default {
 }
 
 .therapy, .approach, .trauma, .moving-towards-change {
-  /* padding: 20px; */
   opacity: 0;
   transition: opacity 1s ease-in;
   font-size: larger;
@@ -171,7 +174,7 @@ export default {
   border: 10px solid #5DAED5;
 }
 
-.approach-card, .change-card {
+.approach-card, .change-card, .text-card2 {
   background: #5DAED5;
 }
 
@@ -180,7 +183,7 @@ export default {
   padding: 0 50px;
 }
 
-.text-card2 {
+.text-card-therapy {
   padding: 0 50px;
 }
 
@@ -202,6 +205,25 @@ export default {
   opacity: 1;
 }
 
+.change-card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-top: 20px;
+}
+
+.text-card2, .image-card {
+  width: 50%;
+  padding: 20px;
+}
+
+.therapy-path-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
 @media screen and (max-width: 768px) {
   .hero, .therapy, .approach, .trauma, .moving-towards-change {
     width: 100%;
@@ -210,11 +232,11 @@ export default {
     margin: 0;
   }
 
-  .approach-container, .trauma-container {
+  .approach-container, .trauma-container, .change-card-container {
     flex-direction: column;
   }
 
-  .text-card, .image-card {
+  .text-card, .image-card, .text-card2 {
     width: 100%;
     /* margin-bottom: 20px; */
     box-sizing: border-box;

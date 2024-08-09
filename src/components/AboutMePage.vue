@@ -54,9 +54,9 @@
         <p>I hold an Enhanced DBS certificate, professional indemnity insurance and am registered with the ICO (ICO Registration: ZB674218)</p>
       </div>
     </section>
-    
     <section class="info-section" ref="section4" :data-section="4" :class="{ 'fade-in': showSection4 }">
-      <div class="info-card section3">
+    <div class="info-card-container">
+      <div class="info-card text-card section3">
         <h2>I can help with:</h2>
         <ul>
           <li>Anxiety (mild to moderate)</li>
@@ -80,7 +80,11 @@
           <li>Time management</li>
         </ul>
       </div>
-    </section>
+      <div class="image-card section3">
+        <img src="@/assets/Trees_up.jpg" alt="Trees up" class="help-image"/>
+      </div>
+    </div>
+  </section>
   </div>
 </template>
 
@@ -199,6 +203,25 @@ export default {
   text-align: left;
 }
 
+.info-card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-top: 20px;
+}
+
+.text-card, .image-card {
+  width: 50%;
+  padding: 20px;
+}
+
+.help-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
 .section1, .section3 {
   background: #5DAED5;
 }
@@ -245,6 +268,15 @@ ul {
     width: 100%;
     box-sizing: border-box;
     max-width:none;
+  }
+
+  .info-card-container {
+    flex-direction: column;
+  }
+
+  .text-card, .image-card {
+    width: 100%;
+    padding: 20px 20px;
   }
   
   .hero {

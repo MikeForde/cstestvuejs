@@ -103,29 +103,32 @@ export default {
     };
   },
   mounted() {
-    this.checkVideoPlayback();
-    
-    const options = {
-      threshold: 0.1
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          if (entry.target.classList.contains('intro')) {
-            this.showIntro = true;
-          } else if (entry.target.classList.contains('additional-info')) {
-            this.showAdditionalInfo = true;
-          } else if (entry.target.classList.contains('immediate-help')) {
-            this.showImmediateHelp = true;
-          } else if (entry.target.classList.contains('resources')) {
-            this.showResources = true;
-          }
-        }
-      });
-    }, options);
-
     this.$nextTick(() => {
+      // Adding a slight delay to ensure Safari initializes video properly
+      setTimeout(() => {
+        this.checkVideoPlayback();
+      }, 500); // Adjust the delay time if needed
+
+      const options = {
+        threshold: 0.1
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            if (entry.target.classList.contains('intro')) {
+              this.showIntro = true;
+            } else if (entry.target.classList.contains('additional-info')) {
+              this.showAdditionalInfo = true;
+            } else if (entry.target.classList.contains('immediate-help')) {
+              this.showImmediateHelp = true;
+            } else if (entry.target.classList.contains('resources')) {
+              this.showResources = true;
+            }
+          }
+        });
+      }, options);
+
       observer.observe(this.$refs.intro);
       observer.observe(this.$refs.additionalInfo);
       observer.observe(this.$refs.immediateHelp);
@@ -137,17 +140,24 @@ export default {
       const video = this.$refs.heroVideo;
       if (video) {
         video.play().then(() => {
-          // Video is playable, nothing to do here
           this.videoPlayable = true;
         }).catch(() => {
-          // Video cannot be played, use backup image
           this.videoPlayable = false;
+        });
+      }
+    },
+    playVideo() {
+      const video = this.$refs.heroVideo;
+      if (video && video.paused) {
+        video.play().catch((error) => {
+          console.error("Error playing video:", error);
         });
       }
     }
   }
 }
 </script>
+
 
 
 

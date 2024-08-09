@@ -1,15 +1,15 @@
 <template>
-  <div id="app">
+  <div id="app" @click="handleClickOutsideMenu">
     <nav class="navbar">
       <div class="brand-and-links">
-        <div class="hamburger" @click="toggleMenu">
+        <div class="hamburger" @click.stop="toggleMenu">
           <i class="fas fa-bars"></i>
         </div>
-        <router-link to="/" @click="closeMenu" class="brand-link">
+        <router-link to="/" class="brand-link" @click="closeMenu">
           <img src="@/assets/CSP_Logo_White_trans.png" alt="Logo" class="logo">
           <span class="brand-name">Clear Skies Practice</span>
         </router-link>
-        <ul class="nav-links" :class="{ 'nav-active': menuActive }">
+        <ul class="nav-links" :class="{ 'nav-active': menuActive }" ref="menu">
           <li><router-link to="/therapy" @click="closeMenu">Therapy</router-link></li>
           <li><router-link to="/about-me" @click="closeMenu">About Me</router-link></li>
           <li><router-link to="/contact" @click="closeMenu">Contact</router-link></li>
@@ -52,6 +52,12 @@ export default {
     closeMenu() {
       this.menuActive = false;
       this.dropdownActive = false;
+    },
+    handleClickOutsideMenu(event) {
+      const menu = this.$refs.menu;
+      if (this.menuActive && !menu.contains(event.target)) {
+        this.closeMenu();
+      }
     }
   }
 }

@@ -1,10 +1,15 @@
 <template>
   <div>
     <section class="hero">
-      <video class="hero-video" autoplay muted loop playsinline webkit-playsinline ref="heroVideo">
-        <source src="/hero_video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+      <template v-if="videoPlayable">
+        <video class="hero-video" autoplay muted loop playsinline webkit-playsinline ref="heroVideo">
+          <source src="/hero_video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </template>
+      <template v-else>
+        <img :src="backupImage" alt="Backup Image" class="hero-image">
+      </template>
       <div class="hero-content">
         <h1>Clear Skies Practice</h1>
         <p>Helping You Moving Forward</p>
@@ -93,16 +98,18 @@ export default {
       showAdditionalInfo: false,
       showImmediateHelp: false,
       showResources: false,
+      videoPlayable: true, // Assume the video is playable by default
+      backupImage: require('@/assets/Sky.jpeg') // Correctly reference the backup image
     };
   },
   mounted() {
-    this.playVideo();
-
+    this.checkVideoPlayback();
+    
     const options = {
       threshold: 0.1
     };
 
-    const observer = new IntersectionObserver((entries, observer) => {
+    const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           if (entry.target.classList.contains('intro')) {
@@ -114,7 +121,6 @@ export default {
           } else if (entry.target.classList.contains('resources')) {
             this.showResources = true;
           }
-          observer.unobserve(entry.target);
         }
       });
     }, options);
@@ -127,17 +133,22 @@ export default {
     });
   },
   methods: {
-    playVideo() {
+    checkVideoPlayback() {
       const video = this.$refs.heroVideo;
-      if (video && video.paused) {
-        video.play().catch((error) => {
-          console.error("Error playing video:", error);
+      if (video) {
+        video.play().then(() => {
+          // Video is playable, nothing to do here
+          this.videoPlayable = true;
+        }).catch(() => {
+          // Video cannot be played, use backup image
+          this.videoPlayable = false;
         });
       }
     }
   }
 }
 </script>
+
 
 
 <style scoped>
@@ -147,6 +158,17 @@ export default {
   overflow: hidden;
   width: 100%;
 }
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 
 .hero-video {
   position: absolute; /* https://www.pexels.com/license/ */

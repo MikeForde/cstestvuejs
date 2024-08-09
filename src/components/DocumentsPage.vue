@@ -6,32 +6,53 @@
       </div>
     </section>
     <section class="documents-list" ref="documentsList" :class="{ 'fade-in': showDocumentsList }">
-      <h2>Please Download the Documents Below</h2>
+      <h2>Please Download the Documents Below or Preview Them</h2>
       <ul>
         <li>
+          Information for Clients
+          <a href="#" @click.prevent="previewDocument('/Fees and Terms of Business.pdf')">
+            Preview
+          </a> | 
           <a href="/Fees and Terms of Business.pdf" download="Information for Clients">
-            Information for Clients
+            Download
           </a>
         </li>
         <li>
+          Privacy Notice
+          <a href="#" @click.prevent="previewDocument('/Privacy Notice.pdf')">
+            Preview
+          </a> | 
           <a href="/Privacy Notice.pdf" download="Privacy Notice">
-            Privacy Notice
+            Download
           </a>
         </li>
         <li>
+          Client Contract
+          <a href="#" @click.prevent="previewDocument('/Client Contract_pdf.pdf')">
+            Preview (PDF Only)
+          </a> | 
           <a href="/Client Contract.docx" download="Client Contract">
-            Client Contract
+            Download (Editable Word Doc)
           </a>
         </li>
         <li>
+          Registration Form
+          <a href="#" @click.prevent="previewDocument('/Registration Form_pdf.pdf')">
+            Preview (PDF Only)
+          </a> | 
           <a href="/Registration Form.docx" download="Registration Form">
-            Registration Form
+            Download (Editable Word Doc)
           </a>
         </li>
       </ul>
+      <div v-if="previewUrl" class="document-previewer">
+        <h3>Document Preview</h3>
+        <iframe :src="previewUrl" frameborder="0"></iframe>
+      </div>
     </section>
   </div>
 </template>
+
 
 <script>
 export default {
@@ -39,7 +60,21 @@ export default {
   data() {
     return {
       showDocumentsList: false,
+      previewUrl: ''
     };
+  },
+  methods: {
+    previewDocument(url) {
+      const extension = url.split('.').pop();
+      if (extension === 'pdf') {
+        this.previewUrl = url;
+      } else if (extension === 'docx') {
+        this.previewUrl = `https://view.officeapps.live.com/op/embed.aspx?src=${window.location.origin}${url}`;
+      } else {
+        this.previewUrl = '';
+        alert('This document cannot be previewed.');
+      }
+    }
   },
   mounted() {
     const options = {
@@ -59,10 +94,13 @@ export default {
 
     this.$nextTick(() => {
       observer.observe(this.$refs.documentsList);
+      // Automatically select the "Client Contract" document in the previewer
+      this.previewDocument('/Client Contract_pdf.pdf');
     });
   }
 };
 </script>
+
 
 <style scoped>
 .documents-hero {
@@ -123,7 +161,18 @@ export default {
   text-decoration: underline;
 }
 
+.document-previewer {
+  margin-top: 20px;
+}
+
+.document-previewer iframe {
+  width: 100%;
+  height: 600px;
+  border: 1px solid #ccc;
+}
+
 .fade-in {
   opacity: 1;
 }
 </style>
+

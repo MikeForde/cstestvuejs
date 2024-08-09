@@ -188,7 +188,6 @@ export default {
 .image-card {
   background: #f9f9f9;
   width: 40%;
-  max-width: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -227,7 +226,6 @@ export default {
 }
 
 .about-me-info {
-  width: 60%;
   padding: 0 30px;
 }
 

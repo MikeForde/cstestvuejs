@@ -37,7 +37,7 @@
       <section class="info-section" ref="section5" :data-section="5" :class="{ 'fade-in': showSection5 }">
         <div class="info-card">
           <h2>Cost of Therapy</h2>
-          <p>The therapy is free; however, we ask our clients to contribute to room hire £12.00 per 1-hour session payable at each session. Any longer session, if agreed to be necessary by both parties in advance, will be charged on a pro-rata basis for room hire.</p>
+          <p>There is no charge for the therapy; however, we ask our clients to contribute to room hire £12.00 per 1-hour session payable at each session. Any longer session, if agreed to be necessary by both parties in advance, will be charged on a pro-rata basis for room hire.</p>
           <p>Notes:</p>
           <ul>
             <li>The session fee is subject to revision from time to time. Advance notice will be given of any increase.</li>

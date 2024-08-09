@@ -36,7 +36,7 @@
       <div class="info-container">
         <div class="info-card map-card">
           <h2>Map</h2>
-          <iframe width="520" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Devereux%20Centre,%20Barton%20Road%20Tewkesbury+(Clear%20Skies%20Practice)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> 
+          <iframe class="mapImage"   frameborder="0" scrolling="no" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Devereux%20Centre,%20Barton%20Road%20Tewkesbury+(Clear%20Skies%20Practice)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> 
         </div>
         <div class="info-card image-card">
           <img src="@/assets/Devereux_Centre.jpg" alt="Devereux Centre" class="location-image"/>
@@ -111,12 +111,19 @@ export default {
   opacity: 0;
   transition: opacity 1s ease-in;
   font-size: larger;
+  background-color: #f9f9f9;
+  color: #666;
+}
+
+.info-section[data-section="2"], .info-section[data-section="4"] {
+  background-color: #5DAED5;
+  color: white;
 }
 
 .info-section p, .info-section li {
   font-family: Verdana, sans-serif;
-  color: #666;
   font-size: large;
+  color: #666; 
 }
 
 .info-section h2 {
@@ -124,10 +131,17 @@ export default {
   color: #333;
 }
 
+.info-section[data-section="2"] h2, .info-section[data-section="4"] h2 {
+  color: white;
+}
+
+.info-section[data-section="2"] p {
+  color: white;
+}
+
 .info-card {
-  background: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 10px;
+  background: transparent;
+  border: none; 
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -144,19 +158,24 @@ export default {
 
 .map-card {
   flex: 1;
-  margin-right: 10px;
+}
+
+.mapImage {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
 }
 
 .image-card {
   flex: 1;
-  margin-left: 10px;
 }
 
 .location-image {
   width: 100%;
-  height: auto;
+  height: 400px;
   border-radius: 10px;
   object-fit: cover;
+  margin-top: 78px;
 }
 
 .fade-in {
@@ -173,13 +192,35 @@ ul {
 }
 
 @media screen and (max-width: 768px) {
+  .hero, .info-section {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
   .info-container {
     flex-direction: column;
+    box-sizing: border-box;
   }
 
   .map-card, .image-card {
     width: 100%;
-    margin: 0 0 20px 0;
+    box-sizing: border-box;
+    /* margin: 0 0 20px 0; */
+  }
+
+  .hero {
+    height: 250px;
+  }
+
+  .hero-content {
+    padding: 10px 10px;
+  }
+
+  .hero-content h1 {
+    font-size: larger;
   }
 }
 </style>
+

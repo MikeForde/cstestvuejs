@@ -5,7 +5,7 @@
         <div class="hamburger" @click="toggleMenu">
           <i class="fas fa-bars"></i>
         </div>
-        <router-link to="/" class="brand-link">
+        <router-link to="/" @click="closeMenu" class="brand-link">
           <img src="@/assets/CSP_Logo_White_trans.png" alt="Logo" class="logo">
           <span class="brand-name">Clear Skies Practice</span>
         </router-link>

@@ -158,7 +158,7 @@
 
 .info-section {
   opacity: 0;
-  transition: opacity 0.5s ease-in;
+  transition: opacity 0.5s;
   font-size: larger;
 }
 

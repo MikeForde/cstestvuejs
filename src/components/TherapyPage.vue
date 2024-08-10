@@ -161,17 +161,11 @@ export default {
 
 .therapy-card, .approach-card, .trauma-card, .change-card {
   background: #f9f9f9;
-  /* border: 1px solid #ddd;
-  border-radius: 10px; */
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: left;
-}
-
-.therapy-card {
-  border: 10px solid #5DAED5;
 }
 
 .approach-card, .change-card, .text-card2 {

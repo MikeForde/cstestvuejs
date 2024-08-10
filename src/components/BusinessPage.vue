@@ -65,7 +65,7 @@
       <section class="info-section" ref="section8" :data-section="8" :class="{ 'fade-in': showSection8 }">
         <div class="info-card">
           <h2>No Show Policy</h2>
-          <p>Where an appointment is arranged and agreed, and a client does not attend that appointment, the room fee will payable in full.</p>
+          <p>Where an appointment is arranged and agreed, and a client does not attend that appointment, the room fee will be payable in full.</p>
           <p>Your Personal Information will be kept in accordance with the Data Protection Act (2018) and the General Data Protection Regulation (GDPR).</p>
           <p>Please see our Privacy Policy (attached) for full details of the information we process.</p>
         </div>

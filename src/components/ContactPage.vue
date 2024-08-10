@@ -9,17 +9,17 @@
     <section class="info-section" ref="section1" :data-section="1" :class="{ 'fade-in': showSection1 }">
       <div class="info-card">
         <h2>Booking Sessions</h2>
-        <p>Please contact me for my availability and to book low-cost therapy sessions*. Text and email are my preferred methods of contact as I may be in a session if you call. I will then arrange a 15-minute, free introductory phone call, to ask any questions you may have, discuss the outcome you’re looking for, or explore how therapy will work for you.</p>
+        <p>Please contact me for my availability and to book low-cost therapy sessions*. Email is my preferred method of contact. I will then arrange a 15-minute, free introductory phone call, to ask any questions you may have, discuss the outcome you’re looking for, or explore how therapy will work for you.</p>
         <p><i>* I do not charge for therapy but ask my clients to contribute £12 per 1-hour session towards room hire.</i></p>
-        <p>Email: <a href="mailto:clearskiespractice@gmail.com">clearskiespractice@gmail.com</a></p>
-        <p>Text: <a href="sms:07760 531057">07760 531057</a></p>
+        <p>Email: <a href="mailto:clearskiespractice@gmail.com">clearskiespractice@gmail.com</a> (preferred)</p>
+        <p>Text: <a href="sms:07760 531057">07760 531057</a> (please include your email address)</p>
       </div>
     </section>
 
     <section class="info-section" ref="section2" :data-section="2" :class="{ 'fade-in': showSection2 }">
       <div class="info-card">
         <h2>Location</h2>
-        <p>I provide face to face therapy sessions in Tewkesbury which is easily accessible from the surrounding areas such as Gloucester, Cheltenham and Worcester.</p>
+        <p>I provide face-to-face therapy sessions in Tewkesbury which is easily accessible from the surrounding areas such as Gloucester, Cheltenham and Worcester.</p>
         <p>The Clear Skies Practice is located on the ... floor in the Devereux Centre, Tewkesbury. The Centre is well situated and easy walking distance from the High Street.</p>
         <p>Address: The Devereux Centre, Barton Road, Tewkesbury, GL20 5GJ</p>
       </div>

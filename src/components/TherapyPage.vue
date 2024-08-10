@@ -21,7 +21,7 @@
           <h2>My approach</h2>
           <p>The approach I take, the <a href="https://www.humangivens.com/human-givens/about/" target="_blank">Human Givens (HG) approach</a>, is underpinned by a holistic understanding of our essential emotional and physical needs which when met in balance lead to a fulfilling and emotionally healthy life.</p>
           <p>The approach also draws on the latest research in psychology, neuroscience and on the best of person-centred, solution-focussed, motivational interviewing and CBT therapy.</p>
-          <p>The HG approach is a practical approach. Together we will create a plan tailored to your needs using tools, skills and knowledge I will teach you and, most importantly, your own resources, strengths and skills to help you move forward.</p>
+          <p>The HG approach is a practical approach. Together we will create a plan tailored to your needs using tools, skills and knowledge which I will teach you and, most importantly, your own resources, strengths and skills to help you move forward.</p>
           <p>To support you with implementing the desired change and growing your confidence, I offer guided imagery alongside other effective techniques. </p>
           <p><a href="https://www.humangivens.com/human-givens/research/research-findings/" target="_blank">Learn more</a></p>
         </div>
@@ -47,8 +47,9 @@
     <div class="change-card-container">
       <div class="change-card text-card2">
         <h2>Moving towards change</h2>
-        <p>The Human Givens model is a brief, solution-focused approach that usually helps you see the change you want in 4-6 sessions. Some people may achieve the wanted change in fewer sessions while others may require more sessions due to the complexity of their lived experiences. I will work with your individual needs and at your pace. You can tell me after each session if you would like to book a further session. My aim is for you to feel a little better after each session and grow more and more confident in your ability to bring about the change you wish to happen.</p>
-        <p>My promise to my clients is for you to have knowledge, skills and techniques to sustain your mental wellbeing beyond therapy sessions.</p>
+        <p>The Human Givens model is a brief, solution-focused approach that usually helps you see the change you want in 4-6 sessions. Some people may achieve the wanted change in fewer sessions while others may require more sessions due to the complexity of their lived experiences.</p>
+        <p> I will work with your individual needs and at your pace. You can tell me after each session if you would like to book a further session. My aim is for you to feel a little better after each session and grow more and more confident in your ability to bring about the change you wish to happen.</p>
+        <p>My promise to my clients is to provide you with knowledge, skills and techniques to sustain your mental wellbeing beyond therapy sessions.</p>
       </div>
       <div class="approach-card image-card">
         <img src="@/assets/TherapyPath.png" alt="Therapy Path" class="therapy-path-image"/>

@@ -19,7 +19,7 @@
           <h2>Our contact details:</h2>
           <p>Trainee Therapist Name: Galina Filipkova</p>
           <p>E-mail: <a href="mailto:clearskiespractice@gmail.com">clearskiespractice@gmail.com</a></p>
-          <p>Phone Number: 077 605 310 57</p>
+          <p>Phone Number: 07760 531057</p>
         </div>
       </section>
       

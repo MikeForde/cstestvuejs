@@ -9,7 +9,7 @@
       <section class="info-section" ref="section1" :data-section="1" :class="{ 'fade-in': showSection1 }">
         <div class="info-card">
           <h2>Your trainee therapist: Galina Filipkova</h2>
-          <p>Telephone: 07760 531057</p>
+          <p>Telephone: <a href="sms:07760 531057">07760 531057</a></p>
           <p>E-mail: <a href="mailto:clearskiespractice@gmail.com">clearskiespractice@gmail.com</a></p>
         </div>
       </section>
@@ -76,7 +76,7 @@
           <h2>Governance</h2>
           <p>The work of this practice is governed by The Codes of Ethics & Professional Practice of the Human Givens Institute. The Institute can be contacted as follows:</p>
           <p>The HGI Membership Secretary, Human Givens Institute, Chalvington, East Sussex, BN27 3TD, UK</p>
-          <p>Telephone: 01323 811662</p>
+          <p>Telephone: <a href="sms:01323 811662">01323 811662</a></p>
           <p>E-mail: <a href="mailto:hgi@humangivens.com">hgi@humangivens.com</a></p>
           <p>The Human Givens Institute’s Code of Ethics and Conduct can be viewed at: <a href="https://www.hgi.org.uk/about-hgi/ethics-and-conduct" target="_blank">https://www.hgi.org.uk/about-hgi/ethics-and-conduct</a>. If you would like a paper copy of the Policy, please contact the Human Givens Institute.</p>
           <p>If any client has comments or concerns, or even a complaint, we ask them to bring it to the attention of the practice by emailing us at <a href="mailto:clearskiespractice@gmail.com">clearskiespractice@gmail.com</a>.</p>

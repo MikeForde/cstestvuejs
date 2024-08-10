@@ -134,7 +134,7 @@ export default {
 .hero {
   position: relative;
   overflow: hidden;
-  background-image: url('@/assets/Sky.jpeg');
+  background-image: url('@/assets/AnimatedSky.gif');
   background-size: cover;
   background-position: center;
   color: white;

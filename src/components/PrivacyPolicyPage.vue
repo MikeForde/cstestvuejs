@@ -130,7 +130,7 @@
   .hero {
   position: relative;
   height: 200px;
-  background-image: url('@/assets/Sky.jpeg');
+  background-image: url('@/assets/AnimatedSky.gif');
   background-size: cover;
   background-position: center;
   display: flex;

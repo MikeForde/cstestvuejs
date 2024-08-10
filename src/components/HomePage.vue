@@ -99,7 +99,7 @@ export default {
       showImmediateHelp: false,
       showResources: false,
       videoPlayable: true, // Assume the video is playable by default
-      backupImage: require('@/assets/Sky.jpeg') // Correctly reference the backup image
+      backupImage: require('@/assets/AnimatedSky.gif') // Correctly reference the backup image
     };
   },
   mounted() {
@@ -188,7 +188,7 @@ export default {
   height: 100%;
   object-fit: cover;
   z-index: -1;
-  background: url('@/assets/Sky.jpeg') no-repeat center center;
+  background: url('@/assets/AnimatedSky.gif') no-repeat center center;
   background-size: cover;
 }
 

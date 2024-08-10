@@ -2,7 +2,7 @@
   <div>
     <section class="documents-hero">
       <div class="hero-content">
-        <h1>Clear Skies Documents</h1>
+        <h1>Documents</h1>
       </div>
     </section>
     <section class="documents-list" ref="documentsList" :class="{ 'fade-in': showDocumentsList }">

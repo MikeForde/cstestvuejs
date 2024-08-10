@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="hero">
+    <section class="hero" ref="hero" :class="{ 'fade-in': showHero }">
       <template v-if="videoPlayable">
         <video class="hero-video" autoplay muted loop playsinline webkit-playsinline ref="heroVideo">
           <source src="/hero_video.mp4" type="video/mp4">
@@ -94,6 +94,7 @@ export default {
   name: 'HomePage',
   data() {
     return {
+      showHero: false,
       showIntro: false,
       showAdditionalInfo: false,
       showImmediateHelp: false,
@@ -116,7 +117,9 @@ export default {
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
-            if (entry.target.classList.contains('intro')) {
+            if (entry.target.classList.contains('hero')) {
+              this.showHero = true;
+            } else if (entry.target.classList.contains('intro')) {
               this.showIntro = true;
             } else if (entry.target.classList.contains('additional-info')) {
               this.showAdditionalInfo = true;
@@ -129,6 +132,7 @@ export default {
         });
       }, options);
 
+      observer.observe(this.$refs.hero);
       observer.observe(this.$refs.intro);
       observer.observe(this.$refs.additionalInfo);
       observer.observe(this.$refs.immediateHelp);

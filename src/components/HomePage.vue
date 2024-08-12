@@ -1,6 +1,9 @@
 <template>
   <div>
     <section class="hero" ref="hero" :class="{ 'fade-in': showHero }">
+      <div class="curtain curtain-left" v-if="showCurtains"></div>
+      <div class="curtain curtain-right" v-if="showCurtains"></div>
+
       <template v-if="videoPlayable">
         <video class="hero-video" autoplay muted loop playsinline webkit-playsinline ref="heroVideo">
           <source src="/hero_video.mp4" type="video/mp4">
@@ -10,6 +13,7 @@
       <template v-else>
         <img :src="backupImage" alt="Backup Image" class="hero-image">
       </template>
+      
       <div class="hero-content">
         <h1>Clear Skies Practice</h1>
         <p>Helping You Moving Forward</p>
@@ -88,7 +92,6 @@
   </div>
 </template>
 
-
 <script>
 export default {
   name: 'HomePage',
@@ -99,8 +102,9 @@ export default {
       showAdditionalInfo: false,
       showImmediateHelp: false,
       showResources: false,
-      videoPlayable: true, // Assume the video is playable by default
-      backupImage: require('@/assets/AnimatedSky.gif') // Correctly reference the backup image
+      videoPlayable: true,
+      backupImage: require('@/assets/AnimatedSky.gif'),
+      showCurtains: true // Add this to control the curtains
     };
   },
   mounted() {
@@ -108,7 +112,8 @@ export default {
       // Adding a slight delay to ensure Safari initializes video properly
       setTimeout(() => {
         this.checkVideoPlayback();
-      }, 100); // Adjust the delay time if needed
+        this.openCurtains();
+      }, 100);
 
       const options = {
         threshold: 0.1
@@ -150,18 +155,15 @@ export default {
         });
       }
     },
-    playVideo() {
-      const video = this.$refs.heroVideo;
-      if (video && video.paused) {
-        video.play().catch((error) => {
-          console.error("Error playing video:", error);
-        });
-      }
+    openCurtains() {
+      // Open the curtains after a brief delay
+      setTimeout(() => {
+        this.showCurtains = false;
+      }, 2000); // Adjust the delay as needed
     }
   }
 }
 </script>
-
 
 
 
@@ -173,6 +175,90 @@ export default {
   width: 100%;
 }
 
+.hero-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #ffffff, #f0f0f0);
+  z-index: 10;
+  animation: artisticFadeOut 3s ease-in-out forwards;
+}
+
+@keyframes artisticFadeOut {
+  0% {
+    opacity: 1;
+    transform: scale(1) translateY(0) rotate(0deg);
+    filter: blur(0) brightness(1);
+    background: linear-gradient(135deg, #ffffff, #f0f0f0);
+  }
+  20% {
+    opacity: 0.9;
+    transform: scale(1.1) translateY(-5px) rotate(2deg);
+    filter: blur(1px) brightness(0.9);
+    background: linear-gradient(135deg, #f8f8f8, #e0e0e0);
+  }
+  40% {
+    opacity: 0.8;
+    transform: scale(1.2) translateY(-10px) rotate(-2deg);
+    filter: blur(2px) brightness(0.8);
+    background: linear-gradient(135deg, #f0f0f0, #d0d0d0);
+  }
+  60% {
+    opacity: 0.6;
+    transform: scale(1.3) translateY(-15px) rotate(3deg);
+    filter: blur(3px) brightness(0.7);
+    background: linear-gradient(135deg, #e8e8e8, #c0c0c0);
+  }
+  80% {
+    opacity: 0.4;
+    transform: scale(1.4) translateY(-20px) rotate(-3deg);
+    filter: blur(4px) brightness(0.6);
+    background: linear-gradient(135deg, #e0e0e0, #b0b0b0);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.5) translateY(-25px) rotate(0deg);
+    filter: blur(5px) brightness(0.5);
+    background: linear-gradient(135deg, #d8d8d8, #a0a0a0);
+  }
+}
+
+.curtain {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  z-index: 20; /* Above the content, below the logo */
+  transition: transform 2s ease-in-out; /* Smooth transition */
+}
+
+.curtain-left {
+  left: 0;
+  transform: translateX(0);
+}
+
+.curtain-right {
+  right: 0;
+  transform: translateX(0);
+}
+
+.fade-in .curtain-left {
+  transform: translateX(-100%);
+}
+
+.fade-in .curtain-right {
+  transform: translateX(100%);
+}
+
+
+
+.hero-mask.fade-out {
+  opacity: 0;
+}
+
 .hero-image {
   width: 100%;
   height: 100%;
@@ -182,7 +268,6 @@ export default {
   left: 0;
   z-index: -1;
 }
-
 
 .hero-video {
   position: absolute; /* https://www.pexels.com/license/ */

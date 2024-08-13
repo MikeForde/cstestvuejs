@@ -1,15 +1,15 @@
 <template>
   <div>
     <section class="hero" ref="hero" :class="{ 'fade-in': showHero }">
+      <img :src="backupImage" alt="Backup Image" class="hero-image"> <!-- GIF shows by default -->
+      
       <template v-if="videoPlayable">
         <video class="hero-video" autoplay muted loop playsinline webkit-playsinline ref="heroVideo">
           <source src="/hero_video.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </template>
-      <template v-else>
-        <img :src="backupImage" alt="Backup Image" class="hero-image">
-      </template>
+
       <div class="hero-content">
         <h1>Clear Skies Practice</h1>
         <p>Helping You Moving Forward</p>
@@ -100,7 +100,7 @@ export default {
       showImmediateHelp: false,
       showResources: false,
       videoPlayable: true, // Assume the video is playable by default
-      backupImage: require('@/assets/AnimatedSky.gif') // Correctly reference the backup image
+      backupImage: require('@/assets/AnimatedSky.gif') // GIF is the backup image
     };
   },
   mounted() {
@@ -108,7 +108,7 @@ export default {
       // Adding a slight delay to ensure Safari initializes video properly
       setTimeout(() => {
         this.checkVideoPlayback();
-      }, 100); // Adjust the delay time if needed
+      }, 100);
 
       const options = {
         threshold: 0.1
@@ -117,9 +117,7 @@ export default {
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
-            if (entry.target.classList.contains('hero')) {
-              this.showHero = true;
-            } else if (entry.target.classList.contains('intro')) {
+            if (entry.target.classList.contains('intro')) {
               this.showIntro = true;
             } else if (entry.target.classList.contains('additional-info')) {
               this.showAdditionalInfo = true;
@@ -145,17 +143,16 @@ export default {
       if (video) {
         video.play().then(() => {
           this.videoPlayable = true;
+          this.fadeInVideo(); // Trigger fade-in animation for the video
         }).catch(() => {
           this.videoPlayable = false;
         });
       }
     },
-    playVideo() {
-      const video = this.$refs.heroVideo;
-      if (video && video.paused) {
-        video.play().catch((error) => {
-          console.error("Error playing video:", error);
-        });
+    fadeInVideo() {
+      const videoElement = this.$refs.heroVideo;
+      if (videoElement) {
+        videoElement.classList.add('fade-in-video');
       }
     }
   }
@@ -185,15 +182,20 @@ export default {
 
 
 .hero-video {
-  position: absolute; /* https://www.pexels.com/license/ */
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -1;
-  background: url('@/assets/AnimatedSky.gif') no-repeat center center;
-  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2; /* Start beneath the GIF */
+  opacity: 0;
+  transition: opacity 1s ease-in; /* Transition for fading in */
+}
+
+.hero-video.fade-in-video {
+  opacity: 1; /* Fade the video in when the class is added */
+  z-index: -1; /* Bring the video above the GIF */
 }
 
 .hero-content {

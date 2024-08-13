@@ -94,7 +94,7 @@ export default {
   name: 'HomePage',
   data() {
     return {
-      showHero: false,
+      showHero: true,
       showIntro: false,
       showAdditionalInfo: false,
       showImmediateHelp: false,

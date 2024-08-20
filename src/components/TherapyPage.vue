@@ -77,8 +77,8 @@ export default {
       showApproach: false,
       showTrauma: false,
       showMovingTowardsChange: false,
-      videoPlayable: true, // Assume the video is playable by default
-      backupImage: require('@/assets/AnimatedSky.gif') // GIF is the backup image
+      videoPlayable: true, 
+      backupImage: require('@/assets/AnimatedSky.gif') 
     };
   },
   mounted() {
@@ -166,7 +166,7 @@ export default {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -2; /* Start beneath the GIF */
+  z-index: -2;
   opacity: 0;
   transition: opacity 1s ease-in; /* Transition for fading in */
 }

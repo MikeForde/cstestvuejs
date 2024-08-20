@@ -179,13 +179,13 @@ export default {
 }
 
 .info-section p, .info-section li {
-  font-family: Verdana, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: large;
   color: #666; 
 }
 
 .info-section h2 {
-  font-family: Cambria, serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: #333;
 }
 

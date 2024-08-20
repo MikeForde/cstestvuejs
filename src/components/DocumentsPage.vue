@@ -132,7 +132,7 @@ export default {
   margin: auto;
   opacity: 0;
   transition: opacity 0.5s ease-in;
-  font-family: Verdana, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .documents-list h2 {

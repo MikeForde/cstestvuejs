@@ -227,7 +227,7 @@ export default {
 }
 
 .about-me h2, .info-section h2 {
-  font-family: Cambria, serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: #333;
 }
 

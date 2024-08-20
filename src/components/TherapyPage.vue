@@ -191,7 +191,7 @@ export default {
 }
 
 .therapy p, .approach p, .trauma p, .moving-towards-change p {
-  font-family: Verdana, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #666;
   font-size: large;
 }
@@ -204,7 +204,7 @@ export default {
 .approach h1, .approach h2, .approach h3,
 .trauma h1, .trauma h2, .trauma h3,
 .moving-towards-change h1, .moving-towards-change h2, .moving-towards-change h3 {
-  font-family: Cambria, serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: #333;
 }
 

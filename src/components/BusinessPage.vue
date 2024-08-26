@@ -23,21 +23,21 @@
       <section class="info-section" ref="section3" :data-section="3" :class="{ 'fade-in': showSection3 }">
         <div class="info-card">
           <h2>Opening Hours</h2>
-          <p>Wednesday 8:30am to 12:30pm</p>
+          <p>Wednesday 2.30am to 6.30pm</p>
         </div>
       </section>
   
       <section class="info-section" ref="section4" :data-section="4" :class="{ 'fade-in': showSection4 }">
         <div class="info-card">
           <h2>Outcome measures</h2>
-          <p>Various measures are used to gauge your progress and response to treatment. If you are happy to do so, you may be asked to complete a brief anonymised questionnaire to help the therapist understand your needs, how best to help you and to evaluate outcomes.</p>
+          <p>We use various measures to gauge your progress and response to treatment. If you are happy to do so, you may be asked to complete a brief anonymised questionnaire to help the therapist understand your needs, how best to help you and to evaluate outcomes.</p>
         </div>
       </section>
   
       <section class="info-section" ref="section5" :data-section="5" :class="{ 'fade-in': showSection5 }">
         <div class="info-card">
           <h2>Cost of Therapy</h2>
-          <p>There is no charge for the therapy; however, we ask our clients to contribute to room hire £12.00 per 1-hour session payable at each session. Any longer session, if agreed to be necessary by both parties in advance, will be charged on a pro-rata basis for room hire.</p>
+          <p>The therapy is free; however, we ask our clients to contribute to room hire £12.00 per 1-hour session payable at each session. Any longer session, if agreed to be necessary by both parties in advance, will be charged on a pro-rata basis for room hire.</p>
           <p>Notes:</p>
           <ul>
             <li>The session fee is subject to revision from time to time. Advance notice will be given of any increase.</li>

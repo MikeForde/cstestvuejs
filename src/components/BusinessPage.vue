@@ -23,7 +23,7 @@
       <section class="info-section" ref="section3" :data-section="3" :class="{ 'fade-in': showSection3 }">
         <div class="info-card">
           <h2>Opening Hours</h2>
-          <p>Wednesday 2.30am to 6.30pm</p>
+          <p>Wednesday 2.30pm to 6.30pm</p>
         </div>
       </section>
   

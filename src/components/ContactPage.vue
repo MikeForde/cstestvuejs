@@ -19,7 +19,7 @@
         <h2>Booking Sessions</h2>
         <p>Please contact me for my availability and to book low-cost therapy sessions*. Email is my preferred method of contact. I will then arrange a 15-minute, free introductory phone call, to ask any questions you may have, discuss the outcome you’re looking for, or explore how therapy will work for you.</p>
         <p>My working hours are 2:30pm to 6:30pm.</p>
-        <p><i>* I do not charge for therapy but ask my clients to contribute towards room hire -<router-link to="/business#cost-of-therapy" class="button-link">see here for more information</router-link>
+        <p><i>* I do not charge for therapy but ask my clients to contribute towards room hire - <router-link to="/business#cost-of-therapy" class="button-link">see here for more information</router-link>
         </i></p>
         <p>Email: <a href="mailto:clearskiespractice@gmail.com">clearskiespractice@gmail.com</a> (preferred)</p>
         <p>Text: <a href="sms:07760 531057">07760 531057</a> (please include your email address)</p>

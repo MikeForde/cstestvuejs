@@ -38,13 +38,13 @@
         <div class="info-card">
           <h2>Cost of Therapy</h2>
           <h3>Sessions during regular opening hours (Wednesday 2.30pm to 6.30pm)</h3>
-          <p>The therapy is free; however, we ask our clients to contribute to room hire £12.00 per 1-hour session payable at each session. Any longer session, if agreed to be necessary by both parties in advance, will be charged on a pro-rata basis for room hire.</p>
+          <p>The therapy is free; however, we ask our clients to contribute to room hire £12.00 per 1-hour session. Longer sessions will be charged on a pro-rata basis.</p>
           <h3>Sessions outside regular working hours </h3>
-          <p>Sessions outside regular working hours may be available. This is by prior agreement only. An advanced payment of £12.00 for room hire is required before we request the room with the Devereux Centre. Due to varying availability of the room, which is out of our control, your 1st choice appointment may not be available in a given week. If your 1st choice is not available, we will always endeavour to arrange an appointment on an alternative day (your 2nd or 3rd choice). Please note we cannot guarantee that you will always be seen in the same room. If it is not possible to arrange a room then a full refund will be given unless the client wishes to use this payment towards the next booking. </p>
-          <h3>Notes:</h3>
+          <p>Sessions outside regular working hours may be available. This is by prior agreement only. An advanced payment of £12.00 for room hire is required before we request the room with the Devereux Centre. Due to varying availability of the room, which is outside of our control, your preferred appointment may not be available in a given week. If so, we will endeavour to arrange an appointment on an alternative day (your 2nd or 3rd choice). Please note, we cannot guarantee that you will always be seen in the same room. If it is not possible to arrange a room, then a full refund will be given unless the client wishes to use this payment towards the next booking.</p>
+          <h3>Please Note:</h3>
           <ul>
             <li>The session fee is subject to revision from time to time. Advance notice will be given of any increase.</li>
-            <li>Human Givens therapists and therapist trainees aim to meet the needs of their clients in as few sessions as possible and do not charge in advance for a course of treatment</li>
+            <li>Human Givens therapists and therapist trainees aim to meet the needs of their clients in as few sessions as possible and do not charge in advance for a course of treatment.</li>
             <li>Any extra work undertaken on the client’s behalf, such as writing reports or letters for other agencies will be charged at the standard hourly rate.</li>
           </ul>
         </div>

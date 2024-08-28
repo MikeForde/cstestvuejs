@@ -37,8 +37,11 @@
       <section class="info-section" ref="section5" :data-section="5" :class="{ 'fade-in': showSection5 }">
         <div class="info-card">
           <h2>Cost of Therapy</h2>
+          <h3>Sessions during regular opening hours (Wednesday 2.30pm to 6.30pm)</h3>
           <p>The therapy is free; however, we ask our clients to contribute to room hire £12.00 per 1-hour session payable at each session. Any longer session, if agreed to be necessary by both parties in advance, will be charged on a pro-rata basis for room hire.</p>
-          <p>Notes:</p>
+          <h3>Sessions outside regular working hours </h3>
+          <p>Sessions outside regular working hours may be available. This is by prior agreement only. An advanced payment of £18.00 for room hire is required before we request the room with the Devereux Centre. Due to varying availability of the room, which is out of our control, your 1st choice appointment may not be available in a given week. If your 1st choice is not available, we will always endeavour to arrange an appointment on an alternative day (your 2nd or 3rd choice). Please note we cannot guarantee that you will always be seen in the same room. If it is not possible to arrange a room then a full refund will be given unless the client wishes to use this payment towards the next booking. </p>
+          <h3>Notes:</h3>
           <ul>
             <li>The session fee is subject to revision from time to time. Advance notice will be given of any increase.</li>
             <li>Human Givens therapists and therapist trainees aim to meet the needs of their clients in as few sessions as possible and do not charge in advance for a course of treatment</li>
@@ -50,15 +53,21 @@
       <section class="info-section" ref="section6" :data-section="6" :class="{ 'fade-in': showSection6 }">
         <div class="info-card">
           <h2>Payment Method</h2>
-          <p>If it is convenient to the client, a bank payment may be made in advance or on the day of consultation otherwise we accept cash. An invoice will be sent via email in advance.</p>
+          <h3>Sessions during regular opening hours (Wednesday 2.30pm to 6.30pm)</h3>
+          <p>You will receive an invoice for the room hire via email prior to your appointment. If it is convenient for the client, a bank payment may be made in advance. Bank payment should be made at the latest 3 days after the consultation.</p>
+          <h3>Sessions outside regular working hours</h3>
+          <p>Bank payment must be received before we can arrange room hire. You will receive an invoice for room hire via email.</p>
         </div>
       </section>
   
       <section class="info-section" ref="section7" :data-section="7" :class="{ 'fade-in': showSection7 }">
         <div class="info-card">
           <h2>Cancellation Policy</h2>
+          <h3>Sessions during regular opening hours (Wednesday 2.30pm to 6.30pm)</h3>
           <p>Since scheduling of an appointment involves the reservation of time for your individual session, a minimum of 48 hours is required for rescheduling or cancelling client appointments. Unless we reach a different agreement, the full room fee will be charged for session missed without such notification.</p>
           <p>In the event of a serious accident, emergency, or other similar situation outside the client’s control, please deal with the situation first and notify us at the earliest convenient time, or we will follow up with you typically within 24 to 48 hours of the missed appointment.</p>
+          <h3>Sessions outside regular working hours</h3>
+          <p>Once we have paid the Devereux Centre for the room hire then there is no refund for sessions outside regular opening hours unless you cancel the session at least 10 days in advance to allow us – in turn - to cancel the booking with the Devereux Centre.</p>
         </div>
       </section>
   
@@ -66,6 +75,7 @@
         <div class="info-card">
           <h2>No Show Policy</h2>
           <p>Where an appointment is arranged and agreed, and a client does not attend that appointment, the room fee will be payable in full.</p>
+          <h2>Your Personal Information</h2>
           <p>Your Personal Information will be kept in accordance with the Data Protection Act (2018) and the General Data Protection Regulation (GDPR).</p>
           <p>Please see our Privacy Policy (attached) for full details of the information we process.</p>
         </div>
@@ -178,6 +188,10 @@
 }
 
 [data-section="2"] h2, [data-section="4"] h2, [data-section="6"] h2, [data-section="8"] h2 {
+  color: white;
+}
+
+[data-section="2"] h3, [data-section="4"] h3, [data-section="6"] h3, [data-section="8"] h3 {
   color: white;
 }
 

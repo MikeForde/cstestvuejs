@@ -9,11 +9,11 @@
       <h2>Please Download the Documents Below or Preview Them</h2>
       <ul>
         <li>
-          Information for Clients
+          Fees and Terms of Business
           <a href="#" @click.prevent="previewDocument('/Fees and Terms of Business.pdf')">
             Preview
           </a> 
-          <a href="/Fees and Terms of Business.pdf" download="Information for Clients">
+          <a href="/Fees and Terms of Business.pdf" download="Fees and Terms of Business">
             Download
           </a>
         </li>

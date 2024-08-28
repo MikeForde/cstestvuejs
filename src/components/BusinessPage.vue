@@ -34,7 +34,7 @@
         </div>
       </section>
   
-      <section class="info-section" ref="section5" :data-section="5" :class="{ 'fade-in': showSection5 }">
+      <section id="cost-of-therapy" class="info-section" ref="section5" :data-section="5" :class="{ 'fade-in': showSection5 }">
         <div class="info-card">
           <h2>Cost of Therapy</h2>
           <h3>Sessions during regular opening hours (Wednesday 2.30pm to 6.30pm)</h3>

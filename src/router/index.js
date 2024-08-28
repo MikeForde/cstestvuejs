@@ -20,9 +20,17 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(),
   routes,
-  scrollBehavior() {
-    // Always scroll to the top when navigating to a new route
-    return { top: 0 };
+  scrollBehavior(to) {
+    if (to.hash) {
+      // Handle scrolling to a specific section when there's a hash
+      return {
+        el: to.hash,
+        behavior: 'smooth',
+      };
+    } else {
+      // Scroll to the top for all other routes
+      return { top: 0 };
+    }
   }
 });
 

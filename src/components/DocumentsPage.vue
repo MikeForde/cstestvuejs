@@ -28,7 +28,7 @@
         </li>
         <li>
           Client Contract
-          <a href="#" @click.prevent="previewDocument('/Client Contract_pdf.pdf')">
+          <a href="#" @click.prevent="previewDocument('/Client Contract.pdf')">
             Preview (PDF)
           </a>
           <a href="/Client Contract.docx" download="Client Contract">

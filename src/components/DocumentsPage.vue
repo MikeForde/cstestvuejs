@@ -95,7 +95,7 @@ export default {
     this.$nextTick(() => {
       observer.observe(this.$refs.documentsList);
       // Automatically select the "Client Contract" document in the previewer
-      this.previewDocument('/Client Contract_pdf.pdf');
+      this.previewDocument('/Client Contract.pdf');
     });
   }
 };

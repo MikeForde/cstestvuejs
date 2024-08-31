@@ -28,8 +28,8 @@
         <div class="approach-card text-card">
           <h2>My approach</h2>
           <p>The approach I take, the <a href="https://www.humangivens.com/human-givens/about/" target="_blank">Human Givens (HG) approach</a>, is underpinned by a holistic understanding of our essential emotional and physical needs which when met in balance lead to a fulfilling and emotionally healthy life.</p>
-          <p>The approach also draws on the latest research in psychology, neuroscience and on the best of person-centred, solution-focussed, motivational interviewing and CBT therapy.</p>
-          <p>The HG approach is a practical approach. Together we will create a plan tailored to your needs using tools, skills and knowledge which I will teach you and, most importantly, your own resources, strengths and skills to help you move forward.</p>
+          <p>It draws on the latest research in psychology, neuroscience and on the best of person-centred, solution-focussed, motivational interviewing and CBT therapy.</p>
+          <p>The HG approach is a practical one. Together we will create a plan tailored to your needs using tools, skills and knowledge which I will teach you and, most importantly, your own resources, strengths and skills to help you move forward.</p>
           <p>To support you with implementing the desired change and growing your confidence, I offer guided imagery alongside other effective techniques. </p>
           <p><a href="https://www.humangivens.com/human-givens/research/research-findings/" target="_blank">Learn more</a></p>
         </div>

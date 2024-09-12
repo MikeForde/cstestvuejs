@@ -30,7 +30,7 @@
       <div class="info-card">
         <h2>Location</h2>
         <p>I provide face-to-face therapy sessions in Tewkesbury which is easily accessible from the surrounding areas such as Gloucester, Cheltenham and Worcester.</p>
-        <p>The Clear Skies Practice is located on the ground floor in the Devereux Centre, Tewkesbury. The Centre is well situated and easy walking distance from the High Street.</p>
+        <p>The Clear Skies Practice is located on the ground floor in <a href="https://www.thedevereuxcentre.co.uk/other-tenants/" target="_blank">the Devereux Centre, Tewkesbury</a>. The Centre is well situated and easy walking distance from the High Street.</p>
         <p>Address: The Devereux Centre, Barton Road, Tewkesbury, GL20 5GJ</p>
       </div>
     </section>

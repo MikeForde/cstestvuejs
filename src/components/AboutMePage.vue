@@ -21,7 +21,7 @@
         </div>
         <div class="about-me-info info-card">
           <h2>I'm Galina Filipkova</h2>
-          <p>I am a trainee counsellor HG.Dip.P (Trainee) and currently offer low-cost therapy sessions for adults to complete the final stage of my psychotherapy qualification.</p>
+          <p>My name is Galina Filipkova. I am a trainee therapist HG.Dip.P (Trainee) and will be taking my final assessment in May to fully qualify as a psychotherapist. I have completed over 100 practice hours with clients and will be offering face-to-face, low-cost, fast phobia treatment for adults between June and August to hone my skills in the technique and to be able to offer sessions online.</p>
           <p>From my previous roles in education and social care, I have extensive experience of working with both adults and young people. I currently work in a grammar school in Gloucester supporting students’ wellbeing and mental health.</p>
           <p>I also volunteered previously with the Samaritans.</p>
           <p>In my free time, I enjoy reading, gardening, yoga, running and walking.</p>

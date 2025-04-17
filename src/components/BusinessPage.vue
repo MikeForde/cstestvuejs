@@ -38,9 +38,9 @@
         <div class="info-card">
           <h2>Cost of Therapy</h2>
           <h3>Sessions during regular opening hours (Wednesday 2.30pm to 6.30pm)</h3>
-          <p>The therapy is free; however, we ask our clients to contribute to room hire £12.00 per 1-hour session. Longer sessions will be charged on a pro-rata basis.</p>
+          <p>The therapy is free; however, we ask our clients to contribute to room hire and supervision cost £25.00 per 1-hour session. Longer sessions will be charged on a pro-rata basis.</p>
           <h3>Sessions outside regular working hours </h3>
-          <p>Sessions outside regular working hours may be available. This is by prior agreement only. An advanced payment of £12.00 for room hire is required before we request the room with the Devereux Centre. Due to varying availability of the room, which is outside of our control, your preferred appointment may not be available in a given week. If so, we will endeavour to arrange an appointment on an alternative day (your 2nd or 3rd choice). Please note, we cannot guarantee that you will always be seen in the same room. If it is not possible to arrange a room, then a full refund will be given unless the client wishes to use this payment towards the next booking.</p>
+          <p>Sessions outside regular working hours may be available. This is by prior agreement only. An advanced payment of £25.00 for room hire and supervision cost is required before we request the room with the Devereux Centre. Due to varying availability of the room, which is outside of our control, your preferred appointment may not be available in a given week. If so, we will endeavour to arrange an appointment on an alternative day (your 2nd or 3rd choice). Please note, we cannot guarantee that you will always be seen in the same room. If it is not possible to arrange a room, then a full refund will be given unless the client wishes to use this payment towards the next booking.</p>
           <h3>Please Note:</h3>
           <ul>
             <li>The session fee is subject to revision from time to time. Advance notice will be given of any increase.</li>
@@ -67,7 +67,7 @@
           <p>Since scheduling of an appointment involves the reservation of time for your individual session, a minimum of 48 hours is required for rescheduling or cancelling client appointments. Unless we reach a different agreement, the full room fee will be charged for session missed without such notification.</p>
           <p>In the event of a serious accident, emergency, or other similar situation outside the client’s control, please deal with the situation first and notify us at the earliest convenient time, or we will follow up with you typically within 24 to 48 hours of the missed appointment.</p>
           <h3>Sessions outside regular working hours</h3>
-          <p>Once we have paid the Devereux Centre for the room hire then there is no refund for sessions outside regular opening hours unless you cancel the session at least 10 days in advance to allow us – in turn - to cancel the booking with the Devereux Centre.</p>
+          <p>Once we have paid the Devereux Centre for the room hire then there is no refund for the room hire for sessions outside regular opening hours (£12 per 60 minutes) unless you cancel the session at least 10 days in advance to allow us – in turn - to cancel the booking with the Devereux Centre.</p>
         </div>
       </section>
   
@@ -75,6 +75,8 @@
         <div class="info-card">
           <h2>No Show Policy</h2>
           <p>Where an appointment is arranged and agreed, and a client does not attend that appointment, the room fee will be payable in full.</p>
+          <h2>Personalised Guided Imagery</h2>
+          <p>At my discretion, I may offer to record a personalised guided imagery for you. This guided imagery is for your sole use and must not be shared with third parties. It must not be listened to when driving, operating heavy machinery or in any other situations where distraction may put your safety or that of others at risk.</p>
           <h2>Your Personal Information</h2>
           <p>Your Personal Information will be kept in accordance with the Data Protection Act (2018) and the General Data Protection Regulation (GDPR).</p>
           <p>Please see our Privacy Policy (attached) for full details of the information we process.</p>

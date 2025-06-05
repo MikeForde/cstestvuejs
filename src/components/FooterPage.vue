@@ -81,7 +81,7 @@
 }
 
 .footer-logo {
-  max-height: 50px;
+  max-height: 75px;
 }
 
 @media screen and (max-width: 768px) {

@@ -1,9 +1,8 @@
-<!-- src/components/Footer.vue -->
 <template>
   <footer class="site-footer">
     <div class="footer-content">
       <div class="footer-left">
-        <p>&copy; 2024 Clear Skies Practice. All rights reserved.</p>
+        <p>&copy; 2024-{{ currentYear }} Clear Skies Practice. All rights reserved.</p>
       </div>
       <div class="footer-center">
         <img src="@/assets/CSP_Logo_White_trans.png" alt="Clear Skies Practice Logo" class="footer-logo" />
@@ -20,14 +19,18 @@
   </footer>
 </template>
 
-  
-  <script>
-  export default {
-    name: 'FooterPage',
-  };
-  </script>
-  
-  <style scoped>
+<script>
+export default {
+  name: 'FooterPage',
+  computed: {
+    currentYear() {
+      return new Date().getFullYear();
+    }
+  }
+};
+</script>
+
+<style scoped>
 .site-footer {
   background-color: #5DAED5;
   color: white;

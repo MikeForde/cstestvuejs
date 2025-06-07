@@ -16,7 +16,10 @@
 
     <section class="therapy" ref="therapy" :class="{ 'fade-in': showTherapy }">
       <div class="therapy-container">
-        <div class="therapy-card text-card-therapy">
+        <div class="trauma-card image-card">
+          <img src="@/assets/Therapy_Stones.png" alt="Therapy Image" class="trauma-image"/>
+        </div>
+        <div class="therapy-card text-card">
           <h2>Therapy</h2>
           <p>Our work will begin with understanding what has brought you to seek support and what you would like to be different.</p>
         </div>
@@ -46,7 +49,9 @@
         </div>
         <div class="trauma-card text-card">
           <h2>Trauma</h2>
-          <p>If you are held back by trauma, I will help you move on from that with the effective method developed by the Human Givens Institute. This method is utilised by the PTSD Resolution charity for UK veterans and their families.</p>
+          <p>If you are held back by trauma, I will help you move on from that with the effective method developed by the Human Givens Institute, the rewind technique.</p>
+          <p><a href="https://www.hgi.org.uk/useful-information/treatment-dealing-ptsd-trauma-phobias/rewind-technique" target="_blank">Learn more</a></p>
+          <p>This method is utilised by the PTSD Resolution charity for UK veterans and their families. If you are a UK veteran or a member of their family, you may qualify for free therapy with the PTSD Resolution.</p>
           <p><a href="https://www.humangivens.com/case-studies/ptsd-resolution" target="_blank">Learn more</a></p>
         </div>
       </div>
@@ -219,6 +224,25 @@ export default {
   align-items: stretch;
 }
 
+.image-card {
+  width: 40%;
+  overflow: hidden;            /* hide any overshoot */
+}
+
+.image-card img {
+  display: block;              /* remove inline-img whitespace */
+  width: 100%;                 /* fill the width of the card */
+  height: auto;
+  max-height: clamp(200px, 50vh, 400px);
+  object-fit: cover;           /* crop nicely if needed */
+}
+
+.change-card-container, .therapy-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
 .therapy-card, .approach-card, .trauma-card, .change-card {
   background: #f9f9f9;
   padding: 20px;
@@ -257,12 +281,6 @@ export default {
 
 .fade-in {
   opacity: 1;
-}
-
-.change-card-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
 }
 
 .text-card2, .image-card {

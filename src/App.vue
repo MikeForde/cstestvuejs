@@ -13,6 +13,7 @@
           <li><router-link to="/therapy" @click="closeMenu">Therapy</router-link></li>
           <li><router-link to="/about-me" @click="closeMenu">About Me</router-link></li>
           <li><router-link to="/contact" @click="closeMenu">Contact</router-link></li>
+          <li><router-link to="/testimonials" @click="closeMenu">Testimonials</router-link></li>
           <li class="dropdown">
             <span @click="toggleDropdown">Info <i class="fas fa-caret-down"></i></span>
             <ul class="dropdown-content" :class="{ 'show-dropdown': dropdownActive }">
@@ -165,6 +166,19 @@ export default {
 
 .content {
   margin-top: 70px; /* Adjust this value if your navbar height changes */
+}
+
+.image-card {
+  width: 40%;
+  overflow: hidden;            /* hide any overshoot */
+}
+
+.image-card img {
+  display: block;              /* remove inline-img whitespace */
+  width: 100%;                 /* fill the width of the card */
+  height: auto;
+  max-height: clamp(200px, 50vh, 400px);
+  object-fit: cover;           /* crop nicely if needed */
 }
 
 /* Responsive Design */

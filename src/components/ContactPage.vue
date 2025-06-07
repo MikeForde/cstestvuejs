@@ -2,7 +2,7 @@
   <div>
     <section class="hero" ref="hero" :class="{ 'fade-in': showHero }">
       <img :src="backupImage" alt="Backup Image" class="hero-image"> <!-- GIF shows by default -->
-      
+
       <template v-if="videoPlayable">
         <video class="hero-video" autoplay muted loop playsinline webkit-playsinline ref="heroVideo">
           <source src="/hero_video.mp4" type="video/mp4">
@@ -13,14 +13,20 @@
         <h1>Get in Touch</h1>
       </div>
     </section>
-    
+
     <section class="info-section" ref="section1" :data-section="1" :class="{ 'fade-in': showSection1 }">
       <div class="info-card">
         <h2>Booking Sessions</h2>
-        <p>Please contact me for my availability and to book low-cost therapy sessions*. Email is my preferred method of contact. I will then arrange a 15-minute, free introductory phone call, to ask any questions you may have, discuss the outcome you’re looking for, or explore how therapy will work for you.</p>
-        <p>My working hours are 2:30pm to 6:30pm.</p>
-        <p><i>* I do not charge for therapy but ask my clients to contribute towards room hire - <router-link to="/business#cost-of-therapy" class="button-link">see here for more information</router-link>
-        </i></p>
+        <h3>Opening Hours</h3>
+        <p>Monday 6-7pm<br/>
+          Tuesday 6-7pm<br/>
+          Wednesday 2.30pm to 6.30pm<br/>
+          Thursday 6-7pm
+        </p>
+        <p>Other times may be available on request (Monday, Tuesday, Thursday: 5-6pm; Friday 5-6pm and 6-7pm).</p>
+        <h3>Fees</h3>
+        <p>The therapy sessions are 60-90 minutes in length. A 60-minute session is charged at £80. 90-minute sessions are charged at £120 per session.</p>
+        <p>Please contact me for my availability and to arrange a 15-minute, free introductory phone call to discuss the outcome you’re looking for and to ask questions about how therapy will work for you. Email is my preferred method of contact.</p>
         <p>Email: <a href="mailto:clearskiespractice@gmail.com">clearskiespractice@gmail.com</a> (preferred)</p>
         <p>Text: <a href="sms:07760 531057">07760 531057</a> (please include your email address)</p>
       </div>
@@ -29,8 +35,13 @@
     <section class="info-section" ref="section2" :data-section="2" :class="{ 'fade-in': showSection2 }">
       <div class="info-card">
         <h2>Location</h2>
-        <p>I provide face-to-face therapy sessions in Tewkesbury which is easily accessible from the surrounding areas such as Gloucester, Cheltenham and Worcester.</p>
-        <p>The Clear Skies Practice is located on the ground floor in <a href="https://www.thedevereuxcentre.co.uk/other-tenants/" target="_blank">the Devereux Centre, Tewkesbury</a>. The Centre is well situated and easy walking distance from the High Street.</p>
+        <p>I provide face-to-face therapy sessions in Tewkesbury which is easily accessible from the surrounding areas
+          such
+          as Gloucester, Cheltenham and Worcester.</p>
+        <p>The Clear Skies Practice is located on the ground floor in <a
+            href="https://www.thedevereuxcentre.co.uk/other-tenants/" target="_blank">the Devereux Centre,
+            Tewkesbury</a>.
+          The Centre is well situated and easy walking distance from the High Street.</p>
         <p>Address: The Devereux Centre, Barton Road, Tewkesbury, GL20 5GJ</p>
       </div>
     </section>
@@ -38,7 +49,11 @@
     <section class="info-section" ref="section3" :data-section="3" :class="{ 'fade-in': showSection3 }">
       <div class="info-card">
         <h2>Parking Information</h2>
-        <p>There is free on-street parking in some side streets in Tewkesbury that are within walking distance of the practice. If on-street parking is at capacity, the closest paid car park is Rails Meadow, Howells Road, Tewkesbury, GL20 5BQ (<a href="https://tewkesbury.gov.uk/parking/rails-meadow-howells-road-tewkesbury-gl20-5qb/" target="_blank">Rails Meadow Parking</a>). They charge £1 up to 1 hour and £2 up to 3 hours.</p>
+        <p>There is free on-street parking in some side streets in Tewkesbury that are within walking distance of the
+          practice. If on-street parking is at capacity, the closest paid car park is Rails Meadow, Howells Road,
+          Tewkesbury, GL20 5BQ (<a
+            href="https://tewkesbury.gov.uk/parking/rails-meadow-howells-road-tewkesbury-gl20-5qb/"
+            target="_blank">Rails Meadow Parking</a>). They charge £1 up to 1 hour and £2 up to 3 hours.</p>
       </div>
     </section>
 
@@ -46,10 +61,11 @@
       <div class="info-container">
         <div class="info-card map-card">
           <h2>Map</h2>
-          <iframe class="mapImage"   frameborder="0" scrolling="no" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Devereux%20Centre,%20Barton%20Road%20Tewkesbury+(Clear%20Skies%20Practice)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> 
+          <iframe class="mapImage" frameborder="0" scrolling="no" id="gmap_canvas"
+            src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Devereux%20Centre,%20Barton%20Road%20Tewkesbury+(Clear%20Skies%20Practice)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
         </div>
         <div class="info-card image-card">
-          <img src="@/assets/Devereux_Centre.jpg" alt="Devereux Centre" class="location-image"/>
+          <img src="@/assets/Devereux_Centre.jpg" alt="Devereux Centre" class="location-image" />
         </div>
       </div>
     </section>
@@ -151,12 +167,15 @@ export default {
   left: 0;
   z-index: -2;
   opacity: 0;
-  transition: opacity 1s ease-in; /* Transition for fading in */
+  transition: opacity 1s ease-in;
+  /* Transition for fading in */
 }
 
 .hero-video.fade-in-video {
-  opacity: 1; /* Fade the video in when the class is added */
-  z-index: -1; /* Bring the video above the GIF */
+  opacity: 1;
+  /* Fade the video in when the class is added */
+  z-index: -1;
+  /* Bring the video above the GIF */
 }
 
 .hero-content {
@@ -175,15 +194,17 @@ export default {
   color: #666;
 }
 
-.info-section[data-section="2"], .info-section[data-section="4"] {
+.info-section[data-section="2"],
+.info-section[data-section="4"] {
   background-color: #5DAED5;
   color: white;
 }
 
-.info-section p, .info-section li {
+.info-section p,
+.info-section li {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: large;
-  color: #666; 
+  color: #666;
 }
 
 .info-section h2 {
@@ -191,7 +212,8 @@ export default {
   color: #333;
 }
 
-.info-section[data-section="2"] h2, .info-section[data-section="4"] h2 {
+.info-section[data-section="2"] h2,
+.info-section[data-section="4"] h2 {
   color: white;
 }
 
@@ -201,7 +223,7 @@ export default {
 
 .info-card {
   background: transparent;
-  border: none; 
+  border: none;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -242,7 +264,9 @@ export default {
   opacity: 1;
 }
 
-h2, p, ul {
+h2,
+p,
+ul {
   text-align: left;
 }
 
@@ -252,7 +276,9 @@ ul {
 }
 
 @media screen and (max-width: 768px) {
-  .hero, .info-section {
+
+  .hero,
+  .info-section {
     width: 100%;
     box-sizing: border-box;
     padding: 0;
@@ -264,7 +290,8 @@ ul {
     box-sizing: border-box;
   }
 
-  .map-card, .image-card {
+  .map-card,
+  .image-card {
     width: 100%;
     box-sizing: border-box;
     /* margin: 0 0 20px 0; */
@@ -283,4 +310,3 @@ ul {
   }
 }
 </style>
-

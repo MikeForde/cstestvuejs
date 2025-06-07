@@ -2,7 +2,7 @@
   <div>
     <section class="hero" ref="hero" :class="{ 'fade-in': showHero }">
       <img :src="backupImage" alt="Backup Image" class="hero-image"> <!-- GIF shows by default -->
-      
+
       <template v-if="videoPlayable">
         <video class="hero-video" autoplay muted loop playsinline webkit-playsinline ref="heroVideo">
           <source src="/hero_video.mp4" type="video/mp4">
@@ -16,50 +16,75 @@
       </div>
       <img src="@/assets/CSP_Logo_White_trans.png" alt="Logo" class="logo-overlay">
     </section>
+    <section class="testimonial" ref="testimonial" :class="{ 'fade-in': showTestimonial }">
+      <div class="testimonial-container">
+        <div class="testimonial-card text-card-testimonial">
+          <p class="cursive">
+            “Galina is kind, patient, caring and enables you to confront your issues. I cannot ever thank her enough for
+            setting me free of my issues and with her help and guidance, she was like a beacon. I had a rewind which was
+            instantly successful, it was truly mind-blowing the difference it made and continues to make. I am now back
+            to
+            the bubbly, positive person I was with Galina's gentle guidance.”
+          </p>
+          <router-link to="/testimonials" class="see-more-link">See more testimonials</router-link>
+        </div>
+      </div>
+    </section>
+
     <section class="intro" ref="intro" :class="{ 'fade-in': showIntro }">
       <div class="intro-container">
         <div class="intro-card text-card">
           <h2>'Every journey begins with a single step'</h2>
-          <p>Feeling overwhelmed by life’s challenges? Struggling with emotional pain, relationship issues, or finding balance? If you need support to navigate these difficulties, I can help.</p>
-          <p>My name is Galina Filipkova. I am a trainee therapist HG.Dip.P (Trainee) and will be taking my final assessment in May to fully qualify as a psychotherapist. I have completed over 100 practice hours with clients and will be offering face-to-face, <b>low-cost, fast and distress-free phobia treatment for adults between June and August</b> to hone my skills in the technique and to be able to offer sessions online.</p>
-          <p>I created the Clear Skies Practice as a safe space where we can work together to help you move forward. I work from the Human Givens (HG) approach. It is a practical, brief and solution-focussed approach that combines the latest insights from psychology and neuroscience research with proven techniques from a wide range of modalities in counselling and psychotherapy.</p>
-          <p>My aim is to help you feel a little better after every session and to give you the tools to maintain good mental health moving forward. Please read more about how I will support you. <router-link to="/therapy">Learn more</router-link></p>
+          <p>Feeling stressed, overwhelmed, and out of control? Struggling with emotional pain, low confidence or
+            relationship issues? If you need support to navigate these difficulties, I can help.</p>
+          <p>My name is Galina Filipkova. I created the Clear Skies Practice as a safe space where we can work together
+            to
+            help you move forward. I work from the Human Givens (HG) approach, which focuses on helping you build a life
+            where your emotional and physical needs are met in balance, activating and adding to your resources.</p>
+          <p>It is a practical, brief and solution-focussed approach that combines the latest insights from psychology
+            and
+            neuroscience research with proven techniques from a wide range of modalities in counselling and
+            psychotherapy.
+          </p>
+          <p>My aim is to help you feel a little better after every session and to give you the tools to maintain good
+            mental health moving forward. Please read more about how I will support you. <router-link
+              to="/therapy">Learn
+              more</router-link></p>
           <div class="button-container">
             <router-link to="/contact" class="button-link">Get in Touch Today</router-link>
           </div>
         </div>
         <div class="intro-card image-card">
-          <img src="@/assets/portrait_colour.jpg" alt="Galina Filipkova" class="portrait"/>
+          <img src="@/assets/portrait_colour.jpg" alt="Galina Filipkova" class="portrait" />
         </div>
       </div>
     </section>
     <section class="additional-info" ref="additionalInfo" :class="{ 'fade-in': showAdditionalInfo }">
       <div class="info-container">
         <div class="info-card image-card">
-          <img src="@/assets/Daisy.jpeg" alt="Help Image" class="help-image"/>
+          <img src="@/assets/Daisy.jpeg" alt="Help Image" class="help-image" />
         </div>
         <div class="info-card text-card">
           <h2>I Can Help With:</h2>
           <ul>
-            <li>Anxiety (mild to moderate)</li>
+            <li>Anxiety</li>
+            <li>Academic anxiety</li>
             <li>Panic attacks</li>
-            <li>Stress (mild to moderate)</li>
-            <li>Sleep</li>
-            <li>Relaxation</li>
-            <li>Depression (mild to moderate)</li>
-            <li>Addiction (mild)</li>
-            <li>Behaviour change</li>
-            <li>Communication skills</li>
-            <li>Grief/bereavement</li>
-            <li>Life changes</li>
-            <li>Loneliness</li>
-            <li>Loss</li>
-            <li>Performance</li>
-            <li>Personal development</li>
-            <li>Phobias (mild to moderate)</li>
-            <li>Relationship difficulties (mild)</li>
-            <li>Self-confidence</li>
-            <li>Time management</li>
+            <li>OCD</li>
+            <li>Concentration difficulties</li>
+            <li>Low mood/depression</li>
+            <li>Stress</li>
+            <li>Trauma</li>
+            <li>PTSD</li>
+            <li>Phobias</li>
+            <li>Anger</li>
+            <li>Bereavement and loss</li>
+            <li>Relationship difficulties</li>
+            <li>Life transitions</li>
+            <li>Addictions (mild to moderate) and unhelpful habits</li>
+            <li>Low confidence</li>
+            <li>Low self-esteem</li>
+            <li>Emotional problems</li>
           </ul>
         </div>
       </div>
@@ -73,13 +98,17 @@
       <div class="resources-container">
         <div class="resource-card">
           <h2>Samaritans</h2>
-          <p>A Samaritan is there to offer emotional support and help whatever you are going through. They're available 24 hours a day, 365 days a year.</p>
+          <p>A Samaritan is there to offer emotional support and help whatever you are going through. They're available
+            24
+            hours a day, 365 days a year.</p>
           <p><strong>Need support? Call 116 123 to speak to a Samaritan</strong></p>
           <a href="https://www.samaritans.org/" target="_blank">LEARN MORE</a>
         </div>
         <div class="resource-card">
           <h2>Shout</h2>
-          <p>Shout is a 24/7 text service, free on all major mobile networks in the UK, for anyone in crisis and in need of immediate help.</p>
+          <p>Shout is a 24/7 text service, free on all major mobile networks in the UK, for anyone in crisis and in need
+            of
+            immediate help.</p>
           <p><strong>Text SHOUT to 85258</strong></p>
           <a href="https://giveusashout.org/" target="_blank">LEARN MORE</a>
         </div>
@@ -95,6 +124,7 @@ export default {
   data() {
     return {
       showHero: true,
+      showTestimonial: false,
       showIntro: false,
       showAdditionalInfo: false,
       showImmediateHelp: false,
@@ -117,7 +147,9 @@ export default {
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
-            if (entry.target.classList.contains('intro')) {
+            if (entry.target.classList.contains('testimonial')) {
+              this.showTestimonial = true;
+            } else if (entry.target.classList.contains('intro')) {
               this.showIntro = true;
             } else if (entry.target.classList.contains('additional-info')) {
               this.showAdditionalInfo = true;
@@ -131,6 +163,7 @@ export default {
       }, options);
 
       observer.observe(this.$refs.hero);
+      observer.observe(this.$refs.testimonial);
       observer.observe(this.$refs.intro);
       observer.observe(this.$refs.additionalInfo);
       observer.observe(this.$refs.immediateHelp);
@@ -165,7 +198,8 @@ export default {
 <style scoped>
 .hero {
   position: relative;
-  height: 300px; /* Adjust the height as needed */
+  height: 300px;
+  /* Adjust the height as needed */
   overflow: hidden;
   width: 100%;
 }
@@ -188,14 +222,18 @@ export default {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -2; /* Start beneath the GIF */
+  z-index: -2;
+  /* Start beneath the GIF */
   opacity: 0;
-  transition: opacity 1s ease-in; /* Transition for fading in */
+  transition: opacity 1s ease-in;
+  /* Transition for fading in */
 }
 
 .hero-video.fade-in-video {
-  opacity: 1; /* Fade the video in when the class is added */
-  z-index: -1; /* Bring the video above the GIF */
+  opacity: 1;
+  /* Fade the video in when the class is added */
+  z-index: -1;
+  /* Bring the video above the GIF */
 }
 
 .hero-content {
@@ -206,7 +244,7 @@ export default {
   padding: 50px 20px;
   z-index: 1;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size:xx-large;
+  font-size: xx-large;
 }
 
 .hero-content p {
@@ -215,41 +253,99 @@ export default {
 
 .logo-overlay {
   position: absolute;
-  bottom: 10px; /* Adjust as needed */
+  bottom: 10px;
+  /* Adjust as needed */
   left: 50%;
   transform: translateX(-50%);
-  width: 80px; /* Adjust size as needed */
+  width: 80px;
+  /* Adjust size as needed */
   z-index: 0;
 }
 
-.intro, .additional-info, .immediate-help, .resources {
+.text-card-testimonial {
+  padding: 0 50px;
+}
+
+.testimonial {
+  background: #f9f9f9;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.testimonial-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.testimonial-card {
+  background: #f9f9f9;
+  padding: 30px;
+}
+
+.cursive {
+  font-style: italic;
+  font-family: cursive;
+  font-size: x-large;
+  margin-bottom: 20px;
+}
+
+.see-more-link {
+  display: inline-block;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.see-more-link:hover {
+  text-decoration: underline;
+}
+
+.intro,
+.additional-info,
+.immediate-help,
+.resources {
   text-align: center;
   opacity: 0;
   transition: opacity 1s ease-in;
   font-size: larger;
 }
 
-.intro p, .additional-info li, .immediate-help p, .resources p {
+.intro p,
+.additional-info li,
+.immediate-help p,
+.resources p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: large;
 }
 
-.intro h1, .intro h2, .intro h3, 
-.additional-info h1, .additional-info h2, .additional-info h3, 
-.immediate-help h1, .immediate-help h2, .immediate-help h3, 
-.resources h1, .resources h2, .resources h3 {
+.intro h1,
+.intro h2,
+.intro h3,
+.additional-info h1,
+.additional-info h2,
+.additional-info h3,
+.immediate-help h1,
+.immediate-help h2,
+.immediate-help h3,
+.resources h1,
+.resources h2,
+.resources h3 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: xx-large;
 }
 
 
-.intro-container, .info-container, .resources-container{
+.intro-container,
+.info-container,
+.resources-container {
   display: flex;
   align-items: stretch;
 }
 
-.intro-card, .info-card {
-  background: #f9f9f9;
+.intro-card {
+  background: #5DAED5;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -258,7 +354,23 @@ export default {
 }
 
 .info-card {
-  background: #5DAED5;
+  background: #f9f9f9;
+  color: #333;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.intro .intro-card h2,
+.intro .intro-card p {
+  color: #fff;
+}
+
+.info .info-card h2,
+.info .info-card p {
+  color: #333;
 }
 
 .text-card {
@@ -273,8 +385,10 @@ export default {
   align-items: center;
 }
 
-.portrait, .help-image {
+.portrait,
+.help-image {
   width: 100%;
+  max-height: 500px;
   height: auto;
   border-radius: 10px;
   object-fit: cover;
@@ -286,8 +400,12 @@ export default {
 }
 
 .help-card {
-  background: #f9f9f9;
+  background: #5DAED5;
   padding: 20px;
+}
+
+.help-card h2 {
+  color: #f9f9f9
 }
 
 .resources {
@@ -327,12 +445,19 @@ export default {
 /* Existing styles... */
 
 @media screen and (max-width: 768px) {
-  .intro-container, .info-container, .resources-container {
+
+  .intro-container,
+  .info-container,
+  .resources-container {
     flex-direction: column;
   }
 
   /* Ensure all sections occupy full width in mobile view */
-  .intro, .additional-info, .immediate-help, .resources, .hero {
+  .intro,
+  .additional-info,
+  .immediate-help,
+  .resources,
+  .hero {
     width: 100%;
     box-sizing: border-box;
     padding: 0;
@@ -393,17 +518,16 @@ export default {
   opacity: 1;
 }
 
-.intro h2, .immediate-help h2 {
-  color: #333;
+.immediate-help h2 {
   margin-bottom: 15px;
 }
 
 .additional-info h2 {
-  color: white;
   margin-bottom: 15px;
 }
 
-.intro p, .immediate-help ul {
+.intro p,
+.immediate-help ul {
   color: #666;
 }
 
@@ -411,12 +535,14 @@ export default {
   color: white;
 }
 
-.additional-info ul, .immediate-help ul {
+.additional-info ul,
+.immediate-help ul {
   list-style-type: none;
   padding: 0;
 }
 
-.additional-info ul li, .immediate-help ul li {
+.additional-info ul li,
+.immediate-help ul li {
   margin: 10px 0;
 }
 
@@ -428,8 +554,8 @@ export default {
 .button-link {
   display: inline-block;
   padding: 12px 25px;
-  color: white;
-  background-color: #5DAED5;
+  color: #333;
+  background-color: #f9f9f9;
   text-align: center;
   text-decoration: none;
   border-radius: 5px;
@@ -446,6 +572,6 @@ export default {
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
   transform: translateY(-2px);
   border-color: #D5845D;
+  color: #f9f9f9
 }
-
 </style>

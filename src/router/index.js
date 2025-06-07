@@ -6,6 +6,7 @@ import DocumentsPage from '../components/DocumentsPage.vue';
 import AboutMePage from '../components/AboutMePage.vue';
 import PrivacyPolicyPage from '../components/PrivacyPolicyPage.vue';
 import BusinessPage from '@/components/BusinessPage.vue';
+import TestimonialPage from '@/components/TestimonialPage.vue';
 
 const routes = [
   { path: '/', component: HomePage },
@@ -14,8 +15,9 @@ const routes = [
   { path: '/documents', component: DocumentsPage },
   { path: '/about-me', component: AboutMePage },
   { path: '/privacy', component: PrivacyPolicyPage },
-  { path: '/business', component: BusinessPage }
-];
+  { path: '/business', component: BusinessPage },
+  { path: '/testimonials', component: TestimonialPage },
+  ];
 
 const router = createRouter({
   history: createWebHistory(),

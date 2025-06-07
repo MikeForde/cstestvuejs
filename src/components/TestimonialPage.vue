@@ -23,7 +23,7 @@
     >
       <div class="testimonial-card">
         <blockquote>
-          “Galina is kind, patient, caring and enables you to confront your issues. I cannot ever thank her enough for setting me free of my issues and with her help and guidance, she was like a beacon. I had a rewind which was instantly successful, it was truly mind-blowing the difference it made and continues to make. I am now back to the bubbly, positive person I was with Galina's gentle guidance.”
+          “Galina was very professional but also very understanding and helpful to me! She asked very relevant questions and listened intently!”
         </blockquote>
         <img src="@/assets/CSP_Logo_Black_trans.png" alt="CSP Logo" class="testimonial-logo" />
       </div>
@@ -37,7 +37,7 @@
     >
       <div class="testimonial-card">
         <blockquote>
-          “Galina was very professional but also very understanding and helpful to me! She asked very relevant questions and listened intently!”
+          “Galina is kind, patient, caring and enables you to confront your issues. I cannot ever thank her enough for setting me free of my issues and with her help and guidance, she was like a beacon. I had a rewind which was instantly successful, it was truly mind-blowing the difference it made and continues to make. I am now back to the bubbly, positive person I was with Galina's gentle guidance.”
         </blockquote>
         <img src="@/assets/CSP_Logo_White_trans.png" alt="CSP Logo" class="testimonial-logo" />
       </div>

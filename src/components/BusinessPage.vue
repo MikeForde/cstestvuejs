@@ -360,5 +360,13 @@ ul {
     width: 100%;
     box-sizing: border-box;
   }
+
+  .tooltip-text {
+    width: 320px;
+    /* position  below the text on smaller screens */
+    bottom: -10px;
+    left: 0;
+    transform: none;
+  }
 }
 </style>

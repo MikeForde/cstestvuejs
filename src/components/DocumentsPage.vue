@@ -27,20 +27,38 @@
           </a>
         </li>
         <li>
-          Client Contract
-          <a href="#" @click.prevent="previewDocument('/Client Contract.pdf')">
+          Client Contract - 16 and over
+          <a href="#" @click.prevent="previewDocument('/C Client Contract over 16s.pdf')">
             Preview (PDF)
           </a>
-          <a href="/Client Contract.docx" download="Client Contract">
+          <a href="/C Client Contract over 16s.docx" download="Client Contract - 16 and over">
             Download (Word)
           </a>
         </li>
         <li>
-          Registration Form
-          <a href="#" @click.prevent="previewDocument('/Registration Form_pdf.pdf')">
+          Registration Form - 16 and over
+          <a href="#" @click.prevent="previewDocument('/D Registration Form over 16s.pdf')">
             Preview (PDF)
           </a>
-          <a href="/Registration Form.docx" download="Registration Form">
+          <a href="/D Registration Form over 16s.docx" download="Registration Form - 16 and over">
+            Download (Word)
+          </a>
+        </li>
+        <li class="under-16">
+          Client Contract - under 16s
+          <a href="#" @click.prevent="previewDocument('/C Client Contract under 16s.pdf')">
+            Preview (PDF)
+          </a>
+          <a href="/C Client Contract under 16s.docx" download="Client Contract - under 16s">
+            Download (Word)
+          </a>
+        </li>
+        <li class="under-16">
+          Registration Form - under 16s
+          <a href="#" @click.prevent="previewDocument('/D Registration Form under 16s.pdf')">
+            Preview (PDF)
+          </a>
+          <a href="/D Registration Form under 16s.docx" download="Registration Form - under 16s">
             Download (Word)
           </a>
         </li>
@@ -95,7 +113,7 @@ export default {
     this.$nextTick(() => {
       observer.observe(this.$refs.documentsList);
       // Automatically select the "Client Contract" document in the previewer
-      this.previewDocument('/Client Contract.pdf');
+      this.previewDocument('/C Client Contract over 16s.pdf');
     });
   }
 };
@@ -170,6 +188,14 @@ export default {
   height: 600px;
   border: 1px solid #ccc;
 }
+
+.documents-list ul li.under-16 {
+  background-color: #a6daf4;      /* subtle highlight */
+  border-left: 4px solid #5DAED5; /* accent line */
+  padding: 0.5em 1em;
+  border-radius: 4px;
+}
+
 
 .fade-in {
   opacity: 1;

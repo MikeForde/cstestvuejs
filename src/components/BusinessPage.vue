@@ -48,8 +48,38 @@
         <h2>Cost of Therapy</h2>
         <p>The therapy sessions are 60-90 minutes in length. A 60-minute session is charged at £80.</p>
         <p>90-minute sessions are charged at £120 per session.</p>
-        <p>Sessions are offered online and face to face; trauma and phobia treatment are currently offered face-to-face only.</p>
-        <p><b>Phobia or single trauma treatment - trauma relating to a single traumatic event - are offered at the discounted price of £60 per hr between June-August 2025. Completing a certain number of these face-to-face is a post-qualification training requirement and will enable me to offer them online in the future.</b></p>
+        <p>Sessions are offered online and face-to-face; trauma or phobia treatment is currently offered face-to-face
+          only.</p>
+        <p>
+          <b>
+            Phobia or
+            <span class="tooltip-container" tabindex="0">
+              single-incident trauma
+              <span class="tooltip-text">
+                Single-event trauma is triggered by one unexpected incident—such as physical or sexual assault, a
+                natural
+                disaster,
+                a serious accident, or a sudden illness or injury. Recognizing its warning signs and symptoms is
+                essential
+                for getting
+                the right support and care. After such an event, people often suffer intrusive memories that interfere
+                with
+                everyday
+                life, leading to emotional upheaval and shifts in mood. They might find themselves plagued by recurrent
+                flashbacks,
+                overwhelming fear, anger, or sadness, and unable to enjoy activities they once loved. Understanding
+                these
+                mental
+                health effects is key to making sense of what’s happening in the aftermath of a single-incident trauma.
+              </span>
+            </span>
+            treatment - trauma relating to a single traumatic event - is offered at the discounted price of £60 per hr
+            between
+            June-August 2025. Completing a certain number of these face-to-face is a post-qualification training
+            requirement
+            and will enable me to offer them online in the future.
+          </b>
+        </p>
         <h3>Room bookings</h3>
         <p>Due to varying availability of the room, which is outside of our control, your preferred appointment may not
           be available on a given day. If so, we will endeavour to arrange an appointment on an alternative day. Please
@@ -101,7 +131,8 @@
         <h2>Your Personal Information</h2>
         <p>Your Personal Information will be kept in accordance with the Data Protection Act (2018) and the General Data
           Protection Regulation (GDPR).</p>
-        <p>Please see our  <router-link to="/privacy">Privacy Policy</router-link> for full details of the information we process.</p>
+        <p>Please see our <router-link to="/privacy">Privacy Policy</router-link> for full details of the information we
+          process.</p>
       </div>
     </section>
 
@@ -274,6 +305,45 @@ ul {
 ul {
   list-style-type: disc;
   padding-left: 20px;
+}
+
+.tooltip-container {
+  position: relative;
+  color: #0066cc;
+  text-decoration: underline;
+  cursor: pointer;
+  outline: none;
+}
+
+/* hide the tooltip by default */
+.tooltip-text {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  bottom: 125%;
+  /* position above the text */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 420px;
+  padding: 10px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  text-align: left;
+  font-size: 0.8em;
+  line-height: 1.4;
+  transition: opacity 0.2s ease;
+  z-index: 100;
+}
+
+/* on hover or focus, show it */
+.tooltip-container:hover .tooltip-text,
+.tooltip-container:focus .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+  background-color: #5DAED5;
+  font-weight: 100;
 }
 
 @media screen and (max-width: 768px) {

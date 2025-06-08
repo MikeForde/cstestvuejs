@@ -500,6 +500,10 @@ export default {
     order: 1;
   }
 
+  .info-container .image-card img {
+    max-height: 300px;
+  }
+
   .hero {
     height: 250px;
   }

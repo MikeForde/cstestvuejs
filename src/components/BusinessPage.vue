@@ -60,18 +60,13 @@
           <li>Any extra work undertaken on the client’s behalf, such as writing reports or letters for other agencies
             will be charged at the standard hourly rate.</li>
         </ul>
-      </div>
-    </section>
-
-    <section class="info-section" ref="section6" :data-section="6" :class="{ 'fade-in': showSection6 }">
-      <div class="info-card">
-        <h2>Payment Method</h2>
+        <h3>Payment Method</h3>
         <p>You will receive an invoice following your appointment. Bank payment should be made at the latest 3 days
           after the consultation.</p>
       </div>
     </section>
 
-    <section class="info-section" ref="section7" :data-section="7" :class="{ 'fade-in': showSection7 }">
+    <section class="info-section" ref="section6" :data-section="6" :class="{ 'fade-in': showSection6 }">
       <div class="info-card">
         <h2>Cancellation Policy</h2>
         <p>With any cancellations, an administration fee of £15 pounds will be charged.</p>
@@ -81,20 +76,25 @@
         <p>In the event of a serious accident, emergency, or other similar situation outside the client’s control,
           please deal with the situation first and notify us at the earliest convenient time, or we will follow up with
           you typically within 24 to 48 hours of the missed appointment.</p>
-      </div>
-    </section>
-
-    <section class="info-section" ref="section8" :data-section="8" :class="{ 'fade-in': showSection8 }">
-      <div class="info-card">
         <h2>No Show Policy</h2>
         <p>Where an appointment is arranged and agreed, and a client does not attend that appointment, <b>the room fee
             will
             be payable in full.</b></p>
+      </div>
+    </section>
+
+    <section class="info-section" ref="section7" :data-section="7" :class="{ 'fade-in': showSection7 }">
+      <div class="info-card">
         <h2>Personalised Guided Imagery</h2>
         <p>At your request, I can record a personalised guided imagery for you. Each recording will be charged at £60.
           This guided imagery is for your sole use and must not be shared with third parties. It must not be listened to
           when driving, operating heavy machinery or in any other situations where distraction may put your safety or
           that of others at risk.</p>
+      </div>
+    </section>
+
+    <section class="info-section" ref="section8" :data-section="8" :class="{ 'fade-in': showSection8 }">
+      <div class="info-card">
         <h2>Your Personal Information</h2>
         <p>Your Personal Information will be kept in accordance with the Data Protection Act (2018) and the General Data
           Protection Regulation (GDPR).</p>

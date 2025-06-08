@@ -16,8 +16,8 @@
 
     <section class="therapy" ref="therapy" :class="{ 'fade-in': showTherapy }">
       <div class="therapy-container">
-        <div class="trauma-card image-card">
-          <img src="@/assets/Therapy_Stones.png" alt="Therapy Image" class="trauma-image"/>
+        <div class="therapy-card image-card">
+          <img src="@/assets/Therapy_Stones.png" alt="Therapy Image" class="therapy-image"/>
         </div>
         <div class="therapy-card text-card">
           <h2>Therapy</h2>
@@ -239,7 +239,7 @@ export default {
 
 .change-card-container, .therapy-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: stretch;
 }
 
@@ -272,7 +272,7 @@ export default {
   align-items: center;
 }
 
-.approach-image, .trauma-image {
+.approach-image, .trauma-image .therapy-image {
   width: 100%;
   height: auto;
   border-radius: 10px;
@@ -303,7 +303,7 @@ export default {
     margin: 0;
   }
 
-  .approach-container, .trauma-container, .change-card-container {
+  .approach-container, .trauma-container, .change-card-container, .therapy-container {
     flex-direction: column;
   }
 
@@ -327,6 +327,14 @@ export default {
 
   .trauma-container .image-card {
     order: 2;
+  }
+
+  .therapy-container .text-card {
+    order: 2;
+  }
+
+  .therapy-container .image-card {
+    order: 1;
   }
 
   .hero {

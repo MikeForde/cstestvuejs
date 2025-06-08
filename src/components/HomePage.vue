@@ -288,8 +288,13 @@ export default {
   font-style: italic;
   font-family: 
     /* pick the best‐looking one first: */
+    "Apple Chancery",
+    "Snell Roundhand",
     "TT Knickerbockers Script",
     "Segoe Script",
+    "Brush Script MT",
+    /* fallback on both */
+    "Lucida Handwriting",
     /* finally the generic cursive */
     cursive;
   font-size: x-large;

@@ -285,9 +285,10 @@ export default {
 }
 
 .cursive {
-  font-style: italic;
+  /* font-style: italic; */
   font-family: 
     /* pick the best‐looking one first: */
+    'Handlee',
     "Apple Chancery",
     "Snell Roundhand",
     "TT Knickerbockers Script",

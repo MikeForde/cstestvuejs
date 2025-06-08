@@ -102,7 +102,7 @@
     <section class="info-section" ref="section6" :data-section="6" :class="{ 'fade-in': showSection6 }">
       <div class="info-card">
         <h2>Cancellation Policy</h2>
-        <p>With any cancellations, an administration fee of £15 pounds will be charged.</p>
+        <p>With any cancellation less than 7 working days in advance, an administration fee of £15 pounds will be charged.</p>
         <p>Since scheduling of an appointment involves the reservation of time for your individual session, a minimum of
           48 hours is required for rescheduling or cancelling client appointments. Unless we reach a different
           agreement, <b>the full fee will be charged for session missed without such notification.</b></p>
@@ -362,11 +362,15 @@ ul {
   }
 
   .tooltip-text {
-    width: 320px;
-    /* position  below the text on smaller screens */
-    bottom: -10px;
-    left: 0;
-    transform: none;
+    /* make tooltip span nearly full width and center it on the viewport */
+    position: fixed;
+    bottom: 20%;           /* adjust as needed for vertical placement */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90vw;
+    max-width: 320px;      /* optional cap */
+    text-align: center;    /* center the text inside */
+    pointer-events: auto;  /* ensure it remains interactive */
   }
 }
 </style>

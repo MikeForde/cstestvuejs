@@ -387,5 +387,17 @@ ul {
   .hero-content h1 {
     font-size: larger;
   }
+
+  .tooltip-text {
+    /* make tooltip span nearly full width and center it on the viewport */
+    position: fixed;
+    bottom: 20%;           /* adjust as needed for vertical placement */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90vw;
+    max-width: 320px;      /* optional cap */
+    text-align: center;    /* center the text inside */
+    pointer-events: auto;  /* ensure it remains interactive */
+  }
 }
 </style>

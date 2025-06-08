@@ -14,7 +14,7 @@
       </div>
     </section>
 
-    <section class="about-me" ref="aboutMe" :class="{ 'fade-in': showAboutMe }">
+    <section class="about-me blackWhite" ref="aboutMe" :class="{ 'fade-in': showAboutMe }">
       <div class="about-me-container">
         <div class="about-me-info image-card">
           <img src="@/assets/galina2.jpg" alt="Galina Filipkova" class="about-me-image" />
@@ -48,7 +48,7 @@
       </div>
     </section>
 
-    <section class="info-section" ref="section2" :data-section="2" :class="{ 'fade-in': showSection2 }">
+    <section class="info-section whiteBlue" ref="section2" :data-section="2" :class="{ 'fade-in': showSection2 }">
       <div class="info-card section1">
         <h2>My Qualifications:</h2>
         <ul>
@@ -62,8 +62,14 @@
       </div>
     </section>
 
-    <section class="info-section" ref="section3" :data-section="3" :class="{ 'fade-in': showSection3 }">
-      <div class="info-card">
+    <section
+    class="info-section blackWhite"
+    ref="section3"
+    :data-section="3"
+    :class="{ 'fade-in': showSection3, section3: true }"
+  >
+    <div class="info-card-container">
+      <div class="info-card text-card">
         <h2>My Professional Training</h2>
         <p>My further professional training includes the following courses with the Human Givens Institute:</p>
         <ul>
@@ -81,48 +87,80 @@
           <li>Understanding eating difficulties</li>
           <li>Online and phone therapy training</li>
         </ul>
-        <p>I have regular professional supervision for all my work with clients. I am registered with the HGI as a
-          Trainee
-          Member and adheres to its <a href="https://www.hgi.org.uk/about-hgi/ethics-and-conduct" target="_blank">Code
-            of
-            Ethics & Professional Practice</a>. Trainee Membership Number 188828 22</p>
-        <p>The HGI is a professional register accredited by the <a
-            href="https://www.professionalstandards.org.uk/what-we-do/accredited-registers/find-a-register/detail/human-givens-institute"
-            target="_blank">Professional Standards Authority</a>.</p>
-        <p>I hold an Enhanced DBS certificate, professional indemnity insurance and am registered with the ICO (ICO
-          Registration: ZB674218)</p>
       </div>
-    </section>
-    <section class="info-section" ref="section4" :data-section="4" :class="{ 'fade-in': showSection4 }">
-      <div class="info-card-container">
-        <div class="info-card text-card section3">
-          <h2>I can help with:</h2>
-          <ul>
-            <li>Anxiety</li>
-            <li>Academic anxiety</li>
-            <li>Panic attacks</li>
-            <li>OCD</li>
-            <li>Concentration difficulties</li>
-            <li>Low mood/depression</li>
-            <li>Stress</li>
-            <li>Trauma</li>
-            <li>PTSD</li>
-            <li>Phobias</li>
-            <li>Anger</li>
-            <li>Bereavement and loss</li>
-            <li>Relationship difficulties</li>
-            <li>Life transitions</li>
-            <li>Addictions (mild to moderate) and unhelpful habits</li>
-            <li>Low confidence</li>
-            <li>Low self-esteem</li>
-            <li>Emotional problems</li>
-          </ul>
-        </div>
-        <div class="image-card section3">
-          <img src="@/assets/Trees_up.jpg" alt="Trees up" class="help-image" />
-        </div>
+      <div class="image-card section3">
+        <img src="@/assets/Trees_up.jpg" alt="Trees up" class="help-image" />
       </div>
-    </section>
+    </div>
+  </section>
+
+  <!-- PROFESSIONAL TRAINING: blue background for supervision & compliance text -->
+  <section
+    class="info-section whiteBlue"
+    ref="section4"
+    :data-section="4"
+    :class="{ 'fade-in': showSection4 }"
+  >
+    <div class="info-card">
+      <p>
+        I have regular professional supervision for all my work with clients. I am registered with the HGI
+        as a Trainee Member and adheres to its
+        <a href="https://www.hgi.org.uk/about-hgi/ethics-and-conduct" target="_blank">
+          Code of Ethics & Professional Practice
+        </a>. Trainee Membership Number 188828 22
+      </p>
+      <p>
+        The HGI is a professional register accredited by the
+        <a
+          href="https://www.professionalstandards.org.uk/what-we-do/accredited-registers/find-a-register/detail/human-givens-institute"
+          target="_blank"
+        >
+          Professional Standards Authority
+        </a>.
+      </p>
+      <p>
+        I hold an Enhanced DBS certificate, professional indemnity insurance and am registered with the ICO
+        (ICO Registration: ZB674218)
+      </p>
+    </div>
+  </section>
+
+  <!-- HELP WITH: white background + Daisy image -->
+  <section
+    class="info-section blackWhite"
+    ref="section5"
+    :data-section="5"
+    :class="{ 'fade-in': showSection5 }"
+  >
+    <div class="info-card-container">
+      <div class="image-card">
+        <img src="@/assets/Daisy.jpeg" alt="Daisy" class="help-image" />
+      </div>
+      <div class="info-card text-card">
+        <h2>I can help with:</h2>
+        <ul>
+          <li>Anxiety</li>
+          <li>Academic anxiety</li>
+          <li>Panic attacks</li>
+          <li>OCD</li>
+          <li>Concentration difficulties</li>
+          <li>Low mood/depression</li>
+          <li>Stress</li>
+          <li>Trauma</li>
+          <li>PTSD</li>
+          <li>Phobias</li>
+          <li>Anger</li>
+          <li>Bereavement and loss</li>
+          <li>Relationship difficulties</li>
+          <li>Life transitions</li>
+          <li>Addictions (mild to moderate) and unhelpful habits</li>
+          <li>Low confidence</li>
+          <li>Low self-esteem</li>
+          <li>Emotional problems</li>
+        </ul>
+      </div>
+    </div>
+  </section>
   </div>
 </template>
 
@@ -138,6 +176,7 @@ export default {
       showSection2: false,
       showSection3: false,
       showSection4: false,
+      showSection5: false,
       videoPlayable: true, // Assume the video is playable by default
       backupImage: require('@/assets/AnimatedSky.gif') // GIF is the backup image
     };
@@ -169,6 +208,7 @@ export default {
       observer.observe(this.$refs.section2);
       observer.observe(this.$refs.section3);
       observer.observe(this.$refs.section4);
+      observer.observe(this.$refs.section5);
     });
   },
   methods: {
@@ -244,6 +284,30 @@ export default {
   padding: 50px 20px;
 }
 
+.blackWhite {
+  background-color: #f9f9f9;
+}
+.whiteBlue {
+  background-color: #5DAED5;
+}
+
+/* typography colors */
+.blackWhite h2,
+.blackWhite h3,
+.blackWhite p,
+.blackWhite li,
+.blackWhite a {
+  color: #333;
+}
+.whiteBlue h2,
+.whiteBlue h3,
+.whiteBlue p,
+.whiteBlue li,
+.whiteBlue a {
+  color: #fff;
+}
+
+
 .about-me,
 .info-section {
   opacity: 0;
@@ -255,25 +319,14 @@ export default {
 .info-section p,
 .info-section li {
   font-family: Verdana, sans-serif;
-  color: #666;
   font-size: large;
-}
-
-.section1 li,
-.section3 li {
-  color: white;
 }
 
 .about-me h2,
 .info-section h2 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: #333;
 }
 
-.section1 h2,
-.section3 h2 {
-  color: white;
-}
 
 .about-me-container {
   display: flex;
@@ -283,7 +336,6 @@ export default {
 }
 
 .image-card {
-  background: #f9f9f9;
   width: 40%;
   display: flex;
   justify-content: center;
@@ -291,7 +343,6 @@ export default {
 }
 
 .info-card {
-  background: #f9f9f9;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -318,11 +369,6 @@ export default {
   max-height: 500px;
   border-radius: 10px;
   object-fit: cover;
-}
-
-.section1,
-.section3 {
-  background: #5DAED5;
 }
 
 .about-me-info {

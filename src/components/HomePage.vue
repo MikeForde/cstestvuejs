@@ -395,13 +395,23 @@ export default {
   align-items: center;
 }
 
-.portrait,
-.help-image {
+.portrait {
   width: 100%;
   max-height: 500px;
   height: auto;
   border-radius: 10px;
   object-fit: cover;
+}
+
+.info-container .image-card {
+  overflow: hidden;
+}
+
+.help-image {
+  height: 100%;           /* full height of its flex‐stretched parent */
+  width: auto;            /* let width scale proportionally */
+  object-fit: cover;      /* crop to fill */
+  object-position: center center; /* center the cropped area */
 }
 
 .immediate-help {
@@ -519,6 +529,10 @@ export default {
   .hero-content p {
     font-size: large;
   }
+
+  .help-image {
+    width:100%
+}
 
   .logo-overlay {
     width: 60px;

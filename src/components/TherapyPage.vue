@@ -2,7 +2,7 @@
   <div>
     <section class="hero" ref="hero" :class="{ 'fade-in': showHero }">
       <img :src="backupImage" alt="Backup Image" class="hero-image"> <!-- GIF shows by default -->
-      
+
       <template v-if="videoPlayable">
         <video class="hero-video" autoplay muted loop playsinline webkit-playsinline ref="heroVideo">
           <source src="/hero_video.mp4" type="video/mp4">
@@ -17,58 +17,84 @@
     <section class="therapy" ref="therapy" :class="{ 'fade-in': showTherapy }">
       <div class="therapy-container">
         <div class="therapy-card image-card">
-          <img src="@/assets/Therapy_Stones.png" alt="Therapy Image" class="therapy-image"/>
+          <img src="@/assets/Therapy_Stones.png" alt="Therapy Image" class="therapy-image" />
         </div>
         <div class="therapy-card text-card">
           <h2>Therapy</h2>
-          <p>Our work will begin with understanding what has brought you to seek support and what you would like to be different.</p>
+          <p>Our work will begin with understanding what has brought you to seek support and what you would like to be
+            different.</p>
         </div>
       </div>
     </section>
-    
+
     <section class="approach" ref="approach" :class="{ 'fade-in': showApproach }">
       <div class="approach-container">
         <div class="approach-card text-card">
           <h2>My approach</h2>
-          <p>The approach I take, the <a href="https://www.humangivens.com/human-givens/about/" target="_blank">Human Givens (HG) approach</a>, is underpinned by a holistic understanding of our essential emotional and physical needs which when met in balance lead to a fulfilling and emotionally healthy life.</p>
-          <p>It draws on the latest research in psychology, neuroscience and on the best of person-centred, solution-focussed, motivational interviewing and CBT therapy.</p>
-          <p>The HG approach is a practical one. Together we will create a plan tailored to your needs using tools, skills and knowledge which I will teach you and, most importantly, your own resources, strengths and skills to help you move forward.</p>
-          <p>To support you with implementing the desired change and growing your confidence, I offer guided imagery alongside other effective techniques. </p>
-          <p><a href="https://www.humangivens.com/human-givens/research/research-findings/" target="_blank">Learn more</a></p>
+          <p>The approach I take, the <a href="https://www.humangivens.com/human-givens/about/" target="_blank">Human
+              Givens
+              (HG) approach</a>, is underpinned by a holistic understanding of our essential emotional and physical
+            needs
+            which when met in balance lead to a fulfilling and emotionally healthy life.</p>
+          <p>It draws on the latest research in psychology, neuroscience and on the best of person-centred,
+            solution-focussed, motivational interviewing and CBT therapy.</p>
+          <p>The HG approach is a practical one. Together we will create a plan tailored to your needs using tools,
+            skills
+            and knowledge which I will teach you and, most importantly, your own resources, strengths and skills to help
+            you
+            move forward.</p>
+          <p>To support you with implementing the desired change and growing your confidence, I offer guided imagery
+            alongside other effective techniques. </p>
+          <p><a href="https://www.humangivens.com/human-givens/research/research-findings/" target="_blank">Learn
+              more</a>
+          </p>
         </div>
         <div class="approach-card image-card">
-          <img src="@/assets/LillySteppingStones.jpeg" alt="Therapy Image" class="approach-image"/>
+          <img src="@/assets/LillySteppingStones.jpeg" alt="Therapy Image" class="approach-image" />
         </div>
       </div>
     </section>
-    
+
     <section class="trauma" ref="trauma" :class="{ 'fade-in': showTrauma }">
       <div class="trauma-container">
         <div class="trauma-card image-card">
-          <img src="@/assets/Ladder_Tree.jpg" alt="Trauma Image" class="trauma-image"/>
+          <img src="@/assets/Ladder_Tree.jpg" alt="Trauma Image" class="trauma-image" />
         </div>
         <div class="trauma-card text-card">
           <h2>Trauma</h2>
-          <p>If you are held back by trauma, I will help you move on from that with the effective method developed by the Human Givens Institute, the rewind technique.</p>
-          <p><a href="https://www.hgi.org.uk/useful-information/treatment-dealing-ptsd-trauma-phobias/rewind-technique" target="_blank">Learn more</a></p>
-          <p>This method is utilised by the PTSD Resolution charity for UK veterans and their families. If you are a UK veteran or a member of their family, you may qualify for free therapy with the PTSD Resolution.</p>
+          <p>If you are held back by trauma, I will help you move on from that with the effective method developed by
+            the
+            Human Givens Institute, the rewind technique.</p>
+          <p><a href="https://www.hgi.org.uk/useful-information/treatment-dealing-ptsd-trauma-phobias/rewind-technique"
+              target="_blank">Learn more</a></p>
+          <p>This method is utilised by the PTSD Resolution charity for UK veterans and their families. If you are a UK
+            veteran or a member of their family, you may qualify for free therapy with the PTSD Resolution.</p>
           <p><a href="https://www.humangivens.com/case-studies/ptsd-resolution" target="_blank">Learn more</a></p>
         </div>
       </div>
     </section>
     <section class="moving-towards-change" ref="movingTowardsChange" :class="{ 'fade-in': showMovingTowardsChange }">
-    <div class="change-card-container">
-      <div class="change-card text-card2">
-        <h2>Moving towards change</h2>
-        <p>The Human Givens model is a brief, solution-focused approach that usually helps you see the change you want in 4-6 sessions. Some people may achieve the wanted change in fewer sessions while others may require more sessions due to the complexity of their lived experiences.</p>
-        <p> I will work with your individual needs and at your pace. You can tell me after each session if you would like to book a further session. My aim is for you to feel a little better after each session and grow more and more confident in your ability to bring about the change you wish to happen.</p>
-        <p>My promise to my clients is to provide you with knowledge, skills and techniques to sustain your mental wellbeing beyond therapy sessions.</p>
+      <div class="change-card-container">
+        <div class="change-card text-card2">
+          <h2>Moving towards change</h2>
+          <p>The Human Givens model is a brief, solution-focused approach that usually helps you see the change you want
+            in
+            4-6 sessions. Some people may achieve the wanted change in fewer sessions while others may require more
+            sessions
+            due to the complexity of their lived experiences.</p>
+          <p> I will work with your individual needs and at your pace. You can tell me after each session if you would
+            like
+            to book a further session. My aim is for you to feel a little better after each session and grow more and
+            more
+            confident in your ability to bring about the change you wish to happen.</p>
+          <p>My promise to my clients is to provide you with knowledge, skills and techniques to sustain your mental
+            wellbeing beyond therapy sessions.</p>
+        </div>
+        <div class="approach-card image-card">
+          <img src="@/assets/TherapyPath.png" alt="Therapy Path" class="therapy-path-image" />
+        </div>
       </div>
-      <div class="approach-card image-card">
-        <img src="@/assets/TherapyPath.png" alt="Therapy Path" class="therapy-path-image"/>
-      </div>
-    </div>
-  </section>
+    </section>
   </div>
 </template>
 
@@ -82,8 +108,8 @@ export default {
       showApproach: false,
       showTrauma: false,
       showMovingTowardsChange: false,
-      videoPlayable: true, 
-      backupImage: require('@/assets/AnimatedSky.gif') 
+      videoPlayable: true,
+      backupImage: require('@/assets/AnimatedSky.gif')
     };
   },
   mounted() {
@@ -113,10 +139,10 @@ export default {
         });
       }, options);
 
-    observer.observe(this.$refs.therapy);
-    observer.observe(this.$refs.approach);
-    observer.observe(this.$refs.trauma);
-    observer.observe(this.$refs.movingTowardsChange);
+      observer.observe(this.$refs.therapy);
+      observer.observe(this.$refs.approach);
+      observer.observe(this.$refs.trauma);
+      observer.observe(this.$refs.movingTowardsChange);
     });
   },
   methods: {
@@ -173,12 +199,15 @@ export default {
   left: 0;
   z-index: -2;
   opacity: 0;
-  transition: opacity 1s ease-in; /* Transition for fading in */
+  transition: opacity 1s ease-in;
+  /* Transition for fading in */
 }
 
 .hero-video.fade-in-video {
-  opacity: 1; /* Fade the video in when the class is added */
-  z-index: -1; /* Bring the video above the GIF */
+  opacity: 1;
+  /* Fade the video in when the class is added */
+  z-index: -1;
+  /* Bring the video above the GIF */
 }
 
 .hero-content {
@@ -189,36 +218,55 @@ export default {
   z-index: 1;
 }
 
-.therapy, .approach, .trauma, .moving-towards-change {
+.therapy,
+.approach,
+.trauma,
+.moving-towards-change {
   opacity: 0;
   transition: opacity 1s ease-in;
   font-size: larger;
 }
 
-.therapy p, .approach p, .trauma p, .moving-towards-change p {
+.therapy p,
+.approach p,
+.trauma p,
+.moving-towards-change p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #666;
   font-size: large;
 }
 
-.approach p, .moving-towards-change p {
+.approach p,
+.moving-towards-change p {
   color: white;
 }
 
-.therapy h1, .therapy h2, .therapy h3,
-.approach h1, .approach h2, .approach h3,
-.trauma h1, .trauma h2, .trauma h3,
-.moving-towards-change h1, .moving-towards-change h2, .moving-towards-change h3 {
+.therapy h1,
+.therapy h2,
+.therapy h3,
+.approach h1,
+.approach h2,
+.approach h3,
+.trauma h1,
+.trauma h2,
+.trauma h3,
+.moving-towards-change h1,
+.moving-towards-change h2,
+.moving-towards-change h3 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: #333;
 }
 
-.approach h1, .approach h2, .approach h3,
-.moving-towards-change h2, .moving-towards-change h3 {
+.approach h1,
+.approach h2,
+.approach h3,
+.moving-towards-change h2,
+.moving-towards-change h3 {
   color: white;
 }
 
-.approach-container, .trauma-container {
+.approach-container,
+.trauma-container {
   display: flex;
   justify-content: space-around;
   align-items: stretch;
@@ -226,24 +274,32 @@ export default {
 
 .image-card {
   width: 40%;
-  overflow: hidden;            /* hide any overshoot */
+  overflow: hidden;
+  /* hide any overshoot */
 }
 
 .image-card img {
-  display: block;              /* remove inline-img whitespace */
-  width: 100%;                 /* fill the width of the card */
+  display: block;
+  /* remove inline-img whitespace */
+  width: 100%;
+  /* fill the width of the card */
   height: auto;
   max-height: clamp(200px, 50vh, 400px);
-  object-fit: cover;           /* crop nicely if needed */
+  object-fit: cover;
+  /* crop nicely if needed */
 }
 
-.change-card-container, .therapy-container {
+.change-card-container,
+.therapy-container {
   display: flex;
   justify-content: space-around;
   align-items: stretch;
 }
 
-.therapy-card, .approach-card, .trauma-card, .change-card {
+.therapy-card,
+.approach-card,
+.trauma-card,
+.change-card {
   background: #f9f9f9;
   padding: 20px;
   display: flex;
@@ -252,7 +308,9 @@ export default {
   text-align: left;
 }
 
-.approach-card, .change-card, .text-card2 {
+.approach-card,
+.change-card,
+.text-card2 {
   background: #5DAED5;
 }
 
@@ -272,7 +330,10 @@ export default {
   align-items: center;
 }
 
-.approach-image, .trauma-image .therapy-image {
+.approach-image,
+.trauma-image,
+.therapy-image,
+.therapy-path-image {
   width: 100%;
   height: auto;
   border-radius: 10px;
@@ -283,36 +344,52 @@ export default {
   opacity: 1;
 }
 
-.text-card2, .image-card {
+.text-card2,
+.image-card {
   width: 50%;
   padding: 20px;
 }
 
-.therapy-path-image {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  object-fit: cover;
-}
-
 @media screen and (max-width: 768px) {
-  .hero, .therapy, .approach, .trauma, .moving-towards-change {
+
+  .hero,
+  .therapy,
+  .approach,
+  .trauma,
+  .moving-towards-change {
     width: 100%;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
   }
 
-  .approach-container, .trauma-container, .change-card-container, .therapy-container {
+  .approach-container,
+  .trauma-container,
+  .change-card-container,
+  .therapy-container {
     flex-direction: column;
   }
 
-  .text-card, .image-card, .text-card2 {
+  .text-card,
+  .text-card2 {
     width: 100%;
     /* margin-bottom: 20px; */
     padding: 0 20px;
     box-sizing: border-box;
   }
+
+  .image-card {
+    width: 100%;
+    /* padding: 0 0px; */
+    box-sizing: border-box;
+  }
+
+  /* .approach-image,
+  .trauma-image,
+  .therapy-image,
+  .therapy-path-image {
+    border-radius: 0px;
+  } */
 
   .approach-container .text-card {
     order: 1;

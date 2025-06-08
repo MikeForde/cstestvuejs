@@ -314,11 +314,11 @@ export default {
   }
 
   .approach-container .text-card {
-    order: 2;
+    order: 1;
   }
 
   .approach-container .image-card {
-    order: 1;
+    order: 2;
   }
 
   .trauma-container .text-card {
@@ -330,11 +330,11 @@ export default {
   }
 
   .therapy-container .text-card {
-    order: 2;
+    order: 1;
   }
 
   .therapy-container .image-card {
-    order: 1;
+    order: 2;
   }
 
   .image-card img {

@@ -332,7 +332,7 @@ ul {
   /* position above the text */
   left: 50%;
   transform: translateX(-50%);
-  width: 380px;
+  width: 420px;
   padding: 10px;
   border-radius: 4px;
   background: rgba(0, 0, 0, 0.85);
@@ -349,6 +349,8 @@ ul {
 .tooltip-container:focus .tooltip-text {
   visibility: visible;
   opacity: 1;
+  background-color: #5DAED5;
+  font-weight: 100;
 }
 
 

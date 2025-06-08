@@ -18,17 +18,50 @@
       <div class="info-card">
         <h2>Booking Sessions</h2>
         <h3>Opening Hours</h3>
-        <p>Monday 6-7pm<br/>
-          Tuesday 6-7pm<br/>
-          Wednesday 2.30pm to 6.30pm<br/>
+        <p>Monday 6-7pm<br />
+          Tuesday 6-7pm<br />
+          Wednesday 2.30pm to 6.30pm<br />
           Thursday 6-7pm
         </p>
         <p>Other times may be available on request (Monday, Tuesday, Thursday: 5-6pm; Friday 5-6pm and 6-7pm).</p>
         <p>A greater choice of session times is available between 18 July and 31 August.</p>
         <h3>Fees</h3>
-        <p>The therapy sessions are 60-90 minutes in length. A 60-minute session is charged at £80. 90-minute sessions are charged at £120 per session.</p>
-        <p><b>Phobia or single trauma treatment - trauma relating to a single traumatic event - are offered at the discounted price of £60 per hr between June-August 2025. Completing a certain number of these face-to-face is a post-qualification training requirement and will enable me to offer them online in the future.</b></p>
-        <p>Please contact me for my availability and to arrange a 15-minute, free introductory phone call to discuss the outcome you’re looking for and to ask questions about how therapy will work for you. Email is my preferred method of contact.</p>
+        <p>The therapy sessions are 60-90 minutes in length. A 60-minute session is charged at £80. 90-minute sessions
+          are
+          charged at £120 per session.</p>
+        <p>
+          <b>
+            Phobia or
+            <span class="tooltip-container" tabindex="0">
+              single-incident trauma
+              <span class="tooltip-text">
+                Single-event trauma is triggered by one unexpected incident—such as physical or sexual assault, a
+                natural
+                disaster,
+                a serious accident, or a sudden illness or injury. Recognizing its warning signs and symptoms is
+                essential
+                for getting
+                the right support and care. After such an event, people often suffer intrusive memories that interfere
+                with
+                everyday
+                life, leading to emotional upheaval and shifts in mood. They might find themselves plagued by recurrent
+                flashbacks,
+                overwhelming fear, anger, or sadness, and unable to enjoy activities they once loved. Understanding
+                these
+                mental
+                health effects is key to making sense of what’s happening in the aftermath of a single-incident trauma.
+              </span>
+            </span>
+            treatment - trauma relating to a single traumatic event - is offered at the discounted price of £60 per hr between
+            June-August 2025. Completing a certain number of these face-to-face is a post-qualification training
+            requirement
+            and will enable me to offer them online in the future.
+          </b>
+        </p>
+        <p>Please contact me for my availability and to arrange a 15-minute, free introductory phone call to discuss the
+          outcome you’re looking for and to ask questions about how therapy will work for you. Email is my preferred
+          method
+          of contact.</p>
         <p>Email: <a href="mailto:clearskiespractice@gmail.com">clearskiespractice@gmail.com</a> (preferred)</p>
         <p>Text: <a href="sms:07760 531057">07760 531057</a> (please include your email address)</p>
       </div>
@@ -37,9 +70,13 @@
     <section class="info-section" ref="section2" :data-section="2" :class="{ 'fade-in': showSection2 }">
       <div class="info-card">
         <h2>Location</h2>
-        <p>I provide both <b>online</b> and <b>face-to-face</b> therapy sessions, the latter in Tewkesbury which is easily accessible from the surrounding areas
+        <p>I provide both <b>online</b> and <b>face-to-face</b> therapy sessions, the latter in Tewkesbury which is
+          easily
+          accessible from the surrounding areas
           such
-          as Gloucester, Cheltenham and Worcester. Rewinds (for fast trauma and phobia treatment) are currently only offered face-to-face.</p>
+          as Gloucester, Cheltenham and Worcester. Rewinds (for fast trauma and phobia treatment) are currently only
+          offered
+          face-to-face.</p>
         <p>The Clear Skies Practice is located on the ground floor in <a
             href="https://www.thedevereuxcentre.co.uk/other-tenants/" target="_blank">the Devereux Centre,
             Tewkesbury</a>.
@@ -276,6 +313,44 @@ ul {
   list-style-type: disc;
   padding-left: 20px;
 }
+
+.tooltip-container {
+  position: relative;
+  color: #0066cc;
+  text-decoration: underline;
+  cursor: pointer;
+  outline: none;
+}
+
+/* hide the tooltip by default */
+.tooltip-text {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  bottom: 125%;
+  /* position above the text */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 380px;
+  padding: 10px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  text-align: left;
+  font-size: 0.8em;
+  line-height: 1.4;
+  transition: opacity 0.2s ease;
+  z-index: 100;
+}
+
+/* on hover or focus, show it */
+.tooltip-container:hover .tooltip-text,
+.tooltip-container:focus .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
 
 @media screen and (max-width: 768px) {
 

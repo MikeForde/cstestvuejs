@@ -24,8 +24,10 @@
           Thursday 6-7pm
         </p>
         <p>Other times may be available on request (Monday, Tuesday, Thursday: 5-6pm; Friday 5-6pm and 6-7pm).</p>
+        <p>A greater choice of session times is available between 18 July and 31 August.</p>
         <h3>Fees</h3>
         <p>The therapy sessions are 60-90 minutes in length. A 60-minute session is charged at £80. 90-minute sessions are charged at £120 per session.</p>
+        <p>Phobia or single trauma treatment - trauma relating to a single traumatic event - are offered at the discounted price of £60 per hr between June-August 2025.</p>
         <p>Please contact me for my availability and to arrange a 15-minute, free introductory phone call to discuss the outcome you’re looking for and to ask questions about how therapy will work for you. Email is my preferred method of contact.</p>
         <p>Email: <a href="mailto:clearskiespractice@gmail.com">clearskiespractice@gmail.com</a> (preferred)</p>
         <p>Text: <a href="sms:07760 531057">07760 531057</a> (please include your email address)</p>
@@ -35,9 +37,9 @@
     <section class="info-section" ref="section2" :data-section="2" :class="{ 'fade-in': showSection2 }">
       <div class="info-card">
         <h2>Location</h2>
-        <p>I provide face-to-face therapy sessions in Tewkesbury which is easily accessible from the surrounding areas
+        <p>I provide both <b>online</b> and <b>face-to-face</b> therapy sessions, the latter in Tewkesbury which is easily accessible from the surrounding areas
           such
-          as Gloucester, Cheltenham and Worcester.</p>
+          as Gloucester, Cheltenham and Worcester. Rewinds (for fast trauma and phobia treatment) are currently only offered face-to-face.</p>
         <p>The Clear Skies Practice is located on the ground floor in <a
             href="https://www.thedevereuxcentre.co.uk/other-tenants/" target="_blank">the Devereux Centre,
             Tewkesbury</a>.

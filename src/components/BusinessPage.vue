@@ -29,6 +29,7 @@
           Thursday 6-7pm
         </p>
         <p>Other times may be available on request (Monday, Tuesday, Thursday: 5-6pm; Friday 5-6pm and 6-7pm).</p>
+        <p>A greater choice of session times is available between 18 July and 31 August.</p>
       </div>
     </section>
 
@@ -47,6 +48,7 @@
         <h2>Cost of Therapy</h2>
         <p>The therapy sessions are 60-90 minutes in length. A 60-minute session is charged at £80.</p>
         <p>90-minute sessions are charged at £120 per session.</p>
+        <p>Sessions are offered online and face to face; trauma and phobia treatment are currently offered face-to-face only.</p>
         <h3>Room bookings</h3>
         <p>Due to varying availability of the room, which is outside of our control, your preferred appointment may not
           be available on a given day. If so, we will endeavour to arrange an appointment on an alternative day. Please

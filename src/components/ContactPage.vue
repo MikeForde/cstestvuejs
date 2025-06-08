@@ -27,7 +27,7 @@
         <p>A greater choice of session times is available between 18 July and 31 August.</p>
         <h3>Fees</h3>
         <p>The therapy sessions are 60-90 minutes in length. A 60-minute session is charged at £80. 90-minute sessions are charged at £120 per session.</p>
-        <p>Phobia or single trauma treatment - trauma relating to a single traumatic event - are offered at the discounted price of £60 per hr between June-August 2025.</p>
+        <p><b>Phobia or single trauma treatment - trauma relating to a single traumatic event - are offered at the discounted price of £60 per hr between June-August 2025. Completing a certain number of these face-to-face is a post-qualification training requirement and will enable me to offer them online in the future.</b></p>
         <p>Please contact me for my availability and to arrange a 15-minute, free introductory phone call to discuss the outcome you’re looking for and to ask questions about how therapy will work for you. Email is my preferred method of contact.</p>
         <p>Email: <a href="mailto:clearskiespractice@gmail.com">clearskiespractice@gmail.com</a> (preferred)</p>
         <p>Text: <a href="sms:07760 531057">07760 531057</a> (please include your email address)</p>

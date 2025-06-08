@@ -146,17 +146,18 @@
           <li>Concentration difficulties</li>
           <li>Low mood/depression</li>
           <li>Stress</li>
-          <li>Trauma</li>
-          <li>PTSD</li>
-          <li>Phobias</li>
-          <li>Anger</li>
-          <li>Bereavement and loss</li>
-          <li>Relationship difficulties</li>
-          <li>Life transitions</li>
-          <li>Addictions (mild to moderate) and unhelpful habits</li>
-          <li>Low confidence</li>
-          <li>Low self-esteem</li>
-          <li>Emotional problems</li>
+          <li><b>*Trauma</b></li>
+            <li>PTSD</li>
+            <li><b>*Phobias</b></li>
+            <li>Anger</li>
+            <li>Bereavement and loss</li>
+            <li>Relationship difficulties</li>
+            <li>Life transitions</li>
+            <li>Addictions (mild to moderate) and unhelpful habits</li>
+            <li>Low confidence</li>
+            <li>Low self-esteem</li>
+            <li>Emotional problems</li>
+            <i>* short-term discounts available due to my own training needs - <router-link to="/contact">see more</router-link></i>
         </ul>
       </div>
     </div>

@@ -49,6 +49,7 @@
         <p>The therapy sessions are 60-90 minutes in length. A 60-minute session is charged at £80.</p>
         <p>90-minute sessions are charged at £120 per session.</p>
         <p>Sessions are offered online and face to face; trauma and phobia treatment are currently offered face-to-face only.</p>
+        <p><b>Phobia or single trauma treatment - trauma relating to a single traumatic event - are offered at the discounted price of £60 per hr between June-August 2025. Completing a certain number of these face-to-face is a post-qualification training requirement and will enable me to offer them online in the future.</b></p>
         <h3>Room bookings</h3>
         <p>Due to varying availability of the room, which is outside of our control, your preferred appointment may not
           be available on a given day. If so, we will endeavour to arrange an appointment on an alternative day. Please

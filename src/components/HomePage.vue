@@ -288,6 +288,7 @@ export default {
   font-style: italic;
   font-family: 
     /* pick the best‐looking one first: */
+    "TT Knickerbockers Script",
     "Segoe Script",
     /* finally the generic cursive */
     cursive;

@@ -98,7 +98,7 @@
         <h2>Your Personal Information</h2>
         <p>Your Personal Information will be kept in accordance with the Data Protection Act (2018) and the General Data
           Protection Regulation (GDPR).</p>
-        <p>Please see our Privacy Policy (attached) for full details of the information we process.</p>
+        <p>Please see our  <router-link to="/privacy">Privacy Policy</router-link> for full details of the information we process.</p>
       </div>
     </section>
 

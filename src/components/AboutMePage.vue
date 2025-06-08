@@ -160,6 +160,9 @@
             <i>* short-term discounts available due to my own training needs - <router-link to="/contact">see more</router-link></i>
         </ul>
       </div>
+      <div class="button-container">
+            <router-link to="/contact" class="button-link">Get in Touch Today</router-link>
+          </div>
     </div>
   </section>
   </div>

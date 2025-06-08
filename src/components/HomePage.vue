@@ -286,7 +286,12 @@ export default {
 
 .cursive {
   font-style: italic;
-  font-family: cursive;
+  font-family: 
+    /* pick the best‐looking one first: */
+    "Lucida Handwriting",
+    "Segoe Script",
+    /* finally the generic cursive */
+    cursive;
   font-size: x-large;
   margin-bottom: 20px;
 }

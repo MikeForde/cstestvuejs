@@ -17,7 +17,7 @@
       <section class="info-section" ref="section2" :data-section="2" :class="{ 'fade-in': showSection2 }">
         <div class="info-card">
           <h2>Our contact details:</h2>
-          <p>Trainee Therapist Name: Galina Filipkova</p>
+          <p>Therapist Name: Galina Filipkova</p>
           <p>E-mail: <a href="mailto:clearskiespractice@gmail.com">clearskiespractice@gmail.com</a></p>
           <p>Phone Number: 07760 531057</p>
         </div>

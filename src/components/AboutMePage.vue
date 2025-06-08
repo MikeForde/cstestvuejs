@@ -21,27 +21,26 @@
         </div>
         <div class="about-me-info info-card">
           <h2>I'm Galina Filipkova</h2>
-          <p>Since founding the Clear Skies Practice in September 2024, I have conducted over 100 therapeutic sessions
-            with
-            adults to help them move forward from difficult periods in their life. In my practice, I always endeavour to
-            ensure that alongside specific therapeutic work in sessions, you learn tools, skills and knowledge to
-            sustain
-            good emotional health in the future and beyond therapy.</p>
-          <p>For the past three years, I have worked in a grammar school successfully supporting pupils with a wide
-            range of
-            emotional difficulties, including anxiety, performance anxiety, OCD, anger, panic attacks, procrastination,
-            low
-            mood, low self-esteem, relationships, barriers to school attendance and self-harm. In this role and my
-            previous
-            role as a teaching assistant at a SEND school, I have also built substantial experience in supporting
-            neurodivergent individuals. </p>
-          <p>Furthermore, I have extensive experience of working with both adults and young people from my past roles as
-            a
-            teacher, personal tutor and a social worker. I also volunteered previously with the Samaritans.</p>
+          <p>Since founding Clear Skies Practice in September 2024, I have conducted over 100 therapeutic sessions with
+            adults to help them move forward from difficult periods in their lives. In my practice, I always endeavour
+            to
+            ensure that, alongside the specific therapeutic work in sessions, clients learn tools, skills and knowledge
+            to
+            sustain good emotional health both during and beyond therapy.</p>
+          <p>For the past three years, I have worked in a grammar school, successfully supporting pupils with a wide
+            range
+            of emotional difficulties, including anxiety (general and performance), OCD, anger, panic attacks,
+            procrastination, low mood, low self-esteem, relationship issues, barriers to school attendance and
+            self-harm. In
+            that role—and in my previous position as a teaching assistant at a SEND school—I also developed extensive
+            experience supporting neurodivergent individuals.</p>
+          <p>Furthermore, I have worked with both adults and young people in my past roles as a teacher, personal tutor,
+            and
+            social worker, and I’ve volunteered with the Samaritans.</p>
           <p>In my free time, I enjoy reading, gardening, yoga, running and walking.</p>
-          <p>Please feel free to get in touch by email or text to request a 15-minute initial call (free of charge) so I
-            can
-            answer any questions you might have.</p>
+          <p>Please feel free to get in touch via email or text to request a free 15-minute initial call, where I can
+            answer
+            any questions you might have.</p>
           <div class="button-container">
             <router-link to="/contact" class="button-link">Get in Touch Today</router-link>
           </div>

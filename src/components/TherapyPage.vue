@@ -310,6 +310,7 @@ export default {
   .text-card, .image-card, .text-card2 {
     width: 100%;
     /* margin-bottom: 20px; */
+    padding: 0 20px;
     box-sizing: border-box;
   }
 

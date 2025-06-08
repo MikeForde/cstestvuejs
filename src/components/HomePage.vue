@@ -538,6 +538,10 @@ export default {
   .logo-overlay {
     width: 60px;
   }
+
+  .cursive {
+    font-size: large;
+  }
 }
 
 /* Additional styles... */

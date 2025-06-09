@@ -53,7 +53,7 @@
               </span>
             </span>
             treatment - trauma relating to a single traumatic event - is offered at the discounted price of £60 per hr between
-            June-August 2025. Completing a certain number of these face-to-face is a post-qualification training
+            June-August 2025. Completing a further number of these face-to-face is a post-qualification training
             requirement
             and will enable me to offer them online in the future.
           </b>

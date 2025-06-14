@@ -102,9 +102,8 @@
     <section class="info-section" ref="section6" :data-section="6" :class="{ 'fade-in': showSection6 }">
       <div class="info-card">
         <h2>Cancellation Policy</h2>
-        <p>With any cancellation less than 7 working days in advance, an administration fee of £15 pounds will be charged.</p>
         <p>Since scheduling of an appointment involves the reservation of time for your individual session, a minimum of
-          48 hours is required for rescheduling or cancelling client appointments. Unless we reach a different
+          2 working days are required for rescheduling or cancelling client appointments. Unless we reach a different
           agreement, <b>the full fee will be charged for session missed without such notification.</b></p>
         <p>In the event of a serious accident, emergency, or other similar situation outside the client’s control,
           please deal with the situation first and notify us at the earliest convenient time, or we will follow up with

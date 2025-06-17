@@ -103,15 +103,13 @@
       <div class="info-card">
         <h2>Cancellation Policy</h2>
         <p>Since scheduling of an appointment involves the reservation of time for your individual session, a minimum of
-          2 working days are required for rescheduling or cancelling client appointments. Unless we reach a different
+          2 working days is required for rescheduling or cancelling client appointments. Unless we reach a different
           agreement, <b>the full fee will be charged for session missed without such notification.</b></p>
         <p>In the event of a serious accident, emergency, or other similar situation outside the client’s control,
           please deal with the situation first and notify us at the earliest convenient time, or we will follow up with
           you typically within 24 to 48 hours of the missed appointment.</p>
         <h2>No Show Policy</h2>
-        <p>Where an appointment is arranged and agreed, and a client does not attend that appointment, <b>the room fee
-            will
-            be payable in full.</b></p>
+        <p>Where an appointment is arranged and agreed, and a client does not attend that appointment, <b>the full fee will be charged for the session missed.</b></p>
       </div>
     </section>
 

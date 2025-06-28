@@ -103,11 +103,10 @@
   >
     <div class="info-card">
       <p>
-        I have regular professional supervision for all my work with clients. I am registered with the HGI
-        as a Trainee Member and adheres to its
+        I have regular professional supervision for all my work with clients. I am registered with the Human Givens Institute (HGI) and adhere to its
         <a href="https://www.hgi.org.uk/about-hgi/ethics-and-conduct" target="_blank">
           Code of Ethics & Professional Practice
-        </a>. Trainee Membership Number 188828 22
+        </a>. Membership Number 188828
       </p>
       <p>
         The HGI is a professional register accredited by the

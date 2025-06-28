@@ -17,10 +17,26 @@
     <section class="info-section" ref="section1" :data-section="1" :class="{ 'fade-in': showSection1 }">
       <div class="info-card">
         <h2>Booking Sessions</h2>
-        <h3>Opening Hours</h3>
+        <p>Email: <a href="mailto:clearskiespractice@gmail.com">clearskiespractice@gmail.com</a> (preferred)</p>
+        <p>Text via WhatsApp: <a href="sms:07760 531057">07760 531057</a> (please include your email address)</p>
+        <p>Please contact me for my availability and to arrange a 15-minute, free introductory phone call to discuss the
+          outcome you’re looking for and to ask questions about how therapy will work for you. Email is my preferred
+          method
+          of contact.</p>
+      </div>
+    </section>
+
+    <section class="info-section" ref="section2" :data-section="2" :class="{ 'fade-in': showSection2 }">
+      <div class="info-card">
+        <h2>Opening Hours</h2>
         <p>Afternoons, evenings, and Saturdays. More appointment options are available during the school holidays.
         </p>
-        <h3>Fees</h3>
+      </div>
+    </section>
+
+    <section class="info-section" ref="section3" :data-section="3" :class="{ 'fade-in': showSection3 }">
+      <div class="info-card">
+        <h2>Cost of Therapy</h2>
         <p>Therapy for individuals - £80 (for 60 minutes), on Saturdays - £85 (for 60 minutes)</p>
         <p>Therapy for couples - £115 (for 60 minutes), on Saturdays - £120 (for 60 minutes)</p>
         <p>Therapy for 12-18 year olds - £70 (for 50 minutes), on Saturdays - £75 (for 50 minutes)</p>
@@ -73,16 +89,10 @@
             and will enable me to offer them online in the future.
           </b>
         </p>
-        <p>Please contact me for my availability and to arrange a 15-minute, free introductory phone call to discuss the
-          outcome you’re looking for and to ask questions about how therapy will work for you. Email is my preferred
-          method
-          of contact.</p>
-        <p>Email: <a href="mailto:clearskiespractice@gmail.com">clearskiespractice@gmail.com</a> (preferred)</p>
-        <p>Text via WhatsApp: <a href="sms:07760 531057">07760 531057</a> (please include your email address)</p>
       </div>
     </section>
 
-    <section class="info-section" ref="section2" :data-section="2" :class="{ 'fade-in': showSection2 }">
+    <section class="info-section" ref="section4" :data-section="4" :class="{ 'fade-in': showSection4 }">
       <div class="info-card">
         <h2>Location</h2>
         <p>We provide <b>online</b> (16+) and <b>face-to-face</b> therapy sessions. Rewinds (for fast trauma
@@ -104,7 +114,7 @@
       </div>
     </section>
 
-    <section class="info-section" ref="section3" :data-section="3" :class="{ 'fade-in': showSection3 }">
+    <section class="info-section" ref="section5" :data-section="5" :class="{ 'fade-in': showSection5 }">
       <div class="info-card">
         <h2>Parking Information</h2>
         <p>Free on-road parking is available around the town, along with several paid car parks nearby.</p>
@@ -114,7 +124,7 @@
       </div>
     </section>
 
-    <section class="info-section" ref="section4" :data-section="4" :class="{ 'fade-in': showSection4 }">
+    <section class="info-section" ref="section6" :data-section="6" :class="{ 'fade-in': showSection6 }">
       <div class="info-container">
         <div class="info-card map-card">
           <h2>Reflection Rooms</h2>
@@ -127,7 +137,7 @@
       </div>
     </section>
 
-    <section class="info-section" ref="section5" :data-section="5" :class="{ 'fade-in': showSection5 }">
+    <section class="info-section" ref="section7" :data-section="7" :class="{ 'fade-in': showSection7 }">
       <div class="info-container">
         <div class="info-card map-card">
           <h2>The Devereux Centre</h2>
@@ -153,6 +163,8 @@ export default {
       showSection3: false,
       showSection4: false,
       showSection5: false,
+      showSection6: false,
+      showSection7: false,
       videoPlayable: true,
       backupImage: require('@/assets/AnimatedSky.gif')
     };
@@ -183,6 +195,8 @@ export default {
       observer.observe(this.$refs.section3);
       observer.observe(this.$refs.section4);
       observer.observe(this.$refs.section5);
+      observer.observe(this.$refs.section6);
+      observer.observe(this.$refs.section7);
     });
   },
   methods: {
@@ -267,7 +281,8 @@ export default {
 }
 
 .info-section[data-section="2"],
-.info-section[data-section="4"] {
+.info-section[data-section="4"],
+.info-section[data-section="6"] {
   background-color: #5DAED5;
   color: white;
 }
@@ -285,11 +300,14 @@ export default {
 }
 
 .info-section[data-section="2"] h2,
-.info-section[data-section="4"] h2 {
+.info-section[data-section="4"] h2,
+.info-section[data-section="6"] h2 {
   color: white;
 }
 
-.info-section[data-section="2"] p {
+.info-section[data-section="2"] p,
+.info-section[data-section="4"] p,
+.info-section[data-section="6"] p {
   color: white;
 }
 

@@ -77,19 +77,23 @@
           as Gloucester, Cheltenham and Worcester. Rewinds (for fast trauma and phobia treatment) are currently only
           offered
           face-to-face.</p>
-        <p>The Clear Skies Practice is located on the ground floor in <a
+        <p>The Clear Skies Practice is currenlty available from the following locations:</p>
+        <p>From <a
+            href="https://reflectionrooms.co.uk" target="_blank">Reflection Rooms,
+            Tewkesbury</a>.</p>
+        <p>Address: Reflection Rooms, 13-14 Barton St, Tewkesbury, GL20 5PP</p>
+        <p>Until 31 Aug 2025, on the ground floor in <a
             href="https://www.thedevereuxcentre.co.uk/other-tenants/" target="_blank">the Devereux Centre,
-            Tewkesbury</a>.
-          The Centre is well situated and easy walking distance from the High Street.</p>
+            Tewkesbury</a>.</p>
         <p>Address: The Devereux Centre, Barton Road, Tewkesbury, GL20 5GJ</p>
+        <p>Both are well situated and easy walking distance from the High Street.</p>
       </div>
     </section>
 
     <section class="info-section" ref="section3" :data-section="3" :class="{ 'fade-in': showSection3 }">
       <div class="info-card">
         <h2>Parking Information</h2>
-        <p>There is free on-street parking in some side streets in Tewkesbury that are within walking distance of the
-          practice. If on-street parking is at capacity, the closest paid car park is Rails Meadow, Howells Road,
+        <p>There is free on-street parking in some side streets in Tewkesbury that are within walking distance of both locations. If on-street parking is at capacity, the closest paid car park is Rails Meadow, Howells Road,
           Tewkesbury, GL20 5BQ (<a
             href="https://tewkesbury.gov.uk/parking/rails-meadow-howells-road-tewkesbury-gl20-5qb/"
             target="_blank">Rails Meadow Parking</a>). They charge £1 up to 1 hour and £2 up to 3 hours.</p>

@@ -84,10 +84,13 @@
             and will enable me to offer them online in the future.
           </b>
         </p>
+        <p><i>Please note these prices are for private paying individuals only, rates will vary when paying via EAP or
+            insurance companies due to the increased financial & administrative requirements; rates are agreed with each
+            company. Please call us if you wish to discuss further. </i></p>
         <h3>Healthcare Insurance</h3>
         <p>Some clients have coverage from a healthcare insurer. We are unable to communicate directly with insurers,
           and we do not have an electronic claims system in place. It is the client’s responsibility to ascertain
-          whether or not their insurance provider covers psychological talking therapies, to pay their fees at the time
+          whether their insurance provider covers psychological talking therapies, to pay their fees at the time
           of consultation, and to then claim from their insurer, where possible. We will do our utmost to facilitate
           that claim.</p>
         <h3>Payment Method</h3>

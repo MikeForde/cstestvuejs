@@ -52,7 +52,8 @@
                 health effects is key to making sense of what’s happening in the aftermath of a single-incident trauma.
               </span>
             </span>
-            treatment - trauma relating to a single traumatic event - is offered at the discounted price of £60 per hr between
+            treatment - trauma relating to a single traumatic event - is offered at the discounted price of £60 per hr
+            between
             June-August 2025. Completing a further number of these face-to-face is a post-qualification training
             requirement
             and will enable me to offer them online in the future.
@@ -63,27 +64,25 @@
           method
           of contact.</p>
         <p>Email: <a href="mailto:clearskiespractice@gmail.com">clearskiespractice@gmail.com</a> (preferred)</p>
-        <p>Text: <a href="sms:07760 531057">07760 531057</a> (please include your email address)</p>
+        <p>Text via WhatsApp: <a href="sms:07760 531057">07760 531057</a> (please include your email address)</p>
       </div>
     </section>
 
     <section class="info-section" ref="section2" :data-section="2" :class="{ 'fade-in': showSection2 }">
       <div class="info-card">
         <h2>Location</h2>
-        <p>I provide both <b>online</b> and <b>face-to-face</b> therapy sessions, the latter in Tewkesbury which is
-          easily
-          accessible from the surrounding areas
-          such
-          as Gloucester, Cheltenham and Worcester. Rewinds (for fast trauma and phobia treatment) are currently only
+        <p>I provide <b>online</b> (16+) and <b>face-to-face</b> therapy sessions. My practice is based in Tewkesbury
+          and is
+          easily accessible from the surrounding areas of Gloucestershire and Worcestershire.</p>
+        <p>Rewinds (for fast trauma and phobia treatment) are currently only
           offered
           face-to-face.</p>
         <p>The Clear Skies Practice is currently available from the following locations:</p>
-        <p>From <a
-            href="https://reflectionrooms.co.uk" target="_blank">Reflection Rooms,
+        <p>Location 1: <a href="https://reflectionrooms.co.uk" target="_blank">Reflection Rooms,
             Tewkesbury</a>.</p>
         <p>Address: Reflection Rooms, 13-14 Barton St, Tewkesbury, GL20 5PP</p>
-        <p>Until 31 Aug 2025, on the ground floor in <a
-            href="https://www.thedevereuxcentre.co.uk/other-tenants/" target="_blank">the Devereux Centre,
+        <p>Location 2 (Until 31 Aug 2025): <a href="https://www.thedevereuxcentre.co.uk/other-tenants/"
+            target="_blank">The Devereux Centre,
             Tewkesbury</a>.</p>
         <p>Address: The Devereux Centre, Barton Road, Tewkesbury, GL20 5GJ</p>
         <p>Both are well situated and easy walking distance from the High Street.</p>
@@ -93,10 +92,8 @@
     <section class="info-section" ref="section3" :data-section="3" :class="{ 'fade-in': showSection3 }">
       <div class="info-card">
         <h2>Parking Information</h2>
-        <p>There is free on-street parking in some side streets in Tewkesbury that are within walking distance of both locations. If on-street parking is at capacity, the closest paid car park is Rails Meadow, Howells Road,
-          Tewkesbury, GL20 5BQ (<a
-            href="https://tewkesbury.gov.uk/parking/rails-meadow-howells-road-tewkesbury-gl20-5qb/"
-            target="_blank">Rails Meadow Parking</a>). They charge £1 up to 1 hour and £2 up to 3 hours.</p>
+        <p>Free on-road parking is available around the town, along with several paid car parks nearby.</p>
+        <p>Tewkesbury is well-served by buses, with the nearest stops at The Crescent or Tewkesbury Hospital, depending on your direction of travel.</p>
       </div>
     </section>
 
@@ -410,13 +407,17 @@ ul {
   .tooltip-text {
     /* make tooltip span nearly full width and center it on the viewport */
     position: fixed;
-    bottom: 20%;           /* adjust as needed for vertical placement */
+    bottom: 20%;
+    /* adjust as needed for vertical placement */
     left: 50%;
     transform: translateX(-50%);
     width: 90vw;
-    max-width: 320px;      /* optional cap */
-    text-align: center;    /* center the text inside */
-    pointer-events: auto;  /* ensure it remains interactive */
+    max-width: 320px;
+    /* optional cap */
+    text-align: center;
+    /* center the text inside */
+    pointer-events: auto;
+    /* ensure it remains interactive */
   }
 }
 </style>

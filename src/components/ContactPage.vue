@@ -85,21 +85,21 @@
     <section class="info-section" ref="section2" :data-section="2" :class="{ 'fade-in': showSection2 }">
       <div class="info-card">
         <h2>Location</h2>
-        <p>I provide <b>online</b> (16+) and <b>face-to-face</b> therapy sessions. My practice is based in Tewkesbury
-          and is
-          easily accessible from the surrounding areas of Gloucestershire and Worcestershire.</p>
-        <p>Rewinds (for fast trauma and phobia treatment) are currently only
+        <p>We provide <b>online</b> (16+) and <b>face-to-face</b> therapy sessions. Rewinds (for fast trauma
+          and
+          phobia treatment) are currently only
           offered
           face-to-face.</p>
-        <p>The Clear Skies Practice is currently available from the following locations:</p>
+        <p>The Clear Skies Practice is based in Tewkesbury and is easily accessible from the surrounding areas of
+          Gloucestershire and Worcestershire.</p>
         <p>Location 1: <a href="https://reflectionrooms.co.uk" target="_blank">Reflection Rooms,
-            Tewkesbury</a>.</p>
-        <p>Address: Reflection Rooms, 13-14 Barton St, Tewkesbury, GL20 5PP</p>
+            Tewkesbury</a>.
+          Address: Reflection Rooms, 13-14 Barton St, Tewkesbury, GL20 5PP</p>
         <p>Location 2 (Until 31 Aug 2025): <a href="https://www.thedevereuxcentre.co.uk/other-tenants/"
             target="_blank">The
             Devereux Centre,
-            Tewkesbury</a>.</p>
-        <p>Address: The Devereux Centre, Barton Road, Tewkesbury, GL20 5GJ</p>
+            Tewkesbury</a>.
+          Address: The Devereux Centre, Barton Road, Tewkesbury, GL20 5GJ</p>
         <p>Both are well situated and easy walking distance from the High Street.</p>
       </div>
     </section>

@@ -25,10 +25,6 @@
         <h2>Opening Hours</h2>
         <p>Afternoons, evenings, and Saturdays. More appointment options are available during the school holidays.
         </p>
-        <h3>Please Note:</h3>
-        <ul>
-          <li>We cannot guarantee that you will always be seen in the same room.</li>
-        </ul>
       </div>
     </section>
 
@@ -50,10 +46,8 @@
           <li>Therapy for individuals - £80 (for 60 minutes), on Saturdays - £85 (for 60 minutes)</li>
           <li>Therapy for couples - £115 (for 60 minutes), on Saturdays - £120 (for 60 minutes)</li>
           <li>Therapy for 12-18 year olds - £70 (for 50 minutes), on Saturdays - £75 (for 50 minutes)</li>
+          <li>Personalised guided imagery recording on demand - £70 per recording (for 10-30 minutes)</li>
         </ul>
-        <p>Any pre-agreed longer or shorter sessions are charged on a pro-rata basis.</p>
-        <p>A limited number of concessions may be available for university students or unemployed individuals. Proof of
-          status is required.</p>
         <p>
           <b>
             Phobia or
@@ -84,18 +78,12 @@
             and will enable me to offer them online in the future.
           </b>
         </p>
+        <p>Any pre-agreed longer or shorter sessions are charged on a pro-rata basis.</p>
+        <p>A limited number of concessions may be available for university students or unemployed individuals. Proof of
+          status is required.</p>
         <p><i>Please note these prices are for private paying individuals only, rates will vary when paying via EAP or
             insurance companies due to the increased financial & administrative requirements; rates are agreed with each
             company. Please call us if you wish to discuss further. </i></p>
-        <h3>Healthcare Insurance</h3>
-        <p>Some clients have coverage from a healthcare insurer. We are unable to communicate directly with insurers,
-          and we do not have an electronic claims system in place. It is the client’s responsibility to ascertain
-          whether their insurance provider covers psychological talking therapies, to pay their fees at the time
-          of consultation, and to then claim from their insurer, where possible. We will do our utmost to facilitate
-          that claim.</p>
-        <h3>Payment Method</h3>
-        <p>You will receive an invoice following your appointment. Bank payment should be made at the latest 3 days
-          after the consultation.</p>
         <h3>Please Note:</h3>
         <ul>
           <li>The session fee is subject to revision from time to time. Advance notice will be given of any increase.
@@ -110,6 +98,17 @@
 
     <section class="info-section" ref="section6" :data-section="6" :class="{ 'fade-in': showSection6 }">
       <div class="info-card">
+        <h2>Healthcare Insurance</h2>
+        <p>Some clients have coverage from a healthcare insurer. We are unable to communicate directly with insurers,
+          and we do not have an electronic claims system in place. It is the client’s responsibility to ascertain
+          whether their insurance provider covers psychological talking therapies, to pay their fees at the time
+          of consultation, and to then claim from their insurer, where possible. We will do our utmost to facilitate
+          that claim.</p>
+      </div>
+    </section>
+
+    <section class="info-section" ref="section7" :data-section="7" :class="{ 'fade-in': showSection7 }">
+      <div class="info-card">
         <h2>Personalised Guided Imagery</h2>
         <p>At your request, I can record a personalised guided imagery for you. Each recording will be charged at £70.
           This guided imagery is for your sole use and must not be shared with third parties. It must not be listened to
@@ -118,7 +117,48 @@
       </div>
     </section>
 
-    <section class="info-section" ref="section7" :data-section="7" :class="{ 'fade-in': showSection7 }">
+    <section class="info-section" ref="section8" :data-section="8" :class="{ 'fade-in': showSection8 }">
+      <div class="info-card">
+        <h2>Protection of Client and Therapist</h2>
+        <p>It is recognised that some clients may be particularly vulnerable, especially young people. We reserve the
+          right to record consultations, if deemed appropriate, for the protection of both client and therapist. We will
+          discuss this with you first.</p>
+      </div>
+    </section>
+
+    <section class="info-section" ref="section9" :data-section="9" :class="{ 'fade-in': showSection9 }">
+      <div class="info-card">
+        <h2>Location and Room Bookings</h2>
+        <p>We provide <b>online</b> (16+) and <b>face-to-face</b> therapy sessions. Rewinds (for fast trauma
+          and
+          phobia treatment) are currently only
+          offered
+          face-to-face.</p>
+        <p>The Clear Skies Practice is based in Tewkesbury and is easily accessible from the surrounding areas of
+          Gloucestershire and Worcestershire.</p>
+        <p>Location 1: <a href="https://reflectionrooms.co.uk" target="_blank">Reflection Rooms,
+            Tewkesbury</a>.
+          Address: Reflection Rooms, 13-14 Barton St, Tewkesbury, GL20 5PP</p>
+        <p>Location 2 (Until 31 Aug 2025): <a href="https://www.thedevereuxcentre.co.uk/other-tenants/"
+            target="_blank">The
+            Devereux Centre,
+            Tewkesbury</a>.
+          Address: The Devereux Centre, Barton Road, Tewkesbury, GL20 5GJ</p>
+        <p>Both are well situated and easy walking distance from the High Street.</p>
+        <p>Please note, we cannot guarantee that you will always be seen in the same room.</p>
+      </div>
+    </section>
+
+    <section class="info-section" ref="section10" :data-section="10" :class="{ 'fade-in': showSection10 }">
+      <div class="info-card">
+        <h2>Payment Method</h2>
+        <p>If it is convenient for the client, payment online may be made in advance or on the day of consultation
+          otherwise we accept cash. An invoice will be sent via email in advance. If payment is not made by the deadline
+          stated on the invoice, an administration fee of £15 will be charged.</p>
+      </div>
+    </section>
+
+    <section class="info-section" ref="section11" :data-section="11" :class="{ 'fade-in': showSection11 }">
       <div class="info-card">
         <h2>Cancellation Policy</h2>
         <p>Since scheduling of an appointment involves the reservation of time for your individual session, a minimum of
@@ -133,21 +173,17 @@
       </div>
     </section>
 
-    <section class="info-section" ref="section8" :data-section="8" :class="{ 'fade-in': showSection8 }">
+    <section class="info-section" ref="section12" :data-section="12" :class="{ 'fade-in': showSection12 }">
       <div class="info-card">
         <h2>Your Personal Information</h2>
         <p>Your Personal Information will be kept in accordance with the Data Protection Act (2018) and the General Data
           Protection Regulation (GDPR).</p>
         <p>Please see our <router-link to="/privacy">Privacy Policy</router-link> for full details of the information we
           process.</p>
-        <h2>Protection of Client and Therapist</h2>
-        <p>It is recognised that some clients may be particularly vulnerable, especially young people. We reserve the
-          right to record consultations, if deemed appropriate, for the protection of both client and therapist. We will
-          discuss this with you first.</p>
       </div>
     </section>
 
-    <section class="info-section" ref="section9" :data-section="9" :class="{ 'fade-in': showSection9 }">
+    <section class="info-section" ref="section13" :data-section="13" :class="{ 'fade-in': showSection13 }">
       <div class="info-card">
         <h2>Governance</h2>
         <p>The work of this practice is governed by The Codes of Ethics & Professional Practice of the Human Givens
@@ -182,6 +218,10 @@ export default {
       showSection7: false,
       showSection8: false,
       showSection9: false,
+      showSection10: false,
+      showSection11: false,
+      showSection12: false,
+      showSection13: false,
     };
   },
   mounted() {
@@ -210,6 +250,10 @@ export default {
       observer.observe(this.$refs.section7);
       observer.observe(this.$refs.section8);
       observer.observe(this.$refs.section9);
+      observer.observe(this.$refs.section10);
+      observer.observe(this.$refs.section11);
+      observer.observe(this.$refs.section12);
+      observer.observe(this.$refs.section13);
     });
   }
 }
@@ -254,7 +298,9 @@ export default {
 [data-section="2"] p,
 [data-section="4"] p,
 [data-section="6"] p,
-[data-section="8"] p {
+[data-section="8"] p,
+[data-section="10"] p,
+[data-section="12"] p {
   color: white;
 }
 
@@ -266,21 +312,27 @@ export default {
 [data-section="2"] h2,
 [data-section="4"] h2,
 [data-section="6"] h2,
-[data-section="8"] h2 {
+[data-section="8"] h2,
+[data-section="10"] h2,
+[data-section="12"] h2 {
   color: white;
 }
 
 [data-section="2"] h3,
 [data-section="4"] h3,
 [data-section="6"] h3,
-[data-section="8"] h3 {
+[data-section="8"] h3,
+[data-section="10"] h3,
+[data-section="12"] h3 {
   color: white;
 }
 
 [data-section="2"],
 [data-section="4"],
 [data-section="6"],
-[data-section="8"] {
+[data-section="8"],
+[data-section="10"],
+[data-section="12"] {
   background: #5DAED5;
 }
 
@@ -298,7 +350,9 @@ export default {
 [data-section="2"] .info-card,
 [data-section="4"] .info-card,
 [data-section="6"] .info-card,
-[data-section="8"] .info-card {
+[data-section="8"] .info-card,
+[data-section="10"] .info-card,
+[data-section="12"] .info-card {
   background: none;
   /* Remove the default card background */
 }

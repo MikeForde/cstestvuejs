@@ -15,89 +15,82 @@
     </section>
 
     <section class="info-section" ref="section1" :data-section="1" :class="{ 'fade-in': showSection1 }">
-      <div class="info-card">
-        <h2>Booking Sessions</h2>
-        <p>Email: <a href="mailto:clearskiespractice@gmail.com">clearskiespractice@gmail.com</a> (preferred)</p>
-        <p>Text via WhatsApp: <a href="sms:07760 531057">07760 531057</a> (please include your email address)</p>
-        <p>Please contact me for my availability and to arrange a 15-minute, free introductory phone call to discuss the
-          outcome you’re looking for and to ask questions about how therapy will work for you. Email is my preferred
-          method
-          of contact.</p>
+      <div class="info-container">
+        <div class="image-card">
+          <img src="@/assets/Booking.jpg" alt="Booking Sessions Image" class="info-image" />
+        </div>
+        <div class="info-card">
+          <h2>Booking Sessions</h2>
+          <p>Email: <a href="mailto:clearskiespractice@gmail.com">clearskiespractice@gmail.com</a> (preferred)</p>
+          <p>Text via WhatsApp: <a href="sms:07760 531057">07760 531057</a> (please include your email address)</p>
+          <p>Please contact me for my availability and to arrange a 15-minute, free introductory phone call to discuss the
+            outcome you’re looking for and to ask questions about how therapy will work for you. Email is my preferred
+            method of contact.</p>
+        </div>
       </div>
     </section>
 
     <section class="info-section" ref="section2" :data-section="2" :class="{ 'fade-in': showSection2 }">
-      <div class="info-card">
-        <h2>Opening Hours</h2>
-        <p>Afternoons, evenings, and Saturdays. More appointment options are available during the school holidays.
-        </p>
+      <div class="info-container">
+        <div class="info-card">
+          <h2>Opening Hours</h2>
+          <p>Afternoons, evenings, and Saturdays. More appointment options are available during the school holidays.</p>
+        </div>
+        <div class="image-card">
+          <img src="@/assets/Openings.jpg" alt="Opening Hours Image" class="info-image" />
+        </div>
       </div>
     </section>
 
     <section class="info-section" ref="section3" :data-section="3" :class="{ 'fade-in': showSection3 }">
-      <div class="info-card">
-        <h2>Cost of Therapy</h2>
-        <p>Therapy for individuals - £80 (for 60 minutes), on Saturdays - £85 (for 60 minutes)</p>
-        <p>Therapy for couples - £115 (for 60 minutes), on Saturdays - £120 (for 60 minutes)</p>
-        <p>Therapy for 12-18 year olds - £70 (for 50 minutes), on Saturdays - £75 (for 50 minutes)</p>
-
-        <p>Pre-agreed longer or shorter sessions are possible and will be charged on a pro-rata basis.
-
-          A limited number of concessions may be available for university students or unemployed individuals. Proof of
-          status is required.
-        </p>
-        <p>
-          <b>
-            Phobia or
+      <div class="info-container">
+        <div class="image-card">
+          <img src="@/assets/CostOfTherapy.jpg" alt="Cost of Therapy Image" class="info-image" />
+        </div>
+        <div class="info-card">
+          <h2>Cost of Therapy</h2>
+          <p>Therapy for individuals - £80 (for 60 minutes), on Saturdays - £85 (for 60 minutes)</p>
+          <p>Therapy for couples - £115 (for 60 minutes), on Saturdays - £120 (for 60 minutes)</p>
+          <p>Therapy for 12-18 year olds - £70 (for 50 minutes), on Saturdays - £75 (for 50 minutes)</p>
+          <p>Pre-agreed longer or shorter sessions are possible and will be charged on a pro-rata basis.</p>
+          <p>A limited number of concessions may be available for university students or unemployed individuals. Proof of status is required.</p>
+          <p><b>Phobia or
             <span class="tooltip-container" tabindex="0">
               single-incident trauma
               <span class="tooltip-text">
-                Single-event trauma is triggered by one unexpected incident—such as physical or sexual assault, a
-                natural
-                disaster,
-                a serious accident, or a sudden illness or injury. Recognizing its warning signs and symptoms is
-                essential
-                for getting
-                the right support and care. After such an event, people often suffer intrusive memories that interfere
-                with
-                everyday
-                life, leading to emotional upheaval and shifts in mood. They might find themselves plagued by recurrent
-                flashbacks,
-                overwhelming fear, anger, or sadness, and unable to enjoy activities they once loved. Understanding
-                these
-                mental
+                Single-event trauma is triggered by one unexpected incident—such as physical or sexual assault, a natural disaster,
+                a serious accident, or a sudden illness or injury. Recognizing its warning signs and symptoms is essential for getting
+                the right support and care. After such an event, people often suffer intrusive memories that interfere with everyday
+                life, leading to emotional upheaval and shifts in mood. They might find themselves plagued by recurrent flashbacks,
+                overwhelming fear, anger, or sadness, and unable to enjoy activities they once loved. Understanding these mental
                 health effects is key to making sense of what’s happening in the aftermath of a single-incident trauma.
               </span>
             </span>
-            treatment - trauma relating to a single traumatic event - is offered at the discounted price of £60 per hr
-            between
-            June-August 2025. Completing a further number of these face-to-face is a post-qualification training
-            requirement
-            and will enable me to offer them online in the future.
-          </b>
-        </p>
+            treatment – trauma relating to a single traumatic event – is offered at the discounted price of £60 per hr between
+            June–August 2025. Completing a further number of these face-to-face is a post-qualification training requirement
+            and will enable me to offer them online in the future.</b>
+          </p>
+        </div>
       </div>
     </section>
 
     <section class="info-section" ref="section4" :data-section="4" :class="{ 'fade-in': showSection4 }">
-      <div class="info-card">
-        <h2>Location</h2>
-        <p>We provide <b>online video call</b> (16+) and <b>face-to-face</b> therapy sessions. Rewinds (for fast trauma
-          and
-          phobia treatment) are currently only
-          offered
-          face-to-face.</p>
-        <p>The Clear Skies Practice is based in Tewkesbury and is easily accessible from the surrounding areas of
-          Gloucestershire and Worcestershire.</p>
-        <p>Location 1: <a href="https://reflectionrooms.co.uk" target="_blank">Reflection Rooms,
-            Tewkesbury</a>.
-          Address: Reflection Rooms, 13-14 Barton St, Tewkesbury, GL20 5PP</p>
-        <p>Location 2 (Until 31 Aug 2025): <a href="https://www.thedevereuxcentre.co.uk/other-tenants/"
-            target="_blank">The
-            Devereux Centre,
-            Tewkesbury</a>.
-          Address: The Devereux Centre, Barton Road, Tewkesbury, GL20 5GJ</p>
-        <p>Both are well situated and easy walking distance from the High Street.</p>
+      <div class="info-container">
+        <div class="info-card">
+          <h2>Location</h2>
+          <p>We provide <b>online video call</b> (16+) and <b>face-to-face</b> therapy sessions. Rewinds (for fast trauma
+            and phobia treatment) are currently only offered face-to-face.</p>
+          <p>The Clear Skies Practice is based in Tewkesbury and is easily accessible from the surrounding areas of
+            Gloucestershire and Worcestershire.</p>
+          <p>Location 1: <a href="https://reflectionrooms.co.uk" target="_blank">Reflection Rooms, Tewkesbury</a>. Address:
+            Reflection Rooms, 13-14 Barton St, Tewkesbury, GL20 5PP</p>
+          <p>Location 2 (Until 31 Aug 2025): <a href="https://www.thedevereuxcentre.co.uk/other-tenants/" target="_blank">The Devereux Centre, Tewkesbury</a>. Address:
+            The Devereux Centre, Barton Road, Tewkesbury, GL20 5GJ</p>
+          <p>Both are well situated and easy walking distance from the High Street.</p>
+        </div>
+        <div class="image-card">
+          <img src="@/assets/Location.jpg" alt="Location Image" class="info-image" />
+        </div>
       </div>
     </section>
 
@@ -391,6 +384,26 @@ ul {
   font-weight: 100;
 }
 
+.image-card,
+.info-card {
+  flex: 1;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.image-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
 
 @media screen and (max-width: 768px) {
 
@@ -440,6 +453,17 @@ ul {
     /* center the text inside */
     pointer-events: auto;
     /* ensure it remains interactive */
+  }
+
+   .info-container {
+    flex-direction: column;
+  }
+
+  .info-container .info-card {
+    order: 1;
+  }
+  .info-container .image-card {
+    order: 2;
   }
 }
 </style>

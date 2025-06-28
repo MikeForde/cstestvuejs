@@ -41,24 +41,11 @@
         <p>Therapy for couples - £115 (for 60 minutes), on Saturdays - £120 (for 60 minutes)</p>
         <p>Therapy for 12-18 year olds - £70 (for 50 minutes), on Saturdays - £75 (for 50 minutes)</p>
 
-        <p>Any pre-agreed longer or shorter sessions are charged on a pro-rata basis.
+        <p>Pre-agreed longer or shorter sessions are possible and will be charged on a pro-rata basis.
 
           A limited number of concessions may be available for university students or unemployed individuals. Proof of
           status is required.
         </p>
-        <p><i>Please note these prices are for private paying individuals only, rates will vary when paying via EAP or
-            <span class="tooltip-container" tabindex="0">
-              insurance companies
-              <span class="tooltip-text">
-                Healthcare Insurance: Some clients have coverage from a healthcare insurer. We are unable to
-                communicate directly with insurers, and we do not have an electronic claims system in place. It is the
-                client’s responsibility to ascertain whether or not their insurance provider covers psychological
-                talking
-                therapies, to pay their fees at the time of consultation, and to then claim from their insurer, where
-                possible. We will do our utmost to facilitate that claim.
-              </span>
-            </span>due to the increased financial & administrative requirements; rates are agreed with each
-            company. Please call us if you wish to discuss further.</i></p>
         <p>
           <b>
             Phobia or
@@ -95,7 +82,7 @@
     <section class="info-section" ref="section4" :data-section="4" :class="{ 'fade-in': showSection4 }">
       <div class="info-card">
         <h2>Location</h2>
-        <p>We provide <b>online</b> (16+) and <b>face-to-face</b> therapy sessions. Rewinds (for fast trauma
+        <p>We provide <b>online video call</b> (16+) and <b>face-to-face</b> therapy sessions. Rewinds (for fast trauma
           and
           phobia treatment) are currently only
           offered

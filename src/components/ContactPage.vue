@@ -77,7 +77,7 @@
           as Gloucester, Cheltenham and Worcester. Rewinds (for fast trauma and phobia treatment) are currently only
           offered
           face-to-face.</p>
-        <p>The Clear Skies Practice is currenlty available from the following locations:</p>
+        <p>The Clear Skies Practice is currently available from the following locations:</p>
         <p>From <a
             href="https://reflectionrooms.co.uk" target="_blank">Reflection Rooms,
             Tewkesbury</a>.</p>

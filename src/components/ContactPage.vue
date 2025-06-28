@@ -103,7 +103,20 @@
     <section class="info-section" ref="section4" :data-section="4" :class="{ 'fade-in': showSection4 }">
       <div class="info-container">
         <div class="info-card map-card">
-          <h2>Map</h2>
+          <h2>Reflection Rooms</h2>
+          <iframe class="mapImage" frameborder="0" scrolling="no" id="gmap_canvas"
+            src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Reflection%20Rooms,%20Barton%20Street%20Tewkesbury+(Clear%20Skies%20Practice)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+        </div>
+        <div class="info-card image-card">
+          <img src="@/assets/Reflection_rooms.jpg" alt="Devereux Centre" class="location-image" />
+        </div>
+      </div>
+    </section>
+
+    <section class="info-section" ref="section5" :data-section="5" :class="{ 'fade-in': showSection5 }">
+      <div class="info-container">
+        <div class="info-card map-card">
+          <h2>The Devereux Centre</h2>
           <iframe class="mapImage" frameborder="0" scrolling="no" id="gmap_canvas"
             src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Devereux%20Centre,%20Barton%20Road%20Tewkesbury+(Clear%20Skies%20Practice)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
         </div>
@@ -125,6 +138,7 @@ export default {
       showSection2: false,
       showSection3: false,
       showSection4: false,
+      showSection5: false,
       videoPlayable: true,
       backupImage: require('@/assets/AnimatedSky.gif')
     };
@@ -154,6 +168,7 @@ export default {
       observer.observe(this.$refs.section2);
       observer.observe(this.$refs.section3);
       observer.observe(this.$refs.section4);
+      observer.observe(this.$refs.section5);
     });
   },
   methods: {

@@ -404,6 +404,27 @@ ul {
   border-radius: 10px;
 }
 
+@media screen and (min-width: 769px) {
+  /* Text cards */
+  .info-section[data-section="1"] .info-card,
+  .info-section[data-section="2"] .info-card,
+  .info-section[data-section="3"] .info-card,
+  .info-section[data-section="4"] .info-card {
+    flex: 0 0 60%;
+    max-width: 60%;
+  }
+
+  /* Image cards */
+  .info-section[data-section="1"] .image-card,
+  .info-section[data-section="2"] .image-card,
+  .info-section[data-section="3"] .image-card,
+  .info-section[data-section="4"] .image-card {
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
+}
+
+
 
 @media screen and (max-width: 768px) {
 

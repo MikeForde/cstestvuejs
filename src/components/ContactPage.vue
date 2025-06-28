@@ -18,17 +18,32 @@
       <div class="info-card">
         <h2>Booking Sessions</h2>
         <h3>Opening Hours</h3>
-        <p>Monday 6-7pm<br />
-          Tuesday 6-7pm<br />
-          Wednesday 2.30pm to 6.30pm<br />
-          Thursday 6-7pm
+        <p>Afternoons, evenings, and Saturdays. More appointment options are available during the school holidays.
         </p>
-        <p>Other times may be available on request (Monday, Tuesday, Thursday: 5-6pm; Friday 5-6pm and 6-7pm).</p>
         <p>A greater choice of session times is available between 18 July and 31 August.</p>
         <h3>Fees</h3>
-        <p>The therapy sessions are 60-90 minutes in length. A 60-minute session is charged at £80. 90-minute sessions
-          are
-          charged at £120 per session.</p>
+        <p>Therapy for individuals - £80 (for 60 minutes), on Saturdays - £85 (for 60 minutes)</p>
+        <p>Therapy for couples - £115 (for 60 minutes), on Saturdays - £120 (for 60 minutes)</p>
+        <p>Therapy for 12-18 year olds - £70 (for 50 minutes), on Saturdays - £75 (for 50 minutes)</p>
+
+        <p>Any pre-agreed longer or shorter sessions are charged on a pro-rata basis.
+
+          A limited number of concessions may be available for university students or unemployed individuals. Proof of
+          status is required.
+        </p>
+        <p><i>Please note these prices are for private paying individuals only, rates will vary when paying via EAP or
+            <span class="tooltip-container" tabindex="0">
+              insurance companies
+              <span class="tooltip-text">
+                Healthcare Insurance: Some clients have coverage from a healthcare insurer. We are unable to
+                communicate directly with insurers, and we do not have an electronic claims system in place. It is the
+                client’s responsibility to ascertain whether or not their insurance provider covers psychological
+                talking
+                therapies, to pay their fees at the time of consultation, and to then claim from their insurer, where
+                possible. We will do our utmost to facilitate that claim.
+              </span>
+            </span>due to the increased financial & administrative requirements; rates are agreed with each
+            company. Please call us if you wish to discuss further.</i></p>
         <p>
           <b>
             Phobia or
@@ -82,7 +97,8 @@
             Tewkesbury</a>.</p>
         <p>Address: Reflection Rooms, 13-14 Barton St, Tewkesbury, GL20 5PP</p>
         <p>Location 2 (Until 31 Aug 2025): <a href="https://www.thedevereuxcentre.co.uk/other-tenants/"
-            target="_blank">The Devereux Centre,
+            target="_blank">The
+            Devereux Centre,
             Tewkesbury</a>.</p>
         <p>Address: The Devereux Centre, Barton Road, Tewkesbury, GL20 5GJ</p>
         <p>Both are well situated and easy walking distance from the High Street.</p>
@@ -93,7 +109,9 @@
       <div class="info-card">
         <h2>Parking Information</h2>
         <p>Free on-road parking is available around the town, along with several paid car parks nearby.</p>
-        <p>Tewkesbury is well-served by buses, with the nearest stops at The Crescent or Tewkesbury Hospital, depending on your direction of travel.</p>
+        <p>Tewkesbury is well-served by buses, with the nearest stops at The Crescent or Tewkesbury Hospital, depending
+          on
+          your direction of travel.</p>
       </div>
     </section>
 

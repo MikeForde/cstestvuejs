@@ -62,91 +62,76 @@
       </div>
     </section>
 
-    <section
-    class="info-section blackWhite"
-    ref="section3"
-    :data-section="3"
-    :class="{ 'fade-in': showSection3, section3: true }"
-  >
-    <div class="info-card-container">
-      <div class="info-card text-card">
-        <h2>My Professional Training</h2>
-        <p>My further professional training includes the following courses with the Human Givens Institute:</p>
-        <ul>
-          <li>Grief and bereavement and what you can do to help</li>
-          <li>Trauma: Patterns of the past</li>
-          <li>Complex trauma: working with challenging cases</li>
-          <li>The missing links: molar memories, subthreshold traumas, and the affect bridge</li>
-          <li>Obsessive compulsive disorder</li>
-          <li>How to help troubled and troublesome teenagers</li>
-          <li>Understanding eating difficulties</li>
-          <li>How to avoid burnout</li>
-          <li>The mind body connection: Food, mood and sleep</li>
-          <li>How to reduce suicide risk</li>
-          <li>Neurodiversity and relationships</li>
-          <li>How to create healing stories for distressed children</li>
-          <li>Understanding eating difficulties</li>
-          <li>Online and phone therapy training</li>
-        </ul>
+    <section class="info-section blackWhite" ref="section3" :data-section="3"
+      :class="{ 'fade-in': showSection3, section3: true }">
+      <div class="info-card-container">
+        <div class="info-card text-card">
+          <h2>My Professional Training</h2>
+          <p>My further professional training includes the following courses with the Human Givens Institute:</p>
+          <ul>
+            <li>Grief and bereavement and what you can do to help</li>
+            <li>Trauma: Patterns of the past</li>
+            <li>Complex trauma: working with challenging cases</li>
+            <li>The missing links: molar memories, subthreshold traumas, and the affect bridge</li>
+            <li>Obsessive compulsive disorder</li>
+            <li>How to help troubled and troublesome teenagers</li>
+            <li>Understanding eating difficulties</li>
+            <li>How to avoid burnout</li>
+            <li>The mind body connection: Food, mood and sleep</li>
+            <li>How to reduce suicide risk</li>
+            <li>Neurodiversity and relationships</li>
+            <li>How to create healing stories for distressed children</li>
+            <li>Understanding eating difficulties</li>
+            <li>Online and phone therapy training</li>
+          </ul>
+        </div>
+        <div class="image-card section3">
+          <img src="@/assets/Trees_up.jpg" alt="Trees up" class="help-image" />
+        </div>
       </div>
-      <div class="image-card section3">
-        <img src="@/assets/Trees_up.jpg" alt="Trees up" class="help-image" />
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- PROFESSIONAL TRAINING: blue background for supervision & compliance text -->
-  <section
-    class="info-section whiteBlue"
-    ref="section4"
-    :data-section="4"
-    :class="{ 'fade-in': showSection4 }"
-  >
-    <div class="info-card">
-      <p>
-        I have regular professional supervision for all my work with clients. I am registered with the Human Givens Institute (HGI) and adhere to its
-        <a href="https://www.hgi.org.uk/about-hgi/ethics-and-conduct" target="_blank">
-          Code of Ethics & Professional Practice
-        </a>. Membership Number 188828
-      </p>
-      <p>
-        The HGI is a professional register accredited by the
-        <a
-          href="https://www.professionalstandards.org.uk/what-we-do/accredited-registers/find-a-register/detail/human-givens-institute"
-          target="_blank"
-        >
-          Professional Standards Authority
-        </a>.
-      </p>
-      <p>
-        I hold an Enhanced DBS certificate, professional indemnity insurance and am registered with the ICO
-        (ICO Registration: ZB674218)
-      </p>
-    </div>
-  </section>
-
-  <!-- HELP WITH: white background + Daisy image -->
-  <section
-    class="info-section blackWhite"
-    ref="section5"
-    :data-section="5"
-    :class="{ 'fade-in': showSection5 }"
-  >
-    <div class="info-card-container">
-      <div class="image-card">
-        <img src="@/assets/Daisy.jpeg" alt="Daisy" class="help-image" />
+    <!-- PROFESSIONAL TRAINING: blue background for supervision & compliance text -->
+    <section class="info-section whiteBlue" ref="section4" :data-section="4" :class="{ 'fade-in': showSection4 }">
+      <div class="info-card">
+        <p>
+          I have regular professional supervision for all my work with clients. I am registered with the Human Givens
+          Institute (HGI) and adhere to its
+          <a href="https://www.hgi.org.uk/about-hgi/ethics-and-conduct" target="_blank">
+            Code of Ethics & Professional Practice
+          </a>. Membership Number 188828
+        </p>
+        <p>
+          The HGI is a professional register accredited by the
+          <a href="https://www.professionalstandards.org.uk/what-we-do/accredited-registers/find-a-register/detail/human-givens-institute"
+            target="_blank">
+            Professional Standards Authority
+          </a>.
+        </p>
+        <p>
+          I hold an Enhanced DBS certificate, professional indemnity insurance and am registered with the ICO
+          (ICO Registration: ZB674218)
+        </p>
       </div>
-      <div class="info-card text-card">
-        <h2>I can help with:</h2>
-        <ul>
-          <li>Anxiety</li>
-          <li>Academic anxiety</li>
-          <li>Panic attacks</li>
-          <li>OCD</li>
-          <li>Concentration difficulties</li>
-          <li>Low mood/depression</li>
-          <li>Stress</li>
-          <li><b>*Trauma</b></li>
+    </section>
+
+    <!-- HELP WITH: white background + Daisy image -->
+    <section class="info-section blackWhite" ref="section5" :data-section="5" :class="{ 'fade-in': showSection5 }">
+      <div class="info-card-container">
+        <div class="image-card">
+          <img src="@/assets/Daisy.jpeg" alt="Daisy" class="help-image" />
+        </div>
+        <div class="info-card text-card">
+          <h2>I can help with:</h2>
+          <ul>
+            <li>Anxiety</li>
+            <li>Academic anxiety</li>
+            <li>Panic attacks</li>
+            <li>OCD</li>
+            <li>Concentration difficulties</li>
+            <li>Low mood/depression</li>
+            <li>Stress</li>
+            <li><b>*Trauma</b></li>
             <li>PTSD</li>
             <li><b>*Phobias</b></li>
             <li>Anger</li>
@@ -158,14 +143,15 @@
             <li>Low self-esteem</li>
             <li>Emotional problems</li>
             <li>Couples therapy</li>
-            <i>* short-term discounts available due to my own training needs - <router-link to="/contact">see more</router-link></i>
-        </ul>
-      </div>
-      <div class="button-container">
+            <i>* short-term discounts available due to my own training needs - <router-link to="/contact">see
+                more</router-link></i>
+          </ul>
+          <div class="button-container">
             <router-link to="/contact" class="button-link">Get in Touch Today</router-link>
           </div>
-    </div>
-  </section>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -292,6 +278,7 @@ export default {
 .blackWhite {
   background-color: #f9f9f9;
 }
+
 .whiteBlue {
   background-color: #5DAED5;
 }
@@ -304,6 +291,7 @@ export default {
 .blackWhite a {
   color: #333;
 }
+
 .whiteBlue h2,
 .whiteBlue h3,
 .whiteBlue p,

@@ -85,6 +85,7 @@
             <li>Low confidence</li>
             <li>Low self-esteem</li>
             <li>Emotional problems</li>
+            <li>Couples therapy</li>
             <i>* short-term discounts available due to my own training needs - <router-link to="/contact">see more</router-link></i>
           </ul>
         </div>

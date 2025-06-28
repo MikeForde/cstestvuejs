@@ -75,6 +75,7 @@
         <ul>
           <li>Grief and bereavement and what you can do to help</li>
           <li>Trauma: Patterns of the past</li>
+          <li>Complex trauma: working with challenging cases</li>
           <li>The missing links: molar memories, subthreshold traumas, and the affect bridge</li>
           <li>Obsessive compulsive disorder</li>
           <li>How to help troubled and troublesome teenagers</li>
@@ -156,6 +157,7 @@
             <li>Low confidence</li>
             <li>Low self-esteem</li>
             <li>Emotional problems</li>
+            <li>Couples therapy</li>
             <i>* short-term discounts available due to my own training needs - <router-link to="/contact">see more</router-link></i>
         </ul>
       </div>

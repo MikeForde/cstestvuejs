@@ -20,7 +20,6 @@
         <h3>Opening Hours</h3>
         <p>Afternoons, evenings, and Saturdays. More appointment options are available during the school holidays.
         </p>
-        <p>A greater choice of session times is available between 18 July and 31 August.</p>
         <h3>Fees</h3>
         <p>Therapy for individuals - £80 (for 60 minutes), on Saturdays - £85 (for 60 minutes)</p>
         <p>Therapy for couples - £115 (for 60 minutes), on Saturdays - £120 (for 60 minutes)</p>

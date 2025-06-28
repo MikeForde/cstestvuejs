@@ -9,7 +9,7 @@
     <section class="info-section" ref="section1" :data-section="1" :class="{ 'fade-in': showSection1 }">
       <div class="info-card">
         <h2>Your therapist: Galina Filipkova</h2>
-        <p>Telephone: <a href="sms:07760 531057">07760 531057</a></p>
+        <p>WhatsApp: <a href="sms:07760 531057">07760 531057</a></p>
         <p>E-mail: <a href="mailto:clearskiespractice@gmail.com">clearskiespractice@gmail.com</a></p>
       </div>
     </section>
@@ -23,13 +23,12 @@
     <section class="info-section" ref="section3" :data-section="3" :class="{ 'fade-in': showSection3 }">
       <div class="info-card">
         <h2>Opening Hours</h2>
-        <p>Monday 6-7pm<br />
-          Tuesday 6-7pm<br />
-          Wednesday 2.30pm to 6.30pm<br />
-          Thursday 6-7pm
+        <p>Afternoons, evenings, and Saturdays. More appointment options are available during the school holidays.
         </p>
-        <p>Other times may be available on request (Monday, Tuesday, Thursday: 5-6pm; Friday 5-6pm and 6-7pm).</p>
-        <p>A greater choice of session times is available between 18 July and 31 August.</p>
+        <h3>Please Note:</h3>
+        <ul>
+          <li>We cannot guarantee that you will always be seen in the same room.</li>
+        </ul>
       </div>
     </section>
 
@@ -46,10 +45,15 @@
       :class="{ 'fade-in': showSection5 }">
       <div class="info-card">
         <h2>Cost of Therapy</h2>
-        <p>The therapy sessions are 60-90 minutes in length. A 60-minute session is charged at £80.</p>
-        <p>90-minute sessions are charged at £120 per session.</p>
-        <p>Sessions are offered <b>online</b> and <b>face-to-face</b>; trauma or phobia treatment is currently offered face-to-face
-          only.</p>
+        <p>Sessions are available online (16+) and face-to-face. Rewinds are currently only offered face-to-face.</p>
+        <ul>
+          <li>Therapy for individuals - £80 (for 60 minutes), on Saturdays - £85 (for 60 minutes)</li>
+          <li>Therapy for couples - £115 (for 60 minutes), on Saturdays - £120 (for 60 minutes)</li>
+          <li>Therapy for 12-18 year olds - £70 (for 50 minutes), on Saturdays - £75 (for 50 minutes)</li>
+        </ul>
+        <p>Any pre-agreed longer or shorter sessions are charged on a pro-rata basis.</p>
+        <p>A limited number of concessions may be available for university students or unemployed individuals. Proof of
+          status is required.</p>
         <p>
           <b>
             Phobia or
@@ -80,10 +84,15 @@
             and will enable me to offer them online in the future.
           </b>
         </p>
-        <h3>Room bookings</h3>
-        <p>Due to varying availability of the room, which is outside of our control, your preferred appointment may not
-          be available on a given day. If so, we will endeavour to arrange an appointment on an alternative day. Please
-          note, we cannot guarantee that you will always be seen in the same room.</p>
+        <h3>Healthcare Insurance</h3>
+        <p>Some clients have coverage from a healthcare insurer. We are unable to communicate directly with insurers,
+          and we do not have an electronic claims system in place. It is the client’s responsibility to ascertain
+          whether or not their insurance provider covers psychological talking therapies, to pay their fees at the time
+          of consultation, and to then claim from their insurer, where possible. We will do our utmost to facilitate
+          that claim.</p>
+        <h3>Payment Method</h3>
+        <p>You will receive an invoice following your appointment. Bank payment should be made at the latest 3 days
+          after the consultation.</p>
         <h3>Please Note:</h3>
         <ul>
           <li>The session fee is subject to revision from time to time. Advance notice will be given of any increase.
@@ -93,13 +102,20 @@
           <li>Any extra work undertaken on the client’s behalf, such as writing reports or letters for other agencies
             will be charged at the standard hourly rate.</li>
         </ul>
-        <h3>Payment Method</h3>
-        <p>You will receive an invoice following your appointment. Bank payment should be made at the latest 3 days
-          after the consultation.</p>
       </div>
     </section>
 
     <section class="info-section" ref="section6" :data-section="6" :class="{ 'fade-in': showSection6 }">
+      <div class="info-card">
+        <h2>Personalised Guided Imagery</h2>
+        <p>At your request, I can record a personalised guided imagery for you. Each recording will be charged at £70.
+          This guided imagery is for your sole use and must not be shared with third parties. It must not be listened to
+          when driving, operating heavy machinery or in any other situations where distraction may put your safety or
+          that of others at risk.</p>
+      </div>
+    </section>
+
+    <section class="info-section" ref="section7" :data-section="7" :class="{ 'fade-in': showSection7 }">
       <div class="info-card">
         <h2>Cancellation Policy</h2>
         <p>Since scheduling of an appointment involves the reservation of time for your individual session, a minimum of
@@ -109,17 +125,8 @@
           please deal with the situation first and notify us at the earliest convenient time, or we will follow up with
           you typically within 24 to 48 hours of the missed appointment.</p>
         <h2>No Show Policy</h2>
-        <p>Where an appointment is arranged and agreed, and a client does not attend that appointment, <b>the full fee will be charged for the session missed.</b></p>
-      </div>
-    </section>
-
-    <section class="info-section" ref="section7" :data-section="7" :class="{ 'fade-in': showSection7 }">
-      <div class="info-card">
-        <h2>Personalised Guided Imagery</h2>
-        <p>At your request, I can record a personalised guided imagery for you. Each recording will be charged at £60.
-          This guided imagery is for your sole use and must not be shared with third parties. It must not be listened to
-          when driving, operating heavy machinery or in any other situations where distraction may put your safety or
-          that of others at risk.</p>
+        <p>Where an appointment is arranged and agreed, and a client does not attend that appointment, <b>the full fee
+            will be charged for the session missed.</b></p>
       </div>
     </section>
 
@@ -130,6 +137,10 @@
           Protection Regulation (GDPR).</p>
         <p>Please see our <router-link to="/privacy">Privacy Policy</router-link> for full details of the information we
           process.</p>
+        <h2>Protection of Client and Therapist</h2>
+        <p>It is recognised that some clients may be particularly vulnerable, especially young people. We reserve the
+          right to record consultations, if deemed appropriate, for the protection of both client and therapist. We will
+          discuss this with you first.</p>
       </div>
     </section>
 
@@ -361,13 +372,17 @@ ul {
   .tooltip-text {
     /* make tooltip span nearly full width and center it on the viewport */
     position: fixed;
-    bottom: 20%;           /* adjust as needed for vertical placement */
+    bottom: 20%;
+    /* adjust as needed for vertical placement */
     left: 50%;
     transform: translateX(-50%);
     width: 90vw;
-    max-width: 320px;      /* optional cap */
-    text-align: center;    /* center the text inside */
-    pointer-events: auto;  /* ensure it remains interactive */
+    max-width: 320px;
+    /* optional cap */
+    text-align: center;
+    /* center the text inside */
+    pointer-events: auto;
+    /* ensure it remains interactive */
   }
 }
 </style>

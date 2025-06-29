@@ -55,7 +55,7 @@
           <ul class="qualifications-list">
             <li>Human Givens Diploma Practitioner, Human Givens College</li>
             <li>CACHE Level 3 Award in Counselling Skills and Theory, Guildford College</li>
-            <li>QTS, UK</li>
+            <li>Qualified Teacher Status (QTS), UK</li>
             <li>ASYE (Social Work), Gloucestershire Local Authority</li>
             <li>Postgraduate Diploma in Social Work, University of Bedfordshire</li>
             <li>Masters in Education, University of Münster, Germany</li>

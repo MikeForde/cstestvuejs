@@ -97,25 +97,30 @@
 
     <!-- PROFESSIONAL TRAINING: blue background for supervision & compliance text -->
     <section class="info-section whiteBlue" ref="section4" :data-section="4" :class="{ 'fade-in': showSection4 }">
-      <div class="info-card">
-        <p>
-          I have regular professional supervision for all my work with clients. I am registered with the Human Givens
-          Institute (HGI) and adhere to its
-          <a href="https://www.hgi.org.uk/about-hgi/ethics-and-conduct" target="_blank">
-            Code of Ethics & Professional Practice
-          </a>. Membership Number 188828
-        </p>
-        <p>
-          The HGI is a professional register accredited by the
-          <a href="https://www.professionalstandards.org.uk/what-we-do/accredited-registers/find-a-register/detail/human-givens-institute"
-            target="_blank">
-            Professional Standards Authority
-          </a>.
-        </p>
-        <p>
-          I hold an Enhanced DBS certificate, professional indemnity insurance and am registered with the ICO
-          (ICO Registration: ZB674218)
-        </p>
+      <div class="info-card-container">
+        <div class="info-card text-card">
+          <p>
+            I have regular professional supervision for all my work with clients. I am registered with the Human Givens
+            Institute (HGI) and adhere to its
+            <a href="https://www.hgi.org.uk/about-hgi/ethics-and-conduct" target="_blank">
+              Code of Ethics & Professional Practice
+            </a>. Membership Number 188828
+          </p>
+          <p>
+            The HGI is a professional register accredited by the
+            <a href="https://www.professionalstandards.org.uk/what-we-do/accredited-registers/find-a-register/detail/human-givens-institute"
+              target="_blank">
+              Professional Standards Authority
+            </a>.
+          </p>
+          <p>
+            I hold an Enhanced DBS certificate, professional indemnity insurance and am registered with the ICO
+            (ICO Registration: ZB674218)
+          </p>
+        </div>
+        <div class="image-card">
+          <img src="@/assets/Double_Rainbow.jpg" alt="Double rainbow image" class="help-image" />
+        </div>
       </div>
     </section>
 
@@ -386,6 +391,11 @@ export default {
   max-height: 400px;
 }
 
+.info-section[data-section="4"] .image-card img {
+  max-height: 280px;
+  object-position: top center;
+}
+
 .info-section[data-section="5"] .image-card img {
   max-height: 620px;
 }
@@ -516,6 +526,11 @@ ul {
 
   .info-section[data-section="3"] .image-card img {
     max-height: 300px;
+  }
+
+  .info-section[data-section="4"] .image-card img {
+    max-height: 300px;
+    object-position: center;
   }
 
   .info-section[data-section="5"] .image-card img {

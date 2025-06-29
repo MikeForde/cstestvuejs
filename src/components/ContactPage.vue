@@ -49,9 +49,9 @@
         </div>
         <div class="info-card">
           <h2>Cost of Therapy</h2>
-          <p>Therapy for individuals - £80 (for 60 minutes), on Saturdays - £85 (for 60 minutes)</p>
-          <p>Therapy for couples - £115 (for 60 minutes), on Saturdays - £120 (for 60 minutes)</p>
-          <p>Therapy for 12-18 year olds - £70 (for 50 minutes), on Saturdays - £75 (for 50 minutes)</p>
+          <p>Therapy for individuals - £80 (for 60 minutes), <small>on Saturdays - £85 (for 60 minutes)</small></p>
+          <p>Therapy for couples - £115 (for 60 minutes), <small>on Saturdays - £120 (for 60 minutes)</small></p>
+          <p>Therapy for 12-18 year olds - £70 (for 50 minutes), <small>on Saturdays - £75 (for 50 minutes)</small></p>
           <p>Personalised guided imagery recording on demand - £70 per recording (for 10-30 minutes)</p>
           <p>Pre-agreed longer or shorter sessions are possible and will be charged on a pro-rata basis.</p>
           <p>A limited number of concessions may be available for university students or unemployed individuals. Proof of status is required.</p>

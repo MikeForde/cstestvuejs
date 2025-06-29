@@ -515,6 +515,7 @@ export default {
 
   .info-container .image-card img {
     max-height: 300px;
+    object-position: top center;
   }
 
   .hero {

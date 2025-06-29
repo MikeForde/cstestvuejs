@@ -384,6 +384,10 @@ export default {
   max-height: 400px;
 }
 
+.info-section[data-section="5"] .image-card img {
+  max-height: 620px;
+}
+
 .about-me-info {
   padding: 0 30px;
 }

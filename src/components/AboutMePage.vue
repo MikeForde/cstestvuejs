@@ -14,7 +14,7 @@
       </div>
     </section>
 
-    <section class="about-me blackWhite" ref="aboutMe" :class="{ 'fade-in': showAboutMe }">
+    <section class="about-me blackWhite" ref="aboutMe" :data-section="1" :class="{ 'fade-in': showAboutMe }">
       <div class="about-me-container">
         <div class="about-me-info image-card">
           <img src="@/assets/galina2.jpg" alt="Galina Filipkova" class="about-me-image" />
@@ -67,8 +67,7 @@
       </div>
     </section>
 
-    <section class="info-section blackWhite" ref="section3" :data-section="3"
-      :class="{ 'fade-in': showSection3 }">
+    <section class="info-section blackWhite" ref="section3" :data-section="3" :class="{ 'fade-in': showSection3 }">
       <div class="info-card-container">
         <div class="image-card">
           <img src="@/assets/Trees_up.jpg" alt="Trees up" class="help-image" />
@@ -230,12 +229,15 @@ export default {
 </script>
 
 <style scoped>
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 .qualifications-list {
-  line-height: 2; /* roughly “160%” of the font-size */
+  line-height: 2;
+  /* roughly “160%” of the font-size */
   /* optionally you can tweak:
   margin-bottom: 0.5em; 
   to add extra space between items */
@@ -462,10 +464,12 @@ ul {
     /* flex: 0 1 auto means “width by content (up to any max‐width),
        but shrink if container gets too small” */
     flex: 0 1 auto;
-    max-width: 70%;         /* optional cap if you still want ~60/40 */
+    max-width: 70%;
+    /* optional cap if you still want ~60/40 */
     padding: 20px;
     box-sizing: border-box;
-    margin-right: 20px;     /* gutter between text and image */
+    margin-right: 20px;
+    /* gutter between text and image */
   }
 
   /* Image block now flex:1, so it takes ALL remaining width */
@@ -483,8 +487,10 @@ ul {
   .image-card .help-image {
     width: 100%;
     height: 100%;
-    object-fit: cover;   /* crops as needed, preserves aspect */
-    border-radius: 10px; /* keep your rounded corners */
+    object-fit: cover;
+    /* crops as needed, preserves aspect */
+    border-radius: 10px;
+    /* keep your rounded corners */
   }
 
 }
@@ -492,11 +498,30 @@ ul {
 @media screen and (max-width: 768px) {
 
   .qualifications-list {
-  line-height: 1.4; /* roughly “160%” of the font-size */
-  /* optionally you can tweak:
+    line-height: 1.4;
+    /* roughly “160%” of the font-size */
+    /* optionally you can tweak:
   margin-bottom: 0.5em; 
   to add extra space between items */
-}
+  }
+
+  .about-me-image {
+    max-height: 500px;
+    width: 80% !important;
+  }
+
+  .info-section[data-section="2"] .image-card img {
+    max-height: 300px;
+  }
+
+  .info-section[data-section="3"] .image-card img {
+    max-height: 300px;
+  }
+
+  .info-section[data-section="5"] .image-card img {
+    max-height: 300px;
+    object-position: top center;
+  }
 
   .hero,
   .about-me,
@@ -526,6 +551,7 @@ ul {
   .info-card-container .info-card {
     order: 1;
   }
+
   .info-card-container .image-card {
     order: 2;
   }

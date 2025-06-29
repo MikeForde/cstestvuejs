@@ -17,7 +17,7 @@
     <section class="info-section" ref="section1" :data-section="1" :class="{ 'fade-in': showSection1 }">
       <div class="info-container">
         <div class="image-card">
-          <img src="@/assets/Booking.jpg" alt="Booking Sessions Image" class="info-image" />
+          <img src="@/assets/Booking.jpg" alt="Booking Sessions Image - swirling sands" class="info-image" />
         </div>
         <div class="info-card">
           <h2>Booking Sessions</h2>
@@ -37,7 +37,7 @@
           <p>Afternoons, evenings, and Saturdays. More appointment options are available during the school holidays.</p>
         </div>
         <div class="image-card">
-          <img src="@/assets/Openings.jpg" alt="Opening Hours Image" class="info-image" />
+          <img src="@/assets/Openings.jpg" alt="Opening Hours Image - clearing in woods" class="info-image" />
         </div>
       </div>
     </section>
@@ -45,13 +45,14 @@
     <section class="info-section" ref="section3" :data-section="3" :class="{ 'fade-in': showSection3 }">
       <div class="info-container">
         <div class="image-card">
-          <img src="@/assets/CostOfTherapy.jpg" alt="Cost of Therapy Image" class="info-image" />
+          <img src="@/assets/CostOfTherapy.jpg" alt="Cost of Therapy Image - the duck bill" class="info-image" />
         </div>
         <div class="info-card">
           <h2>Cost of Therapy</h2>
           <p>Therapy for individuals - £80 (for 60 minutes), on Saturdays - £85 (for 60 minutes)</p>
           <p>Therapy for couples - £115 (for 60 minutes), on Saturdays - £120 (for 60 minutes)</p>
           <p>Therapy for 12-18 year olds - £70 (for 50 minutes), on Saturdays - £75 (for 50 minutes)</p>
+          <p>Personalised guided imagery recording on demand - £70 per recording (for 10-30 minutes)</p>
           <p>Pre-agreed longer or shorter sessions are possible and will be charged on a pro-rata basis.</p>
           <p>A limited number of concessions may be available for university students or unemployed individuals. Proof of status is required.</p>
           <p><b>Phobia or
@@ -89,7 +90,7 @@
           <p>Both are well situated and easy walking distance from the High Street.</p>
         </div>
         <div class="image-card">
-          <img src="@/assets/Location.jpg" alt="Location Image" class="info-image" />
+          <img src="@/assets/Location.jpg" alt="Location Image - boat statue" class="info-image" />
         </div>
       </div>
     </section>
@@ -112,7 +113,7 @@
             src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Reflection%20Rooms,%20Barton%20Street%20Tewkesbury+(Clear%20Skies%20Practice)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
         </div>
         <div class="info-card image-card">
-          <img src="@/assets/Reflection_rooms.jpg" alt="Devereux Centre" class="location-image" />
+          <img src="@/assets/Reflection_rooms.jpg" alt="Reflection Rooms - example room" class="location-image" />
         </div>
       </div>
     </section>
@@ -125,7 +126,7 @@
             src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Devereux%20Centre,%20Barton%20Road%20Tewkesbury+(Clear%20Skies%20Practice)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
         </div>
         <div class="info-card image-card">
-          <img src="@/assets/Devereux_Centre.jpg" alt="Devereux Centre" class="location-image" />
+          <img src="@/assets/Devereux_Centre.jpg" alt="Devereux Centre external view" class="location-image" />
         </div>
       </div>
     </section>

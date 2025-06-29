@@ -235,7 +235,7 @@ export default {
 }
 
 .qualifications-list {
-  line-height: 1.7; /* roughly “160%” of the font-size */
+  line-height: 2; /* roughly “160%” of the font-size */
   /* optionally you can tweak:
   margin-bottom: 0.5em; 
   to add extra space between items */
@@ -375,9 +375,13 @@ export default {
 .help-image {
   width: 100%;
   height: auto;
-  max-height: 500px;
+  /* max-height: 500px; */
   border-radius: 10px;
   object-fit: cover;
+}
+
+.info-section[data-section="2"] .image-card img {
+  max-height: 400px;
 }
 
 .about-me-info {

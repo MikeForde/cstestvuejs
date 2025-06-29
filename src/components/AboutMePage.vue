@@ -49,22 +49,30 @@
     </section>
 
     <section class="info-section whiteBlue" ref="section2" :data-section="2" :class="{ 'fade-in': showSection2 }">
-      <div class="info-card section1">
-        <h2>My Qualifications:</h2>
-        <ul>
-          <li>Human Givens Diploma Practitioner, Human Givens College</li>
-          <li>CACHE Level 3 Award in Counselling Skills and Theory, Guildford College</li>
-          <li>QTS, UK</li>
-          <li>ASYE (Social Work), Gloucestershire Local Authority</li>
-          <li>Postgraduate Diploma in Social Work, University of Bedfordshire</li>
-          <li>Masters in Education, University of Münster, Germany</li>
-        </ul>
+      <div class="info-card-container">
+        <div class="info-card text-card">
+          <h2>My Qualifications:</h2>
+          <ul class="qualifications-list">
+            <li>Human Givens Diploma Practitioner, Human Givens College</li>
+            <li>CACHE Level 3 Award in Counselling Skills and Theory, Guildford College</li>
+            <li>QTS, UK</li>
+            <li>ASYE (Social Work), Gloucestershire Local Authority</li>
+            <li>Postgraduate Diploma in Social Work, University of Bedfordshire</li>
+            <li>Masters in Education, University of Münster, Germany</li>
+          </ul>
+        </div>
+        <div class="image-card">
+          <img src="@/assets/Professional Growth.jpg" alt="Flowering growth image" class="help-image" />
+        </div>
       </div>
     </section>
 
     <section class="info-section blackWhite" ref="section3" :data-section="3"
-      :class="{ 'fade-in': showSection3, section3: true }">
+      :class="{ 'fade-in': showSection3 }">
       <div class="info-card-container">
+        <div class="image-card">
+          <img src="@/assets/Trees_up.jpg" alt="Trees up" class="help-image" />
+        </div>
         <div class="info-card text-card">
           <h2>My Professional Training</h2>
           <p>My further professional training includes the following courses with the Human Givens Institute:</p>
@@ -84,9 +92,6 @@
             <li>Understanding eating difficulties</li>
             <li>Online and phone therapy training</li>
           </ul>
-        </div>
-        <div class="image-card section3">
-          <img src="@/assets/Trees_up.jpg" alt="Trees up" class="help-image" />
         </div>
       </div>
     </section>
@@ -225,6 +230,17 @@ export default {
 </script>
 
 <style scoped>
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.qualifications-list {
+  line-height: 1.7; /* roughly “160%” of the font-size */
+  /* optionally you can tweak:
+  margin-bottom: 0.5em; 
+  to add extra space between items */
+}
+
 .hero {
   position: relative;
   overflow: hidden;
@@ -352,7 +368,7 @@ export default {
 
 .text-card,
 .image-card {
-  width: 50%;
+  /* width: 50%; */
   padding: 20px;
 }
 
@@ -422,7 +438,57 @@ ul {
   color: #f9f9f9
 }
 
+@media screen and (min-width: 769px) {
+
+  .info-card-container {
+    display: flex;
+    /* cross‐axis is vertical, so this makes both children as tall
+       as the tallest one—but since we’ll keep the text natural,
+       its height drives the container’s height. */
+    align-items: stretch;
+    margin-top: 20px;
+  }
+
+  /* Text block stays in flow, height = normal content height */
+  .text-card {
+    /* flex: 0 1 auto means “width by content (up to any max‐width),
+       but shrink if container gets too small” */
+    flex: 0 1 auto;
+    max-width: 70%;         /* optional cap if you still want ~60/40 */
+    padding: 20px;
+    box-sizing: border-box;
+    margin-right: 20px;     /* gutter between text and image */
+  }
+
+  /* Image block now flex:1, so it takes ALL remaining width */
+  .image-card {
+    flex: 1 1 0;
+    padding: 20px;
+    box-sizing: border-box;
+    /* center its contents if they don’t fully fill the box */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Finally: make the <img> fill its wrapper in both dims */
+  .image-card .help-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* crops as needed, preserves aspect */
+    border-radius: 10px; /* keep your rounded corners */
+  }
+
+}
+
 @media screen and (max-width: 768px) {
+
+  .qualifications-list {
+  line-height: 1.4; /* roughly “160%” of the font-size */
+  /* optionally you can tweak:
+  margin-bottom: 0.5em; 
+  to add extra space between items */
+}
 
   .hero,
   .about-me,
@@ -447,6 +513,13 @@ ul {
 
   .info-card-container {
     flex-direction: column;
+  }
+
+  .info-card-container .info-card {
+    order: 1;
+  }
+  .info-card-container .image-card {
+    order: 2;
   }
 
   .text-card,

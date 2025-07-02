@@ -17,7 +17,7 @@
     <section class="therapy" ref="therapy" :class="{ 'fade-in': showTherapy }">
       <div class="therapy-container">
         <div class="therapy-card image-card">
-          <img src="@/assets/Therapy_Stones.jpg" alt="Therapy Image" class="therapy-image" />
+          <img src="@/assets/Therapy_Stones.jpg" alt="Therapy Image" class="therapy-image" loading="eager" />
         </div>
         <div class="therapy-card text-card">
           <h2>Therapy</h2>
@@ -91,7 +91,7 @@
             wellbeing beyond therapy sessions.</p>
         </div>
         <div class="approach-card image-card">
-          <img src="@/assets/TherapyPath.jpg" alt="Therapy Path" class="therapy-path-image" />
+          <img src="@/assets/TherapyPath.jpg" alt="Therapy Path" class="therapy-path-image" loading="lazy"/>
         </div>
       </div>
     </section>

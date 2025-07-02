@@ -17,7 +17,7 @@
     <section class="info-section" ref="section1" :data-section="1" :class="{ 'fade-in': showSection1 }">
       <div class="info-container">
         <div class="image-card">
-          <img src="@/assets/Booking.jpg" alt="Booking Sessions Image - swirling sands" class="info-image" />
+          <img src="@/assets/Booking.jpg" alt="Booking Sessions Image - swirling sands" class="info-image" loading="eager" />
         </div>
         <div class="info-card">
           <h2>Booking Sessions</h2>

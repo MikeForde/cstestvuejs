@@ -17,7 +17,7 @@
     <section class="about-me blackWhite" ref="aboutMe" :data-section="1" :class="{ 'fade-in': showAboutMe }">
       <div class="about-me-container">
         <div class="about-me-info image-card">
-          <img src="@/assets/galina2.jpg" alt="Galina Filipkova" class="about-me-image" />
+          <img src="@/assets/galina2.jpg" alt="Galina Filipkova" class="about-me-image" loading="eager"/>
         </div>
         <div class="about-me-info info-card">
           <h2>I'm Galina Filipkova</h2>

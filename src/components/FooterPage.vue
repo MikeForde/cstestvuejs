@@ -84,7 +84,7 @@ export default {
 }
 
 .footer-logo {
-  max-height: 75px;
+  max-height: 80px;
 }
 
 @media screen and (max-width: 768px) {

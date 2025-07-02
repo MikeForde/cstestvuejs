@@ -55,14 +55,14 @@
           </div>
         </div>
         <div class="intro-card image-card">
-          <img src="@/assets/portrait_colour.jpg" alt="Galina Filipkova" class="portrait" />
+          <img src="@/assets/portrait_colour.jpg" alt="Galina Filipkova" class="portrait" loading="eager" />
         </div>
       </div>
     </section>
     <section class="additional-info" ref="additionalInfo" :class="{ 'fade-in': showAdditionalInfo }">
       <div class="info-container">
         <div class="info-card image-card">
-          <img src="@/assets/Daisy.jpeg" alt="Help Image" class="help-image" />
+          <img src="@/assets/Daisy.jpeg" alt="Help Image" class="help-image" loading="lazy"/>
         </div>
         <div class="info-card text-card">
           <h2>I Can Help With:</h2>

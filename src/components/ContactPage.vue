@@ -131,7 +131,7 @@
             src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Reflection%20Rooms,%20Barton%20Street%20Tewkesbury+(Clear%20Skies%20Practice)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
         </div>
         <div class="info-card image-card">
-          <img src="@/assets/Reflection_rooms.jpg" alt="Reflection Rooms - example room" class="location-image" />
+          <img src="@/assets/Reflection_rooms.jpg" alt="Reflection Rooms - example room" class="location-image" loading="lazy" />
         </div>
       </div>
     </section>
@@ -144,7 +144,7 @@
             src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Devereux%20Centre,%20Barton%20Road%20Tewkesbury+(Clear%20Skies%20Practice)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
         </div>
         <div class="info-card image-card">
-          <img src="@/assets/Devereux_Centre.jpg" alt="Devereux Centre external view" class="location-image" />
+          <img src="@/assets/Devereux_Centre.jpg" alt="Devereux Centre external view" class="location-image" loading="lazy" />
         </div>
       </div>
     </section>

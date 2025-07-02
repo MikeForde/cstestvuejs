@@ -119,7 +119,7 @@
           </p>
         </div>
         <div class="image-card">
-          <img src="@/assets/Double_Rainbow.jpg" alt="Double rainbow image" class="help-image" />
+          <img src="@/assets/Double_Rainbow.jpg" alt="Double rainbow image" class="help-image" loading="lazy"/>
         </div>
       </div>
     </section>
@@ -128,7 +128,7 @@
     <section class="info-section blackWhite" ref="section5" :data-section="5" :class="{ 'fade-in': showSection5 }">
       <div class="info-card-container">
         <div class="image-card">
-          <img src="@/assets/Daisy.jpeg" alt="Daisy" class="help-image" />
+          <img src="@/assets/Daisy.jpeg" alt="Daisy" class="help-image" loading="lazy" />
         </div>
         <div class="info-card text-card">
           <h2>I can help with:</h2>

@@ -12,6 +12,12 @@
           <img src="@/assets/HG_logo_footer.png" alt="Human Givens Logo" class="footer-logo" />
         </a>
       </div>
+      <div class="footer-center">
+        <a href="https://www.psychologytoday.com/gb/counselling/galina-filipkova-tewkesbury/1556498" target="_blank"
+          rel="noopener">
+          <img src="@/assets/Psychology_Today.png" alt="Psychology Today Logo" class="footer-logo2" />
+        </a>
+      </div>
       <div class="footer-right">
         <router-link to="/privacy">Privacy Policy</router-link> |
         <router-link to="/business">Business Terms</router-link> |
@@ -88,7 +94,12 @@ export default {
 }
 
 .footer-logo {
-  max-height: 80px;
+  max-height: 75px;
+}
+
+.footer-logo2 {
+  max-height: 75px;
+  padding-right: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -99,6 +110,12 @@ export default {
 
   .footer-right {
     margin-top: 10px;
+  }
+
+  .footer-logo, .footer-logo2 {
+    max-height: 75px;
+    max-width: 300px;
+    padding-right: 5px;
   }
 
   .footer-left,

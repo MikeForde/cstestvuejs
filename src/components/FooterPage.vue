@@ -8,7 +8,9 @@
         <img src="@/assets/CSP_Logo_White_trans.png" alt="Clear Skies Practice Logo" class="footer-logo" />
       </div>
       <div class="footer-center">
-        <img src="@/assets/HG_logo_footer.png" alt="Human Givens Logo" class="footer-logo" />
+        <a href="https://www.hgi.org.uk/find-therapist/therapist/galina-filipkova" target="_blank" rel="noopener">
+          <img src="@/assets/HG_logo_footer.png" alt="Human Givens Logo" class="footer-logo" />
+        </a>
       </div>
       <div class="footer-right">
         <router-link to="/privacy">Privacy Policy</router-link> |
@@ -53,7 +55,9 @@ export default {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.footer-left, .footer-right, .footer-center {
+.footer-left,
+.footer-right,
+.footer-center {
   flex: 1;
   display: flex;
   justify-content: center;
@@ -92,12 +96,14 @@ export default {
     flex-direction: column;
     text-align: center;
   }
-  
+
   .footer-right {
     margin-top: 10px;
   }
 
-  .footer-left, .footer-right, .footer-center {
+  .footer-left,
+  .footer-right,
+  .footer-center {
     justify-content: center;
     margin: 10px 0;
   }

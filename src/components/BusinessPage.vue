@@ -23,7 +23,7 @@
     <section class="info-section" ref="section3" :data-section="3" :class="{ 'fade-in': showSection3 }">
       <div class="info-card">
         <h2>Opening Hours</h2>
-        <p>Afternoons, evenings, and Saturdays. More appointment options are available during the school holidays.
+        <p>Afternoons and evenings. More appointment options are available during the school holidays.
         </p>
       </div>
     </section>
@@ -43,10 +43,8 @@
         <h2>Cost of Therapy</h2>
         <p>Sessions are available online (16+) and face-to-face. Rewinds are currently only offered face-to-face.</p>
         <ul>
-          <li>Therapy for individuals - £80 (for 60 minutes), on Saturdays - £85 (for 60 minutes)</li>
-          <li>Therapy for couples - £115 (for 60 minutes), on Saturdays - £120 (for 60 minutes)</li>
-          <li>Therapy for 12-18 year olds - £70 (for 50 minutes), on Saturdays - £75 (for 50 minutes)</li>
-          <li>Personalised guided imagery recording on demand - £70 per recording (for 10-30 minutes)</li>
+          <li>Therapy for individuals - £70 (for 60 minutes)</li>
+          <li>Therapy for couples - £130 (for 60 minutes)</li>
         </ul>
         <p>
           <b>
@@ -79,8 +77,6 @@
           </b>
         </p>
         <p>Any pre-agreed longer or shorter sessions are charged on a pro-rata basis.</p>
-        <p>A limited number of concessions may be available for university students or unemployed individuals. Proof of
-          status is required.</p>
         <p><i>Please note these prices are for private paying individuals only, rates will vary when paying via EAP or
             insurance companies due to the increased financial & administrative requirements; rates are agreed with each
             company. Please call us if you wish to discuss further. </i></p>

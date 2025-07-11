@@ -76,7 +76,7 @@
     <section class="info-section" ref="section7" :data-section="7" :class="{ 'fade-in': showSection7 }">
       <div class="info-card">
         <h2>Personalised Guided Imagery</h2>
-        <p>At your request, I can record a personalised guided imagery for you. Each recording will be charged at £70.
+        <p>At your request, we can record a personalised guided imagery for you. Each recording will be charged at £70.
           This guided imagery is for your sole use and must not be shared with third parties. It must not be listened to
           when driving, operating heavy machinery or in any other situations where distraction may put your safety or
           that of others at risk.</p>

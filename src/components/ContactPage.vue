@@ -60,7 +60,7 @@
       <div class="info-container">
         <div class="info-card">
           <h2>Location</h2>
-          <p>We provide <b>online video call</b> (16+) and <b>face-to-face</b> therapy sessions. Rewinds (for fast
+          <p>I provide <b>online video call</b> (16+) and <b>face-to-face</b> therapy sessions. Rewinds (for fast
             trauma
             and phobia treatment) are currently only offered face-to-face.</p>
           <p>The Clear Skies Practice is based in Tewkesbury and is easily accessible from the surrounding areas of

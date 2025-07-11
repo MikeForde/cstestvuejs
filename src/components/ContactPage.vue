@@ -52,39 +52,6 @@
           <h2>Cost of Therapy</h2>
           <p>Therapy for individuals - £70 (for 60 minutes)</p>
           <p>Therapy for couples - £130 (for 60 minutes)</p>
-          <p>Personalised guided imagery recording on demand - £70 per recording (for 10-30 minutes)</p>
-          <p>Pre-agreed longer or shorter sessions are possible and will be charged on a pro-rata basis.</p>
-          <p>A limited number of concessions may be available for university students or unemployed individuals. Proof
-            of
-            status is required.</p>
-          <p><b>Phobia or
-              <span class="tooltip-container" tabindex="0">
-                single-incident trauma
-                <span class="tooltip-text">
-                  Single-event trauma is triggered by one unexpected incident—such as physical or sexual assault, a
-                  natural
-                  disaster,
-                  a serious accident, or a sudden illness or injury. Recognizing its warning signs and symptoms is
-                  essential
-                  for getting
-                  the right support and care. After such an event, people often suffer intrusive memories that interfere
-                  with everyday
-                  life, leading to emotional upheaval and shifts in mood. They might find themselves plagued by
-                  recurrent
-                  flashbacks,
-                  overwhelming fear, anger, or sadness, and unable to enjoy activities they once loved. Understanding
-                  these
-                  mental
-                  health effects is key to making sense of what’s happening in the aftermath of a single-incident
-                  trauma.
-                </span>
-              </span>
-              treatment – trauma relating to a single traumatic event – is offered at the discounted price of £60 per hr
-              between
-              June–August 2025. Completing a further number of these face-to-face is a post-qualification training
-              requirement
-              and will enable me to offer them online in the future.</b>
-          </p>
         </div>
       </div>
     </section>
@@ -424,7 +391,7 @@ ul {
 }
 
 .info-section[data-section="3"] .info-image {
-  max-height: 600px;
+  max-height: 300px;
 }
 
 .info-section[data-section="4"] .info-image {

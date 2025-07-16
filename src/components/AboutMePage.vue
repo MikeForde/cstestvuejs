@@ -90,6 +90,7 @@
             <li>How to create healing stories for distressed children</li>
             <li>Understanding eating difficulties</li>
             <li>Online and phone therapy training</li>
+            <li>Moral injury</li>
           </ul>
         </div>
       </div>

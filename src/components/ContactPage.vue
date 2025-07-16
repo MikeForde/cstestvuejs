@@ -52,6 +52,7 @@
           <h2>Cost of Therapy</h2>
           <p>Therapy for individuals - £70 (for 60 minutes)</p>
           <p>Therapy for couples - £130 (for 60 minutes)</p>
+          <p>I offer concessions for blue-light services staff, NHS staff and social workers for specialist trauma and phobia treatment £30 (for 60 minutes).</p>
         </div>
       </div>
     </section>

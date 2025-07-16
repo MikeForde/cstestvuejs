@@ -45,6 +45,7 @@
         <ul>
           <li>Therapy for individuals - £70 (for 60 minutes)</li>
           <li>Therapy for couples - £130 (for 60 minutes)</li>
+          <li>I offer concessions for blue-light services staff, NHS staff and social workers for specialist trauma and phobia treatment £30 (for 60 minutes).</li>
         </ul>
         <p>Any pre-agreed longer or shorter sessions are charged on a pro-rata basis.</p>
         <p><i>Please note these prices are for private paying individuals only, rates will vary when paying via EAP or

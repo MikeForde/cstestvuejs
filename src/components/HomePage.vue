@@ -74,9 +74,9 @@
             <li>Concentration difficulties</li>
             <li>Low mood/depression</li>
             <li>Stress</li>
-            <li>Trauma</li>
+            <li><b>*Trauma</b></li>
             <li>PTSD</li>
-            <li>Phobias</li>
+            <li><b>*Phobias</b></li>
             <li>Anger</li>
             <li>Bereavement and loss</li>
             <li>Relationship difficulties</li>
@@ -87,6 +87,7 @@
             <li>Emotional problems</li>
             <li>Couples therapy</li>
           </ul>
+          <i>*I offer concessions for blue-light services staff, NHS staff and social workers for specialist trauma and phobia treatment £30 (for 60 minutes).</i>
         </div>
       </div>
     </section>

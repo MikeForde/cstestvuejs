@@ -131,7 +131,7 @@
           <img src="@/assets/Daisy.jpeg" alt="Daisy" class="help-image" loading="lazy" />
         </div>
         <div class="info-card text-card">
-          <h2>I can help with:</h2>
+          <h2>I Can Help With:</h2>
           <ul>
             <li>Anxiety</li>
             <li>Academic anxiety</li>
@@ -140,9 +140,9 @@
             <li>Concentration difficulties</li>
             <li>Low mood/depression</li>
             <li>Stress</li>
-            <li>Trauma</li>
+            <li><b>*Trauma</b></li>
             <li>PTSD</li>
-            <li>Phobias</li>
+            <li><b>*Phobias</b></li>
             <li>Anger</li>
             <li>Bereavement and loss</li>
             <li>Relationship difficulties</li>
@@ -153,6 +153,8 @@
             <li>Emotional problems</li>
             <li>Couples therapy</li>
           </ul>
+          <i>*I offer concessions for blue-light services staff, NHS staff and social workers for specialist trauma and phobia treatment £30 (for 60 minutes).</i>
+        
           <div class="button-container">
             <router-link to="/contact" class="button-link">Get in Touch Today</router-link>
           </div>

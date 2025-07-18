@@ -51,7 +51,7 @@
         <div class="info-card">
           <h2>Cost of Therapy</h2>
           <p>Therapy for individuals - £70 (for 60 minutes), <i>£80 on Saturdays</i></p>
-          <p>Therapy for couples - £130 (for 60 minutes), <i>£120 on Saturdays</i></p>
+          <p>Therapy for couples - £120 (for 60 minutes), <i>£130 on Saturdays</i></p>
           <p>Military Veterans and Family Members - FREE support through the charity <a href="https://ptsdresolution.org" target="_blank">PTSD Resolution.</a></p>
           <p>I offer concessions for blue-light services staff, NHS staff and social workers for specialist trauma and phobia treatment £30 (for 60 minutes).</p>
         </div>

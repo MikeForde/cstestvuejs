@@ -393,7 +393,7 @@ ul {
 }
 
 .info-section[data-section="3"] .info-image {
-  max-height: 450px;
+  max-height: 380px;
 }
 
 .info-section[data-section="4"] .info-image {

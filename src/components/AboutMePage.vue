@@ -153,9 +153,10 @@
             <li>Low self-esteem</li>
             <li>Emotional problems</li>
             <li>Couples therapy</li>
+            <li><b>**Military Veterans and Family Members</b></li>
           </ul>
           <i>*I offer concessions for blue-light services staff, NHS staff and social workers for specialist trauma and phobia treatment £30 (for 60 minutes).</i>
-        
+          <i>**FREE support through the charity <a href="https://ptsdresolution.org" target="_blank">PTSD Resolution.</a></i>
           <div class="button-container">
             <router-link to="/contact" class="button-link">Get in Touch Today</router-link>
           </div>

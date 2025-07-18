@@ -43,8 +43,9 @@
         <h2>Cost of Therapy</h2>
         <p>Sessions are available online (16+) and face-to-face. Rewinds are currently only offered face-to-face.</p>
         <ul>
-          <li>Therapy for individuals - £70 (for 60 minutes)</li>
-          <li>Therapy for couples - £130 (for 60 minutes)</li>
+          <li>Therapy for individuals - £70 (for 60 minutes), <i>£80 on Saturdays</i></li>
+          <li>Therapy for couples - £130 (for 60 minutes), <i>£130 on Saturdays</i></li>
+          <li>Military Veterans and Family Members - FREE support through the charity <a href="https://ptsdresolution.org" target="_blank">PTSD Resolution.</a></li>
           <li>I offer concessions for blue-light services staff, NHS staff and social workers for specialist trauma and phobia treatment £30 (for 60 minutes).</li>
         </ul>
         <p>Any pre-agreed longer or shorter sessions are charged on a pro-rata basis.</p>

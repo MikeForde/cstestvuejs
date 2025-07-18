@@ -108,7 +108,7 @@ export default {
 }
 
 .footer-logo {
-  max-height: 75px;
+  max-height: 85px;
 }
 
 .footer-logo2 {

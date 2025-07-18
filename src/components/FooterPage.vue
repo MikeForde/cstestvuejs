@@ -25,6 +25,12 @@
           <img src="@/assets/Counselling_Directory.png" alt="Counselling Directory Logo" class="footer-logo2" />
         </a>
       </div>
+      <div class="footer-center">
+        <a href="https://ptsdresolution.org" target="_blank"
+          rel="noopener">
+          <img src="@/assets/PTSD_Resolution_Logo.png" alt="Counselling Directory Logo" class="footer-logo2" />
+        </a>
+      </div>
       </div>
       <div class="footer-right">
         <router-link to="/privacy">Privacy Policy</router-link> |
@@ -106,8 +112,8 @@ export default {
 }
 
 .footer-logo2 {
-  max-height: 70px;
-  max-width: 180px;
+  max-height: 40px;
+  max-width: 160px;
   padding-right: 20px;
 }
 

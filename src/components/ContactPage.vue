@@ -65,8 +65,7 @@
           <p>I provide <b>online video call</b> (16+) and <b>face-to-face</b> therapy sessions. Rewinds (for fast
             trauma
             and phobia treatment) are currently only offered face-to-face.</p>
-          <p>The Clear Skies Practice is based in Tewkesbury and is easily accessible from the surrounding areas of
-            Gloucestershire and Worcestershire.</p>
+          <p>The Clear Skies Practice is based in Tewkesbury and Cheltenham. It is easily accessible from the surrounding areas of Gloucestershire and Worcestershire, including nearby towns and villages such as Bredon, Pershore, Upton-upon-Severn, Winchcombe, Cheltenham, and Gloucester.</p>
           <p>Location 1: <a href="https://reflectionrooms.co.uk" target="_blank">Reflection Rooms, Tewkesbury</a>.
             Address:
             Reflection Rooms, 13-14 Barton St, Tewkesbury, GL20 5PP</p>
@@ -267,7 +266,8 @@ export default {
 
 .info-section[data-section="2"],
 .info-section[data-section="4"],
-.info-section[data-section="6"] {
+.info-section[data-section="6"],
+.info-section[data-section="8"] {
   background-color: #5DAED5;
   color: white;
 }
@@ -286,13 +286,15 @@ export default {
 
 .info-section[data-section="2"] h2,
 .info-section[data-section="4"] h2,
-.info-section[data-section="6"] h2 {
+.info-section[data-section="6"] h2,
+.info-section[data-section="8"] h2 {
   color: white;
 }
 
 .info-section[data-section="2"] p,
 .info-section[data-section="4"] p,
-.info-section[data-section="6"] p {
+.info-section[data-section="6"] p,
+.info-section[data-section="8"] p {
   color: white;
 }
 

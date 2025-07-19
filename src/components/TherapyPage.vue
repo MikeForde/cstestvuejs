@@ -68,7 +68,7 @@
           <p><a href="https://www.hgi.org.uk/useful-information/treatment-dealing-ptsd-trauma-phobias/rewind-technique"
               target="_blank">Learn more</a></p>
           <p>This method is utilised by the <a href="https://ptsdresolution.org" target="_blank">PTSD Resolution</a> charity for UK veterans and their families. If you are a UK
-            veteran or a member of their family, you may qualify for free therapy with them.</p>
+            veteran or a member of their family, you may qualify for free therapy - please get in touch with me for further details.</p>
           <p><a href="https://www.humangivens.com/case-studies/ptsd-resolution" target="_blank">Learn more</a></p>
         </div>
       </div>

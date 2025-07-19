@@ -45,8 +45,8 @@
         <ul>
           <li>Therapy for individuals - £70 (for 60 minutes), <i>£80 on Saturdays</i></li>
           <li>Therapy for couples - £120 (for 60 minutes), <i>£130 on Saturdays</i></li>
-          <li>Military Veterans and Family Members - FREE support through the charity <a href="https://ptsdresolution.org" target="_blank">PTSD Resolution.</a></li>
           <li>I offer concessions for blue-light services staff, NHS staff and social workers for specialist trauma and phobia treatment £30 (for 60 minutes).</li>
+          <li>Military Veterans and Family Members - <i>please get in touch for more details.</i></li>
         </ul>
         <p>Any pre-agreed longer or shorter sessions are charged on a pro-rata basis.</p>
         <p><i>Please note these prices are for private paying individuals only, rates will vary when paying via EAP or
@@ -112,7 +112,12 @@
             Devereux Centre,
             Tewkesbury</a>.
           Address: The Devereux Centre, Barton Road, Tewkesbury, GL20 5GJ</p>
-        <p>Both are well situated and easy walking distance from the High Street.</p>
+        <p>Both are the above are well situated and easy walking distance from Tewkesbury High Street.</p>
+        <p>Location 3: <a href="https://www.theregencypractice.com"
+            target="_blank">The
+            Regency Practice,
+            Cheltenham</a>.
+          Address: The Regency Practice, 22A Rodney Road, Cheltenham, GL50 1JJ</p>
         <p>Please note, we cannot guarantee that you will always be seen in the same room.</p>
       </div>
     </section>

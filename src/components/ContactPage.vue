@@ -86,10 +86,13 @@
     <section class="info-section" ref="section5" :data-section="5" :class="{ 'fade-in': showSection5 }">
       <div class="info-card">
         <h2>Parking Information</h2>
-        <p>Free on-road parking is available around the town, along with several paid car parks nearby.</p>
-        <p>Tewkesbury is well-served by buses, with the nearest stops at The Crescent or Tewkesbury Hospital, depending
+        <h3>Tewkesbury</h3>
+        <p>Free on-road parking is available around town, along with several paid car parks nearby.</p>
+        <p>Tewkesbury is also well-served by buses, with the nearest stops at The Crescent or Tewkesbury Hospital, depending
           on
           your direction of travel.</p>
+        <h3>Cheltenham</h3>
+        <p>The Regency Practice - Parking can be located outside on Rodney Road, Rodney Road Car Park GL50 1HX or John Lewis Car Park GL52 2RR.</p>
       </div>
     </section>
 

@@ -72,7 +72,7 @@
           <p>Location 2 (Until 31 Aug 2025): <a href="https://www.thedevereuxcentre.co.uk/other-tenants/"
               target="_blank">The Devereux Centre, Tewkesbury</a>. Address:
             The Devereux Centre, Barton Road, Tewkesbury, GL20 5GJ</p>
-          <p>Both are the above are well situated and easy walking distance from Tewkesbury High Street.</p>
+          <p>Both of the above are well situated and easy walking distance from Tewkesbury High Street.</p>
           <p>Location 3: <a href="https://www.theregencypractice.com"
             target="_blank">The Regency Practice, Cheltenham</a>.
           Address: The Regency Practice, 22A Rodney Road, Cheltenham, GL50 1JJ</p>

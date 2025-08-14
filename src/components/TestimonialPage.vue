@@ -23,7 +23,7 @@
     >
       <div class="testimonial-card">
         <blockquote>
-          “I cannot put into words how much Galina has supported me throughout our sessions. This was my first time attending therapy so I was apprehensive. She guided me through everything and after the first session I felt at ease and excited to come back the following week. From the rewinds to coping strategies, she has given me the tools and resources to help me moving forward. Couldn’t recommend her highly enough.”
+          <p>“I cannot put into words how much Galina has supported me throughout our sessions. This was my first time attending therapy so I was apprehensive. She guided me through everything and after the first session I felt at ease and excited to come back the following week. From the rewinds to coping strategies, she has given me the tools and resources to help me moving forward. Couldn’t recommend her highly enough.”</p>
         </blockquote>
         <img src="@/assets/CSP_Logo_Black_trans.png" alt="CSP Logo" class="testimonial-logo" />
       </div>
@@ -59,7 +59,7 @@ the better.”
     >
       <div class="testimonial-card">
         <blockquote>
-          “Galina was very professional but also very understanding and helpful to me! She asked very relevant questions and listened intently!”
+          <p>“Galina was very professional but also very understanding and helpful to me! She asked very relevant questions and listened intently!”</p>
         </blockquote>
         <img src="@/assets/CSP_Logo_Black_trans.png" alt="CSP Logo" class="testimonial-logo" />
       </div>
@@ -73,7 +73,9 @@ the better.”
     >
       <div class="testimonial-card">
         <blockquote>
-          “Galina is kind, patient, caring and enables you to confront your issues. I cannot ever thank her enough for setting me free of my issues and with her help and guidance, she was like a beacon. I had a rewind which was instantly successful, it was truly mind-blowing the difference it made and continues to make. I am now back to the bubbly, positive person I was with Galina's gentle guidance.”
+          <p>“I was so relieved to gain a recommendation from a colleague for Galina. At the point of contact, my daughter (12)  was struggling with challenging friendships, self confidence, low self esteem and being able to express her feelings.</p>
+          <p>From the first meeting, I had confidence in Galina’s ability to develop a trusting rapport with my daughter and gently support her with compassion. Galina worked with her for approximately three months in which time her confidence started to grow as she challenged previous experiences. We saw examples of her standing up to peers and take on new roles at school. Testament to this, she was awarded the resilience award at school and congratulated on the transformation she had demonstrated in her academic progress in addition.</p>
+          <p>I can wholeheartedly recommend Galina's support.”</p>
         </blockquote>
         <img src="@/assets/CSP_Logo_White_trans.png" alt="CSP Logo" class="testimonial-logo" />
       </div>
@@ -96,6 +98,20 @@ the better.”
         <img src="@/assets/CSP_Logo_Black_trans.png" alt="CSP Logo" class="testimonial-logo" />
       </div>
     </section>
+
+    <section
+      class="testimonial-section"
+      ref="section6"
+      :data-section="6"
+      :class="{ 'fade-in': showSection6 }"
+    >
+      <div class="testimonial-card">
+        <blockquote>
+           <p>“Galina is kind, patient, caring and enables you to confront your issues. I cannot ever thank her enough for setting me free of my issues and with her help and guidance, she was like a beacon. I had a rewind which was instantly successful, it was truly mind-blowing the difference it made and continues to make. I am now back to the bubbly, positive person I was with Galina's gentle guidance.”</p>
+        </blockquote>
+        <img src="@/assets/CSP_Logo_White_trans.png" alt="CSP Logo" class="testimonial-logo" />
+      </div>
+    </section>
   </div>
 </template>
 
@@ -110,6 +126,7 @@ export default {
       showSection3: false,
       showSection4: false,
       showSection5: false,
+      showSection6: false,
       videoPlayable: true,
       backupImage: require('@/assets/AnimatedSky.gif')
     };
@@ -133,6 +150,7 @@ export default {
       observer.observe(this.$refs.section3);
       observer.observe(this.$refs.section4);
       observer.observe(this.$refs.section5);
+      observer.observe(this.$refs.section6);
     });
   },
   methods: {
@@ -213,7 +231,7 @@ export default {
   color: #666;
 }
 
-.testimonial-section[data-section="2"], .testimonial-section[data-section="4"]{
+.testimonial-section[data-section="2"], .testimonial-section[data-section="4"], .testimonial-section[data-section="6"]{
   background-color: #5DAED5;
   color: white;
 }

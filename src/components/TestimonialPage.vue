@@ -112,6 +112,20 @@ the better.”
         <img src="@/assets/CSP_Logo_White_trans.png" alt="CSP Logo" class="testimonial-logo" />
       </div>
     </section>
+
+    <section
+      class="testimonial-section"
+      ref="section7"
+      :data-section="7"
+      :class="{ 'fade-in': showSection7 }"
+    >
+      <div class="testimonial-card">
+        <blockquote>
+           <p>“Galina is fantastic at what she does. She created an environment where I felt safe, supported, and heard. Her thoughtful use of different techniques and resources felt personal and exactly what I needed, especially during a time when negative thoughts were becoming overwhelming. I am very grateful for her guidance and the difference it has made for me. Thank you!”</p>
+        </blockquote>
+        <img src="@/assets/CSP_Logo_Black_trans.png" alt="CSP Logo" class="testimonial-logo" />
+      </div>
+    </section>
   </div>
 </template>
 
@@ -127,6 +141,7 @@ export default {
       showSection4: false,
       showSection5: false,
       showSection6: false,
+      showSection7: false,
       videoPlayable: true,
       backupImage: require('@/assets/AnimatedSky.gif')
     };
@@ -151,6 +166,7 @@ export default {
       observer.observe(this.$refs.section4);
       observer.observe(this.$refs.section5);
       observer.observe(this.$refs.section6);
+      observer.observe(this.$refs.section7);
     });
   },
   methods: {

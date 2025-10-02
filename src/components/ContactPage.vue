@@ -50,9 +50,9 @@
         </div>
         <div class="info-card">
           <h2>Cost of Therapy</h2>
-          <p>Therapy for individuals - £70 (for 60 minutes), <i>£80 on Saturdays</i></p>
-          <p>Therapy for couples - £120 (for 60 minutes), <i>£130 on Saturdays</i></p>
-          <p>I offer concessions for blue-light services staff, NHS staff and social workers for specialist trauma and phobia treatment £30 (for 60 minutes).</p>
+          <p>Therapy for individuals - £75 (for 60 minutes), <i>£80 on Saturdays</i></p>
+          <p>Therapy for couples - £115 (for 60 minutes), <i>£125 on Saturdays</i></p>
+          <p>I offer concessions for blue-light services staff, NHS staff and social workers for work-related trauma issues £30 (for 60 minutes).</p>
           <p>Military Veterans and Family Members - <i>please get in touch for more details.</i></p>
         </div>
       </div>
@@ -69,11 +69,8 @@
           <p>Location 1: <a href="https://reflectionrooms.co.uk" target="_blank">Reflection Rooms, Tewkesbury</a>.
             Address:
             Reflection Rooms, 13-14 Barton St, Tewkesbury, GL20 5PP</p>
-          <p>Location 2 (Until 31 Aug 2025): <a href="https://www.thedevereuxcentre.co.uk/other-tenants/"
-              target="_blank">The Devereux Centre, Tewkesbury</a>. Address:
-            The Devereux Centre, Barton Road, Tewkesbury, GL20 5GJ</p>
-          <p>Both of the above are well situated and easy walking distance from Tewkesbury High Street.</p>
-          <p>Location 3: <a href="https://www.theregencypractice.com"
+          <p>The above is well situated and easy walking distance from Tewkesbury High Street.</p>
+          <p>Location 2: <a href="https://www.theregencypractice.com"
             target="_blank">The Regency Practice, Cheltenham</a>.
           Address: The Regency Practice, 22A Rodney Road, Cheltenham, GL50 1JJ</p>
         </div>
@@ -112,19 +109,6 @@
     <section class="info-section" ref="section7" :data-section="7" :class="{ 'fade-in': showSection7 }">
       <div class="info-container">
         <div class="info-card map-card">
-          <h2>The Devereux Centre - Tewkesbury</h2>
-          <iframe class="mapImage" frameborder="0" scrolling="no" id="gmap_canvas"
-            src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Devereux%20Centre,%20Barton%20Road%20Tewkesbury+(Clear%20Skies%20Practice)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-        </div>
-        <div class="info-card image-card">
-          <img src="@/assets/Devereux_Centre.jpg" alt="Devereux Centre external view" class="location-image" loading="lazy" />
-        </div>
-      </div>
-    </section>
-
-    <section class="info-section" ref="section8" :data-section="8" :class="{ 'fade-in': showSection8 }">
-      <div class="info-container">
-        <div class="info-card map-card">
           <h2>The Regency Practice - Cheltenham</h2>
           <iframe class="mapImage" frameborder="0" scrolling="no" id="gmap_canvas"
             src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Regency%20Practice,%20Rodney%20Road%20Cheltenham+(Clear%20Skies%20Practice)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
@@ -150,7 +134,6 @@ export default {
       showSection5: false,
       showSection6: false,
       showSection7: false,
-      showSection8: false,
       videoPlayable: true,
       backupImage: require('@/assets/AnimatedSky.gif')
     };
@@ -183,7 +166,6 @@ export default {
       observer.observe(this.$refs.section5);
       observer.observe(this.$refs.section6);
       observer.observe(this.$refs.section7);
-      observer.observe(this.$refs.section8);
     });
   },
   methods: {

@@ -45,8 +45,8 @@
         <ul>
           <li>Therapy for individuals - £75 (for 60 minutes), <i>£80 on Saturdays</i></li>
           <li>Therapy for couples - £115 (for 60 minutes), <i>£125 on Saturdays</i></li>
-          <li>I offer concessions for blue-light services staff, NHS staff and social workers for work-related trauma issues £30 (for 60 minutes).</li>
-          <li>Military Veterans and Family Members - <i>please get in touch for more details.</i></li>
+          <li>I offer concessions for blue-light services staff, NHS staff and social workers for work-related trauma issues £30 (for 50 minutes). For non-work-related therapy, concession rates are £60 (for 50 minutes).</li>
+          <li>Free therapy for Military Veterans and Family Members - <i>please get in touch for more details.</i></li>
         </ul>
         <p>Any pre-agreed longer or shorter sessions are charged on a pro-rata basis.</p>
         <p><i>Please note these prices are for private paying individuals only, rates will vary when paying via EAP or
@@ -102,18 +102,13 @@
           phobia treatment) are currently only
           offered
           face-to-face.</p>
-        <p>The Clear Skies Practice is based in Tewkesbury and is easily accessible from the surrounding areas of
+        <p>The Clear Skies Practice is based in Tewkesbury and Cheltenham. It is easily accessible from the surrounding areas of
           Gloucestershire and Worcestershire.</p>
         <p>Location 1: <a href="https://reflectionrooms.co.uk" target="_blank">Reflection Rooms,
             Tewkesbury</a>.
           Address: Reflection Rooms, 13-14 Barton St, Tewkesbury, GL20 5PP</p>
-        <p>Location 2 (Until 31 Aug 2025): <a href="https://www.thedevereuxcentre.co.uk/other-tenants/"
-            target="_blank">The
-            Devereux Centre,
-            Tewkesbury</a>.
-          Address: The Devereux Centre, Barton Road, Tewkesbury, GL20 5GJ</p>
-        <p>Both are the above are well situated and easy walking distance from Tewkesbury High Street.</p>
-        <p>Location 3: <a href="https://www.theregencypractice.com"
+        <p>The above is well situated and easy walking distance from Tewkesbury High Street.</p>
+        <p>Location 2: <a href="https://www.theregencypractice.com"
             target="_blank">The
             Regency Practice,
             Cheltenham</a>.

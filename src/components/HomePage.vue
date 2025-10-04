@@ -88,8 +88,8 @@
             <li>Couples therapy</li>
             <li><b>**Military Veterans and Family Members</b></li>
           </ul>
-          <i>*I offer concessions for blue-light services staff, NHS staff and social workers for work-related trauma issues £30 (for 60 minutes).</i>
-          <i>**please get in touch for more details.</i>
+          <i>*I offer concessions for blue-light services staff, NHS staff and social workers.</i>
+          <i>**Free therapy - please get in touch for more details.</i>
         </div>
       </div>
     </section>

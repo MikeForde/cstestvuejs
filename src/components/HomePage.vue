@@ -202,10 +202,12 @@ export default {
 <style scoped>
 .hero {
   position: relative;
-  height: 300px;
-  /* Adjust the height as needed */
+  height: 280px;
   overflow: hidden;
   width: 100%;
+  isolation: isolate;          /* new: creates its own stacking context */
+  --logo-h: 80px;              /* new: logo height var to reserve space */
+  padding-bottom: calc(-10px + var(--logo-h)); /* new: reserve logo space */
 }
 
 .hero-image {
@@ -246,7 +248,7 @@ export default {
   text-align: center;
   color: white;
   padding: 50px 20px;
-  z-index: 1;
+  z-index: 2;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: xx-large;
 }
@@ -261,9 +263,9 @@ export default {
   /* Adjust as needed */
   left: 50%;
   transform: translateX(-50%);
-  width: 80px;
+  width: var(--logo-h);
   /* Adjust size as needed */
-  z-index: 0;
+  z-index: 1;
 }
 
 .text-card-testimonial {
@@ -522,6 +524,7 @@ export default {
 
   .hero {
     height: 250px;
+    --logo-h: 60px;
   }
 
   .hero-content {
@@ -541,7 +544,7 @@ export default {
 }
 
   .logo-overlay {
-    width: 60px;
+    width: var(--logo-h);
   }
 
   .cursive {

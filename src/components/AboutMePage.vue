@@ -17,26 +17,26 @@
     <section class="about-me blackWhite" ref="aboutMe" :data-section="1" :class="{ 'fade-in': showAboutMe }">
       <div class="about-me-container">
         <div class="about-me-info image-card">
-          <img src="@/assets/galina2.jpg" alt="Galina Filipkova" class="about-me-image" loading="eager"/>
+          <img src="@/assets/galina2.jpg" alt="Galina Filipkova" class="about-me-image" loading="eager" />
         </div>
         <div class="about-me-info info-card">
           <h2>I'm Galina Filipkova</h2>
-          <p>Since founding Clear Skies Practice in September 2024, I have conducted over 100 therapeutic sessions with
-            adults to help them move forward from difficult periods in their lives. In my practice, I always endeavour
-            to
-            ensure that, alongside the specific therapeutic work in sessions, clients learn tools, skills and knowledge
-            to
-            sustain good emotional health both during and beyond therapy.</p>
-          <p>For the past three years, I have worked in a grammar school, successfully supporting pupils with a wide
-            range
-            of emotional difficulties, including anxiety (general and performance), OCD, anger, panic attacks,
-            procrastination, low mood, low self-esteem, relationship issues, barriers to school attendance and
-            self-harm. In
-            that role—and in my previous position as a teaching assistant at a SEND school—I also developed extensive
-            experience supporting neurodivergent individuals.</p>
-          <p>Furthermore, I have worked with both adults and young people in my past roles as a teacher, personal tutor,
-            and
-            social worker, and I’ve volunteered with the Samaritans.</p>
+          <p>Since founding Clear Skies Practice in September 2024, I have supported many adults to help them move
+            forward
+            from difficult periods in their lives. In my practice, I always endeavour to ensure that, alongside the
+            specific
+            therapeutic work in sessions, clients learn tools, skills and knowledge to sustain good emotional health
+            both
+            during and beyond therapy.</p>
+
+          <p>I have over 19 years of combined experience working with children, young people, and adults in the
+            education
+            and social care sectors. This includes extensive experience in supporting neurodivergent individuals.</p>
+
+          <p>I’ve volunteered with the Samaritans and currently work as a therapist for the PTSD Resolution charity for
+            UK
+            veterans and their families.</p>
+
           <p>In my free time, I enjoy reading, gardening, yoga, running and walking.</p>
           <p>Please feel free to get in touch via email or text to request a free 15-minute initial call, where I can
             answer
@@ -73,25 +73,30 @@
           <img src="@/assets/Trees_up.jpg" alt="Trees up" class="help-image" />
         </div>
         <div class="info-card text-card">
-          <h2>My Professional Training</h2>
-          <p>My further professional training includes the following courses with the Human Givens Institute:</p>
+          <h2>Further Professional Training</h2>
+          <p>My further professional training includes the following courses:</p>
           <ul>
-            <li>Grief and bereavement and what you can do to help</li>
             <li>Trauma: Patterns of the past</li>
             <li>Complex trauma: working with challenging cases</li>
-            <li>The missing links: molar memories, subthreshold traumas, and the affect bridge</li>
-            <li>Obsessive compulsive disorder</li>
-            <li>How to help troubled and troublesome teenagers</li>
-            <li>Understanding eating difficulties</li>
-            <li>How to avoid burnout</li>
-            <li>The mind body connection: Food, mood and sleep</li>
-            <li>How to reduce suicide risk</li>
-            <li>Neurodiversity and relationships</li>
-            <li>How to create healing stories for distressed children</li>
-            <li>Online and phone therapy training</li>
             <li>Moral injury</li>
             <li>Understanding complex emotional needs (personality disorder)</li>
+            <li>The missing links: molar memories, subthreshold traumas, and the affect bridge</li>
+            <li>Obsessive-compulsive disorder</li>
+            <li>Grief and bereavement, and what you can do to help</li>
+            <li>How to help troubled and troublesome teenagers</li>
+            <li>How to create healing stories for distressed children</li>
+            <li>Understanding eating difficulties</li>
+            <li>How to avoid burnout</li>
+            <li>The mind-body connection: Food, mood, and sleep</li>
+            <li>How to reduce suicide risk</li>
             <li>Couples Therapy</li>
+            <li>Is narcissism the problem</li>
+            <li>Neurodiversity and relationships</li>
+            <li>Autism, ADHD, and executive function</li>
+            <li>Autism and PDA</li>
+            <li>Autistic burnout</li>
+            <li>Autism: developing a positive self-identity</li>
+            <li>Online and phone therapy training</li>
           </ul>
         </div>
       </div>
@@ -121,7 +126,7 @@
           </p>
         </div>
         <div class="image-card">
-          <img src="@/assets/Double_Rainbow.jpg" alt="Double rainbow image" class="help-image" loading="lazy"/>
+          <img src="@/assets/Double_Rainbow.jpg" alt="Double rainbow image" class="help-image" loading="lazy" />
         </div>
       </div>
     </section>
@@ -135,29 +140,22 @@
         <div class="info-card text-card">
           <h2>I Can Help With:</h2>
           <ul>
-            <li>Anxiety</li>
-            <li>Academic anxiety</li>
-            <li>Panic attacks</li>
-            <li>OCD</li>
-            <li>Concentration difficulties</li>
-            <li>Low mood/depression</li>
-            <li>Stress</li>
-            <li><b>*Trauma</b></li>
-            <li>PTSD</li>
-            <li><b>*Phobias</b></li>
+            <li>Trauma &amp; PTSD</li>
             <li>Anger</li>
-            <li>Bereavement and loss</li>
-            <li>Relationship difficulties</li>
-            <li>Life transitions</li>
-            <li>Addictions (mild to moderate) and unhelpful habits</li>
-            <li>Low confidence</li>
-            <li>Low self-esteem</li>
-            <li>Emotional problems</li>
+            <li>Phobias</li>
             <li>Couples therapy</li>
-            <li><b>**Military Veterans and Family Members</b></li>
+            <li>Relationship Difficulties</li>
+            <li>Narcissistic abuse</li>
+            <li>Anxiety</li>
+            <li>OCD</li>
+            <li>Depression</li>
+            <li>Addictions and unhelpful habits</li>
+            <li>Bereavement and loss</li>
+            <li>Coaching for neurodivergent clients (autism, ADHD)</li>
           </ul>
-          <i>*I offer concessions for blue-light services staff, NHS staff and social workers.</i>
-           <i>**Free therapy - please get in touch for more details.</i>
+          <i>I offer concessions for blue-light services staff, NHS staff and social workers.</i>
+          <br />
+          <i>Free therapy for Military Veterans and Family Members - please get in touch for more details.</i>
           <div class="button-container">
             <router-link to="/contact" class="button-link">Get in Touch Today</router-link>
           </div>

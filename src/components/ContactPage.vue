@@ -50,8 +50,8 @@
         </div>
         <div class="info-card">
           <h2>Cost of Therapy</h2>
-          <p>Therapy for individuals - £75 (for 60 minutes), <i>£80 on Saturdays</i></p>
-          <p>Therapy for couples - £115 (for 60 minutes), <i>£125 on Saturdays</i></p>
+          <p>Therapy for individuals - £80 (for 60 minutes)</p>
+          <p>Therapy for couples - £120 (for 60 minutes)</p>
           <p>I offer concessions for blue-light services staff, NHS staff and social workers - <i>see Fees and Business page for more detail.</i></p>
           <p>Free therapy for Military Veterans and Family Members - <i>please get in touch for more details.</i></p>
         </div>

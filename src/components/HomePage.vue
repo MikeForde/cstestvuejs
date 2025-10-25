@@ -39,8 +39,14 @@
             relationship issues? If you need support to navigate these difficulties, I can help.</p>
           <p>My name is Galina Filipkova. I created the Clear Skies Practice as a safe space where we can work together
             to
-            help you move forward. I work from the Human Givens (HG) approach, which focuses on helping you build a life
-            where your emotional and physical needs are met in balance, activating and adding to your resources.</p>
+            help you move forward. I offer specialist treatment for trauma and phobias. My other areas of expertise are
+            anxiety, depression, relationships/couples therapy, bereavement, and coaching for neurodivergent clients.
+          </p>
+
+          <p>I work from the Human Givens (HG) approach, which focuses on helping you build a life where your emotional
+            and
+            physical needs are met in balance, activating and adding to your resources.</p>
+
           <p>It is a practical, brief and solution-focussed approach that combines the latest insights from psychology
             and
             neuroscience research with proven techniques from a wide range of modalities in counselling and
@@ -62,34 +68,27 @@
     <section class="additional-info" ref="additionalInfo" :class="{ 'fade-in': showAdditionalInfo }">
       <div class="info-container">
         <div class="info-card image-card">
-          <img src="@/assets/Daisy.jpeg" alt="Help Image" class="help-image" loading="lazy"/>
+          <img src="@/assets/Daisy.jpeg" alt="Help Image" class="help-image" loading="lazy" />
         </div>
         <div class="info-card text-card">
           <h2>I Can Help With:</h2>
           <ul>
-            <li>Anxiety</li>
-            <li>Academic anxiety</li>
-            <li>Panic attacks</li>
-            <li>OCD</li>
-            <li>Concentration difficulties</li>
-            <li>Low mood/depression</li>
-            <li>Stress</li>
-            <li><b>*Trauma</b></li>
-            <li>PTSD</li>
-            <li><b>*Phobias</b></li>
+            <li>Trauma &amp; PTSD</li>
             <li>Anger</li>
-            <li>Bereavement and loss</li>
-            <li>Relationship difficulties</li>
-            <li>Life transitions</li>
-            <li>Addictions (mild to moderate) and unhelpful habits</li>
-            <li>Low confidence</li>
-            <li>Low self-esteem</li>
-            <li>Emotional problems</li>
+            <li>Phobias</li>
             <li>Couples therapy</li>
-            <li><b>**Military Veterans and Family Members</b></li>
+            <li>Relationship Difficulties</li>
+            <li>Narcissistic abuse</li>
+            <li>Anxiety</li>
+            <li>OCD</li>
+            <li>Depression</li>
+            <li>Addictions and unhelpful habits</li>
+            <li>Bereavement and loss</li>
+            <li>Coaching for neurodivergent clients (autism, ADHD)</li>
           </ul>
-          <i>*I offer concessions for blue-light services staff, NHS staff and social workers.</i>
-          <i>**Free therapy - please get in touch for more details.</i>
+          <i>I offer concessions for blue-light services staff, NHS staff and social workers.</i>
+          <br />
+          <i>Free therapy for Military Veterans and Family Members - please get in touch for more details.</i>
         </div>
       </div>
     </section>
@@ -205,9 +204,12 @@ export default {
   height: 280px;
   overflow: hidden;
   width: 100%;
-  isolation: isolate;          /* new: creates its own stacking context */
-  --logo-h: 80px;              /* new: logo height var to reserve space */
-  padding-bottom: calc(-10px + var(--logo-h)); /* new: reserve logo space */
+  isolation: isolate;
+  /* new: creates its own stacking context */
+  --logo-h: 80px;
+  /* new: logo height var to reserve space */
+  padding-bottom: calc(-10px + var(--logo-h));
+  /* new: reserve logo space */
 }
 
 .hero-image {
@@ -292,7 +294,7 @@ export default {
 
 .cursive {
   /* font-style: italic; */
-  font-family: 
+  font-family:
     /* pick the best‐looking one first: */
     'Handlee',
     "Apple Chancery",
@@ -415,10 +417,14 @@ export default {
 }
 
 .help-image {
-  height: 100%;           /* full height of its flex‐stretched parent */
-  width: auto;            /* let width scale proportionally */
-  object-fit: cover;      /* crop to fill */
-  object-position: center center; /* center the cropped area */
+  height: 100%;
+  /* full height of its flex‐stretched parent */
+  width: auto;
+  /* let width scale proportionally */
+  object-fit: cover;
+  /* crop to fill */
+  object-position: center center;
+  /* center the cropped area */
 }
 
 .immediate-help {
@@ -540,8 +546,8 @@ export default {
   }
 
   .help-image {
-    width:100%
-}
+    width: 100%
+  }
 
   .logo-overlay {
     width: var(--logo-h);

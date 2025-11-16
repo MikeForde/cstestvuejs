@@ -86,7 +86,7 @@
             <li>Bereavement and loss</li>
             <li>Coaching for neurodivergent clients (autism, ADHD)</li>
           </ul>
-          <i>I offer concessions for blue-light services staff, NHS staff and social workers.</i>
+          <i>I offer concessions for students, blue-light services staff, NHS staff and social workers.</i>
           <br />
           <i>Free therapy for Military Veterans and Family Members - please get in touch for more details.</i>
         </div>

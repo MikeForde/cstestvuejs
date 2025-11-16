@@ -52,7 +52,8 @@
           <h2>Cost of Therapy</h2>
           <p>Therapy for individuals - £80 (for 60 minutes)</p>
           <p>Therapy for couples - £120 (for 60 minutes)</p>
-          <p>I offer concessions for blue-light services staff, NHS staff and social workers - <i>see Fees and Business page for more detail.</i></p>
+          <p>Concessions for students - £70 (for 60 minutes)</p>
+          <p>I also offer concessions for blue-light services staff, NHS staff and social workers - <i>please get in touch for more details.</i></p>
           <p>Free therapy for Military Veterans and Family Members - <i>please get in touch for more details.</i></p>
         </div>
       </div>

@@ -45,7 +45,8 @@
         <ul>
           <li>Therapy for individuals - £80 (for 60 minutes)</li>
           <li>Therapy for couples - £120 (for 60 minutes)</li>
-          <li>I offer concessions for blue-light services staff, NHS staff and social workers for work-related trauma issues £30 (for 60 minutes). For non-work-related therapy, concession rates are £70 (for 60 minutes).</li>
+          <li>Concessions for students - £70 (for 60 minutes)</li>
+          <li>Concessions for blue-light services staff, NHS staff and social workers - <i>please get in touch for more details.</i></li>
           <li>Free therapy for Military Veterans and Family Members - <i>please get in touch for more details.</i></li>
         </ul>
         <p>Any pre-agreed longer or shorter sessions are charged on a pro-rata basis.</p>

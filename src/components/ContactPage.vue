@@ -63,9 +63,7 @@
       <div class="info-container">
         <div class="info-card">
           <h2>Location</h2>
-          <p>I provide <b>online video call</b> (16+) and <b>face-to-face</b> therapy sessions. Rewinds (for fast
-            trauma
-            and phobia treatment) are currently only offered face-to-face.</p>
+          <p>I provide <b>online video call</b> (16+) and <b>face-to-face</b> therapy sessions.</p>
           <p>The Clear Skies Practice is based in Tewkesbury and Cheltenham. It is easily accessible from the surrounding areas of Gloucestershire and Worcestershire, including nearby towns and villages such as Bredon, Pershore, Upton-upon-Severn, Winchcombe, Cheltenham, and Gloucester.</p>
           <p>Location 1: <a href="https://reflectionrooms.co.uk" target="_blank">Reflection Rooms, Tewkesbury</a>.
             Address:

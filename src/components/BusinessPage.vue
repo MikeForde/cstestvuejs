@@ -41,7 +41,7 @@
       :class="{ 'fade-in': showSection5 }">
       <div class="info-card">
         <h2>Cost of Therapy</h2>
-        <p>Sessions are available online (16+) and face-to-face. Rewinds are currently only offered face-to-face.</p>
+        <p>Sessions are available online (16+) and face-to-face.</p>
         <ul>
           <li>Therapy for individuals - £80 (for 60 minutes)</li>
           <li>Therapy for couples - £120 (for 60 minutes)</li>

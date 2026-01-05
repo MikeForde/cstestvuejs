@@ -135,7 +135,7 @@
     <section class="info-section blackWhite" ref="section5" :data-section="5" :class="{ 'fade-in': showSection5 }">
       <div class="info-card-container">
         <div class="image-card">
-          <img src="@/assets/Daisy.jpeg" alt="Daisy" class="help-image" loading="lazy" />
+          <img src="@/assets/Daisy.jpeg" alt="Daisy" class="help-image focus-top" loading="lazy" />
         </div>
         <div class="info-card text-card">
           <h2>I Can Help With:</h2>
@@ -143,7 +143,7 @@
             <li>Trauma &amp; PTSD</li>
             <li>Anger</li>
             <li>Phobias</li>
-            <li>Couples therapy</li>
+            <li><router-link to="/couplestherapy">Couples Therapy</router-link></li>
             <li>Relationship Difficulties</li>
             <li>Narcissistic abuse</li>
             <li>Anxiety</li>
@@ -322,6 +322,10 @@ export default {
 .whiteBlue li,
 .whiteBlue a {
   color: #fff;
+}
+
+.focus-top {
+  object-position: 50% 10%; /* x y — 20% is “higher” than centre */
 }
 
 

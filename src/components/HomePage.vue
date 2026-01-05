@@ -76,7 +76,7 @@
             <li>Trauma &amp; PTSD</li>
             <li>Anger</li>
             <li>Phobias</li>
-            <li>Couples therapy</li>
+            <li><router-link to="/couplestherapy">Couples Therapy</router-link></li>
             <li>Relationship Difficulties</li>
             <li>Narcissistic abuse</li>
             <li>Anxiety</li>

@@ -11,6 +11,7 @@
         </router-link>
         <ul class="nav-links" :class="{ 'nav-active': menuActive }" ref="menu">
           <li><router-link to="/therapy" @click="closeMenu">Therapy</router-link></li>
+          <li><router-link to="/couplestherapy" @click="closeMenu">Couples Therapy</router-link></li>
           <li><router-link to="/about-me" @click="closeMenu">About Me</router-link></li>
           <li><router-link to="/contact" @click="closeMenu">Contact</router-link></li>
           <li><router-link to="/testimonials" @click="closeMenu">Testimonials</router-link></li>
@@ -70,6 +71,23 @@ export default {
 }
 </script>
 
+<style>
+  /* Default links behave like text, not browser chrome */
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:visited {
+  color: inherit;
+}
+
+</style>
 <style scoped>
 @import '~@fortawesome/fontawesome-free/css/all.css';
 

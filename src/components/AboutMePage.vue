@@ -29,9 +29,12 @@
             both
             during and beyond therapy.</p>
 
-          <p>I have over 19 years of combined experience working with children, young people, and adults in the
-            education
-            and social care sectors. This includes extensive experience in supporting neurodivergent individuals.</p>
+          <p>I have over {{ yearsExperience }} years of combined experience working with children, young people, and
+            adults
+            in the
+            education and social care sectors. This includes extensive experience in supporting neurodivergent
+            individuals.
+          </p>
 
           <p>I’ve volunteered with the Samaritans and currently work as a therapist for the PTSD Resolution charity for
             UK
@@ -179,8 +182,24 @@ export default {
       showSection4: false,
       showSection5: false,
       videoPlayable: true, // Assume the video is playable by default
-      backupImage: require('@/assets/AnimatedSky.gif') // GIF is the backup image
+      backupImage: require('@/assets/AnimatedSky.gif'), // GIF is the backup image
+      experienceStartDate: new Date(2005, 11, 1), // months are 0-based: 8 = September
     };
+  },
+  computed: {
+    yearsExperience() {
+      const now = new Date();
+      let years = now.getFullYear() - this.experienceStartDate.getFullYear();
+
+      const anniversaryThisYear = new Date(
+        now.getFullYear(),
+        this.experienceStartDate.getMonth(),
+        this.experienceStartDate.getDate()
+      );
+
+      if (now < anniversaryThisYear) years -= 1;
+      return years;
+    }
   },
   mounted() {
     this.$nextTick(() => {
@@ -325,7 +344,8 @@ export default {
 }
 
 .focus-top {
-  object-position: 50% 10%; /* x y — 20% is “higher” than centre */
+  object-position: 50% 10%;
+  /* x y — 20% is “higher” than centre */
 }
 
 

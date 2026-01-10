@@ -16,20 +16,68 @@
 
     <section class="info-section" ref="section1" :data-section="1" :class="{ 'fade-in': showSection1 }">
       <div class="info-container">
+
+        <!-- Image -->
         <div class="image-card">
-          <img src="@/assets/Booking.jpg" alt="Booking Sessions Image - swirling sands" class="info-image" loading="eager" />
+          <img src="@/assets/Booking.jpg" alt="Booking Sessions Image - swirling sands" class="info-image"
+            loading="eager" />
         </div>
+
+        <!-- Content -->
         <div class="info-card">
           <h2>Booking Sessions</h2>
-          <p>Email: <a href="mailto:clearskiespractice@gmail.com">clearskiespractice@gmail.com</a> (preferred)</p>
-          <p>Text via WhatsApp: <a href="sms:07760 531057">07760 531057</a> (please include your email address)</p>
-          <p>Please contact me for my availability and to arrange a 15-minute, free introductory phone call to discuss
-            the
-            outcome you’re looking for and to ask questions about how therapy will work for you. Email is my preferred
-            method of contact.</p>
+
+          <p>
+            Email:
+            <a href="mailto:clearskiespractice@gmail.com">
+              clearskiespractice@gmail.com
+            </a>
+            (preferred)
+          </p>
+
+          <p>
+            Text via WhatsApp:
+            <a href="sms:07760 531057">07760 531057</a>
+            (please include your email address)
+          </p>
+
+          <p>
+            Please contact me for my availability and to arrange a 15-minute, free
+            introductory phone call to discuss the outcome you’re looking for and to
+            ask questions about how therapy will work for you.
+          </p>
+
+          <hr class="contact-divider" />
+
+          <h3>Quick message</h3>
+
+          <p>
+            If you prefer, fill this in and it will open your email app with the
+            message pre-filled.
+          </p>
+
+          <form class="contact-form" @submit.prevent="openEmailClient">
+            <label>
+              Your name
+              <input v-model.trim="contactName" type="text" autocomplete="name" />
+            </label>
+
+            <label>
+              Message <span class="hint">(required)</span>
+              <textarea v-model.trim="contactMessage" rows="6" required></textarea>
+            </label>
+
+            <button class="contact-submit" type="submit">
+              Open email with this message
+            </button>
+
+            <p v-if="formError" class="form-error">{{ formError }}</p>
+          </form>
         </div>
+
       </div>
     </section>
+
 
     <section class="info-section" ref="section2" :data-section="2" :class="{ 'fade-in': showSection2 }">
       <div class="info-container">
@@ -53,7 +101,9 @@
           <p>Therapy for individuals - £80 (for 60 minutes)</p>
           <p>Therapy for couples - £120 (for 60 minutes)</p>
           <p>Concessions for students - £70 (for 60 minutes)</p>
-          <p>I also offer concessions for blue-light services staff, NHS staff and social workers - <i>please get in touch for more details.</i></p>
+          <p>I also offer concessions for blue-light services staff, NHS staff and social workers - <i>please get in
+              touch
+              for more details.</i></p>
           <p>Free therapy for Military Veterans and Family Members - <i>please get in touch for more details.</i></p>
         </div>
       </div>
@@ -64,14 +114,17 @@
         <div class="info-card">
           <h2>Location</h2>
           <p>I provide <b>online video call</b> (16+) and <b>face-to-face</b> therapy sessions.</p>
-          <p>The Clear Skies Practice is based in Tewkesbury and Cheltenham. It is easily accessible from the surrounding areas of Gloucestershire and Worcestershire, including nearby towns and villages such as Bredon, Pershore, Upton-upon-Severn, Winchcombe, Cheltenham, and Gloucester.</p>
+          <p>The Clear Skies Practice is based in Tewkesbury and Cheltenham. It is easily accessible from the
+            surrounding
+            areas of Gloucestershire and Worcestershire, including nearby towns and villages such as Bredon, Pershore,
+            Upton-upon-Severn, Winchcombe, Cheltenham, and Gloucester.</p>
           <p>Location 1: <a href="https://reflectionrooms.co.uk" target="_blank">Reflection Rooms, Tewkesbury</a>.
             Address:
             Reflection Rooms, 13-14 Barton St, Tewkesbury, GL20 5PP</p>
           <p>The above is well situated and easy walking distance from Tewkesbury High Street.</p>
-          <p>Location 2: <a href="https://www.theregencypractice.com"
-            target="_blank">The Regency Practice, Cheltenham</a>.
-          Address: The Regency Practice, 22A Rodney Road, Cheltenham, GL50 1JJ</p>
+          <p>Location 2: <a href="https://www.theregencypractice.com" target="_blank">The Regency Practice,
+              Cheltenham</a>.
+            Address: The Regency Practice, 22A Rodney Road, Cheltenham, GL50 1JJ</p>
         </div>
         <div class="image-card">
           <img src="@/assets/Location.jpg" alt="Location Image - boat statue" class="info-image" />
@@ -84,11 +137,14 @@
         <h2>Parking Information</h2>
         <h3>Tewkesbury</h3>
         <p>Free on-road parking is available around town, along with several paid car parks nearby.</p>
-        <p>Tewkesbury is also well-served by buses, with the nearest stops at The Crescent or Tewkesbury Hospital, depending
+        <p>Tewkesbury is also well-served by buses, with the nearest stops at The Crescent or Tewkesbury Hospital,
+          depending
           on
           your direction of travel.</p>
         <h3>Cheltenham</h3>
-        <p>The Regency Practice - Parking can be located outside on Rodney Road, Rodney Road Car Park GL50 1HX or John Lewis Car Park GL52 2RR.</p>
+        <p>The Regency Practice - Parking can be located outside on Rodney Road, Rodney Road Car Park GL50 1HX or John
+          Lewis
+          Car Park GL52 2RR.</p>
       </div>
     </section>
 
@@ -100,7 +156,8 @@
             src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Reflection%20Rooms,%20Barton%20Street%20Tewkesbury+(Clear%20Skies%20Practice)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
         </div>
         <div class="info-card image-card">
-          <img src="@/assets/Reflection_rooms.jpg" alt="Reflection Rooms - example room" class="location-image" loading="lazy" />
+          <img src="@/assets/Reflection_rooms.jpg" alt="Reflection Rooms - example room" class="location-image"
+            loading="lazy" />
         </div>
       </div>
     </section>
@@ -113,7 +170,8 @@
             src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Regency%20Practice,%20Rodney%20Road%20Cheltenham+(Clear%20Skies%20Practice)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
         </div>
         <div class="info-card image-card">
-          <img src="@/assets/Regency_Practice_room.jpg" alt="Regency Practice external view" class="location-image" loading="lazy" />
+          <img src="@/assets/Regency_Practice_room.jpg" alt="Regency Practice external view" class="location-image"
+            loading="lazy" />
         </div>
       </div>
     </section>
@@ -127,6 +185,10 @@ export default {
     return {
       showHero: true,
       showSection1: false,
+      contactName: "",
+      contactEmail: "",
+      contactMessage: "",
+      formError: "",
       showSection2: false,
       showSection3: false,
       showSection4: false,
@@ -184,7 +246,42 @@ export default {
       if (videoElement) {
         videoElement.classList.add('fade-in-video');
       }
-    }
+    },
+    openEmailClient() {
+      this.formError = "";
+
+      if (!this.contactMessage) {
+        this.formError = "Please enter a message.";
+        return;
+      }
+
+      const to = "clearskiespractice@gmail.com";
+
+      const subject = this.contactName
+        ? `Website enquiry from ${this.contactName}`
+        : "Website enquiry";
+
+      const lines = [
+        "Hello,",
+        "",
+        this.contactMessage,
+        "",
+        "---",
+        `Name: ${this.contactName || "(not provided)"}`,
+        `Page: Contact`,
+      ];
+
+      const body = lines.join("\n");
+
+      const mailto =
+        `mailto:${encodeURIComponent(to)}` +
+        `?subject=${encodeURIComponent(subject)}` +
+        `&body=${encodeURIComponent(body)}`;
+
+      // Opens the user's default mail app
+      window.location.href = mailto;
+    },
+
   }
 }
 </script>
@@ -389,7 +486,7 @@ ul {
 }
 
 .info-section[data-section="1"] .info-image {
-  max-height: 350px;
+  max-height: 750px;
 }
 
 .info-section[data-section="2"] .info-image {
@@ -412,6 +509,58 @@ ul {
   object-fit: cover;
   border-radius: 10px;
 }
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 10px;
+  max-width: 640px;
+}
+
+.contact-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contact-submit {
+  align-self: flex-start;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  background: #5DAED5;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact-submit:hover {
+  filter: brightness(0.95);
+}
+
+.form-error {
+  margin-top: 6px;
+  color: #b00020;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hint {
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+
 
 @media screen and (min-width: 769px) {
 

@@ -61,7 +61,7 @@
     <section class="content-section blackWhite" ref="section3" :data-section="3" :class="{ 'fade-in': showSection3 }">
       <div class="card-row">
         <div class="card image-card">
-          <img src="@/assets/Two ducks.jpg" alt="Two ducks" class="section-image" loading="lazy" />
+          <img src="@/assets/Two ducks.jpg" alt="Two ducks" class="section-image focus-bottom" loading="lazy" />
         </div>
 
         <div class="card text-card">
@@ -248,6 +248,10 @@ export default {
 /* keep the “interesting bit” nearer the top when cropped */
 .focus-top {
   object-position: 50% 20%; /* x y — 20% is “higher” than centre */
+}
+
+.focus-bottom {
+  object-position: 50% 80%; /* x y — 80% is “lower” than centre */
 }
 
 /* --- SECTIONS / FADE --- */

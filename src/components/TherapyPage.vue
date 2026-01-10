@@ -67,8 +67,12 @@
             Human Givens Institute, the rewind technique.</p>
           <p><a href="https://www.hgi.org.uk/useful-information/treatment-dealing-ptsd-trauma-phobias/rewind-technique"
               target="_blank">Learn more</a></p>
-          <p>This method is utilised by the <a href="https://ptsdresolution.org" target="_blank">PTSD Resolution</a> charity for UK veterans and their families. If you are a UK
-            veteran or a member of their family, you may qualify for free therapy - please get in touch with me for further details.</p>
+          <p>This method is utilised by the <a href="https://ptsdresolution.org" target="_blank">PTSD Resolution</a>
+            charity
+            for UK veterans and their families. If you are a UK
+            veteran or a member of their family, you may qualify for free therapy - please get in touch with me for
+            further
+            details.</p>
           <p><a href="https://www.humangivens.com/case-studies/ptsd-resolution" target="_blank">Learn more</a></p>
         </div>
       </div>
@@ -81,7 +85,8 @@
             in
             4-6 sessions. Some people may achieve the wanted change in fewer sessions while others may require more
             sessions
-            due to the complexity of their lived experiences.</p>
+            due to the complexity of their lived experiences. With complex trauma, healing often unfolds gradually, so
+            allowing a longer timeframe is an important and supportive part of the process.</p>
           <p> I will work with your individual needs and at your pace. You can tell me after each session if you would
             like
             to book a further session. My aim is for you to feel a little better after each session and grow more and
@@ -91,7 +96,7 @@
             wellbeing beyond therapy sessions.</p>
         </div>
         <div class="approach-card image-card">
-          <img src="@/assets/TherapyPath.jpg" alt="Therapy Path" class="therapy-path-image" loading="lazy"/>
+          <img src="@/assets/TherapyPath.jpg" alt="Therapy Path" class="therapy-path-image" loading="lazy" />
         </div>
       </div>
     </section>

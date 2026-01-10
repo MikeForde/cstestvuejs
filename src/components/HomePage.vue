@@ -39,8 +39,8 @@
             relationship issues? If you need support to navigate these difficulties, I can help.</p>
           <p>My name is Galina Filipkova. I created the Clear Skies Practice as a safe space where we can work together
             to
-            help you move forward. I offer specialist treatment for trauma and phobias. My other areas of expertise are
-            anxiety, depression, relationships/couples therapy, bereavement, and coaching for neurodivergent clients.
+            help you move forward. I offer specialist treatment for trauma and fast cure for phobias. My other areas of expertise are
+            anxiety, depression, relationships/<router-link to="/couplestherapy">Couples Therapy</router-link>, bereavement, and supporting neurodivergent clients.
           </p>
 
           <p>I work from the Human Givens (HG) approach, which focuses on helping you build a life where your emotional

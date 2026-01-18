@@ -46,14 +46,11 @@
           <li>Therapy for individuals - £80 (for 60 minutes)</li>
           <li>Therapy for couples - £120 (for 60 minutes)</li>
           <li>Life coaching - £80 (for 60 minutes)</li>
-          <li>Concessions for students - £70 (for 60 minutes)</li>
-          <li>Concessions for blue-light services staff, NHS staff and social workers - <i>please get in touch for more details.</i></li>
-          <li>Free therapy for Military Veterans and Family Members - <i>please get in touch for more details.</i></li>
+          <li>Concessions for students, blue-light services, social care workers, NHS staff and teachers - £70 (for 60
+            minutes)</li>
+          <li>Military Veterans and Family Members - FREE support through the charity PTSD Resolution.</li>
         </ul>
         <p>Any pre-agreed longer or shorter sessions are charged on a pro-rata basis.</p>
-        <p><i>Please note these prices are for private paying individuals only, rates will vary when paying via EAP or
-            insurance companies due to the increased financial & administrative requirements; rates are agreed with each
-            company. Please call us if you wish to discuss further. </i></p>
         <h3>Please Note:</h3>
         <ul>
           <li>The session fee is subject to revision from time to time. Advance notice will be given of any increase.
@@ -80,7 +77,8 @@
     <section class="info-section" ref="section7" :data-section="7" :class="{ 'fade-in': showSection7 }">
       <div class="info-card">
         <h2>Personalised Guided Imagery</h2>
-        <p>At your request, your therapist can record a personalised guided imagery for you. Each recording will be charged at £70.
+        <p>At your request, your therapist can record a personalised guided imagery for you. Each recording will be
+          charged at £70.
           This guided imagery is for your sole use and must not be shared with third parties. It must not be listened to
           when driving, operating heavy machinery or in any other situations where distraction may put your safety or
           that of others at risk.</p>
@@ -100,14 +98,14 @@
       <div class="info-card">
         <h2>Location and Room Bookings</h2>
         <p>We provide <b>online</b> (16+) and <b>face-to-face</b> therapy sessions.</p>
-        <p>The Clear Skies Practice is based in Tewkesbury and Cheltenham. It is easily accessible from the surrounding areas of
+        <p>The Clear Skies Practice is based in Tewkesbury and Cheltenham. It is easily accessible from the surrounding
+          areas of
           Gloucestershire and Worcestershire.</p>
         <p>Location 1: <a href="https://reflectionrooms.co.uk" target="_blank">Reflection Rooms,
             Tewkesbury</a>.
           Address: Reflection Rooms, 13-14 Barton St, Tewkesbury, GL20 5PP</p>
         <p>The above is well situated and easy walking distance from Tewkesbury High Street.</p>
-        <p>Location 2: <a href="https://www.theregencypractice.com"
-            target="_blank">The
+        <p>Location 2: <a href="https://www.theregencypractice.com" target="_blank">The
             Regency Practice,
             Cheltenham</a>.
           Address: The Regency Practice, 22A Rodney Road, Cheltenham, GL50 1JJ</p>

@@ -89,7 +89,7 @@
           </ul>
           <i>I offer <b>neurodiversity-informed</b> therapy and life coaching.</i>
           <br />
-          <i>I offer concessions for students, blue-light services staff, NHS staff and social workers.</i>
+          <i>I offer concessions for students, blue-light services staff, NHS staff, social workers and teachers.</i>
           <br />
           <i>Free therapy for Military Veterans and Family Members - please get in touch for more details.</i>
         </div>

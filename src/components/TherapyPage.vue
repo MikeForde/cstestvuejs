@@ -94,6 +94,9 @@
             confident in your ability to bring about the change you wish to happen.</p>
           <p>My promise to my clients is to provide you with knowledge, skills and techniques to sustain your mental
             wellbeing beyond therapy sessions.</p>
+          <div class="button-container">
+            <router-link to="/contact" class="button-link">Get in Touch Today</router-link>
+          </div>
         </div>
         <div class="approach-card image-card">
           <img src="@/assets/TherapyPath.jpg" alt="Therapy Path" class="therapy-path-image" loading="lazy" />
@@ -353,6 +356,35 @@ export default {
 .image-card {
   width: 50%;
   padding: 20px;
+}
+
+.button-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.button-link {
+  display: inline-block;
+  padding: 12px 25px;
+  color: #333;
+  background-color: #f9f9f9;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: larger;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.button-link:hover {
+  background-color: #D5845D;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+  border-color: #D5845D;
+  color: #f9f9f9
 }
 
 @media screen and (max-width: 768px) {

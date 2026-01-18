@@ -45,6 +45,7 @@
         <ul>
           <li>Therapy for individuals - £80 (for 60 minutes)</li>
           <li>Therapy for couples - £120 (for 60 minutes)</li>
+          <li>Life coaching - £80 (for 60 minutes)</li>
           <li>Concessions for students - £70 (for 60 minutes)</li>
           <li>Concessions for blue-light services staff, NHS staff and social workers - <i>please get in touch for more details.</i></li>
           <li>Free therapy for Military Veterans and Family Members - <i>please get in touch for more details.</i></li>

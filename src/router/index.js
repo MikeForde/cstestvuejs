@@ -8,12 +8,14 @@ import AboutMePage from '../components/AboutMePage.vue';
 import PrivacyPolicyPage from '../components/PrivacyPolicyPage.vue';
 import BusinessPage from '@/components/BusinessPage.vue';
 import TestimonialPage from '@/components/TestimonialPage.vue';
+import LifeCoachingPage from '@/components/LifeCoachingPage.vue';
 
 const routes = [
   { path: '/', component: HomePage },
   { path: '/contact', component: ContactPage },
   { path: '/therapy', component: TherapyPage },
   { path: '/couplestherapy', component: CoupleTherapyPage },
+  { path: '/life-coaching', component: LifeCoachingPage },
   { path: '/documents', component: DocumentsPage },
   { path: '/about-me', component: AboutMePage },
   { path: '/privacy', component: PrivacyPolicyPage },

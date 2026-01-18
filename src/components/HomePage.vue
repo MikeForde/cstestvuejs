@@ -40,7 +40,7 @@
           <p>My name is Galina Filipkova. I created the Clear Skies Practice as a safe space where we can work together
             to
             help you move forward. I offer specialist treatment for trauma and fast cure for phobias. My other areas of expertise are
-            anxiety, depression, relationships/<router-link to="/couplestherapy">Couples Therapy</router-link>, bereavement, and supporting neurodivergent clients.
+            anxiety, low-mood, bereavement, navigating relationships, <router-link to="/couplestherapy">couples therapy</router-link>, <router-link to="/life-coaching">life coaching</router-link>, neurodivergence, and breaking free from unhelpful habits.
           </p>
 
           <p>I work from the Human Givens (HG) approach, which focuses on helping you build a life where your emotional
@@ -75,17 +75,20 @@
           <ul>
             <li>Trauma &amp; PTSD</li>
             <li>Anger</li>
+            <li><router-link to="/life-coaching">Confidence</router-link></li>
             <li>Phobias</li>
-            <li><router-link to="/couplestherapy">Couples Therapy</router-link></li>
-            <li>Relationship Difficulties</li>
+            <li><router-link to="/couplestherapy">Couples therapy</router-link></li>
+            <li>Relationship difficulties</li>
             <li>Narcissistic abuse</li>
             <li>Anxiety</li>
             <li>OCD</li>
-            <li>Depression</li>
+            <li>Depression and low-mood</li>
             <li>Addictions and unhelpful habits</li>
             <li>Bereavement and loss</li>
-            <li>Coaching for neurodivergent clients (autism, ADHD)</li>
+            <li><router-link to="/life-coaching">Life coaching</router-link></li>
           </ul>
+          <i>I offer <b>neurodiversity-informed</b> therapy and life coaching.</i>
+          <br />
           <i>I offer concessions for students, blue-light services staff, NHS staff and social workers.</i>
           <br />
           <i>Free therapy for Military Veterans and Family Members - please get in touch for more details.</i>

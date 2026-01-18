@@ -12,6 +12,7 @@
         <ul class="nav-links" :class="{ 'nav-active': menuActive }" ref="menu">
           <li><router-link to="/therapy" @click="closeMenu">Therapy</router-link></li>
           <li><router-link to="/couplestherapy" @click="closeMenu">Couples Therapy</router-link></li>
+          <li><router-link to="/life-coaching" @click="closeMenu">Life Coaching</router-link></li>
           <li><router-link to="/about-me" @click="closeMenu">About Me</router-link></li>
           <li><router-link to="/contact" @click="closeMenu">Contact</router-link></li>
           <li><router-link to="/testimonials" @click="closeMenu">Testimonials</router-link></li>

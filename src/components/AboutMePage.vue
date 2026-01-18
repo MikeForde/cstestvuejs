@@ -21,7 +21,7 @@
         </div>
         <div class="about-me-info info-card">
           <h2>I'm Galina Filipkova</h2>
-          <p>Since founding Clear Skies Practice in September 2024, I have supported many adults to help them move
+          <p>Since founding Clear Skies Practice in September 2024, I have supported many clients to help them move
             forward
             from difficult periods in their lives. In my practice, I always endeavour to ensure that, alongside the
             specific
@@ -145,17 +145,20 @@
           <ul>
             <li>Trauma &amp; PTSD</li>
             <li>Anger</li>
+            <li><router-link to="/life-coaching">Confidence</router-link></li>
             <li>Phobias</li>
-            <li><router-link to="/couplestherapy">Couples Therapy</router-link></li>
-            <li>Relationship Difficulties</li>
+            <li><router-link to="/couplestherapy">Couples therapy</router-link></li>
+            <li>Relationship difficulties</li>
             <li>Narcissistic abuse</li>
             <li>Anxiety</li>
             <li>OCD</li>
-            <li>Depression</li>
+            <li>Depression and low-mood</li>
             <li>Addictions and unhelpful habits</li>
             <li>Bereavement and loss</li>
-            <li>Coaching for neurodivergent clients (autism, ADHD)</li>
+            <li><router-link to="/life-coaching">Life coaching</router-link></li>
           </ul>
+          <i>I offer <b>neurodiversity-informed</b> therapy and life coaching.</i>
+          <br />
           <i>I offer concessions for students, blue-light services staff, NHS staff and social workers.</i>
           <br />
           <i>Free therapy for Military Veterans and Family Members - please get in touch for more details.</i>

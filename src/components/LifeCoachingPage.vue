@@ -10,7 +10,7 @@
         </video>
       </template>
       <div class="hero-content">
-        <h1>Couples Therapy</h1>
+        <h1>Life Coaching</h1>
       </div>
     </section>
 
@@ -18,24 +18,21 @@
     <section class="content-section blackWhite" ref="section1" :data-section="1" :class="{ 'fade-in': showSection1 }">
       <div class="card-row">
         <div class="card image-card">
-          <img src="@/assets/Two trees.jpg" alt="Two trees" class="section-image" loading="eager" />
+          <img src="@/assets/Denkmal.jpg" alt="Thinker image" class="section-image focus-top" loading="eager" />
         </div>
 
         <div class="card text-card">
-          <h2>Helping couples build stronger, healthier relationships</h2>
+          <h2>Create Clarity, Confidence, and Direction in Your Life</h2>
           <p>
-            Relationships can be deeply meaningful—and deeply challenging. Whether you’re feeling disconnected, stuck in
-            conflict,
-            or struggling to rebuild trust, couples therapy can help you understand each other more clearly and
-            reconnect in
-            a healthier way.
+            If you’re feeling stuck, overwhelmed, or uncertain about your next step, you don’t have to navigate it
+            alone. I
+            provide a safe, nonjudgmental space where you can reflect, gain perspective, and develop practical
+            strategies to
+            move forward with confidence.
           </p>
           <p>
-            As a HG psychotherapist I work within the framework of essential human needs as a foundation for supporting
-            individual wellbeing
-            and thriving relationships. My couples therapy work also incorporates practical communication and conflict
-            resolution skills
-            alongside evidence-based guidance for positive and lasting relationships from John and Julie Gottman.
+            Life coaching is centered on the present and future — supporting growth, accountability, and personal
+            development.
           </p>
         </div>
       </div>
@@ -45,19 +42,23 @@
     <section class="content-section whiteBlue" ref="section2" :data-section="2" :class="{ 'fade-in': showSection2 }">
       <div class="card-row">
         <div class="card text-card">
-          <h2>Sessions focus on</h2>
+          <h2>Life coaching may be a good fit if you:</h2>
           <ul>
-            <li>Understanding your and your partner’s <strong>emotional needs</strong></li>
-            <li>Improving <strong>communication and listening</strong></li>
-            <li>Reducing harmful <strong>conflict patterns</strong></li>
-            <li>Strengthening <strong>friendship and intimacy</strong></li>
-            <li>Rebuilding and nurturing <strong>trust</strong></li>
-            <li>Learning <strong>communication and emotional regulation tools</strong> you can use outside sessions</li>
+            <li>Feel stuck or unsure about your next steps</li>
+            <li>Want to create positive change but need guidance and accountability</li>
+            <li>Are experiencing a life or career transition</li>
+            <li>Want to strengthen motivation, confidence and self-trust</li>
+            <li>Want to manage stress and feeling overwhelmed</li>
+            <li>Want to develop healthier habits and routines</li>
+            <li>Are ready to invest in personal growth</li>
           </ul>
+          <div class="button-container">
+            <router-link to="/contact" class="button-link">Get in Touch Today</router-link>
+          </div>
         </div>
 
         <div class="card image-card">
-          <img src="@/assets/Spinning couple.jpg" alt="Spinning couple" class="section-image focus-top"
+          <img src="@/assets/BerlinArt.jpg" alt="Berlin Art" class="section-image focus-bottom"
             loading="lazy" />
         </div>
       </div>
@@ -67,66 +68,20 @@
     <section class="content-section blackWhite" ref="section3" :data-section="3" :class="{ 'fade-in': showSection3 }">
       <div class="card-row">
         <div class="card image-card">
-          <img src="@/assets/Two ducks.jpg" alt="Two ducks" class="section-image focus-bottom" loading="lazy" />
+          <img src="@/assets/SpirallingUp.jpg" alt="Spiralling Up" class="section-image focus-top" loading="lazy" />
         </div>
 
         <div class="card text-card">
-          <h2>Therapy works best when it is</h2>
+          <h2>Together, we will:</h2>
           <ul>
-            <li><strong>Collaborative</strong> — we work together as a team</li>
-            <li><strong>Non-judgmental</strong> — both partners feel heard and respected</li>
-            <li><strong>Practical</strong> — sessions lead to real, usable skills</li>
-            <li><strong>Compassionate</strong> — change happens at your pace</li>
+            <li>Identify obstacles and limiting patterns</li>
+            <li>Clarify goals, values and priorities</li>
+            <li>Develop actionable steps for change</li>
+            <li>Build sustainable strategies for long-term growth</li>
           </ul>
           <p>
-            Therapy is goal-oriented but flexible. Some couples come for <strong>short-term support</strong>, while
-            others
-            choose
-            <strong>longer-term work</strong>.
-            <em>You don’t need to be “in crisis” to benefit from couples therapy—many couples come to strengthen an
-              already
-              meaningful relationship.</em>
+            My coaching style blends therapeutic insight with practical tools and structured goal-setting. Sessions are collaborative and client-centered, focusing on what matters most to you. If at any point therapy would be more appropriate, I will be able to advise further.
           </p>
-          <div class="button-container">
-            <router-link to="/contact" class="button-link">Get in Touch Today</router-link>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 4: Individual sessions -->
-    <section class="content-section whiteBlue" ref="section4" :data-section="4" :class="{ 'fade-in': showSection4 }">
-      <div class="card-row">
-        <div class="card text-card">
-          <h2>Why individual sessions may be suggested</h2>
-          <p>While most couples therapy sessions are attended together, there are times when <strong>individual
-              sessions</strong> can be a helpful and appropriate part of the process.</p>
-          <p>These sessions are always used <strong>in service of the relationship</strong>, not instead of couples
-            work.
-          </p>
-          <p>Individual sessions help each partner gain <strong>insight into their own patterns, emotions, and stress
-              responses</strong>, which often makes joint sessions more productive and less reactive.</p>
-        </div>
-
-        <div class="card image-card">
-          <img src="@/assets/Blossom.jpg" alt="Blossom" class="section-image focus-top" loading="lazy" />
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 5: Confidentiality -->
-    <section class="content-section blackWhite" ref="section5" :data-section="5" :class="{ 'fade-in': showSection5 }">
-      <div class="card-row single">
-        <div class="card text-card">
-          <h2>Confidentiality of individual sessions</h2>
-          <p>Individual sessions are confidential. They are used to support the couples therapy and the relationship as
-            a
-            whole, not to take sides or keep harmful secrets.</p>
-          <p>If something important for the relationship comes up, we will discuss together how it can be shared in a
-            safe
-            and respectful way.</p>
-          <p>As with all therapy, confidentiality may only be broken in rare situations required by law or professional
-            ethics, such as concerns about safety.</p>
         </div>
       </div>
     </section>
@@ -142,8 +97,6 @@ export default {
       showSection1: false,
       showSection2: false,
       showSection3: false,
-      showSection4: false,
-      showSection5: false,
       videoPlayable: true,
       backupImage: require('@/assets/AnimatedSky.gif')
     };
@@ -164,8 +117,6 @@ export default {
       observer.observe(this.$refs.section1);
       observer.observe(this.$refs.section2);
       observer.observe(this.$refs.section3);
-      observer.observe(this.$refs.section4);
-      observer.observe(this.$refs.section5);
     });
   },
   methods: {
@@ -263,7 +214,7 @@ export default {
 .whiteBlue h2,
 .whiteBlue p,
 .whiteBlue li,
-.whiteBlue a {
+.whiteBlue a:not(.button-link) {
   color: #fff;
 }
 
@@ -362,8 +313,8 @@ export default {
 .button-link {
   display: inline-block;
   padding: 12px 25px;
-  color: #f9f9f9;
-  background-color: #5DAED5;
+  color: #333;
+  background-color: #f9f9f9;
   text-align: center;
   text-decoration: none;
   border-radius: 5px;

@@ -52,10 +52,8 @@
             neuroscience research with proven techniques from a wide range of modalities in counselling and
             psychotherapy.
           </p>
-          <p>My aim is to help you feel a little better after every session and to give you the tools to maintain good
-            mental health moving forward. Please read more about how I will support you. <router-link
-              to="/therapy">Learn
-              more</router-link></p>
+          <p>My aim is that you will leave each session feeling a little better, more hopeful and more confident in your ability to recover, or make the changes you would like to see in your life.  Please <router-link
+              to="/therapy">read more</router-link> about how I will support you.</p>
           <div class="button-container">
             <router-link to="/contact" class="button-link">Get in Touch Today</router-link>
           </div>

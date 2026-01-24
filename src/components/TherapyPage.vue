@@ -81,9 +81,7 @@
       <div class="change-card-container">
         <div class="change-card text-card2">
           <h2>Moving towards change</h2>
-          <p>The Human Givens model is a brief, solution-focused approach that usually helps you see the change you want
-            in
-            4-6 sessions. Some people may achieve the wanted change in fewer sessions while others may require more
+          <p>The Human Givens model is a brief, solution-focused approach that usually helps you see an improvement in 4-8 sessions and gives you tools to maintain good mental health beyond therapy. Some people may achieve the wanted change in fewer sessions while others may require more
             sessions
             due to the complexity of their lived experiences. With complex trauma, healing often unfolds gradually, so
             allowing a longer timeframe is an important and supportive part of the process.</p>

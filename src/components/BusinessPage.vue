@@ -45,7 +45,7 @@
         <ul>
           <li>Therapy for individuals - £85 (for 60 minutes)</li>
           <li>Therapy for couples - £115 (for 60 minutes)</li>
-          <li>Life coaching - £85 (for 60 minutes)</li>
+          <li>Coaching - £85 (for 60 minutes)</li>
           <li>Concessions for students, blue-light services, social care workers, NHS staff and teachers - £75 (for 60
             minutes)</li>
           <li>Military Veterans and Family Members - FREE support through the charity PTSD Resolution.</li>

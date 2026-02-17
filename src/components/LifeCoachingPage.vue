@@ -10,7 +10,7 @@
         </video>
       </template>
       <div class="hero-content">
-        <h1>Life Coaching</h1>
+        <h1>Coaching</h1>
       </div>
     </section>
 
@@ -22,17 +22,17 @@
         </div>
 
         <div class="card text-card">
-          <h2>Create Clarity, Confidence, and Direction in Your Life</h2>
+          <h2>Create Clarity, Confidence, and Direction</h2>
           <p>
             If you’re feeling stuck, overwhelmed, or uncertain about your next step, you don’t have to navigate it
             alone. I
-            provide a safe, nonjudgmental space where you can reflect, gain perspective, and develop practical
+            provide a safe, non-judgmental space where you can reflect, gain fresh perspective, and develop practical
             strategies to
             move forward with confidence.
           </p>
           <p>
-            Life coaching is centered on the present and future — supporting growth, accountability, and personal
-            development.
+            Coaching is centered on the present and future — supporting growth, accountability, and meaningful
+            personal development.
           </p>
         </div>
       </div>
@@ -42,15 +42,15 @@
     <section class="content-section whiteBlue" ref="section2" :data-section="2" :class="{ 'fade-in': showSection2 }">
       <div class="card-row">
         <div class="card text-card">
-          <h2>Life coaching may be a good fit if you:</h2>
+          <h2>Coaching may be a good fit if you:</h2>
           <ul>
-            <li>Feel stuck or unsure about your next steps</li>
+            <li>Feel stuck or uncertain about your next steps</li>
             <li>Want to create positive change but need guidance and accountability</li>
-            <li>Are experiencing a life or career transition</li>
+            <li>Are navigating a life or career transition</li>
             <li>Want to strengthen motivation, confidence and self-trust</li>
-            <li>Want to manage stress and feeling overwhelmed</li>
-            <li>Want to develop healthier habits and routines</li>
-            <li>Are ready to invest in personal growth</li>
+            <li>Feel overwhelmed and want to manage stress more effectively</li>
+            <li>Want to develop healthier habits and sustainable routines</li>
+            <li>Are ready to invest in your personal growth</li>
           </ul>
           <div class="button-container">
             <router-link to="/contact" class="button-link">Get in Touch Today</router-link>
@@ -58,8 +58,7 @@
         </div>
 
         <div class="card image-card">
-          <img src="@/assets/BerlinArt.jpg" alt="Berlin Art" class="section-image focus-bottom"
-            loading="lazy" />
+          <img src="@/assets/BerlinArt.jpg" alt="Berlin Art" class="section-image focus-bottom" loading="lazy" />
         </div>
       </div>
     </section>
@@ -75,12 +74,15 @@
           <h2>Together, we will:</h2>
           <ul>
             <li>Identify obstacles and limiting patterns</li>
-            <li>Clarify goals, values and priorities</li>
-            <li>Develop actionable steps for change</li>
+            <li>Clarify your goals, values and priorities</li>
+            <li>Develop practical, actionable steps for change</li>
             <li>Build sustainable strategies for long-term growth</li>
           </ul>
           <p>
-            My coaching style blends therapeutic insight with practical tools and structured goal-setting. Sessions are collaborative and client-centered, focusing on what matters most to you. If at any point therapy would be more appropriate, I will be able to advise further.
+            My coaching approach blends therapeutic insight with practical tools and structured goal-setting. Sessions
+            are
+            collaborative and client-centred, focusing on what matters most to you.</p>
+          <p>If at any stage therapy would be more appropriate, I will discuss this with you and advise on the next steps.
           </p>
         </div>
       </div>

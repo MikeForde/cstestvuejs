@@ -97,13 +97,25 @@
           <img src="@/assets/CostOfTherapy.jpg" alt="Cost of Therapy Image - the duck bill" class="info-image" />
         </div>
         <div class="info-card">
-          <h2>Cost of Therapy</h2>
+          <h2 id="cost-of-therapy-title">Cost of Therapy</h2>
+
           <p>Sessions are available online (16+) and face-to-face.</p>
-          <p>Therapy for individuals - £85 (for 60 minutes)</p>
-          <p>Therapy for couples - £115 (for 60 minutes)</p>
-          <p>Coaching - £85 (for 60 minutes)</p>
-          <p>Concessions for students, blue-light services, social care workers, NHS staff and teachers - £75 (for 60 minutes)</p>
-          <p>Military Veterans and Family Members - FREE support through the charity PTSD Resolution.</p>
+
+          <ul>
+            <li><strong>Individuals</strong> &ndash; £75 (60 mins) &ndash; <i>Under 16s £60 (50 mins)</i></li>
+            <li><strong>Couples</strong> &ndash; £120 (60 mins)</li>
+            <li>
+              <strong>Concessions</strong>
+              &ndash; £70 (60 mins)
+            </li>
+            <li><strong>Military veterans &amp; family members</strong> &ndash; FREE via PTSD Resolution</li>
+          </ul>
+
+          <h3>Pricing notes:</h3>
+          <ul>
+            <li><strong>Online sessions</strong>: £10 discount (online 16+ only)</li>
+            <li><strong>Evening sessions</strong> (after 5pm): additional £20</li>
+          </ul>
         </div>
       </div>
     </section>

@@ -41,25 +41,46 @@
       :class="{ 'fade-in': showSection5 }">
       <div class="info-card">
         <h2>Cost of Therapy</h2>
-        <p>Sessions are available online (16+) and face-to-face.</p>
+        <p>Sessions are available online (for 16+) and face-to-face.</p>
+
+        <h3>Therapy for individuals (16+)</h3>
         <ul>
-          <li>Therapy for individuals - £85 (for 60 minutes)</li>
-          <li>Therapy for couples - £115 (for 60 minutes)</li>
-          <li>Coaching - £85 (for 60 minutes)</li>
-          <li>Concessions for students, blue-light services, social care workers, NHS staff and teachers - £75 (for 60
-            minutes)</li>
-          <li>Military Veterans and Family Members - FREE support through the charity PTSD Resolution.</li>
-        </ul>
-        <p>Any pre-agreed longer or shorter sessions are charged on a pro-rata basis.</p>
-        <h3>Please Note:</h3>
-        <ul>
-          <li>The session fee is subject to revision from time to time. Advance notice will be given of any increase.
+          <li>
+            <strong>Face-to-face:</strong> £75 (for 60 minutes)<br>
+            <em>Concession rate:</em> £70
           </li>
-          <li>Human Givens therapists and therapist trainees aim to meet the needs of their clients in as few sessions
-            as possible and do not charge in advance for a course of treatment.</li>
-          <li>Any extra work undertaken on the client’s behalf, such as writing reports or letters for other agencies
-            will be charged at the standard hourly rate.</li>
+          <br>
+          <li>
+            <strong>Online:</strong> £65 (for 60 minutes)<br>
+            <em>Concession rate:</em> £60
+          </li>
         </ul>
+
+        <p>Concession rates apply to students, blue-light services, social care workers, NHS staff and teachers.
+            Proof of status required.</p>
+
+        <h3>Under 16s (counselling)</h3>
+        <p>£60 (for 50 minutes)</p>
+
+        <h3>Couples therapy</h3>
+        <ul>
+          <li><strong>Face-to-face:</strong> £120 (for 60 minutes)</li>
+          <li><strong>Online:</strong> £110 (for 60 minutes)</li>
+        </ul>
+
+        <h3>Coaching (16+)</h3>
+        <p>See therapy for individuals.</p>
+
+        <p>
+          <strong>Please note:</strong> For all sessions above after 5pm, there is an additional charge of £20 per
+          hour.
+          Any pre-agreed longer or shorter sessions are charged on a pro-rata basis.
+        </p>
+
+        <h3>Military Veterans and Family Members</h3>
+        <p>
+          FREE support through the charity <strong>PTSD Resolution</strong>.
+        </p>
       </div>
     </section>
 

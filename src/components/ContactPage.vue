@@ -102,19 +102,16 @@
           <p>Sessions are available online (16+) and face-to-face.</p>
 
           <ul>
-            <li><strong>Individuals</strong> &ndash; £75 (60 mins) &ndash; <i>Under 16s £60 (50 mins)</i></li>
+            <li><strong>Individuals</strong> &ndash; £85 (60 mins) &ndash; <i>Under 16s £70 (50 mins)</i></li>
             <li><strong>Couples</strong> &ndash; £120 (60 mins)</li>
-            <li>
-              <strong>Concessions</strong>
-              &ndash; £70 (60 mins)
-            </li>
             <li><strong>Military veterans &amp; family members</strong> &ndash; FREE via PTSD Resolution</li>
           </ul>
 
-          <h3>Pricing notes:</h3>
+          <h3>Discounts (can be combined):</h3>
           <ul>
-            <li><strong>Online sessions</strong>: £10 discount (online 16+ only)</li>
-            <li><strong>Evening sessions</strong> (after 5pm): additional £20</li>
+            <li><strong>Online sessions</strong>: £10 reduction (online available to 16+ only)</li>
+            <li><strong>Daytime sessions</strong>: £10 reduction (where session ends before 5pm)</li>
+            <li><strong>Concessions</strong>: £5</li>
           </ul>
         </div>
       </div>

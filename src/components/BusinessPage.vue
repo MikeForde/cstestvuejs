@@ -40,47 +40,42 @@
     <section id="cost-of-therapy" class="info-section" ref="section5" :data-section="5"
       :class="{ 'fade-in': showSection5 }">
       <div class="info-card">
+
         <h2>Cost of Therapy</h2>
-        <p>Sessions are available online (for 16+) and face-to-face.</p>
+        <p>Sessions are available online (16+) and face-to-face.</p>
 
-        <h3>Therapy for individuals (16+)</h3>
+        <h3>Standard Session Fees</h3>
         <ul>
-          <li>
-            <strong>Face-to-face:</strong> £75 (for 60 minutes)<br>
-            <em>Concession rate:</em> £70
-          </li>
-          <br>
-          <li>
-            <strong>Online:</strong> £65 (for 60 minutes)<br>
-            <em>Concession rate:</em> £60
-          </li>
+          <li><strong>Individual therapy (16+)</strong> – £85 (60 minutes)</li>
+          <li><strong>Under 16s counselling</strong> – £70 (50 minutes)</li>
+          <li><strong>Couples therapy</strong> – £120 (60 minutes)</li>
+          <li><strong>Coaching (16+)</strong> – £85 (60 minutes)</li>
         </ul>
 
-        <p>Concession rates apply to students, blue-light services, social care workers, NHS staff and teachers.
-            Proof of status required.</p>
-
-        <h3>Under 16s (counselling)</h3>
-        <p>£60 (for 50 minutes)</p>
-
-        <h3>Couples therapy</h3>
+        <h3>Online & Daytime Discounts</h3>
         <ul>
-          <li><strong>Face-to-face:</strong> £120 (for 60 minutes)</li>
-          <li><strong>Online:</strong> £110 (for 60 minutes)</li>
+          <li>Online sessions – £10 reduction (online available to 16+ only)</li>
+          <li>Sessions ending before 5pm – £10 reduction</li>
         </ul>
 
-        <h3>Coaching (16+)</h3>
-        <p>See therapy for individuals.</p>
-
+        <h3>Concessions</h3>
         <p>
-          <strong>Please note:</strong> For all sessions above after 5pm, there is an additional charge of £20 per
-          hour.
-          Any pre-agreed longer or shorter sessions are charged on a pro-rata basis.
+          Concession rates are available for students, blue-light services,
+          social care workers, NHS staff and teachers.
+          A £5 reduction applies. Proof of status is required.
         </p>
+
+        <h3>Additional Information</h3>
+        <ul>
+          <li>Any pre-agreed longer or shorter sessions are charged on a pro-rata basis.</li>
+          <li>Additional work (e.g. reports or letters) is charged at the standard hourly rate.</li>
+        </ul>
 
         <h3>Military Veterans and Family Members</h3>
         <p>
-          FREE support through the charity <strong>PTSD Resolution</strong>.
+          FREE support is available through the charity <strong>PTSD Resolution</strong>.
         </p>
+
       </div>
     </section>
 

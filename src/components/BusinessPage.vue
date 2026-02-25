@@ -54,7 +54,7 @@
 
         <h3>Online & Daytime Discounts</h3>
         <ul>
-          <li>Online sessions – £10 reduction (online available to 16+ only)</li>
+          <li>Online sessions – £5 reduction (online available to 16+ only)</li>
           <li>Sessions ending before 5pm – £10 reduction</li>
         </ul>
 

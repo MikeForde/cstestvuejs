@@ -109,7 +109,7 @@
 
           <h3>Discounts (can be combined):</h3>
           <ul>
-            <li><strong>Online sessions</strong>: £10 reduction (online available to 16+ only)</li>
+            <li><strong>Online sessions</strong>: £5 reduction (online available to 16+ only)</li>
             <li><strong>Daytime sessions</strong>: £10 reduction (where session ends before 5pm)</li>
             <li><strong>Concessions</strong>: £5</li>
           </ul>

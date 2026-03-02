@@ -16,17 +16,31 @@
       </div>
       <img src="@/assets/CSP_Logo_White_trans.png" alt="Logo" class="logo-overlay">
     </section>
-    <section class="testimonial" ref="testimonial" :class="{ 'fade-in': showTestimonial }">
+    <section class="testimonial" ref="testimonial" :class="{ 'fade-in': showTestimonial }"
+      v-if="homepageTestimonials.length">
       <div class="testimonial-container">
-        <div class="testimonial-card text-card-testimonial">
-          <p class="cursive">
-            “Galina is kind, patient, caring and enables you to confront your issues. I cannot ever thank her enough for
-            setting me free of my issues and with her help and guidance, she was like a beacon. I had a rewind which was
-            instantly successful, it was truly mind-blowing the difference it made and continues to make. I am now back
-            to
-            the bubbly, positive person I was with Galina's gentle guidance.”
-          </p>
-          <router-link to="/testimonials" class="see-more-link">See more testimonials</router-link>
+        <div class="carousel">
+          <button class="carousel-btn left" @click="prevTestimonial" aria-label="Previous testimonial"></button>
+
+          <div class="carousel-viewport" @pointerdown="onSwipeStart" @pointermove="onSwipeMove" @pointerup="onSwipeEnd"
+            @pointercancel="onSwipeEnd" style="touch-action: pan-y;">
+            <div class="carousel-track" :style="trackStyle">
+              <div v-for="(paras, idx) in homepageTestimonials" :key="idx" class="carousel-slide"
+                :style="{ '--tFont': fontFor(paras) }">
+                <div class="testimonial-card text-card-testimonial">
+                  <p v-for="(p, pIdx) in paras" :key="pIdx" class="cursive">
+                    <span v-if="pIdx === 0">“</span>
+                    {{ p }}
+                    <span v-if="pIdx === paras.length - 1">”</span>
+                  </p>
+
+                  <router-link to="/testimonials" class="see-more-link">See more testimonials</router-link>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-btn right" @click="nextTestimonial" aria-label="Next testimonial"></button>
         </div>
       </div>
     </section>
@@ -39,8 +53,11 @@
             relationship issues? If you need support to navigate these difficulties, I can help.</p>
           <p>My name is Galina Filipkova. I created the Clear Skies Practice as a safe space where we can work together
             to
-            help you move forward. I offer specialist treatment for trauma and fast cure for phobias. My other areas of expertise are
-            anxiety, low-mood, bereavement, navigating relationships, <router-link to="/couplestherapy">couples therapy</router-link>, <router-link to="/life-coaching">life coaching</router-link>, neurodivergence, and breaking free from unhelpful habits.
+            help you move forward. I offer specialist treatment for trauma and fast cure for phobias. My other areas of
+            expertise are
+            anxiety, low-mood, bereavement, navigating relationships, <router-link to="/couplestherapy">couples
+              therapy</router-link>, <router-link to="/life-coaching">life coaching</router-link>, neurodivergence, and
+            breaking free from unhelpful habits.
           </p>
 
           <p>I work from the Human Givens (HG) approach, which focuses on helping you build a life where your emotional
@@ -52,7 +69,8 @@
             neuroscience research with proven techniques from a wide range of modalities in counselling and
             psychotherapy.
           </p>
-          <p>My aim is that you will leave each session feeling a little better, more hopeful and more confident in your ability to recover, or make the changes you would like to see in your life.  Please <router-link
+          <p>My aim is that you will leave each session feeling a little better, more hopeful and more confident in your
+            ability to recover, or make the changes you would like to see in your life. Please <router-link
               to="/therapy">read more</router-link> about how I will support you.</p>
           <div class="button-container">
             <router-link to="/contact" class="button-link">Get in Touch Today</router-link>
@@ -123,8 +141,10 @@
 
 
 <script>
+import testimonialsRaw from "@/data/testimonials";
+
 export default {
-  name: 'HomePage',
+  name: "HomePage",
   data() {
     return {
       showHero: true,
@@ -133,73 +153,271 @@ export default {
       showAdditionalInfo: false,
       showImmediateHelp: false,
       showResources: false,
-      videoPlayable: true, // Assume the video is playable by default
-      backupImage: require('@/assets/AnimatedSky.gif') // GIF is the backup image
+      videoPlayable: true,
+      backupImage: require("@/assets/AnimatedSky.gif"),
+
+      // carousel state
+      currentTestimonialIndex: 0,
+
+      // shared testimonials dataset
+      testimonialsRaw,
+
+      // HomePage.vue: add these fields inside data()
+      swipe: {
+        active: false,
+        startX: 0,
+        lastX: 0,
+        deltaX: 0,
+        pointerId: null,
+        dragging: false
+      },
     };
   },
+
+  computed: {
+    homepageTestimonials() {
+      // For each testimonial:
+      // - include ONLY paragraphs prefixed with "{"
+      // - strip the "{" for display
+      // - drop testimonials that end up empty
+      return this.testimonialsRaw
+        .map((t) =>
+          t
+            .filter((p) => typeof p === "string" && p.startsWith("{"))
+            .map((p) => p.slice(1))
+        )
+        .filter((t) => t.length > 0);
+    },
+
+    trackStyle() {
+      return {
+        transform: `translateX(calc(-${this.currentTestimonialIndex * 100}% + ${this.swipe.deltaX}px))`,
+        transition: this.swipe.dragging ? "none" : "transform 350ms ease"
+      };
+    }
+  },
+
+  watch: {
+    // If the list changes (e.g. you edit the data file), keep index in bounds
+    homepageTestimonials(newVal) {
+      if (!newVal.length) {
+        this.currentTestimonialIndex = 0;
+        return;
+      }
+      if (this.currentTestimonialIndex >= newVal.length) {
+        this.currentTestimonialIndex = 0;
+      }
+    }
+  },
+
   mounted() {
     this.$nextTick(() => {
-      // Adding a slight delay to ensure Safari initializes video properly
       setTimeout(() => {
         this.checkVideoPlayback();
       }, 50);
 
-      const options = {
-        threshold: 0.1
-      };
+      const options = { threshold: 0.1 };
 
       const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            if (entry.target.classList.contains('testimonial')) {
-              this.showTestimonial = true;
-            } else if (entry.target.classList.contains('intro')) {
-              this.showIntro = true;
-            } else if (entry.target.classList.contains('additional-info')) {
-              this.showAdditionalInfo = true;
-            } else if (entry.target.classList.contains('immediate-help')) {
-              this.showImmediateHelp = true;
-            } else if (entry.target.classList.contains('resources')) {
-              this.showResources = true;
-            }
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+
+          if (entry.target.classList.contains("testimonial")) {
+            this.showTestimonial = true;
+          } else if (entry.target.classList.contains("intro")) {
+            this.showIntro = true;
+          } else if (entry.target.classList.contains("additional-info")) {
+            this.showAdditionalInfo = true;
+          } else if (entry.target.classList.contains("immediate-help")) {
+            this.showImmediateHelp = true;
+          } else if (entry.target.classList.contains("resources")) {
+            this.showResources = true;
           }
         });
       }, options);
 
       observer.observe(this.$refs.hero);
-      observer.observe(this.$refs.testimonial);
+      if (this.$refs.testimonial) observer.observe(this.$refs.testimonial);
       observer.observe(this.$refs.intro);
       observer.observe(this.$refs.additionalInfo);
       observer.observe(this.$refs.immediateHelp);
       observer.observe(this.$refs.resources);
     });
   },
+
   methods: {
+    prevTestimonial() {
+      const n = this.homepageTestimonials.length;
+      if (!n) return;
+      this.currentTestimonialIndex = (this.currentTestimonialIndex - 1 + n) % n;
+    },
+
+    nextTestimonial() {
+      const n = this.homepageTestimonials.length;
+      if (!n) return;
+      this.currentTestimonialIndex = (this.currentTestimonialIndex + 1) % n;
+    },
+
     checkVideoPlayback() {
       const video = this.$refs.heroVideo;
       if (video) {
-        video.play().then(() => {
-          this.videoPlayable = true;
-          this.fadeInVideo(); // Trigger fade-in animation for the video
-        }).catch(() => {
-          this.videoPlayable = false;
-        });
+        video
+          .play()
+          .then(() => {
+            this.videoPlayable = true;
+            this.fadeInVideo();
+          })
+          .catch(() => {
+            this.videoPlayable = false;
+          });
       }
     },
+
     fadeInVideo() {
       const videoElement = this.$refs.heroVideo;
       if (videoElement) {
-        videoElement.classList.add('fade-in-video');
+        videoElement.classList.add("fade-in-video");
       }
-    }
+    },
+    onSwipeStart(e) {
+      // Only react to primary button/touch
+      if (e.pointerType === "mouse" && e.button !== 0) return;
+      if (!this.homepageTestimonials.length) return;
+
+      this.swipe.active = true;
+      this.swipe.dragging = true;
+      this.swipe.startX = e.clientX;
+      this.swipe.lastX = e.clientX;
+      this.swipe.deltaX = 0;
+      this.swipe.pointerId = e.pointerId;
+
+      // Capture pointer so we still get move/end even if it leaves the element
+      e.currentTarget.setPointerCapture?.(e.pointerId);
+    },
+
+    onSwipeMove(e) {
+      if (!this.swipe.active) return;
+      if (this.swipe.pointerId !== null && e.pointerId !== this.swipe.pointerId) return;
+
+      const x = e.clientX;
+      this.swipe.deltaX = x - this.swipe.startX;
+      this.swipe.lastX = x;
+    },
+
+    onSwipeEnd(e) {
+      if (!this.swipe.active) return;
+      if (this.swipe.pointerId !== null && e.pointerId !== this.swipe.pointerId) return;
+
+      const threshold = 60; // px needed to change slide
+      const dx = this.swipe.deltaX;
+
+      this.swipe.active = false;
+      this.swipe.dragging = false;
+      this.swipe.deltaX = 0;
+      this.swipe.pointerId = null;
+
+      if (dx > threshold) {
+        this.prevTestimonial();
+      } else if (dx < -threshold) {
+        this.nextTestimonial();
+      }
+    },
+    fontFor(paras) {
+      const len = (paras || []).reduce((sum, p) => sum + String(p).length, 0);
+
+      if (len <= 80) return "3.2rem";
+      if (len <= 120) return "2.9rem";
+      if (len <= 160) return "2.55rem";
+      if (len <= 220) return "2.2rem";
+
+      if (len <= 320) return "1.85rem";
+      if (len <= 420) return "1.6rem";
+      if (len <= 520) return "1.4rem";
+      return "1.25rem";
+    },
   }
-}
+};
 </script>
 
 
 
 
 <style scoped>
+/* --- Carousel layout --- */
+
+.carousel {
+  display: flex;
+  align-items: stretch;  /* important */
+}
+
+.carousel-viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 350ms ease;
+  will-change: transform;
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+}
+
+.carousel-btn {
+  position: relative;
+  width: 40px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+/* Create tall chevron using borders */
+.carousel-btn::before {
+  content: "";
+  width: 28px;              /* overall arrow width */
+  height: 80px;             /* vertical stretch */
+  background: #888;
+
+  /* Create chevron shape */
+  clip-path: polygon(
+    70% 0%,
+    100% 0%,
+    30% 50%,
+    100% 100%,
+    70% 100%,
+    0% 50%
+  );
+
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+/* Left arrow */
+.carousel-btn.left::before {
+  transform: none;
+}
+
+.carousel-btn.right::before {
+  transform: scaleX(-1);
+}
+
+.carousel-btn:hover::before {
+  background: #333;
+}
+
+.carousel-viewport {
+  cursor: grab;
+}
+
+.carousel-viewport:active {
+  cursor: grabbing;
+}
+
 .hero {
   position: relative;
   height: 280px;
@@ -285,30 +503,49 @@ export default {
 .testimonial-container {
   max-width: 900px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 18px 16px;
+  /* reduced from 40px 20px */
 }
 
+.text-card-testimonial {
+  padding: 0 24px;
+  /* reduced from 0 50px */
+}
+
+/* keep a consistent area without being huge */
 .testimonial-card {
   background: #f9f9f9;
-  padding: 30px;
+  padding: 16px 18px;
+  /* reduced from 30px */
+  min-height: 110px;
+  /* reduced from 220px */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* change to flex-start if you prefer top alignment */
 }
 
+/* IMPORTANT: single source of truth for cursive text styling */
 .cursive {
-  /* font-style: italic; */
+  font-style: italic;
   font-family:
-    /* pick the best‐looking one first: */
     'Handlee',
     "Apple Chancery",
     "Snell Roundhand",
     "TT Knickerbockers Script",
     "Segoe Script",
     "Brush Script MT",
-    /* fallback on both */
     "Lucida Handwriting",
-    /* finally the generic cursive */
     cursive;
-  font-size: x-large;
-  margin-bottom: 20px;
+
+  font-size: var(--tFont, 1.5rem);
+  line-height: 1.18;
+  /* tighter to control vertical growth */
+  margin: 0 0 8px;
+}
+
+.testimonial-card .cursive:last-of-type {
+  margin-bottom: 10px;
 }
 
 .see-more-link {
@@ -555,7 +792,9 @@ export default {
   }
 
   .cursive {
-    font-size: large;
+    font-size: var(--tFont, 1.1rem);
+    /* keep adaptive font */
+    line-height: 1.22;
   }
 }
 

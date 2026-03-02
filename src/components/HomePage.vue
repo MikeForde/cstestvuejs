@@ -190,7 +190,21 @@ export default {
           const end = joined.indexOf("}", start + 1);
           if (end === -1) return null;
 
-          const snippet = joined.slice(start + 1, end);
+          const missedStart = start > 0;
+          const missedEnd = end < joined.length - 1;
+
+          // Extract between { and }
+          let snippet = joined.slice(start + 1, end).trim();
+
+          // Add ellipses if we missed start/end of original testimonial
+          if (missedStart && !snippet.startsWith("...")) snippet = `... ${snippet}`;
+          if (missedEnd && !snippet.endsWith("...")) snippet = `${snippet} ...`;
+
+          // Replace FIRST occurrence of whole-word "she"/"She" with "[Galina]"
+          // (only once, per testimonial snippet)
+          if (!/\bGalina\b/i.test(snippet)) {
+            snippet = snippet.replace(/\b(she|her)\b/i, "[Galina]");
+          }
 
           // Split back into paragraphs, trim, drop empties
           return snippet
@@ -808,7 +822,7 @@ export default {
   }
 
   .cursive {
-    font-size: calc(var(--tFont, 1.6rem) * 0.65);
+    font-size: calc(var(--tFont, 1.6rem) * 0.68);
     line-height: 1.2;
   }
 }

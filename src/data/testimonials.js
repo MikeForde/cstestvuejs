@@ -9,10 +9,10 @@ export default [
           "I can wholeheartedly recommend Galina's support."
         ],
         [
-          "{I cannot put into words how much Galina has supported me throughout our sessions. This was my first time attending therapy so I was apprehensive. She guided me through everything and after the first session I felt at ease and excited to come back the following week.} From the rewinds to coping strategies, she has given me the tools and resources to help me moving forward. Couldn’t recommend her highly enough."
+          "I cannot put into words how much Galina has supported me throughout our sessions. {This was my first time attending therapy so I was apprehensive. She guided me through everything and after the first session I felt at ease and excited to come back the following week.} From the rewinds to coping strategies, she has given me the tools and resources to help me moving forward. Couldn’t recommend her highly enough."
         ],
         [
-        "I had a lot of childhood traumas which had deeply affected me for a long time. With Galina’s help, I managed to overcome several fears/phobias. {On the occasions where I did not feel able to complete a ‘Rewind’, we had an amazing relaxation session instead. She worked with me at my own pace and helped to resolve sleeping issues. I am now able to enjoy water sports, where I previously had a constant fear of drowning, so I refused to go anywhere near open bodies of water.} I also had problems with needles, both giving blood and having injections, after a ‘Rewind’, I took my child to have a blood test with little difficulty. Overall, I have become a more confident, less anxious person. It has completely changed my life for the better."
+        "I had a lot of childhood traumas which had deeply affected me for a long time. With Galina’s help, I managed to overcome several fears/phobias. On the occasions where I did not feel able to complete a ‘Rewind’, we had an amazing relaxation session instead. {She worked with me at my own pace and helped to resolve sleeping issues. I am now able to enjoy water sports, where I previously had a constant fear of drowning, so I refused to go anywhere near open bodies of water.} I also had problems with needles, both giving blood and having injections, after a ‘Rewind’, I took my child to have a blood test with little difficulty. Overall, I have become a more confident, less anxious person. It has completely changed my life for the better."
         ],
         [
           "{Galina was very professional but also very understanding and helpful to me! She asked very relevant questions and listened intently!}"
@@ -25,9 +25,9 @@ export default [
           "To Galina, my most heartfelt thanks. To you reading this, do not suffer alone. There is a path through grief but I only found mine with Galina’s help."
         ],
         [
-          "{Galina is kind, patient, caring and enables you to confront your issues. I cannot ever thank her enough for setting me free of my issues and with her help and guidance, she was like a beacon. I had a rewind which was instantly successful, it was truly mind-blowing the difference it made and continues to make.} I am now back to the bubbly, positive person I was with Galina's gentle guidance."
+          "Galina is kind, patient, caring and enables you to confront your issues. {I cannot ever thank her enough for setting me free of my issues and with her help and guidance, she was like a beacon. I had a rewind which was instantly successful, it was truly mind-blowing the difference it made and continues to make.} I am now back to the bubbly, positive person I was with Galina's gentle guidance."
         ],
         [
-          "{Galina is fantastic at what she does. She created an environment where I felt safe, supported, and heard. Her thoughtful use of different techniques and resources felt personal and exactly what I needed, especially during a time when negative thoughts were becoming overwhelming.} I am very grateful for her guidance and the difference it has made for me. Thank you!"
+          "Galina is fantastic at what she does. {She created an environment where I felt safe, supported, and heard. Her thoughtful use of different techniques and resources felt personal and exactly what I needed, especially during a time when negative thoughts were becoming overwhelming.} I am very grateful for her guidance and the difference it has made for me. Thank you!"
         ]
       ];

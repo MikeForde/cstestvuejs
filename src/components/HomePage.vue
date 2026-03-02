@@ -162,6 +162,8 @@ export default {
       // shared testimonials dataset
       testimonialsRaw,
 
+      desktopFontScale: 0.8,
+
       // HomePage.vue: add these fields inside data()
       swipe: {
         active: false,
@@ -335,15 +337,18 @@ export default {
     fontFor(paras) {
       const len = (paras || []).reduce((sum, p) => sum + String(p).length, 0);
 
-      if (len <= 80) return "3.2rem";
-      if (len <= 120) return "2.9rem";
-      if (len <= 160) return "2.55rem";
-      if (len <= 220) return "2.2rem";
+      let base;
 
-      if (len <= 320) return "1.85rem";
-      if (len <= 420) return "1.6rem";
-      if (len <= 520) return "1.4rem";
-      return "1.25rem";
+      if (len <= 80) base = 3.2;
+      else if (len <= 120) base = 2.0;
+      else if (len <= 160) base = 1.9;
+      else if (len <= 220) base = 1.8;
+      else if (len <= 320) base = 1.7;
+      else if (len <= 420) base = 1.5;
+      else if (len <= 520) base = 1.4;
+      else base = 1.25;
+
+      return (base * this.desktopFontScale) + "rem";
     },
   }
 };
@@ -803,7 +808,7 @@ export default {
   }
 
   .cursive {
-    font-size: calc(var(--tFont, 1.6rem) * 0.55);
+    font-size: calc(var(--tFont, 1.6rem) * 0.65);
     line-height: 1.2;
   }
 }

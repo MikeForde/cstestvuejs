@@ -34,7 +34,7 @@
                     <span v-if="pIdx === paras.length - 1">”</span>
                   </p>
 
-                  <router-link to="/testimonials" class="see-more-link">See more testimonials</router-link>
+                  <router-link to="/testimonials" class="see-more-link">See full testimonials</router-link>
                 </div>
               </div>
             </div>
@@ -176,17 +176,27 @@ export default {
 
   computed: {
     homepageTestimonials() {
-      // For each testimonial:
-      // - include ONLY paragraphs prefixed with "{"
-      // - strip the "{" for display
-      // - drop testimonials that end up empty
+      const SEP = "\n\n";
+
       return this.testimonialsRaw
-        .map((t) =>
-          t
-            .filter((p) => typeof p === "string" && p.startsWith("{"))
-            .map((p) => p.slice(1))
-        )
-        .filter((t) => t.length > 0);
+        .map((paras) => {
+          const joined = (paras || []).join(SEP);
+
+          const start = joined.indexOf("{");
+          if (start === -1) return null;
+
+          const end = joined.indexOf("}", start + 1);
+          if (end === -1) return null;
+
+          const snippet = joined.slice(start + 1, end);
+
+          // Split back into paragraphs, trim, drop empties
+          return snippet
+            .split(SEP)
+            .map(s => s.trim())
+            .filter(Boolean);
+        })
+        .filter((x) => x && x.length > 0);
     },
 
     trackStyle() {
@@ -347,7 +357,8 @@ export default {
 
 .carousel {
   display: flex;
-  align-items: stretch;  /* important */
+  align-items: stretch;
+  /* important */
 }
 
 .carousel-viewport {
@@ -380,19 +391,19 @@ export default {
 /* Create tall chevron using borders */
 .carousel-btn::before {
   content: "";
-  width: 28px;              /* overall arrow width */
-  height: 80px;             /* vertical stretch */
+  width: 28px;
+  /* overall arrow width */
+  height: 80px;
+  /* vertical stretch */
   background: #888;
 
   /* Create chevron shape */
-  clip-path: polygon(
-    70% 0%,
-    100% 0%,
-    30% 50%,
-    100% 100%,
-    70% 100%,
-    0% 50%
-  );
+  clip-path: polygon(70% 0%,
+      100% 0%,
+      30% 50%,
+      100% 100%,
+      70% 100%,
+      0% 50%);
 
   transition: background 0.2s ease, transform 0.15s ease;
 }

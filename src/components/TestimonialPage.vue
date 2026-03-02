@@ -109,7 +109,7 @@ export default {
       }
     },
     cleanParagraph(text) {
-      return text.startsWith("{") ? text.slice(1) : text;
+      return String(text).replace(/[{}]/g, "");
     }
   }
 };

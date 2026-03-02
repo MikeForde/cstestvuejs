@@ -803,9 +803,8 @@ export default {
   }
 
   .cursive {
-    font-size: var(--tFont, 1.1rem);
-    /* keep adaptive font */
-    line-height: 1.22;
+    font-size: calc(var(--tFont, 1.6rem) * 0.55);
+    line-height: 1.2;
   }
 }
 

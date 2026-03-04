@@ -109,7 +109,11 @@ export default {
       }
     },
     cleanParagraph(text) {
-      return String(text).replace(/[{}]/g, "");
+      // 1) remove "{<digits>" (e.g. "{1", "{12") but keep the rest of the text
+      // 2) remove any remaining "{" or "}"
+      return String(text)
+        .replace(/\{(\d+)/g, "")  // strips "{1" / "{2" / "{12" only
+        .replace(/[{}]/g, "");
     }
   }
 };

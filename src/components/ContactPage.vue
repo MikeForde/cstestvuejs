@@ -83,7 +83,9 @@
       <div class="info-container">
         <div class="info-card">
           <h2>Opening Hours</h2>
-          <p>Afternoons and evenings. More appointment options are available during the school holidays.</p>
+          <p>Monday, Tuesday, Thursday - evenings</p>
+          <p>Wednesday (online only) - all day</p>
+          <p>Friday - all day </p>
         </div>
         <div class="image-card">
           <img src="@/assets/Openings.jpg" alt="Opening Hours Image - clearing in woods" class="info-image" />

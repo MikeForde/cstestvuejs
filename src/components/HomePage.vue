@@ -34,7 +34,10 @@
                     <span v-if="pIdx === paras.length - 1">”</span>
                   </p>
 
-                  <router-link to="/testimonials" class="see-more-link">See full testimonials</router-link>
+                  <router-link to="/testimonials" class="see-more-link" @click.stop @pointerdown.stop @pointerup.stop
+                    @pointercancel.stop>
+                    See full testimonials
+                  </router-link>
                 </div>
               </div>
             </div>

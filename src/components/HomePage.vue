@@ -180,39 +180,81 @@ export default {
     homepageTestimonials() {
       const SEP = "\n\n";
 
-      return this.testimonialsRaw
-        .map((paras) => {
-          const joined = (paras || []).join(SEP);
+      // returns an array of "slides", where each slide is an array of paragraphs
+      const slides = [];
 
-          const start = joined.indexOf("{");
-          if (start === -1) return null;
+      for (const paras of (this.testimonialsRaw || [])) {
+        const joined = (paras || []).join(SEP);
+        if (!joined) continue;
 
-          const end = joined.indexOf("}", start + 1);
-          if (end === -1) return null;
+        // Find ALL {...} segments (non-greedy)
+        const re = /\{([\s\S]*?)\}/g;
 
-          const missedStart = start > 0;
-          const missedEnd = end < joined.length - 1;
+        // groups: key -> { parts: [{text, start, end}], firstStart, lastEnd }
+        // key is either "__unnumbered__" or the number as string ("1","2",...)
+        const groups = new Map();
 
-          // Extract between { and }
-          let snippet = joined.slice(start + 1, end).trim();
+        let match;
+        while ((match = re.exec(joined)) !== null) {
+          const full = match[0];           // "{...}"
+          const innerRaw = match[1] ?? ""; // inside braces
+          const segStart = match.index;    // index of "{"
+          const segEnd = segStart + full.length; // index after "}"
 
-          // Add ellipses if we missed start/end of original testimonial
-          if (missedStart && !snippet.startsWith("...")) snippet = `... ${snippet}`;
-          if (missedEnd && !snippet.endsWith("...")) snippet = `${snippet} ...`;
+          // Detect optional numeric prefix immediately after "{"
+          // e.g. "{1Some text...}" => groupKey="1", text="Some text..."
+          const mNum = innerRaw.match(/^\s*(\d+)\s*([\s\S]*)$/);
+          const hasNum = !!(mNum && mNum[1] && mNum[2] !== undefined && innerRaw.trim().startsWith(mNum[1]));
+          const groupKey = hasNum ? mNum[1] : "__unnumbered__";
+          const text = (hasNum ? mNum[2] : innerRaw).trim();
 
-          // Replace FIRST occurrence of whole-word "she"/"She" with "[Galina]"
-          // (only once, per testimonial snippet)
-          if (!/\bGalina\b/i.test(snippet)) {
-            snippet = snippet.replace(/\b(she|her)\b/i, "[Galina]");
+          if (!text) continue;
+
+          if (!groups.has(groupKey)) {
+            groups.set(groupKey, { parts: [], firstStart: segStart, lastEnd: segEnd });
+          }
+          const g = groups.get(groupKey);
+          g.parts.push({ text, start: segStart, end: segEnd });
+          g.firstStart = Math.min(g.firstStart, segStart);
+          g.lastEnd = Math.max(g.lastEnd, segEnd);
+        }
+
+        if (!groups.size) continue;
+
+        // Build one quote per group (unnumbered => one combined quote)
+        for (const [, g] of groups.entries()) {
+          // Preserve original order of appearance for this group
+          g.parts.sort((a, b) => a.start - b.start);
+
+          // Join parts with ellipsis between them
+          let quote = g.parts.map(p => p.text).join(" ... ").trim();
+
+          // Add leading/trailing ellipses if this group doesn't cover start/end of testimonial
+          const missedStart = g.parts[0].start > 0;
+          const missedEnd = g.parts[g.parts.length - 1].end < joined.length;
+
+          if (missedStart && !quote.startsWith("...")) quote = `... ${quote}`;
+          if (missedEnd && !quote.endsWith("...")) quote = `${quote} ...`;
+
+          // Pronoun replacement: first whole-word she/her only, but only if Galina not already mentioned
+          if (!/\bGalina\b/i.test(quote)) {
+            quote = quote.replace(/\b(she|her)\b/i, "[Galina]");
           }
 
-          // Split back into paragraphs, trim, drop empties
-          return snippet
+          // Split back into paragraphs
+          const outParas = quote
             .split(SEP)
             .map(s => s.trim())
             .filter(Boolean);
-        })
-        .filter((x) => x && x.length > 0);
+
+          if (outParas.length) slides.push(outParas);
+        }
+      }
+
+      // Keep deterministic order: unnumbered first for each testimonial? (optional)
+      // Current behaviour: preserves insertion order of Map by first-seen group key.
+
+      return slides;
     },
 
     trackStyle() {

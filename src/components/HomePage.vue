@@ -25,18 +25,18 @@
           <div class="carousel-viewport" @pointerdown="onSwipeStart" @pointermove="onSwipeMove" @pointerup="onSwipeEnd"
             @pointercancel="onSwipeEnd" style="touch-action: pan-y;">
             <div class="carousel-track" :style="trackStyle">
-              <div v-for="(paras, idx) in homepageTestimonials" :key="idx" class="carousel-slide"
-                :style="{ '--tFont': fontFor(paras) }">
+              <div v-for="(t, idx) in homepageTestimonials" :key="`${t.tIdx}-${idx}`" class="carousel-slide"
+                :style="{ '--tFont': fontFor(t.paras) }">
                 <div class="testimonial-card text-card-testimonial">
-                  <p v-for="(p, pIdx) in paras" :key="pIdx" class="cursive">
+                  <p v-for="(p, pIdx) in t.paras" :key="pIdx" class="cursive">
                     <span v-if="pIdx === 0">“</span>
                     {{ p }}
-                    <span v-if="pIdx === paras.length - 1">”</span>
+                    <span v-if="pIdx === t.paras.length - 1">”</span>
                   </p>
 
-                  <router-link to="/testimonials" class="see-more-link" @click.stop @pointerdown.stop @pointerup.stop
-                    @pointercancel.stop>
-                    See full testimonials
+                  <router-link :to="`/testimonials#t${t.tIdx}`" class="see-more-link" @click.stop @pointerdown.stop
+                    @pointerup.stop @pointercancel.stop>
+                    See full testimonial
                   </router-link>
                 </div>
               </div>
@@ -186,7 +186,7 @@ export default {
       // returns an array of "slides", where each slide is an array of paragraphs
       const slides = [];
 
-      for (const paras of (this.testimonialsRaw || [])) {
+      for (const [tIdx, paras] of (this.testimonialsRaw || []).entries()) {
         const joined = (paras || []).join(SEP);
         if (!joined) continue;
 
@@ -250,7 +250,7 @@ export default {
             .map(s => s.trim())
             .filter(Boolean);
 
-          if (outParas.length) slides.push(outParas);
+          if (outParas.length) slides.push({ tIdx, paras: outParas });
         }
       }
 

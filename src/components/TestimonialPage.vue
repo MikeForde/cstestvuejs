@@ -14,7 +14,7 @@
     </section>
 
     <!-- Dynamic Testimonials -->
-    <section v-for="(paras, idx) in testimonials" :key="idx" class="testimonial-section" :class="[
+    <section v-for="(paras, idx) in testimonials" :key="idx" :id="`t${idx}`" class="testimonial-section" :class="[
       { 'fade-in': visibleSections.includes(idx) },
       { 'testimonial--alt': idx % 2 === 1 }
     ]">
@@ -83,6 +83,20 @@ export default {
       sections.forEach((el, idx) => {
         el.dataset.index = String(idx);
         observer.observe(el);
+      });
+
+      this.$nextTick(() => {
+        const hash = window.location.hash;
+        if (hash) {
+          const el = document.querySelector(hash);
+          if (el) {
+            setTimeout(() => {
+              const offset = window.innerWidth <= 768 ? 60 : 100;
+              const y = el.getBoundingClientRect().top + window.pageYOffset - offset;
+              window.scrollTo({ top: y, behavior: "smooth" });
+            }, 150);
+          }
+        }
       });
     });
   },

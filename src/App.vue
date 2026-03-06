@@ -16,6 +16,7 @@
           <li><router-link to="/about-me" @click="closeMenu">About Me</router-link></li>
           <li><router-link to="/contact" @click="closeMenu">Contact</router-link></li>
           <li><router-link to="/testimonials" @click="closeMenu">Testimonials</router-link></li>
+          <li><a href="/csrelax-app/" @click="closeMenu">Clear Skies - App</a></li>
           <li class="dropdown">
             <span @click="toggleDropdown">Info <i class="fas fa-caret-down"></i></span>
             <ul class="dropdown-content" :class="{ 'show-dropdown': dropdownActive }">

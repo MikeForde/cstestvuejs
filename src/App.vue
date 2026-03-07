@@ -218,7 +218,14 @@ a:visited {
   }
 
   .nav-links li {
-    margin: 10px 0;
+    margin: 2px 0;
+  }
+
+  .nav-links li a,
+  .nav-links li span {
+    font-size: 16px;
+    padding: 10px 16px;
+    line-height: 1.2;
   }
 
   .hamburger {
@@ -228,6 +235,11 @@ a:visited {
   .dropdown-content {
     position: static;
     box-shadow: none;
+  }
+
+  .dropdown-content li a {
+    font-size: 15px;
+    padding: 8px 16px;
   }
 }
 </style>

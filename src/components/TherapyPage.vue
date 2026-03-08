@@ -43,7 +43,7 @@
             and knowledge which I will teach you and, most importantly, your own resources, strengths and skills to help
             you
             move forward.</p>
-          <p>To support you with implementing the desired change and growing your confidence, I offer guided imagery
+          <p>To support you with implementing the desired change and growing your confidence, I offer guided imagery (<a href="/csrelax-app/" @click="closeMenu">for samples see here</a>)
             alongside other effective techniques. </p>
           <p><a href="https://www.humangivens.com/human-givens/research/research-findings/" target="_blank">Learn
               more</a>

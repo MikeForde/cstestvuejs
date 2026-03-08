@@ -17,14 +17,24 @@
           <li><router-link to="/contact" @click="closeMenu">Contact</router-link></li>
           <li><router-link to="/testimonials" @click="closeMenu">Testimonials</router-link></li>
           <li class="dropdown">
-            <span @click="toggleDropdown">Info <i class="fas fa-caret-down"></i></span>
-            <ul class="dropdown-content" :class="{ 'show-dropdown': dropdownActive }">
-              <li><router-link to="/documents" @click="closeMenu">Documents</router-link></li>
-              <li><router-link to="/privacy" @click="closeMenu">Privacy Policy</router-link></li>
-              <li><router-link to="/business" @click="closeMenu">Fees and Business Terms</router-link></li>
-              <li><a href="/csrelax-app/" @click="closeMenu">Clear Skies - App</a></li>
-            </ul>
-          </li>
+          <span @click.stop="toggleDropdown('info')">
+            Info <i class="fas fa-caret-down"></i>
+          </span>
+          <ul class="dropdown-content" :class="{ 'show-dropdown': activeDropdown === 'info' }">
+            <li><router-link to="/documents" @click="closeMenu">Documents</router-link></li>
+            <li><router-link to="/privacy" @click="closeMenu">Privacy Policy</router-link></li>
+            <li><router-link to="/business" @click="closeMenu">Fees and Business Terms</router-link></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <span @click.stop="toggleDropdown('resources')">
+            Free Resources <i class="fas fa-caret-down"></i>
+          </span>
+          <ul class="dropdown-content" :class="{ 'show-dropdown': activeDropdown === 'resources' }">
+            <li><a href="/csrelax-app/" @click="closeMenu">Clear Skies - App</a></li>
+          </ul>
+        </li>
         </ul>
       </div>
     </nav>
@@ -46,26 +56,26 @@ export default {
   data() {
     return {
       menuActive: false,
-      dropdownActive: false
+      activeDropdown: null
     };
   },
   methods: {
     toggleMenu() {
       this.menuActive = !this.menuActive;
       if (!this.menuActive) {
-        this.dropdownActive = false;
+        this.activeDropdown = null;
       }
     },
-    toggleDropdown() {
-      this.dropdownActive = !this.dropdownActive;
+    toggleDropdown(name) {
+      this.activeDropdown = this.activeDropdown === name ? null : name;
     },
     closeMenu() {
       this.menuActive = false;
-      this.dropdownActive = false;
+      this.activeDropdown = null;
     },
     handleClickOutsideMenu(event) {
       const menu = this.$refs.menu;
-      if (this.menuActive && !menu.contains(event.target)) {
+      if (this.menuActive && menu && !menu.contains(event.target)) {
         this.closeMenu();
       }
     }

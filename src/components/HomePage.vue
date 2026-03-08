@@ -70,7 +70,7 @@
           <p>It is a practical, brief and solution-focussed approach that combines the latest insights from psychology
             and
             neuroscience research with proven techniques from a wide range of modalities in counselling and
-            psychotherapy.
+            psychotherapy, including guided imagery (<a href="/csrelax-app/" @click="closeMenu">for samples see here</a>)
           </p>
           <p>My aim is that you will leave each session feeling a little better, more hopeful and more confident in your
             ability to recover, or make the changes you would like to see in your life. Please <router-link

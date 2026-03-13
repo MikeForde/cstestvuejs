@@ -1,0 +1,92 @@
+[
+  {
+    "question": "What is Human Givens therapy?",
+    "type": "text",
+    "answer": "Human Givens therapy is a practical, evidence-based approach to mental health that focuses on meeting essential emotional needs and using innate resources to resolve emotional difficulties. It blends techniques from cognitive-behavioral therapy, solution-focused therapy, motivational interviewing, guided imagery and other approaches to help clients achieve lasting change quickly and effectively."
+  },
+  {
+    "question": "How does Human Givens therapy differ from traditional therapy?",
+    "type": "text",
+    "answer": "Unlike therapies that focus extensively on analysing the past, Human Givens therapy emphasises practical solutions and achievable outcomes in the present. It helps clients identify unmet emotional needs and use their natural resources to meet them, reducing distress and improving wellbeing efficiently."
+  },
+  {
+    "question": "What issues can Human Givens therapy help with?",
+    "type": "list",
+    "intro": "This approach can help with a wide range of emotional and psychological challenges, including:",
+    "points": [
+      "Anxiety, panic, and phobias",
+      "Depression and low mood",
+      "Stress and burnout",
+      "Relationship difficulties",
+      "Trauma and grief",
+      "Anger",
+      "Sleep problems",
+      "Addictions and unhelpful habits",
+      "Confidence"
+    ]
+  },
+  {
+    "question": "I am feeling worried about starting therapy. What should I do?",
+    "type": "text",
+    "answer": "It is completely normal to feel nervous or unsure before starting therapy. Human Givens therapy is gentle, practical, and collaborative, and your therapist will work at your pace. You can discuss any worries openly in your first session, and your therapist will help you feel safe, supported, and understood. Many clients find that sharing their concerns early helps build trust and confidence in the process."
+  },
+  {
+    "question": "How many sessions will I need?",
+    "type": "text",
+    "answer": "Human Givens therapy is goal-focused and solution-oriented. Many clients notice improvement within 4–8 sessions, though more complex or long-standing issues may require additional sessions."
+  },
+  {
+    "question": "What happens during a session?",
+    "type": "list",
+    "intro": "Sessions are collaborative. We will typically:",
+    "points": [
+      "Understand your current situation and what you would like from therapy",
+      "Explore your emotional needs and how they are being met",
+      "Develop your understanding of mental health, emotions, and behaviours",
+      "Identify unhelpful patterns or obstacles",
+      "Identify practical strategies and tools to achieve your goals",
+      "With your consent, use guided imagery to resolve trauma, reinforce desired change, and move away from unhelpful habits and addictions",
+      "Review progress and adapt approaches as needed"
+    ]
+  },
+  {
+    "question": "Do I need to talk about my past?",
+    "type": "html",
+    "answer": "<p>Human Givens therapy is primarily future-focused and solution-oriented, but it does take the past into account insofar as it affects your present emotional needs and wellbeing.</p><p>The approach recognises that many emotional difficulties, trauma, or unhelpful patterns develop when essential emotional needs were not met earlier in life. Rather than exploring the past extensively, Human Givens therapy aims to use that understanding in a practical way.</p><ul><li><strong>Identify unmet needs and patterns</strong> – past experiences may be considered to help explain why certain emotional needs, such as security, connection, or autonomy, have not been fully met.</li><li><strong>Process distressing memories efficiently</strong> – techniques such as the Rewind Method or guided imagery can help reduce the emotional intensity of traumatic memories without reliving them in detail.</li><li><strong>Focus on current coping and solutions</strong> – insights from the past are used to support practical change in the present and future.</li></ul><p>In short, the past is acknowledged when it helps explain present challenges, but therapy emphasises building skills, resources, and solutions now so that you can move forward effectively.</p>"
+  },
+  {
+    "question": "What are Counterconditioning, Rewind, and Guided Imagery?",
+    "type": "html",
+    "answer": "<p>These are specialised techniques often used in Human Givens therapy to resolve trauma, reduce emotional distress, and work effectively with unhelpful habits and addictions:</p><ul><li><strong>Counterconditioning</strong> – helps people move away from addictions and unhelpful habits.</li><li><strong>Rewind Technique</strong> – a structured method for processing traumatic memories without reliving the distress, helping reduce symptoms such as flashbacks, anxiety, or panic.</li><li><strong>Guided Imagery</strong> – uses mental visualisation to access inner resources, enhance relaxation, and rehearse positive outcomes and new behaviours.</li></ul><p>These techniques are gentle, evidence-informed, and tailored to you as an individual, at your pace and comfort level.</p>"
+  },
+  {
+    "question": "How do I know if Human Givens therapy is right for me?",
+    "type": "text",
+    "answer": "If you are looking for practical, structured, and solution-focused support for emotional or psychological difficulties, Human Givens therapy may be a good fit. A free initial consultation can help you decide whether it aligns with your needs."
+  },
+  {
+    "question": "Is therapy confidential?",
+    "type": "text",
+    "answer": "Yes. Therapy sessions are confidential within legal and ethical limits. Exceptions include situations where there is a risk of harm to yourself or others, or where disclosure is required by law or professional ethics."
+  },
+  {
+    "question": "What are the fees?",
+    "type": "html",
+    "answer": "<p>Sessions are available online (16+) and face-to-face.</p><ul><li><strong>Individuals</strong> – £85 (60 minutes)</li><li><strong>Under 16s</strong> – £70 (50 minutes)</li><li><strong>Couples</strong> – £120 (60 minutes)</li><li><strong>Military veterans and family members</strong> – FREE via PTSD Resolution</li></ul><p><strong>Discounts can be combined:</strong></p><ul><li>Online sessions – £5 reduction (online available to 16+ only)</li><li>Daytime sessions – £10 reduction where the session ends before 5pm</li><li>Concessions – £5 reduction for NHS staff, social workers, teachers, blue-light services, and students</li></ul><p>For fuller fee details, please see the <a href=\"/business\">Fees and Terms of Business page</a>.</p>"
+  },
+  {
+    "question": "How do I book a session?",
+    "type": "html",
+    "answer": "<p>You can book a session by emailing <a href=\"mailto:clearskiespractice@gmail.com\">clearskiespractice@gmail.com</a>.</p><p>Please also see the <a href=\"/contact\">Contact page</a> for details and availability.</p>"
+  },
+  {
+    "question": "What is a free 15-minute consultation?",
+    "type": "text",
+    "answer": "A free 15-minute consultation is a brief telephone conversation designed to explore your current situation and discuss how therapy might support you. During this time, you can ask questions and learn more about the services offered. It is also an opportunity for both of us to decide whether therapy is suitable for your needs. In some cases, I may conclude that therapy is not the most appropriate option at this time, and I will explain why and suggest alternative services or treatments that may better meet your needs. The consultation also gives you a chance to see whether I am the right therapist for you."
+  },
+  {
+    "question": "What if I need to cancel my appointment?",
+    "type": "text",
+    "answer": "Therapy works best when sessions are attended regularly, but I understand that unexpected events can occur. If you cancel more than 48 hours in advance, I can rearrange your session with no charge. Short-notice cancellations, meaning less than 48 hours before the appointment, will be charged at the full session rate. If you do not attend a scheduled appointment without prior notice, the session fee will be payable in full. New appointments cannot be scheduled until any outstanding fees have been settled."
+  }
+]

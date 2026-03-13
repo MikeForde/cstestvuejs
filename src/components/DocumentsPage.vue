@@ -62,6 +62,15 @@
             Download (Word)
           </a>
         </li>
+        <li>
+          Couples Therapy Contract - 18 and over
+          <a href="#" @click.prevent="previewDocument('/Couples Therapy Contract.pdf')">
+            Preview (PDF)
+          </a>
+          <a href="/Couples Therapy Contract.docx" download="Couples Therapy Contract - 18 and over">
+            Download (Word)
+          </a>
+        </li>
       </ul>
       <div v-if="previewUrl" class="document-previewer">
         <h3>Document Preview</h3>

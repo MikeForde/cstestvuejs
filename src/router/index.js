@@ -9,6 +9,7 @@ import PrivacyPolicyPage from '../components/PrivacyPolicyPage.vue';
 import BusinessPage from '@/components/BusinessPage.vue';
 import TestimonialPage from '@/components/TestimonialPage.vue';
 import LifeCoachingPage from '@/components/LifeCoachingPage.vue';
+import FaqPage from '@/components/FaqPage.vue';
 
 const routes = [
   { path: '/', component: HomePage },
@@ -21,6 +22,7 @@ const routes = [
   { path: '/privacy', component: PrivacyPolicyPage },
   { path: '/business', component: BusinessPage },
   { path: '/testimonials', component: TestimonialPage },
+  { path: '/faq', component: FaqPage },
   ];
 
 const router = createRouter({

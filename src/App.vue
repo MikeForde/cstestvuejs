@@ -24,6 +24,7 @@
             <li><router-link to="/documents" @click="closeMenu">Documents</router-link></li>
             <li><router-link to="/privacy" @click="closeMenu">Privacy Policy</router-link></li>
             <li><router-link to="/business" @click="closeMenu">Fees and Business Terms</router-link></li>
+            <li><router-link to="/faq" @click="closeMenu">Frequently Asked Questions</router-link></li>
           </ul>
         </li>
 

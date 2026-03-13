@@ -34,7 +34,6 @@
 
     <section class="info-section faq-section" ref="section3" :data-section="3" :class="{ 'fade-in': showSection3 }">
       <div class="info-card">
-        <h2>Questions and answers</h2>
 
         <div class="faq-list">
           <div v-for="(item, index) in faqs" :key="`faq-${index}`" class="faq-item"

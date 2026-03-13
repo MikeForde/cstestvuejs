@@ -29,5 +29,8 @@ export default [
         ],
         [
           "Galina is fantastic at what she does. {She created an environment where I felt safe, supported, and heard. Her thoughtful use of different techniques and resources felt personal and exactly what I needed, especially during a time when negative thoughts were becoming overwhelming.} I am very grateful for her guidance and the difference it has made for me. Thank you!"
+        ],
+        [
+          "{Galina was incredibly attentive and approachable, her insights and knowledge really helped me understand what I could do to help myself.} Her approach was kind and understanding and just what I needed."
         ]
       ];

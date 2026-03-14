@@ -158,6 +158,10 @@ export default {
 }
 
 .hero-content p {
+  text-align: center;
+}
+
+.hero-content p {
   color: #f5f5f5;
   font-size: 1.1rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;

@@ -34626,7 +34626,7 @@ s=i.p2
 r=s.f
 r=A.cb("Everyday wellbeing",j,j,j,r==null?j:r.tA(B.kA),j,j)
 q=s.y
-q=A.cb("Practical, common-sense guidance for feeling steadier day to day. Try one small change at a time.",j,j,j,q==null?j:q.mE(1.45),j,j)
+q=A.cb("Practical, common-sense guidance for feeling more relaxed. Try one small change at a time.",j,j,j,q==null?j:q.mE(1.45),j,j)
 p=h.$3$body$icon$title("Keep a consistent wake time, limit screens 60 minutes before bed, and try a short wind-down routine (stretching, reading, or breathing).",B.BU,"Sleep")
 o=h.$3$body$icon$title("Aim for a daily walk or gentle movement. Even 10 minutes can reduce stress and improve mood. Build consistency before intensity.",B.BV,"Movement")
 n=h.$3$body$icon$title("Regular meals help regulate energy and mood. Add protein and fibre where you can, and keep hydration simple \u2014 water first, caffeine earlier in the day.",B.BW,"Diet & hydration")

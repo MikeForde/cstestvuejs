@@ -4,15 +4,21 @@ export default [
     "Thank you Galina"
   ],
   [
+    "I had a lot of childhood traumas which had deeply affected me for a long time. {1With Galina’s help, I managed to overcome several fears/phobias.} On the occasions where I did not feel able to complete a ‘Rewind’, we had an amazing relaxation session instead. {2She worked with me at my own pace and helped to resolve sleeping issues.} {1I am now able to enjoy water sports, where I previously had a constant fear of drowning, so I refused to go anywhere near open bodies of water.} I also had problems with needles, both giving blood and having injections, after a ‘Rewind’, I took my child to have a blood test with little difficulty. Overall, I have become a more confident, less anxious person. It has completely changed my life for the better."
+  ],
+  [
     "{I was so relieved to gain a recommendation from a colleague for Galina. At the point of contact, my daughter (12) was struggling with challenging friendships, self confidence, low self esteem and being able to express her feelings.}",
     "{From the first meeting, I had confidence in Galina’s ability to develop a trusting rapport with my daughter and gently support her with compassion. Galina worked with her for approximately three months in which time her confidence started to grow as she challenged previous experiences. We saw examples of her standing up to peers and take on new roles at school. Testament to this, she was awarded the resilience award at school and congratulated on the transformation she had demonstrated in her academic progress in addition.",
     "I can wholeheartedly recommend Galina's support."
   ],
   [
-    "I cannot put into words how much Galina has supported me throughout our sessions. {This was my first time attending therapy so I was apprehensive. She guided me through everything and after the first session I felt at ease and excited to come back the following week.} From the rewinds to coping strategies, she has given me the tools and resources to help me moving forward. Couldn’t recommend her highly enough."
+    "I am delighted to provide this heartfelt endorsement and testimonial for Galina Filipkova. Following what has been 12 weeks of life changing therapy and support around my past traumas and anxieties.",
+    "Galina has consistently demonstrated a wonderful empathetic approach to me with an outstanding ability to listen actively and engage with myself.",
+    "{I came to Galina from a very dark place with a multitude of complex trauma issues. However, from day 1, I felt listened to and appreciated, for who I was.} Galina worked not only with these past experiences but also gave me advice and coping techniques which I can take forward into a much brighter and hopeful future. The rewind technique has been life changing.",
+    "I could wax lyrical about Galina all day. But what I really want to say is very simple and genuine. Thank you, Galina, for being an important part of my transformation towards a much clearer and optimistic future"
   ],
   [
-    "I had a lot of childhood traumas which had deeply affected me for a long time. {1With Galina’s help, I managed to overcome several fears/phobias.} On the occasions where I did not feel able to complete a ‘Rewind’, we had an amazing relaxation session instead. {2She worked with me at my own pace and helped to resolve sleeping issues.} {1I am now able to enjoy water sports, where I previously had a constant fear of drowning, so I refused to go anywhere near open bodies of water.} I also had problems with needles, both giving blood and having injections, after a ‘Rewind’, I took my child to have a blood test with little difficulty. Overall, I have become a more confident, less anxious person. It has completely changed my life for the better."
+    "I cannot put into words how much Galina has supported me throughout our sessions. {This was my first time attending therapy so I was apprehensive. She guided me through everything and after the first session I felt at ease and excited to come back the following week.} From the rewinds to coping strategies, she has given me the tools and resources to help me moving forward. Couldn’t recommend her highly enough."
   ],
   [
     "{Galina was very professional but also very understanding and helpful to me! She asked very relevant questions and listened intently!}"
@@ -32,11 +38,5 @@ export default [
   ],
   [
     "{Galina was incredibly attentive and approachable, her insights and knowledge really helped me understand what I could do to help myself.} Her approach was kind and understanding and just what I needed."
-  ],
-  [
-    "I am delighted to provide this heartfelt endorsement and testimonial for Galina Filipkova. Following what has been 12 weeks of life changing therapy and support around my past traumas and anxieties.",
-    "Galina has consistently demonstrated a wonderful empathetic approach to me with an outstanding ability to listen actively and engage with myself.",
-    "{I came to Galina from a very dark place with a multitude of complex trauma issues. However, from day 1, I felt listened to and appreciated, for who I was.} Galina worked not only with these past experiences but also gave me advice and coping techniques which I can take forward into a much brighter and hopeful future. The rewind technique has been life changing.",
-    "I could wax lyrical about Galina all day. But what I really want to say is very simple and genuine. Thank you, Galina, for being an important part of my transformation towards a much clearer and optimistic future"
   ]
 ];

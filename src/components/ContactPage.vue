@@ -574,7 +574,7 @@ ul {
 }
 
 .info-section[data-section="3"] .info-image {
-  max-height: 520px;
+  max-height: 550px;
 }
 
 .info-section[data-section="4"] .info-image {

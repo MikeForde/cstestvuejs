@@ -47,24 +47,104 @@
 
         <h3>Standard Session Fees</h3>
         <ul>
-          <li><strong>Individual therapy (16+)</strong> – £85 (60 minutes)</li>
-          <li><strong>Under 16s counselling</strong> – £70 (50 minutes)</li>
+          <li><strong>Base fee for individual therapy and coaching</strong> – £90 (60 minutes)</li>
           <li><strong>Couples therapy</strong> – £120 (60 minutes)</li>
-          <li><strong>Coaching (16+)</strong> – £85 (60 minutes)</li>
         </ul>
 
-        <h3>Online & Daytime Discounts</h3>
+        <div class="pricing-tabs" role="tablist" aria-label="Pricing type">
+          <button
+            class="pricing-tab"
+            :class="{ 'pricing-tab--active': activePricingTab === 'individual' }"
+            type="button"
+            role="tab"
+            :aria-selected="activePricingTab === 'individual'"
+            @click="activePricingTab = 'individual'"
+          >
+            Individual & Coaching - £90
+          </button>
+          <button
+            class="pricing-tab"
+            :class="{ 'pricing-tab--active': activePricingTab === 'couples' }"
+            type="button"
+            role="tab"
+            :aria-selected="activePricingTab === 'couples'"
+            @click="activePricingTab = 'couples'"
+          >
+            Couples - £120
+          </button>
+        </div>
+
+        <div v-if="activePricingTab === 'individual'" class="pricing-grid" aria-label="Individual session price grid">
+          <div class="pricing-grid__cell pricing-grid__corner" aria-hidden="true"></div>
+          <div class="pricing-grid__cell pricing-grid__header pricing-grid__header--day">
+            <span class="pricing-grid__label">Day</span>
+            <span class="pricing-grid__subtext">ends before 5pm</span>
+          </div>
+          <div class="pricing-grid__cell pricing-grid__header pricing-grid__header--evening">
+            <span class="pricing-grid__label">Evening</span>
+            <span class="pricing-grid__subtext">from 5pm</span>
+          </div>
+
+          <div class="pricing-grid__cell pricing-grid__row-header">Face-to-face</div>
+          <div class="pricing-grid__cell pricing-grid__price pricing-grid__price--day">
+            <span class="pricing-grid__amount">£80</span>
+            <span class="pricing-grid__subtext">£90 - £10 daytime</span>
+          </div>
+          <div class="pricing-grid__cell pricing-grid__price pricing-grid__price--evening">
+            <span class="pricing-grid__amount">£90</span>
+            <span class="pricing-grid__subtext">base fee</span>
+          </div>
+
+          <div class="pricing-grid__cell pricing-grid__row-header">Online - aged 16+ only</div>
+          <div class="pricing-grid__cell pricing-grid__price pricing-grid__price--day">
+            <span class="pricing-grid__amount">£65</span>
+            <span class="pricing-grid__subtext">£90 - £15 online - £10 daytime</span>
+          </div>
+          <div class="pricing-grid__cell pricing-grid__price pricing-grid__price--evening">
+            <span class="pricing-grid__amount">£75</span>
+            <span class="pricing-grid__subtext">£90 - £15 online</span>
+          </div>
+        </div>
+
+        <div v-else class="pricing-grid" aria-label="Couples session price grid">
+          <div class="pricing-grid__cell pricing-grid__corner" aria-hidden="true"></div>
+          <div class="pricing-grid__cell pricing-grid__header pricing-grid__header--day">
+            <span class="pricing-grid__label">Day</span>
+            <span class="pricing-grid__subtext">ends before 5pm</span>
+          </div>
+          <div class="pricing-grid__cell pricing-grid__header pricing-grid__header--evening">
+            <span class="pricing-grid__label">Evening</span>
+            <span class="pricing-grid__subtext">from 5pm</span>
+          </div>
+
+          <div class="pricing-grid__cell pricing-grid__row-header">Face-to-face</div>
+          <div class="pricing-grid__cell pricing-grid__price pricing-grid__price--day">
+            <span class="pricing-grid__amount">£110</span>
+            <span class="pricing-grid__subtext">£120 - £10 daytime</span>
+          </div>
+          <div class="pricing-grid__cell pricing-grid__price pricing-grid__price--evening">
+            <span class="pricing-grid__amount">£120</span>
+            <span class="pricing-grid__subtext">base fee</span>
+          </div>
+
+          <div class="pricing-grid__cell pricing-grid__row-header">Online</div>
+          <div class="pricing-grid__cell pricing-grid__price pricing-grid__price--day">
+            <span class="pricing-grid__amount">£95</span>
+            <span class="pricing-grid__subtext">£120 - £15 online - £10 daytime</span>
+          </div>
+          <div class="pricing-grid__cell pricing-grid__price pricing-grid__price--evening">
+            <span class="pricing-grid__amount">£105</span>
+            <span class="pricing-grid__subtext">£120 - £15 online</span>
+          </div>
+        </div>
+
+        <h3>Additional Discounts</h3>
+        <p>These discounts can also be combined with the prices above where eligible.</p>
         <ul>
-          <li>Online sessions – £5 reduction (online available to 16+ only)</li>
-          <li>Sessions ending before 5pm – £10 reduction</li>
+          <li><strong>NHS, social workers, teachers and blue-light services</strong> – £10 further reduction</li>
+          <li><strong>Under 16s and and students</strong> – £5 further reduction</li>
         </ul>
-
-        <h3>Concessions</h3>
-        <p>
-          Concession rates are available for students, blue-light services,
-          social care workers, NHS staff and teachers.
-          A £5 reduction applies. Proof of status is required.
-        </p>
+        <p>Online sessions are available to ages 16+ only. Proof of status is required where relevant.</p>
 
         <h3>Additional Information</h3>
         <ul>
@@ -195,6 +275,7 @@ export default {
       showSection3: false,
       showSection4: false,
       showSection5: false,
+      activePricingTab: 'individual',
       showSection6: false,
       showSection7: false,
       showSection8: false,
@@ -392,6 +473,100 @@ ul {
   font-weight: 100;
 }
 
+.pricing-tabs {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 8px 0 14px;
+  padding: 6px;
+  border-radius: 999px;
+  background: #eef6fb;
+}
+
+.pricing-tab {
+  border: none;
+  border-radius: 999px;
+  padding: 10px 18px;
+  background: transparent;
+  color: #2f5165;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.pricing-tab--active {
+  background: #5DAED5;
+  color: white;
+}
+
+.pricing-intro {
+  margin: 0 0 16px;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: minmax(130px, 1.1fr) repeat(2, minmax(150px, 1fr));
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.pricing-grid__cell {
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.pricing-grid__corner {
+  background: transparent;
+}
+
+.pricing-grid__header,
+.pricing-grid__price,
+.pricing-grid__row-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pricing-grid__header {
+  min-height: 88px;
+}
+
+.pricing-grid__header--day,
+.pricing-grid__price--day {
+  background: linear-gradient(180deg, #dff3ff 0%, #c2e7fb 100%);
+  color: #174a62;
+}
+
+.pricing-grid__header--evening,
+.pricing-grid__price--evening {
+  background: linear-gradient(180deg, #355c7d 0%, #23364f 100%);
+  color: #f5f8ff;
+}
+
+.pricing-grid__row-header {
+  background: #eef6fb;
+  color: #2f5165;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.pricing-grid__label,
+.pricing-grid__amount {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.pricing-grid__subtext {
+  margin-top: 6px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
 @media screen and (max-width: 768px) {
 
   .hero,
@@ -421,6 +596,25 @@ ul {
     /* center the text inside */
     pointer-events: auto;
     /* ensure it remains interactive */
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-grid__corner {
+    display: none;
+  }
+
+  .pricing-tabs {
+    display: flex;
+    width: 100%;
+    border-radius: 18px;
+  }
+
+  .pricing-tab {
+    flex: 1;
+    text-align: center;
   }
 }
 </style>

@@ -119,7 +119,7 @@
               :aria-selected="activePricingTab === 'couples'"
               @click="activePricingTab = 'couples'"
             >
-              Couples - £120
+              Couples - £110
             </button>
           </div>
 
@@ -164,18 +164,18 @@
 
             <div class="pricing-grid__cell pricing-grid__row-header">Face-to-face</div>
             <div class="pricing-grid__cell pricing-grid__price pricing-grid__price--day">
-              <span class="pricing-grid__amount">£110</span>
+              <span class="pricing-grid__amount">£100</span>
             </div>
             <div class="pricing-grid__cell pricing-grid__price pricing-grid__price--evening">
-              <span class="pricing-grid__amount">£120</span>
+              <span class="pricing-grid__amount">£110</span>
             </div>
 
             <div class="pricing-grid__cell pricing-grid__row-header">Online</div>
             <div class="pricing-grid__cell pricing-grid__price pricing-grid__price--day">
-              <span class="pricing-grid__amount">£95</span>
+              <span class="pricing-grid__amount">£85</span>
             </div>
             <div class="pricing-grid__cell pricing-grid__price pricing-grid__price--evening">
-              <span class="pricing-grid__amount">£105</span>
+              <span class="pricing-grid__amount">£95</span>
             </div>
           </div>
           <ul>
@@ -703,7 +703,7 @@ ul {
 
 .pricing-grid__header--day,
 .pricing-grid__price--day {
-  background: linear-gradient(180deg, #dff3ff 0%, #c2e7fb 100%);
+  background: linear-gradient(180deg, #cceafc 0%, #a9e2fe 100%);
   color: #174a62;
 }
 
@@ -714,7 +714,7 @@ ul {
 }
 
 .pricing-grid__row-header {
-  background: #eef6fb;
+  background: #def2fe;
   color: #2f5165;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 1.3rem;

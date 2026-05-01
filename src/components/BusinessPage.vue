@@ -45,12 +45,6 @@
         <h2>Cost of Therapy</h2>
         <p>Sessions are available online (16+) and face-to-face.</p>
 
-        <h3>Standard Session Fees</h3>
-        <ul>
-          <li><strong>Base fee for individual therapy and coaching</strong> – £90 (60 minutes)</li>
-          <li><strong>Couples therapy</strong> – £120 (60 minutes)</li>
-        </ul>
-
         <div class="pricing-tabs" role="tablist" aria-label="Pricing type">
           <button
             class="pricing-tab"
@@ -70,7 +64,7 @@
             :aria-selected="activePricingTab === 'couples'"
             @click="activePricingTab = 'couples'"
           >
-            Couples - £120
+            Couples - £110
           </button>
         </div>
 
@@ -88,21 +82,17 @@
           <div class="pricing-grid__cell pricing-grid__row-header">Face-to-face</div>
           <div class="pricing-grid__cell pricing-grid__price pricing-grid__price--day">
             <span class="pricing-grid__amount">£80</span>
-            <span class="pricing-grid__subtext">£90 - £10 daytime</span>
           </div>
           <div class="pricing-grid__cell pricing-grid__price pricing-grid__price--evening">
             <span class="pricing-grid__amount">£90</span>
-            <span class="pricing-grid__subtext">base fee</span>
           </div>
 
           <div class="pricing-grid__cell pricing-grid__row-header">Online - aged 16+ only</div>
           <div class="pricing-grid__cell pricing-grid__price pricing-grid__price--day">
             <span class="pricing-grid__amount">£65</span>
-            <span class="pricing-grid__subtext">£90 - £15 online - £10 daytime</span>
           </div>
           <div class="pricing-grid__cell pricing-grid__price pricing-grid__price--evening">
             <span class="pricing-grid__amount">£75</span>
-            <span class="pricing-grid__subtext">£90 - £15 online</span>
           </div>
         </div>
 
@@ -119,22 +109,18 @@
 
           <div class="pricing-grid__cell pricing-grid__row-header">Face-to-face</div>
           <div class="pricing-grid__cell pricing-grid__price pricing-grid__price--day">
-            <span class="pricing-grid__amount">£110</span>
-            <span class="pricing-grid__subtext">£120 - £10 daytime</span>
+            <span class="pricing-grid__amount">£100</span>
           </div>
           <div class="pricing-grid__cell pricing-grid__price pricing-grid__price--evening">
-            <span class="pricing-grid__amount">£120</span>
-            <span class="pricing-grid__subtext">base fee</span>
+            <span class="pricing-grid__amount">£110</span>
           </div>
 
           <div class="pricing-grid__cell pricing-grid__row-header">Online</div>
           <div class="pricing-grid__cell pricing-grid__price pricing-grid__price--day">
-            <span class="pricing-grid__amount">£95</span>
-            <span class="pricing-grid__subtext">£120 - £15 online - £10 daytime</span>
+            <span class="pricing-grid__amount">£85</span>
           </div>
           <div class="pricing-grid__cell pricing-grid__price pricing-grid__price--evening">
-            <span class="pricing-grid__amount">£105</span>
-            <span class="pricing-grid__subtext">£120 - £15 online</span>
+            <span class="pricing-grid__amount">£95</span>
           </div>
         </div>
 
@@ -143,6 +129,7 @@
         <ul>
           <li><strong>NHS, social workers, teachers and blue-light services</strong> – £10 further reduction</li>
           <li><strong>Under 16s and and students</strong> – £5 further reduction</li>
+          <li><strong>Military Veterans and Family Members</strong> - FREE support is available through the charity <strong>PTSD Resolution</strong>.</li>
         </ul>
         <p>Online sessions are available to ages 16+ only. Proof of status is required where relevant.</p>
 
@@ -151,11 +138,6 @@
           <li>Any pre-agreed longer or shorter sessions are charged on a pro-rata basis.</li>
           <li>Additional work (e.g. reports or letters) is charged at the standard hourly rate.</li>
         </ul>
-
-        <h3>Military Veterans and Family Members</h3>
-        <p>
-          FREE support is available through the charity <strong>PTSD Resolution</strong>.
-        </p>
 
       </div>
     </section>
@@ -535,7 +517,7 @@ ul {
 
 .pricing-grid__header--day,
 .pricing-grid__price--day {
-  background: linear-gradient(180deg, #dff3ff 0%, #c2e7fb 100%);
+  background: linear-gradient(180deg, #cceafc 0%, #a9e2fe 100%);
   color: #174a62;
 }
 
@@ -546,7 +528,7 @@ ul {
 }
 
 .pricing-grid__row-header {
-  background: #eef6fb;
+  background: #def2fe;
   color: #2f5165;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 1.5rem;

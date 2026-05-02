@@ -42,7 +42,7 @@
       :class="{ 'fade-in': showSection5 }">
       <div class="info-card">
 
-        <h2>Cost of Therapy</h2>
+        <h2>Cost of Therapy<small> - Hourly Rate</small></h2>
         <p>Sessions are available online (16+) and face-to-face.</p>
 
         <div class="pricing-tabs" role="tablist" aria-label="Pricing type">

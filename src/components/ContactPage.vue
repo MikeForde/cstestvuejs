@@ -99,7 +99,7 @@
           <img src="@/assets/CostOfTherapy.jpg" alt="Cost of Therapy Image - the duck bill" class="info-image" />
         </div>
         <div class="info-card">
-          <h2 id="cost-of-therapy-title">Cost of Therapy</h2>
+          <h2 id="cost-of-therapy-title">Cost of Therapy<small> - Hourly Rate</small></h2>
           <div class="pricing-tabs" role="tablist" aria-label="Pricing type">
             <button
               class="pricing-tab"

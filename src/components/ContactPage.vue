@@ -101,25 +101,20 @@
         <div class="info-card">
           <h2 id="cost-of-therapy-title">Cost of Therapy<small> - Hourly Rate</small></h2>
           <div class="pricing-tabs" role="tablist" aria-label="Pricing type">
-            <button
-              class="pricing-tab"
-              :class="{ 'pricing-tab--active': activePricingTab === 'individual' }"
-              type="button"
-              role="tab"
-              :aria-selected="activePricingTab === 'individual'"
-              @click="activePricingTab = 'individual'"
-            >
-              Individual Therapy & Coaching- £90
+            <button class="pricing-tab" :class="{ 'pricing-tab--active': activePricingTab === 'individual' }"
+              type="button" role="tab" :aria-selected="activePricingTab === 'individual'"
+              @click="activePricingTab = 'individual'">
+              <span class="pricing-tab__title">Individual Therapy &amp; Coaching</span>
+              <span class="pricing-tab__hint-text">
+                {{ activePricingTab === 'individual' ? '' : 'Tap to view prices' }}
+              </span>
             </button>
-            <button
-              class="pricing-tab"
-              :class="{ 'pricing-tab--active': activePricingTab === 'couples' }"
-              type="button"
-              role="tab"
-              :aria-selected="activePricingTab === 'couples'"
-              @click="activePricingTab = 'couples'"
-            >
-              Couples - £110
+            <button class="pricing-tab" :class="{ 'pricing-tab--active': activePricingTab === 'couples' }" type="button"
+              role="tab" :aria-selected="activePricingTab === 'couples'" @click="activePricingTab = 'couples'">
+              <span class="pricing-tab__title">Couple Therapy</span>
+              <span class="pricing-tab__hint-text">
+                {{ activePricingTab === 'couples' ? '' : 'Tap to view prices' }}
+              </span>
             </button>
           </div>
 
@@ -735,6 +730,78 @@ ul {
   line-height: 1.4;
 }
 
+.pricing-tabs-hint {
+  margin: 0 0 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.98rem;
+  color: #2f5165;
+  font-weight: 600;
+}
+
+.pricing-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 8px 0 16px;
+  padding: 0;
+  background: transparent;
+}
+
+.pricing-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  min-width: 220px;
+  padding: 14px 16px;
+  border: 4px solid #bfdceb;
+  border-radius: 16px;
+  background: #ffffff;
+  color: #2f5165;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.15s ease, box-shadow 0.2s ease, border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.pricing-tab:hover {
+  transform: translateY(-1px);
+  border-color: #5DAED5;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.10);
+}
+
+.pricing-tab:focus-visible {
+  outline: 3px solid rgba(93, 174, 213, 0.35);
+  outline-offset: 2px;
+  border-color: #5DAED5;
+}
+
+.pricing-tab__title {
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+.pricing-tab__hint-text {
+  font-size: 0.82rem;
+  font-weight: 600;
+  opacity: 0.8;
+  align-self: center;
+}
+
+.pricing-tab--active {
+  background: #5DAED5;
+  color: white;
+  border-color: #5DAED5;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.pricing-tab--active .pricing-tab__hint-text {
+  opacity: 1;
+}
+
 
 @media screen and (min-width: 769px) {
 
@@ -838,11 +905,42 @@ ul {
   }
 
   .pricing-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(82px, 1.1fr) repeat(2, minmax(66px, 1fr));
+    gap: 8px;
+    margin: 14px 0;
+    width: 100%;
   }
 
   .pricing-grid__corner {
-    display: none;
+    display: block;
+  }
+
+  .pricing-grid__cell {
+    border-radius: 12px;
+    padding: 9px 7px;
+    min-width: 0;
+  }
+
+  .pricing-grid__header {
+    min-height: 62px;
+    text-align: center;
+  }
+
+  .pricing-grid__row-header {
+    font-size: 1rem;
+    line-height: 1.15;
+  }
+
+  .pricing-grid__label,
+  .pricing-grid__amount {
+    font-size: 1.15rem;
+    line-height: 1.1;
+  }
+
+  .pricing-grid__subtext {
+    font-size: 0.72rem;
+    line-height: 1.2;
+    margin-top: 4px;
   }
 
   .pricing-tabs {

@@ -10,7 +10,7 @@
         </video>
       </template>
       <div class="hero-content">
-        <h1>Couples Therapy</h1>
+        <h1>Couple Therapy</h1>
       </div>
     </section>
 
@@ -33,7 +33,7 @@
           <p>
             As a HG psychotherapist I work within the framework of essential human needs as a foundation for supporting
             individual wellbeing
-            and thriving relationships. My couples therapy work also incorporates practical communication and conflict
+            and thriving relationships. My couple therapy work also incorporates practical communication and conflict
             resolution skills
             alongside evidence-based guidance for positive and lasting relationships from John and Julie Gottman.
           </p>
@@ -83,7 +83,7 @@
             others
             choose
             <strong>longer-term work</strong>.
-            <em>You don’t need to be “in crisis” to benefit from couples therapy—many couples come to strengthen an
+            <em>You don’t need to be “in crisis” to benefit from couple therapy—many couples come to strengthen an
               already
               meaningful relationship.</em>
           </p>
@@ -99,9 +99,9 @@
       <div class="card-row">
         <div class="card text-card">
           <h2>Why individual sessions may be suggested</h2>
-          <p>While most couples therapy sessions are attended together, there are times when <strong>individual
+          <p>While most couple therapy sessions are attended together, there are times when <strong>individual
               sessions</strong> can be a helpful and appropriate part of the process.</p>
-          <p>These sessions are always used <strong>in service of the relationship</strong>, not instead of couples
+          <p>These sessions are always used <strong>in service of the relationship</strong>, not instead of couple therapy
             work.
           </p>
           <p>Individual sessions help each partner gain <strong>insight into their own patterns, emotions, and stress
@@ -119,7 +119,7 @@
       <div class="card-row single">
         <div class="card text-card">
           <h2>Confidentiality of individual sessions</h2>
-          <p>Individual sessions are confidential. They are used to support the couples therapy and the relationship as
+          <p>Individual sessions are confidential. They are used to support the couple therapy and the relationship as
             a
             whole, not to take sides or keep harmful secrets.</p>
           <p>If something important for the relationship comes up, we will discuss together how it can be shared in a

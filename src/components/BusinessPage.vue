@@ -596,6 +596,7 @@ ul {
 .pricing-tab__title {
   font-size: 1rem;
   line-height: 1.25;
+  align-self: center;
 }
 
 .pricing-tab__hint-text {

@@ -47,20 +47,20 @@
 
         <div class="pricing-tabs" role="tablist" aria-label="Pricing type">
           <button class="pricing-tab" :class="{ 'pricing-tab--active': activePricingTab === 'individual' }"
-              type="button" role="tab" :aria-selected="activePricingTab === 'individual'"
-              @click="activePricingTab = 'individual'">
-              <span class="pricing-tab__title">Individual Therapy &amp; Coaching</span>
-              <span class="pricing-tab__hint-text">
-                {{ activePricingTab === 'individual' ? '' : 'Tap to view prices' }}
-              </span>
-            </button>
-            <button class="pricing-tab" :class="{ 'pricing-tab--active': activePricingTab === 'couples' }" type="button"
-              role="tab" :aria-selected="activePricingTab === 'couples'" @click="activePricingTab = 'couples'">
-              <span class="pricing-tab__title">Couple Therapy</span>
-              <span class="pricing-tab__hint-text">
-                {{ activePricingTab === 'couples' ? '' : 'Tap to view prices' }}
-              </span>
-            </button>
+            type="button" role="tab" :aria-selected="activePricingTab === 'individual'"
+            @click="activePricingTab = 'individual'">
+            <span class="pricing-tab__title">Individual Therapy &amp; Coaching</span>
+            <span class="pricing-tab__hint-text">
+              {{ activePricingTab === 'individual' ? '' : 'Tap to view prices' }}
+            </span>
+          </button>
+          <button class="pricing-tab" :class="{ 'pricing-tab--active': activePricingTab === 'couples' }" type="button"
+            role="tab" :aria-selected="activePricingTab === 'couples'" @click="activePricingTab = 'couples'">
+            <span class="pricing-tab__title">Couple Therapy</span>
+            <span class="pricing-tab__hint-text">
+              {{ activePricingTab === 'couples' ? '' : 'Tap to view prices' }}
+            </span>
+          </button>
         </div>
 
         <div v-if="activePricingTab === 'individual'" class="pricing-grid" aria-label="Individual session price grid">
@@ -124,7 +124,9 @@
         <ul>
           <li><strong>NHS, social workers, teachers and blue-light services</strong> – £10 further reduction</li>
           <li><strong>Under 16s and and students</strong> – £5 further reduction</li>
-          <li><strong>Military Veterans and Family Members</strong> - FREE support is available through the charity <strong>PTSD Resolution</strong>.</li>
+          <li><strong>Military Veterans and Family Members</strong> - FREE support is available through the charity
+            <strong>PTSD Resolution</strong>.
+          </li>
         </ul>
         <p>Online sessions are available to ages 16+ only. Proof of status is required where relevant.</p>
 
@@ -140,11 +142,15 @@
     <section class="info-section" ref="section6" :data-section="6" :class="{ 'fade-in': showSection6 }">
       <div class="info-card">
         <h2>Healthcare Insurance</h2>
-        <p>Some clients have coverage from a healthcare insurer. We are unable to communicate directly with insurers,
-          and we do not have an electronic claims system in place. It is the client’s responsibility to ascertain
-          whether their insurance provider covers psychological talking therapies, to pay their fees at the time
-          of consultation, and to then claim from their insurer, where possible. We will do our utmost to facilitate
-          that claim.</p>
+        <p>If you intend to fund your psychotherapy through a private health insurance, please note that I am only able
+          to accept clients whose treatment is authorised and covered by Aviva. It is your responsibility to contact
+          Aviva prior to commencing sessions to confirm that your policy provides cover for Human Givens
+          psychotherapy/counselling, and to establish the number of sessions authorised under your policy. </p>
+        <p>Before your first appointment, you must provide me with your full name, date of birth, home address, Aviva policy number,
+          and the relevant authorisation number for Human Givens psychotherapy/counselling for invoicing purposes.
+          Please also note that each invoice issued for sessions will incur an additional £10 administrative fee to
+          cover invoicing and associated administration time. Any sessions or charges not authorised or reimbursed by
+          Aviva will remain your personal financial responsibility.</p>
       </div>
     </section>
 

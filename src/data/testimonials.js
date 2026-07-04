@@ -3,7 +3,7 @@ export default [
     "{It was my 1st time doing therapy and I chose to go due to some struggles I was battling in my head. Galina was so welcoming and supportive from the 1st phone call to the 1st session all the way to the last session.} She always staying in close contact over email and always providing summaries of a particular session and also provided content to help with the sessions we were talking about. She really helped me realise my struggles, helped me overcome them and how to stay in control of them. I am so grateful for all the hard work she put into me and the knowledge I came away with.",
     "Thank you Galina"
   ],
-  ["{I came to Galina feeling completely stuck, lost and unable to move forward in life. Galina's approach felt unique and personalised to my needs, and I appreciated the combination of talking therapy, rewind therapy, guided visualisations and practical advice.} Being given tools and specific things to focus on between sessions really helped me to keep moving forward, and helped me achieve the goals we'd set.", 
+  ["{I came to Galina feeling completely stuck, lost and unable to move forward in life. Galina's approach felt unique and personalised to my needs, and I appreciated the combination of talking therapy, rewind therapy, guided visualisations and practical advice.} Being given tools and specific things to focus on between sessions really helped me to keep moving forward, and helped me achieve the goals we'd set.",
     "Galina helped me see myself for who I really was, and helped me grow in confidence. She was kind, calm, patient and non-judgemental, and everything I wanted in a therapist. In the few months we worked together, I overcame so much, put in place some of my own practices that have stuck, and feel hopeful about moving forward into the future. Thank you Galina!"
   ],
   [
@@ -41,5 +41,12 @@ export default [
   ],
   [
     "{Galina was incredibly attentive and approachable, her insights and knowledge really helped me understand what I could do to help myself.} Her approach was kind and understanding and just what I needed."
-  ]
+  ],
+  [
+    "I cannot recommend Galina highly enough. From the very first session, she was incredibly professional, compassionate, and insightful. Her knowledge and understanding of trauma were exceptional, and she created a safe, supportive environment where I felt truly heard and understood.",
+    "{What impressed me most was the trauma rewire [rewind]. The results were nothing short of life-changing. She helped me identify and work through patterns and experiences that I had carried for years, and the transformation has been remarkable.} Her empathic approach was both gentle whilst being highly effective, combining intelligence, skill, and genuine care in a way that inspired me to completey trust and feel at ease with her.",
+    "Her knowledge of the effects of trauma and how narcissistic abuse can be so damaging is second to none.",
+    "Galina is an outstanding counsellor whose expertise has made a profound difference to my life.",
+    "If you are looking for someone who has amazing insights, is professional, and truly dedicated to helping people heal and grow, I would wholeheartedly recommend Galina."
+  ],
 ];

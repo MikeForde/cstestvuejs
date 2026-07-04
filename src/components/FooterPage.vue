@@ -13,24 +13,40 @@
         </a>
       </div>
       <div>
-      <div class="footer-center">
-        <a href="https://www.psychologytoday.com/gb/counselling/galina-filipkova-tewkesbury/1556498" target="_blank"
-          rel="noopener">
-          <img src="@/assets/Psychology_Today.png" alt="Psychology Today Logo" class="footer-logo2" />
-        </a>
+        <div class="footer-center">
+          <a href="https://www.psychologytoday.com/gb/counselling/galina-filipkova-tewkesbury/1556498" target="_blank"
+            rel="noopener">
+            <img src="@/assets/Psychology_Today.png" alt="Psychology Today Logo" class="footer-logo2" />
+          </a>
+        </div>
+        <div class="footer-center">
+          <a href="https://www.counselling-directory.org.uk/counsellors/galina-filipkova" target="_blank"
+            rel="noopener">
+            <img src="@/assets/Counselling_Directory.png" alt="Counselling Directory Logo" class="footer-logo2" />
+          </a>
+        </div>
+        <div class="footer-center">
+          <a href="https://ptsdresolution.org" target="_blank" rel="noopener">
+            <img src="@/assets/PTSD_Resolution_Logo.png" alt="Counselling Directory Logo" class="footer-logo2" />
+          </a>
+        </div>
       </div>
-      <div class="footer-center">
-        <a href="https://www.counselling-directory.org.uk/counsellors/galina-filipkova" target="_blank"
-          rel="noopener">
-          <img src="@/assets/Counselling_Directory.png" alt="Counselling Directory Logo" class="footer-logo2" />
+      <div class="fil-footer-block">
+        <a href="https://www.foundationforinfantloss.co.uk" target="_blank" rel="noopener">
+          <img src="@/assets/FIL_logo.jpg" alt="Foundation for Infant Loss Logo" class="fil-main-logo" />
         </a>
-      </div>
-      <div class="footer-center">
-        <a href="https://ptsdresolution.org" target="_blank"
-          rel="noopener">
-          <img src="@/assets/PTSD_Resolution_Logo.png" alt="Counselling Directory Logo" class="footer-logo2" />
-        </a>
-      </div>
+
+        <div class="fil-sublogos">
+          <a href="https://www.foundationforinfantloss.co.uk/practitioner-training" target="_blank" rel="noopener">
+            <img src="@/assets/FIL_rainbowlogo.png" alt="Foundation for Infant Loss Rainbow Baby Specialist Logo"
+              class="fil-small-logo" />
+          </a>
+
+          <a href="https://www.foundationforinfantloss.co.uk/practitioner-training" target="_blank" rel="noopener">
+            <img src="@/assets/FIL_infertility_logo.png" alt="Foundation for Infant Loss Infertility Specialist Logo"
+              class="fil-small-logo" />
+          </a>
+        </div>
       </div>
       <div class="footer-right">
         <router-link to="/privacy">Privacy Policy</router-link> |
@@ -117,11 +133,57 @@ export default {
   padding-right: 20px;
 }
 
-.footer-logo, .footer-logo2 {
+.footer-logo,
+.footer-logo2 {
   user-select: none;
-  -webkit-user-select: none;  /* Safari */
-  -moz-user-select: none;     /* Firefox */
-  -ms-user-select: none;      /* IE10+ */
+  -webkit-user-select: none;
+  /* Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+ */
+}
+
+.fil-footer-block {
+  flex: 0 0 176px;
+  width: 176px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fil-main-logo {
+  display: block;
+  width: 176px;
+  max-width: 176px;
+  height: auto;
+  padding: 0;
+}
+
+.fil-sublogos {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  margin-top: 8px;
+}
+
+.fil-sublogos a {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fil-small-logo {
+  display: block;
+  width: 80px;
+  max-width: none;
+  height: auto;
+  max-height: none;
+  padding: 0;
+  object-fit: contain;
 }
 
 @media screen and (max-width: 768px) {
@@ -134,7 +196,8 @@ export default {
     margin-top: 10px;
   }
 
-  .footer-logo, .footer-logo2 {
+  .footer-logo,
+  .footer-logo2 {
     max-height: 75px;
     max-width: 300px;
     padding-right: 5px;
@@ -145,6 +208,22 @@ export default {
   .footer-center {
     justify-content: center;
     margin: 10px 0;
+  }
+
+  .fil-footer-block {
+    flex: 0 0 300px;
+    width: 300px;
+  }
+
+  .fil-main-logo {
+    width: 300px;
+    max-width: 300px;
+    padding-left: 18px;
+  }
+
+  .fil-small-logo {
+    width: 130px;
+    padding-left: 18px;
   }
 }
 </style>

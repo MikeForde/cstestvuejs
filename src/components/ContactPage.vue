@@ -139,10 +139,10 @@
 
             <div class="pricing-grid__cell pricing-grid__row-header">Online - aged 16+ only</div>
             <div class="pricing-grid__cell pricing-grid__price pricing-grid__price--day">
-              <span class="pricing-grid__amount">£65</span>
+              <span class="pricing-grid__amount">£70</span>
             </div>
             <div class="pricing-grid__cell pricing-grid__price pricing-grid__price--evening">
-              <span class="pricing-grid__amount">£75</span>
+              <span class="pricing-grid__amount">£80</span>
             </div>
           </div>
 
@@ -167,15 +167,14 @@
 
             <div class="pricing-grid__cell pricing-grid__row-header">Online</div>
             <div class="pricing-grid__cell pricing-grid__price pricing-grid__price--day">
-              <span class="pricing-grid__amount">£85</span>
+              <span class="pricing-grid__amount">£90</span>
             </div>
             <div class="pricing-grid__cell pricing-grid__price pricing-grid__price--evening">
-              <span class="pricing-grid__amount">£95</span>
+              <span class="pricing-grid__amount">£100</span>
             </div>
           </div>
           <ul>
             <li><strong>NHS, social workers, teachers and blue-light services</strong>: £10 further reduction</li>
-            <li><strong>Under 16s and students</strong>: £5 further reduction</li>
             <li><strong>Military veterans &amp; family members</strong> &ndash; FREE via PTSD Resolution</li>
           </ul>
           <p></p>

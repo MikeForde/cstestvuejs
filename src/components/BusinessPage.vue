@@ -135,17 +135,29 @@
           <li>Additional work (e.g. reports or letters) is charged at the standard hourly rate.</li>
         </ul>
 
+        <p>Please note:</p>
+        <ol type="a">
+          <li>The session fee is subject to revision from time to time. Advance notice will be given of any increase.
+          </li>
+          <li>Human Givens therapists aim to meet the needs of their clients in as few sessions as possible and do not
+            charge in advance for a course of treatment.</li>
+          <li><b>Any extra work undertaken on the client’s behalf</b>, such as meeting with, making phone/video calls
+            to, writing reports or letters for other agencies will be charged at the standard hourly rate.</li>
+        </ol>
+
+
       </div>
     </section>
 
     <section class="info-section" ref="section6" :data-section="6" :class="{ 'fade-in': showSection6 }">
       <div class="info-card">
         <h2>Healthcare Insurance</h2>
-        <p>If you intend to fund your psychotherapy through a private health insurance, please note that I am only able
+        <p>If you intend to fund your psychotherapy through a private health insurance, please note that we are only able
           to accept clients whose treatment is authorised and covered by Aviva. It is your responsibility to contact
           Aviva prior to commencing sessions to confirm that your policy provides cover for Human Givens
           psychotherapy/counselling, and to establish the number of sessions authorised under your policy. </p>
-        <p>Before your first appointment, you must provide me with your full name, date of birth, home address, Aviva policy number,
+        <p>Before your first appointment, you must provide us with your full name, date of birth, home address, Aviva
+          policy number,
           and the relevant authorisation number for Human Givens psychotherapy/counselling for invoicing purposes.
           Please also note that each invoice issued for sessions will incur an additional £10 administrative fee to
           cover invoicing and associated administration time. Any sessions or charges not authorised or reimbursed by
@@ -175,6 +187,16 @@
 
     <section class="info-section" ref="section9" :data-section="9" :class="{ 'fade-in': showSection9 }">
       <div class="info-card">
+        <h2>Alcohol and Drugs</h2>
+        <p>To ensure that counselling can be conducted safely and effectively, clients are asked not to attend sessions
+          while under the influence of alcohol or recreational/non-prescribed drugs. If we believe that you are under the
+          influence or impaired to the extent that counselling cannot safely or effectively take place, we reserve the
+          right to end the session. In these circumstances, the full session fee will remain payable.</p>
+      </div>
+    </section>
+
+    <section class="info-section" ref="section10" :data-section="10" :class="{ 'fade-in': showSection10 }">
+      <div class="info-card">
         <h2>Location and Room Bookings</h2>
         <p>We provide <b>online</b> (16+) and <b>face-to-face</b> therapy sessions.</p>
         <p>The Clear Skies Practice is based in Tewkesbury and Cheltenham. It is easily accessible from the surrounding
@@ -192,7 +214,7 @@
       </div>
     </section>
 
-    <section class="info-section" ref="section10" :data-section="10" :class="{ 'fade-in': showSection10 }">
+    <section class="info-section" ref="section11" :data-section="11" :class="{ 'fade-in': showSection11 }">
       <div class="info-card">
         <h2>Payment Method</h2>
         <p>If it is convenient for the client, payment online may be made in advance or on the day of consultation
@@ -201,7 +223,7 @@
       </div>
     </section>
 
-    <section class="info-section" ref="section11" :data-section="11" :class="{ 'fade-in': showSection11 }">
+    <section class="info-section" ref="section12" :data-section="12" :class="{ 'fade-in': showSection12 }">
       <div class="info-card">
         <h2>Cancellation Policy</h2>
         <p>Since scheduling of an appointment involves the reservation of time for your individual session, a minimum of
@@ -216,7 +238,7 @@
       </div>
     </section>
 
-    <section class="info-section" ref="section12" :data-section="12" :class="{ 'fade-in': showSection12 }">
+    <section class="info-section" ref="section13" :data-section="13" :class="{ 'fade-in': showSection13 }">
       <div class="info-card">
         <h2>Your Personal Information</h2>
         <p>Your Personal Information will be kept in accordance with the Data Protection Act (2018) and the General Data
@@ -226,7 +248,7 @@
       </div>
     </section>
 
-    <section class="info-section" ref="section13" :data-section="13" :class="{ 'fade-in': showSection13 }">
+    <section class="info-section" ref="section14" :data-section="14" :class="{ 'fade-in': showSection14 }">
       <div class="info-card">
         <h2>Governance</h2>
         <p>The work of this practice is governed by The Codes of Ethics & Professional Practice of the Human Givens
@@ -266,6 +288,7 @@ export default {
       showSection11: false,
       showSection12: false,
       showSection13: false,
+      showSection14: false,
     };
   },
   mounted() {
@@ -298,6 +321,7 @@ export default {
       observer.observe(this.$refs.section11);
       observer.observe(this.$refs.section12);
       observer.observe(this.$refs.section13);
+      observer.observe(this.$refs.section14);
     });
   }
 }
@@ -344,7 +368,8 @@ export default {
 [data-section="6"] p,
 [data-section="8"] p,
 [data-section="10"] p,
-[data-section="12"] p {
+[data-section="12"] p,
+[data-section="14"] p {
   color: white;
 }
 
@@ -358,7 +383,8 @@ export default {
 [data-section="6"] h2,
 [data-section="8"] h2,
 [data-section="10"] h2,
-[data-section="12"] h2 {
+[data-section="12"] h2,
+[data-section="14"] h2 {
   color: white;
 }
 
@@ -367,7 +393,8 @@ export default {
 [data-section="6"] h3,
 [data-section="8"] h3,
 [data-section="10"] h3,
-[data-section="12"] h3 {
+[data-section="12"] h3,
+[data-section="14"] h3 {
   color: white;
 }
 
@@ -376,7 +403,8 @@ export default {
 [data-section="6"],
 [data-section="8"],
 [data-section="10"],
-[data-section="12"] {
+[data-section="12"], 
+[data-section="14"] {
   background: #5DAED5;
 }
 
@@ -396,7 +424,8 @@ export default {
 [data-section="6"] .info-card,
 [data-section="8"] .info-card,
 [data-section="10"] .info-card,
-[data-section="12"] .info-card {
+[data-section="12"] .info-card,
+[data-section="14"] .info-card {
   background: none;
   /* Remove the default card background */
 }

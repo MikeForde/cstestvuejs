@@ -104,11 +104,12 @@
             <li>Depression and low-mood</li>
             <li>Addictions and unhelpful habits</li>
             <li>Bereavement and loss</li>
+            <li>Miscarriage, infant loss, infertility, supporting subsequent pregnancies after infant loss (rainbow babies)</li>
             <li><router-link to="/life-coaching">Life coaching</router-link></li>
           </ul>
           <i>I offer <b>neurodiversity-informed</b> therapy and life coaching.</i>
           <br />
-          <i>I offer concessions for students, blue-light services staff, NHS staff, social workers and teachers.</i>
+          <i>I offer concessions for blue-light services staff, NHS staff, social workers and teachers.</i>
           <br />
           <i>Free therapy for Military Veterans and Family Members - please get in touch for more details.</i>
         </div>

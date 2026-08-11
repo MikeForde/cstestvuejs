@@ -32,17 +32,17 @@
         </div>
       </div>
       <div class="fil-footer-block">
-        <a href="https://www.foundationforinfantloss.co.uk" target="_blank" rel="noopener">
+        <a href="https://www.foundationforinfantloss.co.uk/rainbow-professionals-list" target="_blank" rel="noopener">
           <img src="@/assets/FIL_logo.jpg" alt="Foundation for Infant Loss Logo" class="fil-main-logo" />
         </a>
 
         <div class="fil-sublogos">
-          <a href="https://www.foundationforinfantloss.co.uk/practitioner-training" target="_blank" rel="noopener">
+          <a href="https://www.foundationforinfantloss.co.uk/rainbow-professionals-list" target="_blank" rel="noopener">
             <img src="@/assets/FIL_rainbowlogo.png" alt="Foundation for Infant Loss Rainbow Baby Specialist Logo"
               class="fil-small-logo" />
           </a>
 
-          <a href="https://www.foundationforinfantloss.co.uk/practitioner-training" target="_blank" rel="noopener">
+          <a href="https://www.foundationforinfantloss.co.uk/rainbow-professionals-list" target="_blank" rel="noopener">
             <img src="@/assets/FIL_infertility_logo.png" alt="Foundation for Infant Loss Infertility Specialist Logo"
               class="fil-small-logo" />
           </a>

@@ -130,13 +130,8 @@
         <p>Online sessions are available to ages 16+ only. Proof of status is required where relevant.</p>
 
         <h3>Additional Information</h3>
-        <ul>
-          <li>Any pre-agreed longer or shorter sessions are charged on a pro-rata basis.</li>
-          <li>Additional work (e.g. reports or letters) is charged at the standard hourly rate.</li>
-        </ul>
-
-        <p>Please note:</p>
         <ol type="a">
+          <li>Any pre-agreed longer or shorter sessions are charged on a pro-rata basis.</li>
           <li>The session fee is subject to revision from time to time. Advance notice will be given of any increase.
           </li>
           <li>Human Givens therapists aim to meet the needs of their clients in as few sessions as possible and do not
@@ -152,7 +147,8 @@
     <section class="info-section" ref="section6" :data-section="6" :class="{ 'fade-in': showSection6 }">
       <div class="info-card">
         <h2>Healthcare Insurance</h2>
-        <p>If you intend to fund your psychotherapy through a private health insurance, please note that we are only able
+        <p>If you intend to fund your psychotherapy through a private health insurance, please note that we are only
+          able
           to accept clients whose treatment is authorised and covered by Aviva. It is your responsibility to contact
           Aviva prior to commencing sessions to confirm that your policy provides cover for Human Givens
           psychotherapy/counselling, and to establish the number of sessions authorised under your policy. </p>
@@ -178,6 +174,21 @@
 
     <section class="info-section" ref="section8" :data-section="8" :class="{ 'fade-in': showSection8 }">
       <div class="info-card">
+        <h2>Contact between sessions</h2>
+        <p>Therapy works best when we use our sessions together as the main place for therapeutic work. If something
+          practical arises between appointments, such as rearranging a session or an administrative query, you are very
+          welcome to email yut therapist. We cannot offer therapeutic support by email, text or messaging between
+          sessions, and we do not provide an on-call or crisis service. If you are experiencing significant distress
+          between appointments, we will discuss appropriate strategies and sources of support during therapy, including
+          who to contact in an emergency. Occasionally you may wish to share a brief update before a session. Whilst we
+          will always do our best to read important information, we cannot guarantee that we will be able to respond
+          before your next appointment. Any therapeutic issues will usually be explored during your scheduled session.
+        </p>
+      </div>
+    </section>
+
+    <section class="info-section" ref="section9" :data-section="9" :class="{ 'fade-in': showSection9 }">
+      <div class="info-card">
         <h2>Protection of Client and Therapist</h2>
         <p>It is recognised that some clients may be particularly vulnerable, especially young people. We reserve the
           right to record consultations, if deemed appropriate, for the protection of both client and therapist. We will
@@ -185,17 +196,18 @@
       </div>
     </section>
 
-    <section class="info-section" ref="section9" :data-section="9" :class="{ 'fade-in': showSection9 }">
+    <section class="info-section" ref="section10" :data-section="10" :class="{ 'fade-in': showSection10 }">
       <div class="info-card">
         <h2>Alcohol and Drugs</h2>
         <p>To ensure that counselling can be conducted safely and effectively, clients are asked not to attend sessions
-          while under the influence of alcohol or recreational/non-prescribed drugs. If we believe that you are under the
+          while under the influence of alcohol or recreational/non-prescribed drugs. If we believe that you are under
+          the
           influence or impaired to the extent that counselling cannot safely or effectively take place, we reserve the
           right to end the session. In these circumstances, the full session fee will remain payable.</p>
       </div>
     </section>
 
-    <section class="info-section" ref="section10" :data-section="10" :class="{ 'fade-in': showSection10 }">
+    <section class="info-section" ref="section11" :data-section="11" :class="{ 'fade-in': showSection11 }">
       <div class="info-card">
         <h2>Location and Room Bookings</h2>
         <p>We provide <b>online</b> (16+) and <b>face-to-face</b> therapy sessions.</p>
@@ -214,16 +226,16 @@
       </div>
     </section>
 
-    <section class="info-section" ref="section11" :data-section="11" :class="{ 'fade-in': showSection11 }">
+    <section class="info-section" ref="section12" :data-section="12" :class="{ 'fade-in': showSection12 }">
       <div class="info-card">
-        <h2>Payment Method</h2>
-        <p>If it is convenient for the client, payment online may be made in advance or on the day of consultation
-          otherwise we accept cash. An invoice will be sent via email in advance. If payment is not made by the deadline
-          stated on the invoice, an administration fee of £15 will be charged.</p>
+        <h2>Payment Methods</h2>
+        <p>Payment for each therapy session is due <b>on the day of your session.</b> If it is convenient for the client, payment online (via a bank transfer) may be made in advance or on the day of consultation otherwise we accept cash. An invoice will be sent via email in advance. If payment is not made by the end of the day of the consultation an administration fee of £15 will be charged.</p>
+        <p>Please ensure that all session fees are settle d <b>before your next session, at the latest.</b></p>
+        <p>If you are having any financial difficulties that may make it difficult to pay for your sessions, please talk to us. We understand that circumstances can change, and we would much rather you speak to us so that we can discuss things together.</p>
       </div>
     </section>
 
-    <section class="info-section" ref="section12" :data-section="12" :class="{ 'fade-in': showSection12 }">
+    <section class="info-section" ref="section13" :data-section="13" :class="{ 'fade-in': showSection13 }">
       <div class="info-card">
         <h2>Cancellation Policy</h2>
         <p>Since scheduling of an appointment involves the reservation of time for your individual session, a minimum of
@@ -238,7 +250,7 @@
       </div>
     </section>
 
-    <section class="info-section" ref="section13" :data-section="13" :class="{ 'fade-in': showSection13 }">
+    <section class="info-section" ref="section14" :data-section="14" :class="{ 'fade-in': showSection14 }">
       <div class="info-card">
         <h2>Your Personal Information</h2>
         <p>Your Personal Information will be kept in accordance with the Data Protection Act (2018) and the General Data
@@ -248,7 +260,7 @@
       </div>
     </section>
 
-    <section class="info-section" ref="section14" :data-section="14" :class="{ 'fade-in': showSection14 }">
+    <section class="info-section" ref="section15" :data-section="15" :class="{ 'fade-in': showSection15 }">
       <div class="info-card">
         <h2>Governance</h2>
         <p>The work of this practice is governed by The Codes of Ethics & Professional Practice of the Human Givens
@@ -289,6 +301,7 @@ export default {
       showSection12: false,
       showSection13: false,
       showSection14: false,
+      showSection15: false,
     };
   },
   mounted() {
@@ -322,6 +335,7 @@ export default {
       observer.observe(this.$refs.section12);
       observer.observe(this.$refs.section13);
       observer.observe(this.$refs.section14);
+      observer.observe(this.$refs.section15);
     });
   }
 }
@@ -403,7 +417,7 @@ export default {
 [data-section="6"],
 [data-section="8"],
 [data-section="10"],
-[data-section="12"], 
+[data-section="12"],
 [data-section="14"] {
   background: #5DAED5;
 }

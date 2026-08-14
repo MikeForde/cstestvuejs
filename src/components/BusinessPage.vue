@@ -177,7 +177,7 @@
         <h2>Contact between sessions</h2>
         <p>Therapy works best when we use our sessions together as the main place for therapeutic work. If something
           practical arises between appointments, such as rearranging a session or an administrative query, you are very
-          welcome to email yut therapist. We cannot offer therapeutic support by email, text or messaging between
+          welcome to email your therapist. We cannot offer therapeutic support by email, text or messaging between
           sessions, and we do not provide an on-call or crisis service. If you are experiencing significant distress
           between appointments, we will discuss appropriate strategies and sources of support during therapy, including
           who to contact in an emergency. Occasionally you may wish to share a brief update before a session. Whilst we

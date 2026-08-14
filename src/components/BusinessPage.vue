@@ -23,18 +23,27 @@
     <section class="info-section" ref="section3" :data-section="3" :class="{ 'fade-in': showSection3 }">
       <div class="info-card">
         <h2>Opening Hours</h2>
-        <p>Monday, Tuesday, Thursday - evenings</p>
-        <p>Wednesday (online only) - all day</p>
-        <p>Friday - all day </p>
+        <p>Wednesdays and Tuesdays – evenings</p>
+        <p>Mondays and Thursdays- all day</p>
       </div>
     </section>
 
     <section class="info-section" ref="section4" :data-section="4" :class="{ 'fade-in': showSection4 }">
       <div class="info-card">
-        <h2>Outcome measures</h2>
-        <p>We use various measures to gauge your progress and response to treatment. If you are happy to do so, you may
-          be asked to complete a brief anonymised questionnaire to help the therapist understand your needs, how best to
-          help you and to evaluate outcomes.</p>
+        <h2>Location and Room Bookings</h2>
+        <p>We provide <b>online</b> (16+) and <b>face-to-face</b> therapy sessions.</p>
+        <p>The Clear Skies Practice is based in Tewkesbury and Cheltenham. It is easily accessible from the surrounding
+          areas of
+          Gloucestershire and Worcestershire.</p>
+        <p>Location 1: <a href="https://reflectionrooms.co.uk" target="_blank">Reflection Rooms,
+            Tewkesbury</a>.
+          Address: Reflection Rooms, 13-14 Barton St, Tewkesbury, GL20 5PP</p>
+        <p>The above is well situated and easy walking distance from Tewkesbury High Street.</p>
+        <p>Location 2: <a href="https://www.theregencypractice.com" target="_blank">The
+            Regency Practice,
+            Cheltenham</a>.
+          Address: The Regency Practice, 22A Rodney Road, Cheltenham, GL50 1JJ</p>
+        <p>Please note, we cannot guarantee that you will always be seen in the same room.</p>
       </div>
     </section>
 
@@ -174,6 +183,35 @@
 
     <section class="info-section" ref="section8" :data-section="8" :class="{ 'fade-in': showSection8 }">
       <div class="info-card">
+        <h2>Payment Methods</h2>
+        <p>If it is convenient for you, payment may be made in advance by bank transfer. Otherwise, payment for each
+          therapy session is due <b>on the day of your session</b>. If a bank transfer is not possible, we also accept
+          payment in cash.</p>
+        <p>An invoice will be sent to you by email in advance. If payment has not been received by the end of the day of
+          your consultation, an administration fee of <b>£15</b> will be charged.</p>
+        <p>If you are experiencing financial difficulties that may make it difficult for you to pay for your sessions,
+          please <b>talk to us</b>. We understand that circumstances can change, and we would much rather you speak to
+          us so that we can discuss your situation together and see how we can help.</p>
+      </div>
+    </section>
+
+    <section class="info-section" ref="section9" :data-section="9" :class="{ 'fade-in': showSection9}">
+      <div class="info-card">
+        <h2>Cancellation Policy</h2>
+        <p>Since scheduling of an appointment involves the reservation of time for your individual session, a minimum of
+          48 hours is required for rescheduling or cancelling client appointments. Unless we reach a different
+          agreement, <b>the full fee will be charged for session missed without such notification.</b></p>
+        <p>In the event of a serious accident, emergency, or other similar situation outside the client’s control,
+          please deal with the situation first and notify us at the earliest convenient time, or we will follow up with
+          you typically within 24 to 48 hours of the missed appointment.</p>
+        <h2>No Show Policy</h2>
+        <p>Where an appointment is arranged and agreed, and a client does not attend that appointment, <b>the full fee
+            will be charged for the session missed.</b></p>
+      </div>
+    </section>
+
+    <section class="info-section" ref="section10" :data-section="10" :class="{ 'fade-in': showSection10 }">
+      <div class="info-card">
         <h2>Contact between sessions</h2>
         <p>Therapy works best when we use our sessions together as the main place for therapeutic work. If something
           practical arises between appointments, such as rearranging a session or an administrative query, you are very
@@ -187,7 +225,7 @@
       </div>
     </section>
 
-    <section class="info-section" ref="section9" :data-section="9" :class="{ 'fade-in': showSection9 }">
+    <section class="info-section" ref="section11" :data-section="11" :class="{ 'fade-in': showSection11 }">
       <div class="info-card">
         <h2>Protection of Client and Therapist</h2>
         <p>It is recognised that some clients may be particularly vulnerable, especially young people. We reserve the
@@ -196,7 +234,7 @@
       </div>
     </section>
 
-    <section class="info-section" ref="section10" :data-section="10" :class="{ 'fade-in': showSection10 }">
+    <section class="info-section" ref="section12" :data-section="12" :class="{ 'fade-in': showSection12 }">
       <div class="info-card">
         <h2>Alcohol and Drugs</h2>
         <p>To ensure that counselling can be conducted safely and effectively, clients are asked not to attend sessions
@@ -207,46 +245,12 @@
       </div>
     </section>
 
-    <section class="info-section" ref="section11" :data-section="11" :class="{ 'fade-in': showSection11 }">
-      <div class="info-card">
-        <h2>Location and Room Bookings</h2>
-        <p>We provide <b>online</b> (16+) and <b>face-to-face</b> therapy sessions.</p>
-        <p>The Clear Skies Practice is based in Tewkesbury and Cheltenham. It is easily accessible from the surrounding
-          areas of
-          Gloucestershire and Worcestershire.</p>
-        <p>Location 1: <a href="https://reflectionrooms.co.uk" target="_blank">Reflection Rooms,
-            Tewkesbury</a>.
-          Address: Reflection Rooms, 13-14 Barton St, Tewkesbury, GL20 5PP</p>
-        <p>The above is well situated and easy walking distance from Tewkesbury High Street.</p>
-        <p>Location 2: <a href="https://www.theregencypractice.com" target="_blank">The
-            Regency Practice,
-            Cheltenham</a>.
-          Address: The Regency Practice, 22A Rodney Road, Cheltenham, GL50 1JJ</p>
-        <p>Please note, we cannot guarantee that you will always be seen in the same room.</p>
-      </div>
-    </section>
-
-    <section class="info-section" ref="section12" :data-section="12" :class="{ 'fade-in': showSection12 }">
-      <div class="info-card">
-        <h2>Payment Methods</h2>
-        <p>Payment for each therapy session is due <b>on the day of your session.</b> If it is convenient for the client, payment online (via a bank transfer) may be made in advance or on the day of consultation otherwise we accept cash. An invoice will be sent via email in advance. If payment is not made by the end of the day of the consultation an administration fee of £15 will be charged.</p>
-        <p>Please ensure that all session fees are settle d <b>before your next session, at the latest.</b></p>
-        <p>If you are having any financial difficulties that may make it difficult to pay for your sessions, please talk to us. We understand that circumstances can change, and we would much rather you speak to us so that we can discuss things together.</p>
-      </div>
-    </section>
-
     <section class="info-section" ref="section13" :data-section="13" :class="{ 'fade-in': showSection13 }">
       <div class="info-card">
-        <h2>Cancellation Policy</h2>
-        <p>Since scheduling of an appointment involves the reservation of time for your individual session, a minimum of
-          48 hours is required for rescheduling or cancelling client appointments. Unless we reach a different
-          agreement, <b>the full fee will be charged for session missed without such notification.</b></p>
-        <p>In the event of a serious accident, emergency, or other similar situation outside the client’s control,
-          please deal with the situation first and notify us at the earliest convenient time, or we will follow up with
-          you typically within 24 to 48 hours of the missed appointment.</p>
-        <h2>No Show Policy</h2>
-        <p>Where an appointment is arranged and agreed, and a client does not attend that appointment, <b>the full fee
-            will be charged for the session missed.</b></p>
+        <h2>Outcome measures</h2>
+        <p>We use various measures to gauge your progress and response to treatment. If you are happy to do so, you may
+          be asked to complete a brief anonymised questionnaire to help the therapist understand your needs, how best to
+          help you and to evaluate outcomes.</p>
       </div>
     </section>
 

@@ -49,4 +49,6 @@ export default [
     "Galina is an outstanding counsellor whose expertise has made a profound difference to my life.",
     "If you are looking for someone who has amazing insights, is professional, and truly dedicated to helping people heal and grow, I would wholeheartedly recommend Galina."
   ],
+  ["{Galina is friendly, helpful and enthusiastic. Each session always revolved around what I wanted to achieve. I always came out with a smile on my face. Thanks to Galina, I feel positive about moving forward in a calm way.",
+    "I would highly recommend her sessions. Thank you very much Galina.}"]
 ];
